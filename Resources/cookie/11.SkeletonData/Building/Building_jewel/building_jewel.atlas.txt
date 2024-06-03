@@ -1,0 +1,97 @@
+
+building_jewel.png
+size: 664,412
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_jewel
+  rotate: false
+  xy: 544, 341
+  size: 90, 68
+  orig: 90, 68
+  offset: 0, 0
+  index: -1
+building_jewel_efx_1
+  rotate: true
+  xy: 544, 54
+  size: 34, 55
+  orig: 34, 55
+  offset: 0, 0
+  index: -1
+building_jewel_efx_2
+  rotate: false
+  xy: 614, 189
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+building_jewel_efx_3
+  rotate: true
+  xy: 544, 90
+  size: 57, 66
+  orig: 57, 66
+  offset: 0, 0
+  index: -1
+building_jewel_efx_4
+  rotate: true
+  xy: 544, 209
+  size: 60, 68
+  orig: 60, 68
+  offset: 0, 0
+  index: -1
+building_jewel_efx_5
+  rotate: true
+  xy: 544, 149
+  size: 58, 68
+  orig: 58, 68
+  offset: 0, 0
+  index: -1
+building_jewel_efx_6
+  rotate: false
+  xy: 612, 53
+  size: 49, 67
+  orig: 49, 67
+  offset: 0, 0
+  index: -1
+building_jewel_efx_7
+  rotate: false
+  xy: 614, 122
+  size: 44, 65
+  orig: 44, 65
+  offset: 0, 0
+  index: -1
+building_jewel_efx_8
+  rotate: false
+  xy: 583, 5
+  size: 32, 46
+  orig: 32, 47
+  offset: 0, 0
+  index: -1
+building_jewel_light
+  rotate: false
+  xy: 544, 11
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+building_jewel_ol
+  rotate: true
+  xy: 615, 255
+  size: 84, 46
+  orig: 84, 46
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: false
+  xy: 2, 2
+  size: 540, 407
+  orig: 540, 407
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 544, 271
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1

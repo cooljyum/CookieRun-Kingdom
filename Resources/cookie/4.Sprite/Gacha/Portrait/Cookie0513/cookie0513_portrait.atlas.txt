@@ -1,0 +1,300 @@
+
+cookie0513_portrait.png
+size: 2036,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 1046, 35
+  size: 192, 166
+  orig: 192, 166
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 1898, 348
+  size: 122, 86
+  orig: 122, 86
+  offset: 0, 0
+  index: -1
+arm_r_up
+  rotate: false
+  xy: 1405, 13
+  size: 145, 105
+  orig: 145, 105
+  offset: 0, 0
+  index: -1
+back_cape
+  rotate: false
+  xy: 2, 698
+  size: 701, 321
+  orig: 701, 321
+  offset: 0, 0
+  index: -1
+back_cape_l
+  rotate: false
+  xy: 1608, 656
+  size: 315, 363
+  orig: 315, 363
+  offset: 0, 0
+  index: -1
+back_cape_r
+  rotate: false
+  xy: 705, 678
+  size: 462, 341
+  orig: 462, 341
+  offset: 0, 0
+  index: -1
+back_hair01
+  rotate: false
+  xy: 1608, 436
+  size: 325, 218
+  orig: 325, 218
+  offset: 0, 0
+  index: -1
+back_hair02
+  rotate: false
+  xy: 389, 64
+  size: 224, 232
+  orig: 224, 232
+  offset: 0, 0
+  index: -1
+body_center
+  rotate: false
+  xy: 1476, 193
+  size: 130, 319
+  orig: 130, 319
+  offset: 0, 0
+  index: -1
+cape_l
+  rotate: false
+  xy: 1925, 693
+  size: 98, 126
+  orig: 98, 126
+  offset: 0, 0
+  index: -1
+cape_r
+  rotate: false
+  xy: 868, 7
+  size: 176, 141
+  orig: 176, 141
+  offset: 0, 0
+  index: -1
+coffee_cong00
+  rotate: false
+  xy: 868, 150
+  size: 172, 214
+  orig: 194, 237
+  offset: 11, 11
+  index: -1
+coffee_cong04
+  rotate: false
+  xy: 1240, 33
+  size: 163, 168
+  orig: 165, 171
+  offset: 1, 2
+  index: -1
+eye_down
+  rotate: false
+  xy: 1883, 74
+  size: 85, 64
+  orig: 95, 64
+  offset: 0, 0
+  index: -1
+eye_in
+  rotate: false
+  xy: 2019, 992
+  size: 15, 27
+  orig: 17, 32
+  offset: 1, 1
+  index: -1
+eye_shadow_1
+  rotate: false
+  xy: 1898, 209
+  size: 104, 64
+  orig: 104, 64
+  offset: 0, 0
+  index: -1
+eye_shadow_2
+  rotate: false
+  xy: 110, 2
+  size: 77, 60
+  orig: 77, 60
+  offset: 0, 0
+  index: -1
+eye_up
+  rotate: false
+  xy: 1883, 140
+  size: 141, 67
+  orig: 141, 67
+  offset: 0, 0
+  index: -1
+eye_white
+  rotate: false
+  xy: 189, 14
+  size: 61, 48
+  orig: 61, 48
+  offset: 0, 0
+  index: -1
+eyebrow
+  rotate: false
+  xy: 1552, 18
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 1139, 203
+  size: 335, 309
+  orig: 335, 309
+  offset: 0, 0
+  index: -1
+face_line
+  rotate: false
+  xy: 947, 380
+  size: 190, 296
+  orig: 190, 296
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 1169, 514
+  size: 437, 505
+  orig: 437, 505
+  offset: 0, 0
+  index: -1
+front_hair
+  rotate: false
+  xy: 2, 64
+  size: 385, 232
+  orig: 385, 232
+  offset: 0, 0
+  index: -1
+front_hair_shadow
+  rotate: false
+  xy: 1608, 35
+  size: 273, 193
+  orig: 273, 193
+  offset: 0, 0
+  index: -1
+glasses
+  rotate: false
+  xy: 584, 366
+  size: 361, 310
+  orig: 361, 310
+  offset: 0, 0
+  index: -1
+glasses_light
+  rotate: false
+  xy: 1608, 230
+  size: 288, 204
+  orig: 288, 204
+  offset: 0, 0
+  index: -1
+glasses_shine
+  rotate: false
+  xy: 1405, 120
+  size: 192, 71
+  orig: 192, 71
+  offset: 0, 0
+  index: -1
+hamd_l
+  rotate: false
+  xy: 2, 2
+  size: 106, 60
+  orig: 106, 60
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 1935, 604
+  size: 81, 87
+  orig: 81, 88
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: false
+  xy: 1042, 241
+  size: 95, 137
+  orig: 95, 137
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 1925, 821
+  size: 92, 198
+  orig: 92, 198
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 1970, 92
+  size: 64, 46
+  orig: 64, 46
+  offset: 0, 0
+  index: -1
+mouth_shadow
+  rotate: false
+  xy: 252, 16
+  size: 61, 46
+  orig: 61, 46
+  offset: 0, 0
+  index: -1
+neck_cape_up
+  rotate: false
+  xy: 2, 298
+  size: 580, 398
+  orig: 580, 398
+  offset: 0, 0
+  index: -1
+neck_kara01
+  rotate: false
+  xy: 1935, 446
+  size: 83, 66
+  orig: 83, 66
+  offset: 0, 0
+  index: -1
+neck_kara01_shadow
+  rotate: false
+  xy: 1898, 275
+  size: 106, 71
+  orig: 106, 71
+  offset: 0, 0
+  index: -1
+neck_kara02
+  rotate: false
+  xy: 377, 14
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+neck_kara02_shadow
+  rotate: false
+  xy: 315, 16
+  size: 60, 46
+  orig: 60, 46
+  offset: 0, 0
+  index: -1
+skirt
+  rotate: false
+  xy: 615, 38
+  size: 251, 326
+  orig: 251, 326
+  offset: 0, 0
+  index: -1
+tie01
+  rotate: false
+  xy: 1935, 514
+  size: 77, 88
+  orig: 77, 88
+  offset: 0, 0
+  index: -1
+tie02
+  rotate: false
+  xy: 1552, 61
+  size: 41, 57
+  orig: 42, 59
+  offset: 0, 1
+  index: -1

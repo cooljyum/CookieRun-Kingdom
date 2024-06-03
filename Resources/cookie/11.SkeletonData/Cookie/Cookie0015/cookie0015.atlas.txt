@@ -1,0 +1,328 @@
+
+cookie0015.png
+size: 928,272
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0015_arm_1 copy
+  rotate: false
+  xy: 664, 43
+  size: 80, 114
+  orig: 80, 114
+  offset: 0, 0
+  index: -1
+0015_arm_2
+  rotate: true
+  xy: 648, 159
+  size: 62, 110
+  orig: 62, 110
+  offset: 0, 0
+  index: -1
+0015_body
+  rotate: true
+  xy: 305, 135
+  size: 135, 113
+  orig: 135, 113
+  offset: 0, 0
+  index: -1
+0015_body_line_1
+  rotate: false
+  xy: 170, 111
+  size: 73, 11
+  orig: 73, 11
+  offset: 0, 0
+  index: -1
+0015_body_line_2
+  rotate: true
+  xy: 276, 102
+  size: 20, 24
+  orig: 22, 26
+  offset: 1, 1
+  index: -1
+0015_eye_1
+  rotate: false
+  xy: 787, 46
+  size: 36, 25
+  orig: 36, 25
+  offset: 0, 0
+  index: -1
+0015_eye_2
+  rotate: false
+  xy: 746, 45
+  size: 39, 26
+  orig: 39, 26
+  offset: 0, 0
+  index: -1
+0015_eye_3
+  rotate: false
+  xy: 302, 102
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+0015_eye_3_2
+  rotate: false
+  xy: 453, 138
+  size: 23, 9
+  orig: 23, 9
+  offset: 0, 0
+  index: -1
+0015_eye_4
+  rotate: true
+  xy: 777, 8
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+0015_eye_5
+  rotate: true
+  xy: 812, 9
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+0015_eye_bad_sad
+  rotate: true
+  xy: 760, 150
+  size: 76, 50
+  orig: 78, 52
+  offset: 1, 1
+  index: -1
+0015_eye_default
+  rotate: false
+  xy: 585, 106
+  size: 77, 44
+  orig: 77, 44
+  offset: 0, 0
+  index: -1
+0015_eye_hang_touch
+  rotate: true
+  xy: 746, 73
+  size: 75, 40
+  orig: 77, 42
+  offset: 1, 1
+  index: -1
+0015_eye_pick
+  rotate: false
+  xy: 508, 105
+  size: 75, 42
+  orig: 77, 44
+  offset: 1, 1
+  index: -1
+0015_hair_1
+  rotate: true
+  xy: 890, 211
+  size: 27, 34
+  orig: 27, 34
+  offset: 0, 0
+  index: -1
+0015_hair_2
+  rotate: true
+  xy: 890, 240
+  size: 30, 33
+  orig: 30, 33
+  offset: 0, 0
+  index: -1
+0015_hand_1
+  rotate: false
+  xy: 890, 150
+  size: 32, 27
+  orig: 35, 29
+  offset: 1, 1
+  index: -1
+0015_hand_2
+  rotate: false
+  xy: 741, 5
+  size: 34, 36
+  orig: 37, 38
+  offset: 2, 1
+  index: -1
+0015_head copy
+  rotate: false
+  xy: 420, 149
+  size: 114, 121
+  orig: 114, 138
+  offset: 0, 17
+  index: -1
+0015_head_light
+  rotate: false
+  xy: 803, 132
+  size: 15, 13
+  orig: 17, 15
+  offset: 1, 1
+  index: -1
+0015_hip
+  rotate: false
+  xy: 351, 106
+  size: 61, 27
+  orig: 61, 27
+  offset: 0, 0
+  index: -1
+0015_l_leg_1
+  rotate: true
+  xy: 788, 87
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+0015_l_leg_2
+  rotate: true
+  xy: 414, 102
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+0015_lip_bad_sad
+  rotate: false
+  xy: 324, 108
+  size: 25, 15
+  orig: 27, 17
+  offset: 1, 1
+  index: -1
+0015_lip_default
+  rotate: false
+  xy: 420, 139
+  size: 31, 8
+  orig: 33, 10
+  offset: 1, 1
+  index: -1
+0015_lip_eat
+  rotate: false
+  xy: 245, 103
+  size: 29, 19
+  orig: 31, 21
+  offset: 1, 1
+  index: -1
+0015_lip_hang_touch
+  rotate: false
+  xy: 788, 120
+  size: 13, 28
+  orig: 15, 30
+  offset: 1, 1
+  index: -1
+0015_lip_happy
+  rotate: false
+  xy: 880, 12
+  size: 31, 33
+  orig: 31, 33
+  offset: 0, 0
+  index: -1
+0015_lip_lie
+  rotate: false
+  xy: 737, 228
+  size: 74, 42
+  orig: 76, 44
+  offset: 1, 1
+  index: -1
+0015_lip_pick
+  rotate: false
+  xy: 305, 125
+  size: 44, 8
+  orig: 46, 10
+  offset: 1, 1
+  index: -1
+0015_lipskin
+  rotate: false
+  xy: 457, 104
+  size: 49, 32
+  orig: 49, 32
+  offset: 0, 0
+  index: -1
+0015_r_leg_1
+  rotate: false
+  xy: 847, 11
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+0015_r_leg_2
+  rotate: true
+  xy: 698, 10
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+0015_shoulder
+  rotate: true
+  xy: 825, 47
+  size: 98, 73
+  orig: 98, 73
+  offset: 0, 0
+  index: -1
+0015_shoulder_2
+  rotate: false
+  xy: 651, 5
+  size: 45, 36
+  orig: 45, 36
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 890, 179
+  size: 30, 30
+  orig: 32, 32
+  offset: 1, 1
+  index: -1
+TownCookieShadow
+  rotate: false
+  xy: 536, 152
+  size: 110, 69
+  orig: 117, 75
+  offset: 2, 4
+  index: -1
+axe
+  rotate: false
+  xy: 591, 10
+  size: 58, 94
+  orig: 142, 142
+  offset: 45, 4
+  index: -1
+broom
+  rotate: true
+  xy: 2, 4
+  size: 96, 285
+  orig: 96, 285
+  offset: 0, 0
+  index: -1
+hammer
+  rotate: true
+  xy: 460, 4
+  size: 98, 129
+  orig: 170, 227
+  offset: 36, 8
+  index: -1
+item_jamSoup
+  rotate: false
+  xy: 2, 102
+  size: 166, 168
+  orig: 180, 180
+  offset: 8, 10
+  index: -1
+pickax
+  rotate: false
+  xy: 170, 124
+  size: 133, 146
+  orig: 211, 215
+  offset: 43, 10
+  index: -1
+straw
+  rotate: true
+  xy: 289, 2
+  size: 98, 169
+  orig: 98, 169
+  offset: 0, 0
+  index: -1
+wateringcan
+  rotate: true
+  xy: 813, 147
+  size: 123, 75
+  orig: 177, 127
+  offset: 17, 22
+  index: -1
+weapon
+  rotate: true
+  xy: 536, 223
+  size: 47, 199
+  orig: 49, 201
+  offset: 1, 1
+  index: -1

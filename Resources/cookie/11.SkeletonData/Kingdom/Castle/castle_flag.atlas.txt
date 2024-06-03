@@ -1,0 +1,83 @@
+
+castle_flag.png
+size: 1628,560
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+castle_3_flag_5
+  rotate: false
+  xy: 1587, 414
+  size: 37, 144
+  orig: 41, 146
+  offset: 3, 1
+  index: -1
+flag_b_ani_1
+  rotate: false
+  xy: 1270, 2
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_10
+  rotate: false
+  xy: 1270, 281
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_2
+  rotate: false
+  xy: 2, 281
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_3
+  rotate: false
+  xy: 2, 2
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_4
+  rotate: false
+  xy: 319, 281
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_5
+  rotate: false
+  xy: 319, 2
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_6
+  rotate: false
+  xy: 636, 281
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_7
+  rotate: false
+  xy: 636, 2
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_8
+  rotate: false
+  xy: 953, 281
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1
+flag_b_ani_9
+  rotate: false
+  xy: 953, 2
+  size: 315, 277
+  orig: 315, 277
+  offset: 0, 0
+  index: -1

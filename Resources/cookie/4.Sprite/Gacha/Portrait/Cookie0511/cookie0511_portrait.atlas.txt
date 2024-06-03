@@ -1,0 +1,251 @@
+
+cookie0511_portrait.png
+size: 2036,1324
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+acc_left
+  rotate: true
+  xy: 1939, 1009
+  size: 97, 73
+  orig: 98, 74
+  offset: 0, 0
+  index: -1
+acc_right
+  rotate: true
+  xy: 1928, 424
+  size: 74, 68
+  orig: 74, 69
+  offset: 0, 1
+  index: -1
+arm_left
+  rotate: false
+  xy: 1928, 580
+  size: 101, 109
+  orig: 102, 118
+  offset: 0, 0
+  index: -1
+arm_right
+  rotate: false
+  xy: 815, 13
+  size: 224, 183
+  orig: 224, 183
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1075, 539
+  size: 336, 367
+  orig: 336, 367
+  offset: 0, 0
+  index: -1
+cape_L
+  rotate: true
+  xy: 1464, 800
+  size: 521, 327
+  orig: 521, 327
+  offset: 0, 0
+  index: -1
+cape_R
+  rotate: false
+  xy: 922, 908
+  size: 361, 413
+  orig: 361, 413
+  offset: 0, 0
+  index: -1
+cape_back
+  rotate: false
+  xy: 2, 198
+  size: 852, 335
+  orig: 852, 335
+  offset: 0, 0
+  index: -1
+cape_front
+  rotate: false
+  xy: 1605, 253
+  size: 196, 139
+  orig: 196, 139
+  offset: 0, 0
+  index: -1
+cape_inside
+  rotate: false
+  xy: 2, 25
+  size: 572, 171
+  orig: 572, 171
+  offset: 0, 0
+  index: -1
+chest
+  rotate: true
+  xy: 1464, 353
+  size: 199, 139
+  orig: 199, 139
+  offset: 0, 0
+  index: -1
+chest2
+  rotate: false
+  xy: 1815, 2
+  size: 169, 118
+  orig: 169, 118
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 1285, 1071
+  size: 250, 151
+  orig: 250, 151
+  offset: 0, 0
+  index: -1
+face_shade
+  rotate: false
+  xy: 1413, 554
+  size: 229, 111
+  orig: 229, 111
+  offset: 0, 0
+  index: -1
+glove_L
+  rotate: true
+  xy: 1863, 691
+  size: 120, 151
+  orig: 120, 151
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 1928, 500
+  size: 78, 88
+  orig: 78, 88
+  offset: 0, 0
+  index: -1
+hair_L
+  rotate: true
+  xy: 1803, 258
+  size: 134, 168
+  orig: 159, 168
+  offset: 25, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 1041, 18
+  size: 399, 228
+  orig: 399, 228
+  offset: 0, 0
+  index: -1
+hair_back_1
+  rotate: true
+  xy: 1285, 909
+  size: 160, 152
+  orig: 160, 152
+  offset: 0, 0
+  index: -1
+hair_middle
+  rotate: false
+  xy: 576, 10
+  size: 237, 186
+  orig: 237, 186
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 1464, 258
+  size: 124, 93
+  orig: 124, 93
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1644, 394
+  size: 282, 271
+  orig: 282, 271
+  offset: 0, 0
+  index: -1
+headaccleft
+  rotate: true
+  xy: 922, 823
+  size: 83, 151
+  orig: 83, 151
+  offset: 0, 0
+  index: -1
+headaccmiddle
+  rotate: false
+  xy: 1815, 122
+  size: 167, 134
+  orig: 167, 134
+  offset: 0, 0
+  index: -1
+headaccright
+  rotate: true
+  xy: 1690, 676
+  size: 122, 171
+  orig: 122, 172
+  offset: 0, 0
+  index: -1
+sheild_L
+  rotate: false
+  xy: 431, 820
+  size: 489, 501
+  orig: 489, 501
+  offset: 0, 0
+  index: -1
+sheild_R
+  rotate: true
+  xy: 431, 536
+  size: 282, 599
+  orig: 282, 599
+  offset: 0, 0
+  index: -1
+sheild_back
+  rotate: true
+  xy: 2, 535
+  size: 786, 427
+  orig: 786, 427
+  offset: 0, 0
+  index: -1
+shose_00
+  rotate: false
+  xy: 1442, 28
+  size: 371, 218
+  orig: 371, 218
+  offset: 0, 0
+  index: -1
+shoulderacc_L
+  rotate: false
+  xy: 1793, 813
+  size: 132, 150
+  orig: 132, 151
+  offset: 0, 0
+  index: -1
+shoulderacc_R
+  rotate: true
+  xy: 1793, 965
+  size: 141, 144
+  orig: 141, 144
+  offset: 0, 0
+  index: -1
+sidehair
+  rotate: true
+  xy: 1413, 667
+  size: 131, 275
+  orig: 131, 335
+  offset: 0, 60
+  index: -1
+skirt
+  rotate: false
+  xy: 1815, 1108
+  size: 216, 213
+  orig: 216, 213
+  offset: 0, 0
+  index: -1
+sword
+  rotate: false
+  xy: 856, 248
+  size: 606, 286
+  orig: 606, 286
+  offset: 0, 0
+  index: -1
+sword_grip
+  rotate: true
+  xy: 1927, 813
+  size: 150, 92
+  orig: 150, 92
+  offset: 0, 0
+  index: -1

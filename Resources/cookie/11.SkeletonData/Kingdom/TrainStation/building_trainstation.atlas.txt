@@ -1,0 +1,139 @@
+
+building_trainstation.png
+size: 740,144
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+train_01_tail
+  rotate: true
+  xy: 547, 64
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+train_02_tail
+  rotate: false
+  xy: 2, 7
+  size: 109, 135
+  orig: 109, 136
+  offset: 0, 1
+  index: -1
+train_03_tail
+  rotate: false
+  xy: 251, 9
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+train_04_tail
+  rotate: false
+  xy: 251, 9
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+train_05_body
+  rotate: false
+  xy: 449, 4
+  size: 114, 57
+  orig: 114, 57
+  offset: 0, 0
+  index: -1
+train_06
+  rotate: true
+  xy: 654, 50
+  size: 92, 84
+  orig: 92, 86
+  offset: 0, 1
+  index: -1
+train_06_body
+  rotate: false
+  xy: 113, 52
+  size: 158, 90
+  orig: 158, 90
+  offset: 0, 0
+  index: -1
+train_07
+  rotate: false
+  xy: 547, 84
+  size: 105, 58
+  orig: 106, 58
+  offset: 1, 0
+  index: -1
+train_07_body
+  rotate: false
+  xy: 416, 63
+  size: 129, 79
+  orig: 130, 80
+  offset: 1, 1
+  index: -1
+train_08
+  rotate: false
+  xy: 290, 5
+  size: 67, 52
+  orig: 68, 52
+  offset: 1, 0
+  index: -1
+train_08_body
+  rotate: true
+  xy: 113, 8
+  size: 42, 50
+  orig: 42, 50
+  offset: 0, 0
+  index: -1
+train_08_body_2
+  rotate: false
+  xy: 359, 2
+  size: 52, 55
+  orig: 52, 55
+  offset: 0, 0
+  index: -1
+train_09
+  rotate: false
+  xy: 413, 13
+  size: 34, 44
+  orig: 34, 44
+  offset: 0, 0
+  index: -1
+train_09_body
+  rotate: false
+  xy: 571, 69
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+train_10
+  rotate: false
+  xy: 165, 5
+  size: 43, 45
+  orig: 43, 45
+  offset: 0, 0
+  index: -1
+train_10_body
+  rotate: false
+  xy: 273, 59
+  size: 141, 83
+  orig: 141, 84
+  offset: 0, 1
+  index: -1
+train_11
+  rotate: false
+  xy: 210, 11
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+train_12
+  rotate: true
+  xy: 413, 3
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+train_13
+  rotate: true
+  xy: 565, 2
+  size: 60, 65
+  orig: 60, 66
+  offset: 0, 1
+  index: -1

@@ -1,0 +1,713 @@
+
+cookie0063.png
+size: 668,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0063_arm_3
+  rotate: true
+  xy: 580, 67
+  size: 15, 28
+  orig: 15, 28
+  offset: 0, 0
+  index: -1
+0063_body
+  rotate: false
+  xy: 516, 272
+  size: 57, 71
+  orig: 57, 71
+  offset: 0, 0
+  index: -1
+0063_body_back
+  rotate: false
+  xy: 329, 237
+  size: 57, 71
+  orig: 57, 71
+  offset: 0, 0
+  index: -1
+0063_body_line
+  rotate: false
+  xy: 329, 164
+  size: 57, 71
+  orig: 57, 71
+  offset: 0, 0
+  index: -1
+0063_butterfly_a
+  rotate: true
+  xy: 624, 105
+  size: 25, 37
+  orig: 25, 37
+  offset: 0, 0
+  index: -1
+0063_butterfly_b
+  rotate: false
+  xy: 504, 23
+  size: 25, 37
+  orig: 25, 37
+  offset: 0, 0
+  index: -1
+0063_eye_bad
+  rotate: false
+  xy: 507, 136
+  size: 66, 29
+  orig: 66, 29
+  offset: 0, 0
+  index: -1
+0063_eye_default
+  rotate: true
+  xy: 289, 201
+  size: 77, 38
+  orig: 77, 38
+  offset: 0, 0
+  index: -1
+0063_eye_eat
+  rotate: false
+  xy: 388, 235
+  size: 77, 38
+  orig: 77, 38
+  offset: 0, 0
+  index: -1
+0063_eye_fighting
+  rotate: false
+  xy: 574, 229
+  size: 77, 35
+  orig: 77, 35
+  offset: 0, 0
+  index: -1
+0063_eye_hang
+  rotate: true
+  xy: 467, 194
+  size: 77, 38
+  orig: 77, 38
+  offset: 0, 0
+  index: -1
+0063_eye_happy
+  rotate: true
+  xy: 517, 345
+  size: 77, 45
+  orig: 77, 45
+  offset: 0, 0
+  index: -1
+0063_eye_lie
+  rotate: false
+  xy: 507, 167
+  size: 63, 39
+  orig: 63, 39
+  offset: 0, 0
+  index: -1
+0063_eye_pick
+  rotate: false
+  xy: 329, 133
+  size: 66, 29
+  orig: 66, 29
+  offset: 0, 0
+  index: -1
+0063_eye_sad
+  rotate: true
+  xy: 220, 26
+  size: 78, 38
+  orig: 78, 38
+  offset: 0, 0
+  index: -1
+0063_eye_touch
+  rotate: false
+  xy: 574, 188
+  size: 72, 39
+  orig: 72, 39
+  offset: 0, 0
+  index: -1
+0063_flower
+  rotate: false
+  xy: 239, 280
+  size: 58, 65
+  orig: 58, 65
+  offset: 0, 0
+  index: -1
+0063_flower_1
+  rotate: false
+  xy: 536, 41
+  size: 35, 24
+  orig: 37, 24
+  offset: 1, 0
+  index: -1
+0063_flower_2
+  rotate: false
+  xy: 624, 77
+  size: 35, 26
+  orig: 35, 26
+  offset: 0, 0
+  index: -1
+0063_flower_3
+  rotate: true
+  xy: 195, 106
+  size: 50, 47
+  orig: 50, 47
+  offset: 0, 0
+  index: -1
+0063_flower_4
+  rotate: true
+  xy: 289, 152
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+0063_flower_5
+  rotate: false
+  xy: 428, 89
+  size: 46, 42
+  orig: 46, 42
+  offset: 0, 0
+  index: -1
+0063_flower_6
+  rotate: false
+  xy: 374, 86
+  size: 52, 45
+  orig: 52, 45
+  offset: 0, 0
+  index: -1
+0063_hair_1
+  rotate: false
+  xy: 102, 158
+  size: 114, 120
+  orig: 114, 120
+  offset: 0, 0
+  index: -1
+0063_hair_2
+  rotate: false
+  xy: 244, 347
+  size: 75, 40
+  orig: 75, 40
+  offset: 0, 0
+  index: -1
+0063_hair_3
+  rotate: true
+  xy: 472, 273
+  size: 72, 42
+  orig: 72, 42
+  offset: 0, 0
+  index: -1
+0063_hair_4
+  rotate: false
+  xy: 325, 106
+  size: 44, 25
+  orig: 44, 26
+  offset: 0, 0
+  index: -1
+0063_hair_5
+  rotate: false
+  xy: 220, 3
+  size: 61, 21
+  orig: 61, 21
+  offset: 0, 0
+  index: -1
+0063_hair_back
+  rotate: false
+  xy: 112, 17
+  size: 106, 87
+  orig: 106, 87
+  offset: 0, 0
+  index: -1
+0063_hand
+  rotate: false
+  xy: 648, 201
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+0063_lip_bad
+  rotate: true
+  xy: 569, 6
+  size: 33, 23
+  orig: 33, 23
+  offset: 0, 0
+  index: -1
+0063_lip_default
+  rotate: true
+  xy: 654, 269
+  size: 30, 11
+  orig: 30, 11
+  offset: 0, 0
+  index: -1
+0063_lip_eat
+  rotate: false
+  xy: 197, 2
+  size: 17, 13
+  orig: 17, 13
+  offset: 0, 0
+  index: -1
+0063_lip_fighting
+  rotate: false
+  xy: 283, 2
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+0063_lip_hang
+  rotate: false
+  xy: 277, 156
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+0063_lip_happy
+  rotate: false
+  xy: 629, 44
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+0063_lip_pick
+  rotate: false
+  xy: 237, 161
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+0063_lip_sad
+  rotate: true
+  xy: 661, 91
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
+  index: -1
+0063_lip_touch
+  rotate: false
+  xy: 592, 42
+  size: 19, 23
+  orig: 19, 23
+  offset: 0, 0
+  index: -1
+0063_shoes
+  rotate: true
+  xy: 573, 41
+  size: 24, 17
+  orig: 24, 17
+  offset: 0, 0
+  index: -1
+0063_waterbottle
+  rotate: false
+  xy: 388, 166
+  size: 77, 67
+  orig: 77, 67
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 535, 7
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TownCookieShadow
+  rotate: true
+  xy: 218, 168
+  size: 110, 69
+  orig: 117, 75
+  offset: 2, 4
+  index: -1
+axe
+  rotate: false
+  xy: 100, 380
+  size: 142, 142
+  orig: 142, 142
+  offset: 0, 0
+  index: -1
+broom
+  rotate: false
+  xy: 2, 237
+  size: 96, 285
+  orig: 96, 285
+  offset: 0, 0
+  index: -1
+hammer
+  rotate: false
+  xy: 2, 106
+  size: 98, 129
+  orig: 170, 227
+  offset: 36, 8
+  index: -1
+head
+  rotate: false
+  xy: 2, 2
+  size: 108, 102
+  orig: 108, 102
+  offset: 0, 0
+  index: -1
+head_black
+  rotate: false
+  xy: 563, 425
+  size: 103, 97
+  orig: 103, 97
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_body
+  rotate: false
+  xy: 653, 367
+  size: 11, 56
+  orig: 11, 56
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_eye01
+  rotate: false
+  xy: 218, 158
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_eye02
+  rotate: false
+  xy: 172, 2
+  size: 23, 13
+  orig: 23, 13
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_eye03
+  rotate: true
+  xy: 456, 141
+  size: 23, 6
+  orig: 23, 6
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_flowerpot
+  rotate: true
+  xy: 391, 275
+  size: 70, 79
+  orig: 70, 79
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_handL
+  rotate: true
+  xy: 337, 2
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_handR
+  rotate: false
+  xy: 467, 139
+  size: 38, 53
+  orig: 38, 53
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_head
+  rotate: true
+  xy: 575, 138
+  size: 48, 53
+  orig: 48, 53
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_mouth01
+  rotate: true
+  xy: 613, 42
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_mouth02
+  rotate: false
+  xy: 653, 247
+  size: 13, 17
+  orig: 13, 17
+  offset: 0, 0
+  index: -1
+interactiondeco_flower01_mouth03
+  rotate: false
+  xy: 631, 11
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_body
+  rotate: false
+  xy: 299, 287
+  size: 17, 30
+  orig: 17, 30
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_eye01
+  rotate: false
+  xy: 648, 188
+  size: 18, 11
+  orig: 18, 11
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_eye02
+  rotate: false
+  xy: 145, 2
+  size: 25, 13
+  orig: 25, 13
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_eye03
+  rotate: false
+  xy: 299, 280
+  size: 25, 5
+  orig: 25, 5
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_flowerpot
+  rotate: true
+  xy: 564, 346
+  size: 77, 87
+  orig: 77, 87
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_handL
+  rotate: false
+  xy: 397, 133
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_handR
+  rotate: false
+  xy: 277, 106
+  size: 46, 44
+  orig: 46, 44
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_head01
+  rotate: false
+  xy: 389, 4
+  size: 41, 38
+  orig: 41, 38
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_head02
+  rotate: false
+  xy: 575, 266
+  size: 77, 78
+  orig: 77, 78
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_mouth01
+  rotate: false
+  xy: 631, 27
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_mouth02
+  rotate: true
+  xy: 654, 336
+  size: 29, 12
+  orig: 29, 12
+  offset: 0, 0
+  index: -1
+interactiondeco_flower02_mouth03
+  rotate: false
+  xy: 456, 133
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_body
+  rotate: true
+  xy: 112, 2
+  size: 13, 31
+  orig: 13, 31
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_eye01_01
+  rotate: false
+  xy: 504, 2
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_eye01_02
+  rotate: false
+  xy: 536, 67
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_eye02_01
+  rotate: false
+  xy: 301, 3
+  size: 33, 21
+  orig: 33, 21
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_eye02_02
+  rotate: false
+  xy: 619, 64
+  size: 29, 11
+  orig: 29, 11
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_eye03
+  rotate: true
+  xy: 654, 301
+  size: 33, 11
+  orig: 33, 11
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_flowerpot
+  rotate: false
+  xy: 321, 310
+  size: 68, 77
+  orig: 68, 77
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_handL
+  rotate: true
+  xy: 244, 106
+  size: 60, 31
+  orig: 60, 31
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_handR
+  rotate: false
+  xy: 374, 44
+  size: 53, 40
+  orig: 53, 40
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_head01
+  rotate: false
+  xy: 507, 208
+  size: 65, 62
+  orig: 65, 62
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_head02
+  rotate: true
+  xy: 260, 26
+  size: 78, 75
+  orig: 78, 75
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_mouth01
+  rotate: true
+  xy: 630, 132
+  size: 54, 30
+  orig: 54, 30
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_mouth02
+  rotate: false
+  xy: 594, 13
+  size: 23, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+interactiondeco_flower03_mouth03
+  rotate: true
+  xy: 610, 67
+  size: 15, 7
+  orig: 15, 7
+  offset: 0, 0
+  index: -1
+interactiondeco_flower04
+  rotate: false
+  xy: 100, 280
+  size: 137, 98
+  orig: 137, 98
+  offset: 0, 0
+  index: -1
+music
+  rotate: true
+  xy: 594, 84
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+music2
+  rotate: false
+  xy: 299, 319
+  size: 20, 26
+  orig: 20, 26
+  offset: 0, 0
+  index: -1
+music3
+  rotate: false
+  xy: 619, 15
+  size: 10, 25
+  orig: 10, 25
+  offset: 0, 0
+  index: -1
+n2_arm_1
+  rotate: false
+  xy: 429, 52
+  size: 47, 35
+  orig: 47, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_1
+  rotate: true
+  xy: 337, 48
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_2
+  rotate: false
+  xy: 476, 99
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_3
+  rotate: false
+  xy: 478, 62
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_leg_1
+  rotate: true
+  xy: 584, 102
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+n2_leg_2_1
+  rotate: false
+  xy: 432, 2
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+n2_leg_2_2
+  rotate: false
+  xy: 468, 2
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+n2_leg_2_3
+  rotate: true
+  xy: 534, 100
+  size: 34, 48
+  orig: 34, 48
+  offset: 0, 0
+  index: -1
+pickax
+  rotate: true
+  xy: 244, 389
+  size: 133, 146
+  orig: 211, 215
+  offset: 43, 10
+  index: -1
+shadow
+  rotate: true
+  xy: 102, 106
+  size: 50, 91
+  orig: 50, 91
+  offset: 0, 0
+  index: -1
+straw
+  rotate: true
+  xy: 392, 424
+  size: 98, 169
+  orig: 98, 169
+  offset: 0, 0
+  index: -1
+wateringcan
+  rotate: false
+  xy: 392, 347
+  size: 123, 75
+  orig: 177, 127
+  offset: 17, 22
+  index: -1

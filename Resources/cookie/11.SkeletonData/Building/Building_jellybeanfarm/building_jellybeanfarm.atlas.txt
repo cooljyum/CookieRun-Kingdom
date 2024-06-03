@@ -1,0 +1,48 @@
+
+building_jellybeanfarm.png
+size: 692,416
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jellybeanfarm_00
+  rotate: false
+  xy: 544, 122
+  size: 66, 95
+  orig: 66, 95
+  offset: 0, 0
+  index: -1
+jellybeanfarm_12
+  rotate: false
+  xy: 544, 75
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+jellybeanfarm_13
+  rotate: false
+  xy: 612, 190
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: true
+  xy: 544, 219
+  size: 193, 146
+  orig: 270, 146
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 2, 2
+  size: 540, 410
+  orig: 540, 410
+  offset: 0, 0
+  index: -1
+working
+  rotate: false
+  xy: 544, 89
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,174 @@
+
+building_castle_6.png
+size: 1860,1412
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+castle_1_flag_2
+  rotate: true
+  xy: 2, 2
+  size: 26, 69
+  orig: 26, 69
+  offset: 0, 0
+  index: -1
+castle_3_flag_5
+  rotate: true
+  xy: 2, 30
+  size: 29, 102
+  orig: 29, 102
+  offset: 0, 0
+  index: -1
+castle_4_flag_3
+  rotate: true
+  xy: 2, 61
+  size: 34, 174
+  orig: 34, 174
+  offset: 0, 0
+  index: -1
+castle_6
+  rotate: false
+  xy: 2, 97
+  size: 1212, 1310
+  orig: 1212, 1310
+  offset: 0, 0
+  index: -1
+flag_a_ani_1
+  rotate: false
+  xy: 1216, 1213
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_10
+  rotate: true
+  xy: 1662, 71
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_2
+  rotate: false
+  xy: 1439, 1213
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_3
+  rotate: false
+  xy: 1216, 1017
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_4
+  rotate: true
+  xy: 1662, 963
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_5
+  rotate: false
+  xy: 1439, 821
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_6
+  rotate: false
+  xy: 1216, 625
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_7
+  rotate: true
+  xy: 1662, 517
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_8
+  rotate: false
+  xy: 1439, 429
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_a_ani_9
+  rotate: false
+  xy: 1216, 233
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_1
+  rotate: false
+  xy: 1412, 37
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_10
+  rotate: true
+  xy: 1216, 10
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_2
+  rotate: true
+  xy: 1662, 1186
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_3
+  rotate: false
+  xy: 1439, 1017
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_4
+  rotate: false
+  xy: 1216, 821
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_5
+  rotate: true
+  xy: 1662, 740
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_6
+  rotate: false
+  xy: 1439, 625
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_7
+  rotate: false
+  xy: 1216, 429
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_8
+  rotate: true
+  xy: 1662, 294
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1
+flag_b_ani_9
+  rotate: false
+  xy: 1439, 233
+  size: 221, 194
+  orig: 221, 194
+  offset: 0, 0
+  index: -1

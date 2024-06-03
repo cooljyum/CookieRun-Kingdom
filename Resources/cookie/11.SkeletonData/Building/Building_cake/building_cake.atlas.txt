@@ -1,0 +1,34 @@
+
+building_cake.png
+size: 616,448
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_cake
+  rotate: true
+  xy: 545, 374
+  size: 70, 69
+  orig: 70, 69
+  offset: 0, 0
+  index: -1
+building_cake_chimney
+  rotate: false
+  xy: 545, 297
+  size: 40, 75
+  orig: 40, 75
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: false
+  xy: 2, 2
+  size: 541, 442
+  orig: 541, 442
+  offset: 0, 0
+  index: -1
+working3
+  rotate: true
+  xy: 545, 256
+  size: 39, 26
+  orig: 39, 26
+  offset: 0, 0
+  index: -1

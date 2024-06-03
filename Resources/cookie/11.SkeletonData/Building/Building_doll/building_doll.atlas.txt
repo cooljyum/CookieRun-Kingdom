@@ -1,0 +1,90 @@
+
+building_doll.png
+size: 920,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_doll_02
+  rotate: false
+  xy: 544, 4
+  size: 71, 82
+  orig: 71, 82
+  offset: 0, 0
+  index: -1
+building_doll_03
+  rotate: false
+  xy: 642, 123
+  size: 129, 84
+  orig: 129, 84
+  offset: 0, 0
+  index: -1
+building_doll_04
+  rotate: false
+  xy: 774, 277
+  size: 128, 113
+  orig: 128, 113
+  offset: 0, 0
+  index: -1
+building_doll_05
+  rotate: false
+  xy: 768, 11
+  size: 85, 67
+  orig: 85, 67
+  offset: 0, 0
+  index: -1
+building_doll_06
+  rotate: true
+  xy: 711, 45
+  size: 76, 55
+  orig: 76, 55
+  offset: 0, 0
+  index: -1
+building_doll_07
+  rotate: false
+  xy: 544, 209
+  size: 228, 181
+  orig: 228, 181
+  offset: 0, 0
+  index: -1
+building_doll_08
+  rotate: true
+  xy: 642, 12
+  size: 109, 67
+  orig: 109, 67
+  offset: 0, 0
+  index: -1
+building_doll_09
+  rotate: false
+  xy: 774, 163
+  size: 122, 112
+  orig: 122, 112
+  offset: 0, 0
+  index: -1
+building_doll_11
+  rotate: true
+  xy: 855, 2
+  size: 76, 61
+  orig: 76, 61
+  offset: 0, 0
+  index: -1
+building_doll_12
+  rotate: true
+  xy: 544, 88
+  size: 119, 96
+  orig: 119, 100
+  offset: 0, 4
+  index: -1
+layer_01
+  rotate: false
+  xy: 773, 80
+  size: 100, 81
+  orig: 100, 81
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 2, 3
+  size: 540, 387
+  orig: 540, 387
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,153 @@
+
+Building_hotairballoon.png
+size: 528,1028
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a0
+  rotate: false
+  xy: 162, 40
+  size: 85, 96
+  orig: 85, 96
+  offset: 0, 0
+  index: -1
+a1
+  rotate: false
+  xy: 2, 367
+  size: 300, 306
+  orig: 300, 308
+  offset: 0, 0
+  index: -1
+a10
+  rotate: true
+  xy: 304, 377
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+a11
+  rotate: false
+  xy: 2, 675
+  size: 260, 351
+  orig: 260, 351
+  offset: 0, 0
+  index: -1
+a12
+  rotate: false
+  xy: 264, 770
+  size: 239, 256
+  orig: 239, 256
+  offset: 0, 0
+  index: -1
+a13
+  rotate: false
+  xy: 2, 138
+  size: 296, 227
+  orig: 296, 227
+  offset: 0, 0
+  index: -1
+a2
+  rotate: false
+  xy: 397, 372
+  size: 85, 79
+  orig: 89, 79
+  offset: 0, 0
+  index: -1
+a3
+  rotate: false
+  xy: 505, 962
+  size: 14, 64
+  orig: 14, 64
+  offset: 0, 0
+  index: -1
+a4
+  rotate: true
+  xy: 87, 18
+  size: 13, 47
+  orig: 13, 47
+  offset: 0, 0
+  index: -1
+a5
+  rotate: true
+  xy: 449, 460
+  size: 15, 63
+  orig: 15, 63
+  offset: 0, 0
+  index: -1
+a6
+  rotate: false
+  xy: 505, 913
+  size: 13, 47
+  orig: 13, 47
+  offset: 0, 0
+  index: -1
+a7
+  rotate: false
+  xy: 2, 33
+  size: 158, 103
+  orig: 167, 116
+  offset: 9, 0
+  index: -1
+a8
+  rotate: false
+  xy: 304, 453
+  size: 143, 81
+  orig: 143, 82
+  offset: 0, 1
+  index: -1
+a9
+  rotate: true
+  xy: 275, 81
+  size: 50, 71
+  orig: 50, 71
+  offset: 0, 0
+  index: -1
+d0
+  rotate: true
+  xy: 2, 2
+  size: 29, 83
+  orig: 29, 83
+  offset: 0, 0
+  index: -1
+d1
+  rotate: true
+  xy: 300, 133
+  size: 232, 223
+  orig: 232, 224
+  offset: 0, 1
+  index: -1
+d2
+  rotate: true
+  xy: 264, 690
+  size: 78, 38
+  orig: 78, 38
+  offset: 0, 0
+  index: -1
+d3
+  rotate: false
+  xy: 304, 536
+  size: 222, 232
+  orig: 222, 232
+  offset: 0, 0
+  index: -1
+d4
+  rotate: false
+  xy: 449, 477
+  size: 73, 57
+  orig: 73, 57
+  offset: 0, 0
+  index: -1
+d5
+  rotate: false
+  xy: 348, 101
+  size: 40, 30
+  orig: 40, 31
+  offset: 0, 1
+  index: -1
+d6
+  rotate: true
+  xy: 249, 68
+  size: 68, 24
+  orig: 68, 24
+  offset: 0, 0
+  index: -1

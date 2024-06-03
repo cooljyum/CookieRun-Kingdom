@@ -1,0 +1,41 @@
+
+building_jam.png
+size: 644,348
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_jam_00
+  rotate: false
+  xy: 544, 155
+  size: 35, 64
+  orig: 35, 64
+  offset: 0, 0
+  index: -1
+building_jam_01
+  rotate: false
+  xy: 581, 194
+  size: 43, 25
+  orig: 43, 25
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: true
+  xy: 544, 221
+  size: 123, 96
+  orig: 123, 96
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 2, 2
+  size: 540, 342
+  orig: 540, 342
+  offset: 0, 0
+  index: -1
+working
+  rotate: true
+  xy: 544, 112
+  size: 41, 30
+  orig: 42, 31
+  offset: 1, 0
+  index: -1

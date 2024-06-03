@@ -1,0 +1,83 @@
+
+building_bakery.png
+size: 1128,284
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_bakery_00
+  rotate: true
+  xy: 965, 100
+  size: 82, 125
+  orig: 82, 125
+  offset: 0, 0
+  index: -1
+building_bakery_01
+  rotate: true
+  xy: 965, 184
+  size: 98, 146
+  orig: 98, 146
+  offset: 0, 0
+  index: -1
+building_bakery_02
+  rotate: false
+  xy: 578, 21
+  size: 7, 10
+  orig: 8, 10
+  offset: 1, 0
+  index: -1
+building_bakery_03
+  rotate: true
+  xy: 1092, 97
+  size: 39, 32
+  orig: 39, 32
+  offset: 0, 0
+  index: -1
+building_bakery_04
+  rotate: false
+  xy: 546, 8
+  size: 30, 23
+  orig: 30, 23
+  offset: 0, 0
+  index: -1
+building_bakery_05
+  rotate: false
+  xy: 965, 30
+  size: 67, 68
+  orig: 69, 70
+  offset: 1, 1
+  index: -1
+building_bakery_06
+  rotate: false
+  xy: 546, 33
+  size: 417, 249
+  orig: 417, 249
+  offset: 0, 0
+  index: -1
+building_bakery_07
+  rotate: false
+  xy: 1034, 2
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+layer2
+  rotate: false
+  xy: 2, 6
+  size: 542, 276
+  orig: 542, 276
+  offset: 0, 0
+  index: -1
+working
+  rotate: false
+  xy: 1034, 68
+  size: 41, 30
+  orig: 42, 31
+  offset: 1, 0
+  index: -1
+working2
+  rotate: true
+  xy: 1092, 138
+  size: 44, 32
+  orig: 44, 32
+  offset: 0, 0
+  index: -1

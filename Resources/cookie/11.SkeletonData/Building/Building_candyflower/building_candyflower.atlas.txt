@@ -1,0 +1,34 @@
+
+building_candyflower.png
+size: 680,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_candyflower_01
+  rotate: false
+  xy: 2, 2
+  size: 542, 386
+  orig: 542, 386
+  offset: 0, 0
+  index: -1
+building_candyflower_02
+  rotate: true
+  xy: 546, 238
+  size: 150, 132
+  orig: 150, 132
+  offset: 0, 0
+  index: -1
+building_candyflower_03
+  rotate: false
+  xy: 546, 179
+  size: 50, 57
+  orig: 50, 57
+  offset: 0, 0
+  index: -1
+working
+  rotate: false
+  xy: 546, 147
+  size: 41, 30
+  orig: 42, 31
+  offset: 1, 0
+  index: -1

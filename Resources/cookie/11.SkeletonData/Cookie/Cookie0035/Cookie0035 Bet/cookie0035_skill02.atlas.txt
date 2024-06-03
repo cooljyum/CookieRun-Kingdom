@@ -1,0 +1,55 @@
+
+cookie0035_skill02.png
+size: 128,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bat_eye
+  rotate: false
+  xy: 2, 2
+  size: 55, 10
+  orig: 55, 10
+  offset: 0, 0
+  index: -1
+bat_eye2
+  rotate: false
+  xy: 84, 55
+  size: 42, 13
+  orig: 42, 13
+  offset: 0, 0
+  index: -1
+bat_face
+  rotate: false
+  xy: 2, 14
+  size: 80, 92
+  orig: 80, 92
+  offset: 0, 0
+  index: -1
+bat_mouth
+  rotate: true
+  xy: 102, 3
+  size: 11, 18
+  orig: 11, 18
+  offset: 0, 0
+  index: -1
+bat_mouth2
+  rotate: false
+  xy: 84, 16
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+bat_mouth3
+  rotate: false
+  xy: 59, 2
+  size: 41, 10
+  orig: 41, 10
+  offset: 0, 0
+  index: -1
+bat_wing
+  rotate: false
+  xy: 84, 70
+  size: 41, 36
+  orig: 41, 36
+  offset: 0, 0
+  index: -1
