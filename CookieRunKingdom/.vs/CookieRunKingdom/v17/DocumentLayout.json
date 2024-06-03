@@ -1,17 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\",
+  "WorkspaceRootPath": "D:\\GitHub\\CookieRun-Kingdom\\CookieRunKingdom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\gitfiles\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9F6AB0-1C77-B9D0-1953-3D6B526E6875}|spine-unity.csproj|c:\\users\\user\\desktop\\gitfiles\\cookierun-kingdom\\cookierunkingdom\\assets\\11.spine\\runtime\\spine-unity\\asset types\\spineatlasasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9F6AB0-1C77-B9D0-1953-3D6B526E6875}|spine-unity.csproj|solutionrelative:assets\\11.spine\\runtime\\spine-unity\\asset types\\spineatlasasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|d:\\github\\cookierun-kingdom\\cookierunkingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|solutionrelative:assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,49 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\GameManager.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
-              "RelativeToolTip": "Assets\\2.Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T16:53:19.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpineAtlasAsset.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Runtime\\spine-unity\\Asset Types\\SpineAtlasAsset.cs",
-              "RelativeDocumentMoniker": "Assets\\11.Spine\\Runtime\\spine-unity\\Asset Types\\SpineAtlasAsset.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Runtime\\spine-unity\\Asset Types\\SpineAtlasAsset.cs",
-              "RelativeToolTip": "Assets\\11.Spine\\Runtime\\spine-unity\\Asset Types\\SpineAtlasAsset.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAMBUwH8AAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T15:50:28.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "SpinePreferences.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
+              "DocumentMoniker": "D:\\GitHub\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "RelativeDocumentMoniker": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\GitFiles\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
+              "ToolTip": "D:\\GitHub\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "RelativeToolTip": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "ViewState": "AQIAAGkAAAAAAAAAAADgv3gAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T14:42:21.637Z"
+              "WhenOpened": "2024-06-03T14:42:21.637Z",
+              "EditorCaption": ""
             }
           ]
         }
