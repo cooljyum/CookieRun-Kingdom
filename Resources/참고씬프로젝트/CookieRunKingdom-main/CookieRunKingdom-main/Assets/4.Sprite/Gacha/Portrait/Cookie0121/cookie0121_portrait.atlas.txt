@@ -1,0 +1,146 @@
+
+cookie0121_portrait.png
+size: 1860,544
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_arm
+  rotate: true
+  xy: 1387, 244
+  size: 298, 180
+  orig: 298, 180
+  offset: 0, 0
+  index: -1
+L_knife
+  rotate: false
+  xy: 1569, 207
+  size: 242, 134
+  orig: 242, 134
+  offset: 0, 0
+  index: -1
+L_knife_handle
+  rotate: true
+  xy: 174, 7
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+L_leg
+  rotate: false
+  xy: 1569, 343
+  size: 287, 199
+  orig: 287, 199
+  offset: 0, 0
+  index: -1
+R_arm
+  rotate: false
+  xy: 793, 5
+  size: 195, 109
+  orig: 195, 109
+  offset: 0, 0
+  index: -1
+R_knife
+  rotate: false
+  xy: 990, 7
+  size: 197, 107
+  orig: 197, 107
+  offset: 0, 0
+  index: -1
+R_knife_handle
+  rotate: true
+  xy: 2, 2
+  size: 68, 55
+  orig: 68, 55
+  offset: 0, 0
+  index: -1
+R_leg
+  rotate: true
+  xy: 1533, 36
+  size: 169, 148
+  orig: 169, 148
+  offset: 0, 0
+  index: -1
+back_hair_seed_02
+  rotate: false
+  xy: 2, 72
+  size: 789, 470
+  orig: 790, 470
+  offset: 0, 0
+  index: -1
+band
+  rotate: false
+  xy: 1683, 36
+  size: 154, 98
+  orig: 154, 98
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 1307, 8
+  size: 225, 136
+  orig: 225, 136
+  offset: 0, 0
+  index: -1
+face_01
+  rotate: true
+  xy: 1445, 17
+  size: 188, 86
+  orig: 188, 86
+  offset: 0, 0
+  index: -1
+face_02
+  rotate: false
+  xy: 59, 7
+  size: 113, 63
+  orig: 113, 63
+  offset: 0, 0
+  index: -1
+face_03
+  rotate: false
+  xy: 238, 10
+  size: 129, 60
+  orig: 129, 60
+  offset: 0, 0
+  index: -1
+face_04
+  rotate: false
+  xy: 1079, 117
+  size: 218, 116
+  orig: 218, 116
+  offset: 0, 0
+  index: -1
+hair_01
+  rotate: true
+  xy: 793, 116
+  size: 426, 284
+  orig: 426, 284
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1683, 136
+  size: 157, 69
+  orig: 157, 69
+  offset: 0, 0
+  index: -1
+head copy
+  rotate: true
+  xy: 1079, 235
+  size: 307, 306
+  orig: 307, 306
+  offset: 0, 0
+  index: -1
+skarf_01
+  rotate: false
+  xy: 1189, 2
+  size: 116, 113
+  orig: 116, 113
+  offset: 0, 0
+  index: -1
+skarf_03
+  rotate: false
+  xy: 369, 26
+  size: 137, 44
+  orig: 137, 44
+  offset: 0, 0
+  index: -1

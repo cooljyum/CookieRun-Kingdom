@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32579f66ef5fd6445b68eaa005031d15, type: 3}
+  m_Name: Cookie0007
+  m_EditorClassIdentifier: 
+  _characterName: "\uB2CC\uC790\uB9DB \uCFE0\uD0A4"
+  _animationData: {fileID: 11400000, guid: 1c1062a39bbeab445811170abea34473, type: 2}
+  moveSpeed: 5
+  attackRange: 3
+  _idleSprite: {fileID: 21300000, guid: 491b2314dd6851b44a2067e5bf05440f, type: 3}
+  _skillSprite: {fileID: 21300000, guid: 4ada635761b8add4c9fec7e5a8e3e8fe, type: 3}
+  _typeSprite: {fileID: 21300000, guid: d917490da2af72e4d81e53f92425bfc4, type: 3}
+  _evolutionSprite: {fileID: -3384384108498248997, guid: 183849bf2ef2bdd41aa5b4b5fbde72ee, type: 3}
+  _cookieGradeSprite: {fileID: 21300000, guid: 7fabf714778e6bc40941c319dd88d787, type: 3}
+  _cookieGrade: 0
+  _cookieType: 3
+  _cookiePosition: 1

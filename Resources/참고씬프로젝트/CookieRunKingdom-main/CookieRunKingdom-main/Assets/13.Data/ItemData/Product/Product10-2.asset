@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8be9e078ec57eb4ba7e3422e1e8098b, type: 3}
+  m_Name: Product10-2
+  m_EditorClassIdentifier: 
+  itemType: 3
+  itemImage: {fileID: 21300000, guid: e7d29d37478e4b941b4cf953b8b0de05, type: 3}
+  itemName: "\uB3C4\uD1A0\uB9AC \uB7A8\uD504"
+  itemExplain: "\uC5B4\uB450\uC6B4 \uACF3\uC744 \uBC1D\uD788\uB294 \uB370 \uD544\uC218\uC778
+    \uB7A8\uD504. \uB3C4\uD1A0\uB9AC \uB69C\uAED1\uC744 \uB36E\uC5B4\n\uADC0\uC5EC\uC6C0\uACFC
+    \uC2E4\uC6A9\uC131\uC744 \uBAA8\uB450 \uC7A1\uC558\uB2E4."
+  itemValue: 0

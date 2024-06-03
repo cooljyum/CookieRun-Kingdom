@@ -1,0 +1,139 @@
+
+cookie0063_portrait.png
+size: 1684,332
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_arm
+  rotate: false
+  xy: 1441, 200
+  size: 193, 128
+  orig: 193, 128
+  offset: 0, 0
+  index: -1
+R_arm
+  rotate: false
+  xy: 1541, 10
+  size: 73, 78
+  orig: 75, 80
+  offset: 1, 1
+  index: -1
+R_hand
+  rotate: true
+  xy: 1449, 10
+  size: 78, 90
+  orig: 78, 90
+  offset: 0, 0
+  index: -1
+back_body
+  rotate: false
+  xy: 1113, 20
+  size: 134, 152
+  orig: 134, 152
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 690, 9
+  size: 239, 159
+  orig: 239, 159
+  offset: 0, 0
+  index: -1
+eyebrow
+  rotate: false
+  xy: 1616, 82
+  size: 41, 38
+  orig: 41, 38
+  offset: 0, 0
+  index: -1
+front_body
+  rotate: true
+  xy: 997, 174
+  size: 154, 214
+  orig: 154, 214
+  offset: 0, 0
+  index: -1
+hair_1
+  rotate: true
+  xy: 2, 4
+  size: 324, 363
+  orig: 349, 368
+  offset: 0, 5
+  index: -1
+hair_2
+  rotate: false
+  xy: 690, 170
+  size: 305, 158
+  orig: 305, 158
+  offset: 0, 0
+  index: -1
+hair_3
+  rotate: false
+  xy: 1213, 187
+  size: 226, 141
+  orig: 226, 141
+  offset: 0, 0
+  index: -1
+hair_4
+  rotate: false
+  xy: 1444, 90
+  size: 146, 108
+  orig: 146, 108
+  offset: 0, 0
+  index: -1
+hair_5
+  rotate: false
+  xy: 1592, 122
+  size: 74, 76
+  orig: 74, 76
+  offset: 0, 0
+  index: -1
+hair_6
+  rotate: true
+  xy: 1616, 33
+  size: 47, 32
+  orig: 48, 33
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 367, 10
+  size: 321, 318
+  orig: 321, 318
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 1249, 60
+  size: 125, 193
+  orig: 125, 193
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 1249, 5
+  size: 53, 198
+  orig: 55, 200
+  offset: 1, 1
+  index: -1
+neck
+  rotate: true
+  xy: 1636, 262
+  size: 66, 45
+  orig: 66, 45
+  offset: 0, 0
+  index: -1
+plants
+  rotate: true
+  xy: 931, 2
+  size: 166, 180
+  orig: 210, 195
+  offset: 0, 15
+  index: -1
+water
+  rotate: true
+  xy: 1636, 208
+  size: 52, 42
+  orig: 56, 45
+  offset: 3, 1
+  index: -1

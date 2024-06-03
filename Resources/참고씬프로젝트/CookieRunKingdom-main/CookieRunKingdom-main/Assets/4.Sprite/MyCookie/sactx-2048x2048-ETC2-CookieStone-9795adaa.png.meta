@@ -1,0 +1,1380 @@
+fileFormatVersion: 2
+guid: 183849bf2ef2bdd41aa5b4b5fbde72ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2633507568890333297
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_0
+  - first:
+      213: -5815352208722621891
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_1
+  - first:
+      213: 7633401873193870366
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_2
+  - first:
+      213: -823961447135524358
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_3
+  - first:
+      213: 1938569370579876254
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_4
+  - first:
+      213: -562993099160649117
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_5
+  - first:
+      213: 3524867647302592018
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_6
+  - first:
+      213: -691768913344205200
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_7
+  - first:
+      213: -1168322963083761597
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_8
+  - first:
+      213: 6664777627273441741
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_9
+  - first:
+      213: -8623120865336485396
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_10
+  - first:
+      213: 5909070341987612312
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_11
+  - first:
+      213: -8636347921992830559
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_12
+  - first:
+      213: 7179303596046433211
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_13
+  - first:
+      213: -7247488710007640064
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_14
+  - first:
+      213: 3054666994558148284
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_15
+  - first:
+      213: 6820133666583289826
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_16
+  - first:
+      213: -8450438358920323792
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_17
+  - first:
+      213: 7642657725048413530
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_18
+  - first:
+      213: -5442507764841157086
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_19
+  - first:
+      213: -5956607996014739129
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_20
+  - first:
+      213: -3384384108498248997
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_21
+  - first:
+      213: -4446708122346912526
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_22
+  - first:
+      213: -953547335171090139
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_23
+  - first:
+      213: 10087529756688947
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_24
+  - first:
+      213: -3224802520069771629
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_25
+  - first:
+      213: -723996136770326355
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_26
+  - first:
+      213: 4904062822454921854
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_27
+  - first:
+      213: 3207448786702450818
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_28
+  - first:
+      213: 5218214737431997339
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_29
+  - first:
+      213: 6565215237151577837
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_30
+  - first:
+      213: -4817389534646937413
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_31
+  - first:
+      213: -3827046070345118282
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_32
+  - first:
+      213: 4238721210859798152
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_33
+  - first:
+      213: -1468284237633673541
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_34
+  - first:
+      213: 7526235497678105615
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_35
+  - first:
+      213: -6493232327392650722
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_36
+  - first:
+      213: -2987305469397688911
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_37
+  - first:
+      213: -3507850529294854849
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_38
+  - first:
+      213: 7879589850378248394
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_39
+  - first:
+      213: 1905972359367900655
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_40
+  - first:
+      213: -9165280031109473637
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_41
+  - first:
+      213: -6076411429358038608
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_42
+  - first:
+      213: 7986558676996232268
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_43
+  - first:
+      213: 2997254195740327580
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_44
+  - first:
+      213: 3677025341217676614
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_45
+  - first:
+      213: 3311627326830742897
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_46
+  - first:
+      213: 5473315667942333634
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_47
+  - first:
+      213: -8594854531211014825
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_48
+  - first:
+      213: 2377146513878085529
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_49
+  - first:
+      213: -2297702208948920117
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_50
+  - first:
+      213: 9130652049014527539
+    second: sactx-2048x2048-ETC2-CookieStone-9795adaa_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1730
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178c2055e291c8420800000000000000
+      internalID: 2633507568890333297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1729
+        width: 220
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a0e4b2af7bb4fa0800000000000000
+      internalID: -5815352208722621891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_2
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1724
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14a5876f8a4fe960800000000000000
+      internalID: 7633401873193870366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_3
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1703
+        width: 228
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9cedaed63b094f0800000000000000
+      internalID: -823961447135524358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1517
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99bdd1529e27ea10800000000000000
+      internalID: 1938569370579876254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1517
+        width: 220
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362888952c8df28f0800000000000000
+      internalID: -562993099160649117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1512
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216ecbd1378dae030800000000000000
+      internalID: 3524867647302592018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1491
+        width: 228
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ee575a6d75666f0800000000000000
+      internalID: -691768913344205200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1304
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348e572847849cfe0800000000000000
+      internalID: -1168322963083761597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1304
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ba94c0fb0e7c50800000000000000
+      internalID: 6664777627273441741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1300
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce91c5e9245845880800000000000000
+      internalID: -8623120865336485396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_11
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1279
+        width: 228
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896b7fe1b2c310250800000000000000
+      internalID: 5909070341987612312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1091
+        width: 216
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a13fe08257852880800000000000000
+      internalID: -8636347921992830559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1091
+        width: 220
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb3801459202a360800000000000000
+      internalID: 7179303596046433211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1088
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0003756ca6fbb6b90800000000000000
+      internalID: -7247488710007640064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_15
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1067
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe9fbd727b546a20800000000000000
+      internalID: 3054666994558148284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1063
+        width: 216
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef11656f6bf5ae50800000000000000
+      internalID: 6820133666583289826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_17
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1164
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d183cb5130aba80800000000000000
+      internalID: -8450438358920323792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 878
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dd76955bc201a60800000000000000
+      internalID: 7642657725048413530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 878
+        width: 220
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e665506045874b0800000000000000
+      internalID: -5442507764841157086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_20
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 876
+        width: 216
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7414a4b4690e55da0800000000000000
+      internalID: -5956607996014739129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_21
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 855
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda1c75a5904801d0800000000000000
+      internalID: -3384384108498248997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_22
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 851
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f40babb58e1a42c0800000000000000
+      internalID: -4446708122346912526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 664
+        width: 216
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5295b9230c154c2f0800000000000000
+      internalID: -953547335171090139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 664
+        width: 216
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3320fcb0e86d32000800000000000000
+      internalID: 10087529756688947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_25
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 663
+        width: 216
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ee47891333f33d0800000000000000
+      internalID: -3224802520069771629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_26
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 642
+        width: 220
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0bc097959d3f5f0800000000000000
+      internalID: -723996136770326355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_27
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 639
+        width: 216
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a00a8772bbe0440800000000000000
+      internalID: 4904062822454921854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_28
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 639
+        width: 216
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28048ae7da5238c20800000000000000
+      internalID: 3207448786702450818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 450
+        width: 216
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ba75a08a2da6840800000000000000
+      internalID: 5218214737431997339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 220
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6d66469745c1b50800000000000000
+      internalID: 6565215237151577837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_31
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 450
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb85faaedb1352db0800000000000000
+      internalID: -4817389534646937413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_32
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 429
+        width: 220
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd460620e993eac0800000000000000
+      internalID: -3827046070345118282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_33
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 427
+        width: 216
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e363bcb76f2da30800000000000000
+      internalID: 4238721210859798152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_34
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 427
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb62a82e34b9f9be0800000000000000
+      internalID: -1468284237633673541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_35
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 426
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ce9073f4f827860800000000000000
+      internalID: 7526235497678105615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_36
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 528
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a9da1d99763e5a0800000000000000
+      internalID: -6493232327392650722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 218
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd18f4c085fa86d0800000000000000
+      internalID: -2987305469397688911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_38
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 236
+        width: 218
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35d63c678c915fc0800000000000000
+      internalID: -3507850529294854849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_39
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 216
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0a197983de95d60800000000000000
+      internalID: 7879589850378248394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_40
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 215
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed36d733cf537a10800000000000000
+      internalID: 1905972359367900655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_41
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 215
+        width: 216
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a1db61f526ec080800000000000000
+      internalID: -9165280031109473637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_42
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 214
+        width: 220
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b19dfbcfff3caba0800000000000000
+      internalID: -6076411429358038608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_43
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 214
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449c285dc4f5de60800000000000000
+      internalID: 7986558676996232268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_44
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 316
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9eb6a69fc2689920800000000000000
+      internalID: 2997254195740327580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 240
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d936de01b670330800000000000000
+      internalID: 3677025341217676614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_46
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d093c028345fd20800000000000000
+      internalID: 3311627326830742897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_47
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 216
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc5843e99f15fb40800000000000000
+      internalID: 5473315667942333634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_48
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2
+        width: 220
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc2036751f8b880800000000000000
+      internalID: -8594854531211014825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_49
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fe2c2e8225df020800000000000000
+      internalID: 2377146513878085529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_50
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 2
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc028f3c30cec10e0800000000000000
+      internalID: -2297702208948920117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x2048-ETC2-CookieStone-9795adaa_51
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 2
+        width: 216
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336143d89a796be70800000000000000
+      internalID: 9130652049014527539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec94a223a6a511443a23ee12ddcc0e20
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

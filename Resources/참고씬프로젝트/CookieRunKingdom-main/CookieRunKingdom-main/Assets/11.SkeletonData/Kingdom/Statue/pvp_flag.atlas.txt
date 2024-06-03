@@ -1,0 +1,279 @@
+
+pvp_flag.png
+size: 1908,864
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bronze_flag_1
+  rotate: false
+  xy: 2, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+bronze_flag_2
+  rotate: false
+  xy: 2, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+bronze_flag_3
+  rotate: false
+  xy: 169, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+bronze_head
+  rotate: false
+  xy: 2, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+choco_flag_1
+  rotate: false
+  xy: 169, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+choco_flag_2
+  rotate: false
+  xy: 336, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+choco_flag_3
+  rotate: false
+  xy: 336, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+choco_head
+  rotate: false
+  xy: 201, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+crystal_flag_1
+  rotate: true
+  xy: 1395, 8
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+crystal_flag_2
+  rotate: false
+  xy: 503, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+crystal_flag_3
+  rotate: false
+  xy: 1338, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+crystal_head
+  rotate: false
+  xy: 997, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+dia_flag_1
+  rotate: false
+  xy: 1739, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+dia_flag_2
+  rotate: true
+  xy: 1395, 696
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+dia_flag_3
+  rotate: false
+  xy: 1171, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+dia_head
+  rotate: false
+  xy: 798, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+gold_flag_1
+  rotate: false
+  xy: 503, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+gold_flag_2
+  rotate: false
+  xy: 670, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+gold_flag_3
+  rotate: false
+  xy: 670, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+gold_head
+  rotate: false
+  xy: 400, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+master_flag_1
+  rotate: false
+  xy: 1171, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+master_flag_2
+  rotate: false
+  xy: 1004, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+master_flag_3
+  rotate: false
+  xy: 1004, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+master_flag_4
+  rotate: false
+  xy: 837, 519
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+master_flag_5
+  rotate: false
+  xy: 837, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+master_head
+  rotate: false
+  xy: 599, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+silver_flag_1
+  rotate: false
+  xy: 1505, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+silver_flag_2
+  rotate: false
+  xy: 1672, 175
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+silver_flag_3
+  rotate: true
+  xy: 1388, 529
+  size: 165, 342
+  orig: 165, 342
+  offset: 0, 0
+  index: -1
+silver_head
+  rotate: false
+  xy: 1196, 2
+  size: 197, 171
+  orig: 197, 171
+  offset: 0, 0
+  index: -1
+star_1
+  rotate: true
+  xy: 1338, 592
+  size: 26, 27
+  orig: 26, 27
+  offset: 0, 0
+  index: -1
+star_1_c
+  rotate: true
+  xy: 1338, 812
+  size: 49, 52
+  orig: 49, 52
+  offset: 0, 0
+  index: -1
+star_2
+  rotate: true
+  xy: 1338, 565
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+star_2_c
+  rotate: true
+  xy: 1338, 764
+  size: 46, 50
+  orig: 46, 50
+  offset: 0, 0
+  index: -1
+star_3
+  rotate: false
+  xy: 1338, 537
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+star_3_b
+  rotate: false
+  xy: 1338, 714
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+star_3_c
+  rotate: false
+  xy: 1338, 664
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+star_4
+  rotate: true
+  xy: 1839, 495
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+star_4_b
+  rotate: true
+  xy: 1338, 620
+  size: 42, 43
+  orig: 42, 43
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+building_coffee.png
+size: 592,400
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_coffee_01
+  rotate: true
+  xy: 546, 140
+  size: 36, 29
+  orig: 36, 29
+  offset: 0, 0
+  index: -1
+building_coffee_02
+  rotate: false
+  xy: 546, 92
+  size: 20, 14
+  orig: 30, 14
+  offset: 0, 0
+  index: -1
+building_coffee_03
+  rotate: true
+  xy: 546, 276
+  size: 119, 36
+  orig: 119, 36
+  offset: 0, 0
+  index: -1
+building_coffee_04
+  rotate: true
+  xy: 546, 108
+  size: 30, 21
+  orig: 30, 21
+  offset: 0, 0
+  index: -1
+building_coffee_05
+  rotate: true
+  xy: 546, 178
+  size: 46, 35
+  orig: 46, 36
+  offset: 0, 1
+  index: -1
+building_coffee_06
+  rotate: true
+  xy: 546, 226
+  size: 48, 44
+  orig: 48, 44
+  offset: 0, 0
+  index: -1
+layer2
+  rotate: false
+  xy: 2, 2
+  size: 542, 393
+  orig: 542, 393
+  offset: 0, 0
+  index: -1

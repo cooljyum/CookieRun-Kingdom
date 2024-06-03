@@ -1,0 +1,97 @@
+
+building_biscuitpowder.png
+size: 728,456
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B_pc_BiscuitPowder_004
+  rotate: false
+  xy: 627, 187
+  size: 50, 73
+  orig: 50, 73
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_005
+  rotate: false
+  xy: 679, 202
+  size: 29, 58
+  orig: 29, 58
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_006
+  rotate: false
+  xy: 615, 163
+  size: 6, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_008
+  rotate: false
+  xy: 627, 179
+  size: 10, 6
+  orig: 10, 6
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_009
+  rotate: true
+  xy: 710, 236
+  size: 24, 15
+  orig: 25, 19
+  offset: 0, 1
+  index: -1
+B_pc_BiscuitPowder_010
+  rotate: false
+  xy: 546, 36
+  size: 37, 43
+  orig: 37, 43
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_011
+  rotate: false
+  xy: 596, 54
+  size: 17, 115
+  orig: 17, 115
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_012
+  rotate: false
+  xy: 546, 81
+  size: 48, 88
+  orig: 48, 88
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_013
+  rotate: false
+  xy: 546, 9
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+B_pc_BiscuitPowder_014
+  rotate: false
+  xy: 679, 194
+  size: 6, 6
+  orig: 6, 7
+  offset: 0, 1
+  index: -1
+building_biscuitpowder_00
+  rotate: false
+  xy: 2, 2
+  size: 542, 449
+  orig: 542, 490
+  offset: 0, 0
+  index: -1
+building_biscuitpowder_02
+  rotate: false
+  xy: 546, 171
+  size: 79, 89
+  orig: 79, 91
+  offset: 0, 1
+  index: -1
+building_biscuitpowder_03
+  rotate: true
+  xy: 546, 262
+  size: 189, 179
+  orig: 190, 179
+  offset: 1, 0
+  index: -1

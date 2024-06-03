@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32579f66ef5fd6445b68eaa005031d15, type: 3}
+  m_Name: Cookie0001
+  m_EditorClassIdentifier: 
+  _characterName: "\uC6A9\uAC10\uD55C \uCFE0\uD0A4"
+  _animationData: {fileID: 11400000, guid: 1c1062a39bbeab445811170abea34473, type: 2}
+  _skeletonDataAsset: {fileID: 11400000, guid: f47a014c9f4f4af42b9237caec4a4abf, type: 2}
+  moveSpeed: 5
+  attackRange: 1
+  _hpStat: 10000
+  _attackStat: 200
+  _defenseStat: 100
+  _criticalStat: 1
+  _cookieIndex: 0
+  _skillCoolTime: 8
+  _appearSpeech: 
+  _bubbleSpeech: 
+  _cookiePortraitSkeleton: {fileID: 0}
+  _idleBlackMaterial: {fileID: 2100000, guid: 5864676e1cdaded439d1e0cb7e4e8819, type: 2}
+  _cookieHeadSprite: {fileID: -4553151646470416720, guid: 9d4a6d23348f2be40adb640568dc0c06, type: 3}
+  _idleSprite: {fileID: 21300000, guid: 7cfbfca9c79170e4bb08d9309f534ba8, type: 3}
+  _idleBlackAndWhiteSprite: {fileID: 21300000, guid: 18c0aa2fbc705d647bb259a7d0e721da, type: 3}
+  _skillSprite: {fileID: 21300000, guid: 8e3a95ee9405f4741b47b59e80a98b89, type: 3}
+  _skillName: "\uC6A9\uAC10\uD55C \uB3CC\uACA9"
+  _typeSprite: {fileID: 21300000, guid: 1ef3c4d47a7a84d4a99611b25020c976, type: 3}
+  _evolutionSprite: {fileID: -1468284237633673541, guid: 183849bf2ef2bdd41aa5b4b5fbde72ee, type: 3}
+  _cookieGradeSprite: {fileID: 21300000, guid: 7fabf714778e6bc40941c319dd88d787, type: 3}
+  _cookieGrade: 0
+  _cookieType: 0
+  _cookiePosition: 0
+  _expCandyItemData: {fileID: 11400000, guid: 822f507d10c78c44dbe3f211887f95da, type: 2}

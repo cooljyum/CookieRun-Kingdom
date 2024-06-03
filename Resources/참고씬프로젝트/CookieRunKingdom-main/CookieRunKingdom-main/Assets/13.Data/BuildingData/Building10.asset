@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467e03254e97021468009c4a075941dd, type: 3}
+  m_Name: Building10
+  m_EditorClassIdentifier: 
+  _buildingIndex: 9
+  _skeletonData: {fileID: 11400000, guid: 3de8f475240211943ae0c10773c845a8, type: 2}
+  buildingName: "\uB864\uCF00\uC774\uD06C \uACF5\uC791\uC18C"
+  buildingExplain: "\uC0AC\uAC01\uC0AC\uAC01 \uB864\uCF00\uC774\uD06C \uB098\uBB34\uB97C
+    \uAE4E\uB294 \uC18C\uB9AC\uAC00 \uC870\uC6A9\uD788 \uC6B8\uB9B0\uB2E4. \uC81C\uC544\uBB34\uB9AC
+    \uC190\uC7AC\uC8FC \uC5C6\uB294 \uCFE0\uD0A4\uB77C\uB3C4 \uBB50\uB4E0 \uB9CC\uB4E4
+    \uC218 \uC788\uC744 \uB4EF \uD574!"
+  buildingSize: {x: 3, y: 3}
+  buildingScore: 1000
+  craftItems:
+  - {fileID: 11400000, guid: 3797439caf208c74eb2e73562cf006c0, type: 2}
+  - {fileID: 11400000, guid: 93090aae31fd1a348977f53f3030c508, type: 2}
+  - {fileID: 11400000, guid: fd8bc0c46be0c794ba74d22439f226fc, type: 2}
+  - {fileID: 11400000, guid: b617c04005eb0ec40811abc9a74f2532, type: 2}
+  isCraftable: 1

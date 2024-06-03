@@ -1,0 +1,181 @@
+
+building_milk.png
+size: 920,348
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_milk
+  rotate: true
+  xy: 856, 32
+  size: 31, 14
+  orig: 31, 14
+  offset: 0, 0
+  index: -1
+b_milk_can
+  rotate: false
+  xy: 858, 142
+  size: 54, 50
+  orig: 54, 50
+  offset: 0, 0
+  index: -1
+b_milk_cookie_b1
+  rotate: true
+  xy: 858, 65
+  size: 41, 48
+  orig: 41, 48
+  offset: 0, 0
+  index: -1
+b_milk_cookie_b2
+  rotate: true
+  xy: 776, 30
+  size: 41, 48
+  orig: 41, 48
+  offset: 0, 0
+  index: -1
+b_milk_cookie_b3
+  rotate: true
+  xy: 776, 73
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+b_milk_cookie_stick
+  rotate: true
+  xy: 800, 3
+  size: 25, 21
+  orig: 25, 21
+  offset: 0, 0
+  index: -1
+b_milk_cookie_w
+  rotate: false
+  xy: 736, 196
+  size: 36, 46
+  orig: 36, 46
+  offset: 0, 0
+  index: -1
+b_milk_leaf_01
+  rotate: true
+  xy: 823, 4
+  size: 24, 19
+  orig: 24, 19
+  offset: 0, 0
+  index: -1
+b_milk_leaf_02
+  rotate: true
+  xy: 826, 30
+  size: 27, 22
+  orig: 27, 22
+  offset: 0, 0
+  index: -1
+b_milk_lope_01
+  rotate: false
+  xy: 736, 244
+  size: 37, 102
+  orig: 37, 102
+  offset: 0, 0
+  index: -1
+b_milk_lope_02
+  rotate: false
+  xy: 826, 86
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+b_milk_lope_03
+  rotate: false
+  xy: 776, 3
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1
+b_milk_lope_04
+  rotate: true
+  xy: 844, 6
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+b_milk_lope_line
+  rotate: true
+  xy: 2, 5
+  size: 4, 9
+  orig: 4, 9
+  offset: 0, 0
+  index: -1
+b_milk_pudding
+  rotate: true
+  xy: 776, 194
+  size: 152, 133
+  orig: 152, 133
+  offset: 0, 0
+  index: -1
+b_milk_roof
+  rotate: false
+  xy: 544, 118
+  size: 190, 228
+  orig: 190, 228
+  offset: 0, 0
+  index: -1
+b_milk_sign
+  rotate: false
+  xy: 592, 3
+  size: 116, 113
+  orig: 132, 113
+  offset: 0, 0
+  index: -1
+b_milk_stem
+  rotate: false
+  xy: 858, 108
+  size: 50, 32
+  orig: 50, 32
+  offset: 0, 0
+  index: -1
+b_milk_stick
+  rotate: false
+  xy: 736, 118
+  size: 120, 74
+  orig: 120, 74
+  offset: 0, 0
+  index: -1
+b_milk_well_milk
+  rotate: true
+  xy: 544, 2
+  size: 114, 46
+  orig: 114, 46
+  offset: 0, 0
+  index: -1
+b_milk_well_ol
+  rotate: true
+  xy: 710, 12
+  size: 104, 64
+  orig: 104, 64
+  offset: 0, 0
+  index: -1
+building_milk_bird
+  rotate: false
+  xy: 826, 59
+  size: 28, 25
+  orig: 28, 25
+  offset: 0, 0
+  index: -1
+building_milk_bird_wing
+  rotate: false
+  xy: 867, 8
+  size: 13, 14
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+flower
+  rotate: true
+  xy: 872, 24
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: false
+  xy: 2, 11
+  size: 540, 335
+  orig: 540, 335
+  offset: 0, 0
+  index: -1

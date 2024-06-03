@@ -1,0 +1,76 @@
+
+building_restaurant.png
+size: 616,384
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_restaurant_01
+  rotate: true
+  xy: 544, 69
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+building_restaurant_02
+  rotate: false
+  xy: 577, 43
+  size: 12, 10
+  orig: 12, 10
+  offset: 0, 0
+  index: -1
+building_restaurant_03
+  rotate: false
+  xy: 568, 5
+  size: 21, 18
+  orig: 21, 18
+  offset: 0, 0
+  index: -1
+building_restaurant_04
+  rotate: false
+  xy: 544, 3
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+building_restaurant_05
+  rotate: true
+  xy: 577, 55
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+building_restaurant_07
+  rotate: true
+  xy: 544, 227
+  size: 72, 70
+  orig: 72, 70
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: false
+  xy: 544, 301
+  size: 70, 78
+  orig: 70, 78
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 2, 2
+  size: 540, 377
+  orig: 540, 377
+  offset: 0, 0
+  index: -1
+layer_03
+  rotate: true
+  xy: 544, 135
+  size: 90, 52
+  orig: 90, 52
+  offset: 0, 0
+  index: -1
+working
+  rotate: true
+  xy: 544, 25
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1

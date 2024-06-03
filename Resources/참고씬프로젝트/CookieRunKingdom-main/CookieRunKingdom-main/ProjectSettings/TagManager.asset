@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CookieBundle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Building
+  - 
+  - Cookie
+  - Enemy
+  - 
+  - Obstacle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: GridLower
+    uniqueID: 2048013629
+    locked: 0
+  - name: Grid
+    uniqueID: 2986532279
+    locked: 0
+  - name: GridUpper
+    uniqueID: 2405615477
+    locked: 0
+  - name: UI
+    uniqueID: 1543226767
+    locked: 0
+  - name: UIUpper
+    uniqueID: 2277755403
+    locked: 0

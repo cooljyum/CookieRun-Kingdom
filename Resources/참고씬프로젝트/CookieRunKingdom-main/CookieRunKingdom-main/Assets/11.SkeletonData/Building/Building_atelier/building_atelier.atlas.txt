@@ -1,0 +1,83 @@
+
+building_atelier.png
+size: 548,500
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_atelier_01
+  rotate: false
+  xy: 437, 40
+  size: 62, 45
+  orig: 62, 45
+  offset: 0, 0
+  index: -1
+building_atelier_02
+  rotate: false
+  xy: 437, 2
+  size: 38, 36
+  orig: 39, 38
+  offset: 0, 1
+  index: -1
+building_atelier_03
+  rotate: false
+  xy: 381, 8
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+building_atelier_04
+  rotate: false
+  xy: 412, 22
+  size: 12, 15
+  orig: 13, 16
+  offset: 1, 0
+  index: -1
+building_atelier_05
+  rotate: true
+  xy: 316, 27
+  size: 58, 63
+  orig: 58, 64
+  offset: 0, 1
+  index: -1
+building_atelier_06
+  rotate: false
+  xy: 194, 16
+  size: 120, 69
+  orig: 120, 69
+  offset: 0, 0
+  index: -1
+building_atelier_07
+  rotate: false
+  xy: 98, 8
+  size: 94, 77
+  orig: 94, 77
+  offset: 0, 0
+  index: -1
+building_atelier_08
+  rotate: true
+  xy: 501, 32
+  size: 53, 41
+  orig: 53, 41
+  offset: 0, 0
+  index: -1
+building_atelier_09
+  rotate: false
+  xy: 381, 39
+  size: 54, 46
+  orig: 54, 46
+  offset: 0, 0
+  index: -1
+building_atelier_10
+  rotate: false
+  xy: 2, 4
+  size: 94, 81
+  orig: 94, 81
+  offset: 0, 0
+  index: -1
+layer2
+  rotate: false
+  xy: 2, 87
+  size: 542, 410
+  orig: 542, 410
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32579f66ef5fd6445b68eaa005031d15, type: 3}
+  m_Name: Cookie0511
+  m_EditorClassIdentifier: 
+  _characterName: "\uB9C8\uB4E4\uB80C\uB9DB \uCFE0\uD0A4"
+  _animationData: {fileID: 11400000, guid: 1c1062a39bbeab445811170abea34473, type: 2}
+  _skeletonDataAsset: {fileID: 11400000, guid: fe7c5c2dad691c948beed3f6c141b0df, type: 2}
+  moveSpeed: 5
+  attackRange: 3
+  _hpStat: 12000
+  _attackStat: 400
+  _defenseStat: 120
+  _criticalStat: 1
+  _cookieIndex: 7
+  _skillCoolTime: 23
+  _appearSpeech: "\uBE5B\uC758 \uC2E0\uAED8 \uC138\uC0C1\uC744 \uAD6C\uD558\uB77C\uB294
+    \uBA85\uC744 \uBC1B\uC740 \uCFE0\uD0A4\uAC00 \uBC14\uB85C \uB098\uB2E4!"
+  _bubbleSpeech: "\uB0B4\uAC00 \uAC00\uB294 \uAE38\uC5D0 \uC2E0\uC758 \uAC00\uD638\uAC00
+    \uB530\uB978\uB2E4!"
+  _cookiePortraitSkeleton: {fileID: 11400000, guid: e21c44fcba21bd24db5411bf88040f3f, type: 2}
+  _idleBlackMaterial: {fileID: 2100000, guid: c3abdb4fd597d864f8720845339734a0, type: 2}
+  _cookieHeadSprite: {fileID: 896647828470443464, guid: 9d4a6d23348f2be40adb640568dc0c06, type: 3}
+  _idleSprite: {fileID: 21300000, guid: 81b1cd28ca7bced458bd2343b11d5c6c, type: 3}
+  _idleBlackAndWhiteSprite: {fileID: 21300000, guid: 57f6ffdf20783a241bdd7bad69bcd63c, type: 3}
+  _skillSprite: {fileID: 21300000, guid: 284fbc0ab6eb60d43b269d30f0cc0a72, type: 3}
+  _skillName: "\uAE30\uC0AC\uB2E8\uC7A5\uC758 \uD6C4\uAD11"
+  _typeSprite: {fileID: 21300000, guid: 0ec6a55966ef03f43a0883e677f25c9d, type: 3}
+  _evolutionSprite: {fileID: 7986558676996232268, guid: 183849bf2ef2bdd41aa5b4b5fbde72ee, type: 3}
+  _cookieGradeSprite: {fileID: 21300000, guid: 66292ddd4d4687247a78bef600aad68a, type: 3}
+  _cookieGrade: 2
+  _cookieType: 1
+  _cookiePosition: 0
+  _expCandyItemData: {fileID: 11400000, guid: 822f507d10c78c44dbe3f211887f95da, type: 2}

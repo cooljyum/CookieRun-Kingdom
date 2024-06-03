@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b7abdea9e710bb4893d6b14bf0f1157, type: 3}
+  m_Name: Enemy10125-2
+  m_EditorClassIdentifier: 
+  _characterName: "\uC824\uB9AC \uC655\uAFC0\uBC8C"
+  _animationData: {fileID: 11400000, guid: fcea7f77607b63341ab2a7907961f289, type: 2}
+  _skeletonDataAsset: {fileID: 0}
+  moveSpeed: 5
+  attackRange: 1
+  _hpStat: 5000
+  _attackStat: 300
+  _defenseStat: 10
+  _criticalStat: 1
+  _isBig: 0
+  _enemyPortrait: {fileID: 4154368656713327175, guid: 9cfe6a08df348414383b91c5e791cc12, type: 3}

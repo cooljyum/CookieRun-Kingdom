@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 611af94dc644b2845bf0098e6b63aec4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2423609262351189953
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_2
+  - first:
+      213: 5746656911859813266
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_3
+  - first:
+      213: -6060439221544252252
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_0
+  - first:
+      213: 76672854588514525
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_1
+  - first:
+      213: -2018349084865138158
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_4
+  - first:
+      213: -2171886635358819900
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_5
+  - first:
+      213: 8916122648035193387
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_6
+  - first:
+      213: 6217835263741775950
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_7
+  - first:
+      213: 2620823817361961738
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_8
+  - first:
+      213: -2349413313467611192
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_9
+  - first:
+      213: 5764765002855982345
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_10
+  - first:
+      213: -6123987595082273229
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_11
+  - first:
+      213: -6610726429958091700
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_12
+  - first:
+      213: 7680507527119196919
+    second: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_2
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 100
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38f53b773c9d5ed0800000000000000
+      internalID: -2423609262351189953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_3
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 139
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b8275a30a30cf40800000000000000
+      internalID: 5746656911859813266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 174
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 57, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac820933aef4eba0800000000000000
+      internalID: -6060439221544252252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2
+        width: 87
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0e9a51e85601100800000000000000
+      internalID: 76672854588514525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 957
+        width: 168
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212f0e373326df3e0800000000000000
+      internalID: -2018349084865138158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 353
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9e40fbc98ebd1e0800000000000000
+      internalID: -2171886635358819900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 682
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 39, y: 36, z: 36, w: 59}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22f3f90f4e6cbb70800000000000000
+      internalID: 8916122648035193387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 664
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 30, z: 28, w: 30}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d9379a303a4650800000000000000
+      internalID: 6217835263741775950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 150
+        width: 118
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 18, z: 23, w: 19}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a033ebc40690f5420800000000000000
+      internalID: 2620823817361961738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_9
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 173
+        width: 63
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c780340a05356fd0800000000000000
+      internalID: -2349413313467611192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 535
+        width: 300
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 30, z: 38, w: 35}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905a5d02a3f800050800000000000000
+      internalID: 5764765002855982345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1
+        width: 154
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 37, y: 35, z: 40, w: 42}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ee8328ab9330ba0800000000000000
+      internalID: -6123987595082273229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_12
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 207
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 1, z: 17, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ccf0b465bf144a0800000000000000
+      internalID: -6610726429958091700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleMapUISpriteAtlas-8c0c4aa8_13
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 337
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 16, y: 1, z: 16, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f257a027e4a69a60800000000000000
+      internalID: 7680507527119196919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

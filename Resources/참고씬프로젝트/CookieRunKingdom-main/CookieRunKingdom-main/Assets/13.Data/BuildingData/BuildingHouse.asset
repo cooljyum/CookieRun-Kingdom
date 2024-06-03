@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467e03254e97021468009c4a075941dd, type: 3}
+  m_Name: BuildingHouse
+  m_EditorClassIdentifier: 
+  _buildingIndex: 20
+  _skeletonData: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  buildingName: "\uCFE0\uD0A4\uD558\uC6B0\uC2A4"
+  buildingExplain: "\uCFE0\uD0A4\uC655\uAD6D\uC5D0\uB294 \uB2EC\uCF64\uD55C \uCFE0\uD0A4
+    \uD558\uC6B0\uC2A4\uB4E4\uC774 \uAC00\uB4DD\uD558\uACE0 \uB2EC\uCF64\uD55C \uCFE0\uD0A4
+    \uD558\uC6B0\uC2A4\uC5D0\uB294 \uBC14\uC0AD\uD55C \uCFE0\uD0A4\uB4E4\uC774 \uC0B4\uC9C0!"
+  buildingSize: {x: 2, y: 2}
+  buildingScore: 50
+  craftItems: []
+  isCraftable: 0

@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01884f6f44279fd4e874c8ccf5d9acd7, type: 3}
+  m_Name: 2Stage
+  m_EditorClassIdentifier: 
+  _isBoss: 0
+  _bossSkeletonAnimation: {fileID: 0}
+  _stageName: "1-2 \uB85C\uC584\uC824\uB9AC \uAF43\uBC2D"
+  _recommendedPower: 3000
+  _jelly: 3
+  _waveInfo:
+  - enemies:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 3845897827278865402, guid: 840bb3b63e04938478c8e440f1631a36, type: 3}
+    - {fileID: 0}
+    - {fileID: 3845897827278865402, guid: 840bb3b63e04938478c8e440f1631a36, type: 3}
+    - {fileID: 0}
+    distance: 1
+  - enemies:
+    - {fileID: 8449429943820295725, guid: 3184e9f7e85231d48b9ec9fb5bf42040, type: 3}
+    - {fileID: 0}
+    - {fileID: 8449429943820295725, guid: 3184e9f7e85231d48b9ec9fb5bf42040, type: 3}
+    - {fileID: 0}
+    - {fileID: 8449429943820295725, guid: 3184e9f7e85231d48b9ec9fb5bf42040, type: 3}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    distance: 5
+  - enemies:
+    - {fileID: 0}
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 423337786166003941, guid: 9a156ff518a400745bc67dd0f0c95a8f, type: 3}
+    - {fileID: 5948300616551661578, guid: df4b6fd84c3dee248bb0e3ef71fe5c32, type: 3}
+    - {fileID: 0}
+    distance: 9
+  - enemies:
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 2377727317304456039, guid: 9d73875fe8f39c54fa05b3c8dc53c82a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 423337786166003941, guid: 9a156ff518a400745bc67dd0f0c95a8f, type: 3}
+    - {fileID: 0}
+    - {fileID: 423337786166003941, guid: 9a156ff518a400745bc67dd0f0c95a8f, type: 3}
+    - {fileID: 0}
+    distance: 13
+  _mapSprites:
+  - {fileID: 21300000, guid: b34e2f5effb958747b962d1a3a301d5e, type: 3}
+  - {fileID: 21300000, guid: 3fc62bc5f43e7934a9a0daba7d6b83bc, type: 3}
+  - {fileID: 21300000, guid: 1b23cedea5726044db12fd71285a87ef, type: 3}
+  - {fileID: 21300000, guid: 27351f5c380f44d4893021d8e9d86bf0, type: 3}
+  - {fileID: 21300000, guid: 59adec8ef2f43a643937412a3ac97741, type: 3}
+  - {fileID: 21300000, guid: 4e1493427f1354349b360739bb6c9558, type: 3}
+  - {fileID: 21300000, guid: fff80502f38e81244a88b8073d963f42, type: 3}
+  - {fileID: 21300000, guid: 8407f44df7f423c44bac7f1bc0fa65bc, type: 3}
+  - {fileID: 21300000, guid: c9030f2cf3019c34093229fdbef2200a, type: 3}
+  - {fileID: 21300000, guid: 435f4b6103593914cba531b4cb95ba39, type: 3}
+  - {fileID: 21300000, guid: 753fe55dc1427d04e9c9ed3682f32359, type: 3}
+  - {fileID: 21300000, guid: 329edc7380728384ab2927306def208b, type: 3}
+  - {fileID: 21300000, guid: 6ea6ce9b3dc239c4fbd9aaa80cfeebf0, type: 3}
+  - {fileID: 21300000, guid: bcbe0df54a13fe649b0c946ceca962cd, type: 3}
+  - {fileID: 21300000, guid: 8a7c2955997d0f7459829ed6db38de81, type: 3}
+  - {fileID: 21300000, guid: 46489e58ac571384f9394b31af5b984f, type: 3}
+  - {fileID: 21300000, guid: 8f55e96f45b369c49bc7ec1802127791, type: 3}
+  - {fileID: 21300000, guid: 9f050c55580efb746894d76c01b1295d, type: 3}
+  - {fileID: 21300000, guid: 98a2b9bafcf02bc4da6f5bb5a7917cd9, type: 3}
+  - {fileID: 21300000, guid: d354e7292340b1043af2ee45bc46158f, type: 3}
+  - {fileID: 21300000, guid: 44d24cbf65531f6409a090800dbf0ae8, type: 3}
+  - {fileID: 21300000, guid: a9b9bd4ddb4b33949b775e1e8fb547c8, type: 3}
+  - {fileID: 21300000, guid: 3ae2b2f14392f6e4aa5e926346efac04, type: 3}
+  - {fileID: 21300000, guid: 56093d73a6217af439bf4cb1609d2681, type: 3}
+  - {fileID: 21300000, guid: e1d39a319e7436f4a94ae5e452af252d, type: 3}
+  - {fileID: 21300000, guid: d8936a40788105343b167249df014f69, type: 3}
+  - {fileID: 21300000, guid: d6d1038e00ec45943ade26fdd04e20a0, type: 3}
+  - {fileID: 21300000, guid: 0da628bf260216c4897eccc244ab90ca, type: 3}
+  - {fileID: 21300000, guid: dcc047e1360970041addaa98dab95774, type: 3}
+  - {fileID: 21300000, guid: 923babb65dd4b574299d981696c5bedc, type: 3}
+  - {fileID: 21300000, guid: 534e324ea3a9b7541b1b916d36aa756d, type: 3}
+  - {fileID: 21300000, guid: 13b18245b4ecde34cbc9c91f283fde4e, type: 3}
+  - {fileID: 21300000, guid: 939cc6a9dcaad144c8ba04d7144ca50e, type: 3}
+  _stagePos: {fileID: 5758351856707295096, guid: 6d06bf8bdf177734fbd69328c6de619a, type: 3}
+  _closeLeftObjectSprites:
+  - {fileID: 21300000, guid: 27e87d31c95bc1346a92ad6ee5994256, type: 3}
+  _middleLeftObjectSprites: []
+  _farLeftObjectSprites: []
+  _closeRightObjectSprites:
+  - {fileID: 21300000, guid: 27e87d31c95bc1346a92ad6ee5994256, type: 3}
+  _middleRightObjectSprites: []
+  _farRightObjectSprites:
+  - {fileID: 21300000, guid: 9deb64f9f3d9d0d45b2c0c84fbc27d5e, type: 3}
+  _victoryRewardItems:
+  - ingredientItem: {fileID: 11400000, guid: 822f507d10c78c44dbe3f211887f95da, type: 2}
+    count: 120
+  - ingredientItem: {fileID: 11400000, guid: 9b26c7b51c7eeac43852f427dfce50b0, type: 2}
+    count: 12000
+  - ingredientItem: {fileID: 11400000, guid: 1eeed9897d9dd37438ec302481873902, type: 2}
+    count: 12000
+  _defeatRewardItems:
+  - ingredientItem: {fileID: 11400000, guid: 9b26c7b51c7eeac43852f427dfce50b0, type: 2}
+    count: 15

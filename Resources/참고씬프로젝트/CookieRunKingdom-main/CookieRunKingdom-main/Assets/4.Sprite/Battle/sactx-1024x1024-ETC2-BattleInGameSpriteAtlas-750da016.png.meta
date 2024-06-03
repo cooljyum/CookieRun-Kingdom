@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: 936d085335474d04ca7cab2382d7cc45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6532104580548527575
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_0
+  - first:
+      213: 5481103138681645403
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_1
+  - first:
+      213: -5385596810302956461
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_2
+  - first:
+      213: 6750124577171878185
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_3
+  - first:
+      213: 6924666464766498646
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_4
+  - first:
+      213: 8618785793439609191
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_5
+  - first:
+      213: 1663307722619500110
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_6
+  - first:
+      213: -1210569667364420206
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_7
+  - first:
+      213: 6345919212056321100
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_8
+  - first:
+      213: 8961925504393650079
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_9
+  - first:
+      213: -5038989127007704878
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_14
+  - first:
+      213: 3290921908301736484
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_15
+  - first:
+      213: -3447684823380577335
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_16
+  - first:
+      213: 836643657926899639
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_17
+  - first:
+      213: -9059440080266938528
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_18
+  - first:
+      213: -6423519427713070744
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_19
+  - first:
+      213: 1214408756052009977
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_20
+  - first:
+      213: -936464231084170066
+    second: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_0
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 598
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92af3b81e7d4955a0800000000000000
+      internalID: -6532104580548527575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 545
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59e566b34ac01c40800000000000000
+      internalID: 5481103138681645403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 563
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c5a623c348245b0800000000000000
+      internalID: -5385596810302956461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 429
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921b6fb0a824dad50800000000000000
+      internalID: 6750124577171878185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 725
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579774167b591060800000000000000
+      internalID: 6924666464766498646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_5
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 545
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761b62dc3041c9770800000000000000
+      internalID: 8618785793439609191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 725
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4636e6af81451710800000000000000
+      internalID: 1663307722619500110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 727
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29581e82d41333fe0800000000000000
+      internalID: -1210569667364420206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 494
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c91f7b6eb311850800000000000000
+      internalID: 6345919212056321100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 675
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f95e093c72f5c70800000000000000
+      internalID: 8961925504393650079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 619
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3deb02c70ea1870800000000000000
+      internalID: 8654476457675772869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_11
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 157
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b98c67160edae870800000000000000
+      internalID: 8713020546845804985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_12
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 334
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bc4fa2cbd5fb300800000000000000
+      internalID: 270037565421439749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_13
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 350
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9407c5bae5aab120800000000000000
+      internalID: 2430437376410453147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 399
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d866a1361ae11ab0800000000000000
+      internalID: -5038989127007704878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_15
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 156
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a20ef1a04bbad20800000000000000
+      internalID: 3290921908301736484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_16
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 399
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c335e47bec5720d0800000000000000
+      internalID: -3447684823380577335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_17
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 224
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7f05269fa5c9b00800000000000000
+      internalID: 836643657926899639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_18
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 0
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067b0c7fe37664280800000000000000
+      internalID: -9059440080266938528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 334
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869875f1d131bd6a0800000000000000
+      internalID: -6423519427713070744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3aa9454527ad010800000000000000
+      internalID: 1214408756052009977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BattleInGameSpriteAtlas-750da016_21
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 283
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea46e515eb20103f0800000000000000
+      internalID: -936464231084170066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 40f003fd40a44d747ae94a205f2fc1ca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

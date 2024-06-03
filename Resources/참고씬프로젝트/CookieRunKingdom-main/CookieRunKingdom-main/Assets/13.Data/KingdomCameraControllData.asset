@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7e3e29578dd504eb1bf7706fa57e37, type: 3}
+  m_Name: KingdomCameraControllData
+  m_EditorClassIdentifier: 
+  _cameraMoveSpeed: 60
+  _cameraZoomSpeed: 0.01
+  _cameraZoomMin: 10
+  _cameraZoomMax: 20
+  _cameraBorder: {x: -30, y: 90, z: -50, w: 37}
+  _cameraBuildingZoom: 4.5
+  _cameraBuildingZoomOffset: {x: 1, y: -0.5, z: -10}

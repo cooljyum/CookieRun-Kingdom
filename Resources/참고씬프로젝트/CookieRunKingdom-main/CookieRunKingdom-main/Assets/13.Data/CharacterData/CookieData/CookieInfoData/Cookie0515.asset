@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32579f66ef5fd6445b68eaa005031d15, type: 3}
+  m_Name: Cookie0515
+  m_EditorClassIdentifier: 
+  _characterName: "\uD638\uBC00\uB9DB \uCFE0\uD0A4"
+  _animationData: {fileID: 11400000, guid: 1c1062a39bbeab445811170abea34473, type: 2}
+  _skeletonDataAsset: {fileID: 11400000, guid: aa0ee6f6db12c8b4db4509bea01c889b, type: 2}
+  moveSpeed: 5
+  attackRange: 3
+  _hpStat: 9000
+  _attackStat: 700
+  _defenseStat: 70
+  _criticalStat: 5
+  _cookieIndex: 9
+  _skillCoolTime: 15
+  _appearSpeech: "\uC560\uC1A1\uC774\uB4E4! \uADF8\uB807\uAC8C \uBD80\uB4DC\uB7EC\uC6CC\uC11C\uC57C
+    \uB418\uACA0\uC5B4?"
+  _bubbleSpeech: "\uD55C\uBC88 \uBB38 \uAC74 \uB193\uC9C0 \uC54A\uC9C0! \uADF8\uAC8C
+    \uD638\uBC00\uC758 \uBC29\uC2DD\uC774\uB2E4!"
+  _cookiePortraitSkeleton: {fileID: 11400000, guid: ae3d5f926fecf30489e3ae93d443730c, type: 2}
+  _idleBlackMaterial: {fileID: 2100000, guid: 0e7e606482e83594f93b448449233842, type: 2}
+  _cookieHeadSprite: {fileID: 783378552271554183, guid: 9d4a6d23348f2be40adb640568dc0c06, type: 3}
+  _idleSprite: {fileID: 21300000, guid: 2f251e0a2aceb4f46a044a5bed0d9393, type: 3}
+  _idleBlackAndWhiteSprite: {fileID: 21300000, guid: 4962c409e15351b41981cf91e5a4c8f3, type: 3}
+  _skillSprite: {fileID: 21300000, guid: 6971ccb6b6babaa47aa915b056a477c8, type: 3}
+  _skillName: "\uACB0\uD22C\uC758 \uC21C\uAC04"
+  _typeSprite: {fileID: 21300000, guid: 1408109c18d9b674e962afd8f3fe59a0, type: 3}
+  _evolutionSprite: {fileID: -823961447135524358, guid: 183849bf2ef2bdd41aa5b4b5fbde72ee, type: 3}
+  _cookieGradeSprite: {fileID: 21300000, guid: 66292ddd4d4687247a78bef600aad68a, type: 3}
+  _cookieGrade: 2
+  _cookieType: 4
+  _cookiePosition: 2
+  _expCandyItemData: {fileID: 11400000, guid: 822f507d10c78c44dbe3f211887f95da, type: 2}

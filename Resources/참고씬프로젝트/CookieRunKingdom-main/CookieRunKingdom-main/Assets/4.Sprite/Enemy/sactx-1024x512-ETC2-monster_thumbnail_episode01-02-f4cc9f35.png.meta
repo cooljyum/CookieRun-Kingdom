@@ -1,0 +1,636 @@
+fileFormatVersion: 2
+guid: 9cfe6a08df348414383b91c5e791cc12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8598198376604545484
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_0
+  - first:
+      213: -5045521072363693070
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_1
+  - first:
+      213: 8477695892131183516
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_2
+  - first:
+      213: 60364906885881401
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_3
+  - first:
+      213: 452283752886898037
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_4
+  - first:
+      213: 5800489677576522703
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_5
+  - first:
+      213: 545396336727003914
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_6
+  - first:
+      213: -6711686739992574653
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_7
+  - first:
+      213: -3847635859047843211
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_8
+  - first:
+      213: -6537218469735772642
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_9
+  - first:
+      213: -3701542830808707455
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_10
+  - first:
+      213: 5370486544659755821
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_11
+  - first:
+      213: -3177026529739953235
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_12
+  - first:
+      213: -6495635285565132973
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_13
+  - first:
+      213: 414741725773345758
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_14
+  - first:
+      213: 7541424375055591247
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_15
+  - first:
+      213: 4154368656713327175
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_16
+  - first:
+      213: -1045951481912319934
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_17
+  - first:
+      213: 598835867253334191
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_18
+  - first:
+      213: 2600333908144866976
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_19
+  - first:
+      213: -3832488732968643310
+    second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 286
+        width: 136
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1bad94edfe25770800000000000000
+      internalID: 8598198376604545484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 286
+        width: 136
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb93072155baf9b0800000000000000
+      internalID: -5045521072363693070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 136
+        width: 122
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b74444f73d6a570800000000000000
+      internalID: 8477695892131183516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 139
+        width: 134
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e15df109576d000800000000000000
+      internalID: 60364906885881401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_4
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 273
+        width: 107
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d018c4da5d64600800000000000000
+      internalID: 452283752886898037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 385
+        width: 101
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbc44321aa7f7050800000000000000
+      internalID: 5800489677576522703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 146
+        width: 138
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0399602413a19700800000000000000
+      internalID: 545396336727003914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 146
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3450b03587c4bd2a0800000000000000
+      internalID: -6711686739992574653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_8
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 142
+        width: 133
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57af56462937a9ac0800000000000000
+      internalID: -3847635859047843211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_9
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 143
+        width: 118
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ec64cff622745a0800000000000000
+      internalID: -6537218469735772642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_10
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 262
+        width: 100
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ec0c0386a71acc0800000000000000
+      internalID: -3701542830808707455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 260
+        width: 97
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23b57dee0dc78a40800000000000000
+      internalID: 5370486544659755821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_12
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 145
+        width: 115
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dababdc243fe8e3d0800000000000000
+      internalID: -3177026529739953235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 138
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fa5658f1edad5a0800000000000000
+      internalID: -6495635285565132973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 137
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3b046f66571c500800000000000000
+      internalID: 414741725773345758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 3
+        width: 133
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4729af438588a860800000000000000
+      internalID: 7541424375055591247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 0
+        width: 123
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7422a61584847a930800000000000000
+      internalID: 4154368656713327175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_17
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2
+        width: 119
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240a25c3ba80c71f0800000000000000
+      internalID: -1045951481912319934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_18
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0
+        width: 114
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0e56a6c0e7f4800800000000000000
+      internalID: 598835867253334191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_19
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 106
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6c06c89ed361420800000000000000
+      internalID: 2600333908144866976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_20
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 284
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21597b18dc340dac0800000000000000
+      internalID: -3832488732968643310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 95d98cfd49501f0429baffbd2a08a368
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

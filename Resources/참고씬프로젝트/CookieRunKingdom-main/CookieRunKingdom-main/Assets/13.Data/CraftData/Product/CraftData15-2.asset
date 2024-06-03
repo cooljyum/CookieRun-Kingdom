@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7689a1324ee504048913ae12b0a08762, type: 3}
+  m_Name: CraftData15-2
+  m_EditorClassIdentifier: 
+  craftImage: {fileID: 21300000, guid: fe35dd5aba18f7041bbef7ea1d752e80, type: 3}
+  craftName: "\uBC84\uD130"
+  isResource: 0
+  craftResult:
+    ingredientItem: {fileID: 11400000, guid: b6160c23c602ffd4cbdae9f54b019eb4, type: 2}
+    count: 1
+  ingredients:
+  - ingredientItem: {fileID: 11400000, guid: 3449a4b49de5c674194524047e8e99be, type: 2}
+    count: 15
+  - ingredientItem: {fileID: 11400000, guid: ab2adc51e993f26409c6602b5d9ed7c9, type: 2}
+    count: 5
+  craftTime: 9000
+  craftCost: 0

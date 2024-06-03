@@ -1,0 +1,104 @@
+
+m10111_emotion.png
+size: 400,1596
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m10111_emotion_angry_body01
+  rotate: false
+  xy: 2, 1246
+  size: 361, 347
+  orig: 361, 347
+  offset: 0, 0
+  index: -1
+m10111_emotion_angry_body02
+  rotate: 180
+  xy: 2, 318
+  size: 281, 209
+  orig: 281, 209
+  offset: 0, 0
+  index: -1
+m10111_emotion_angry_body03
+  rotate: 180
+  xy: 77, 131
+  size: 276, 295
+  orig: 276, 296
+  offset: 0, 1
+  index: -1
+m10111_emotion_angry_eye01
+  rotate: true
+  xy: 294, 1269
+  size: 107, 93
+  orig: 113, 97
+  offset: 3, 2
+  index: -1
+m10111_emotion_angry_eye02
+  rotate: false
+  xy: 110, 3
+  size: 110, 69
+  orig: 115, 73
+  offset: 3, 2
+  index: -1
+m10111_emotion_angry_eyebrow
+  rotate: false
+  xy: 283, 31
+  size: 113, 76
+  orig: 117, 80
+  offset: 2, 2
+  index: -1
+m10111_emotion_angry_mouth02
+  rotate: true
+  xy: 289, 835
+  size: 150, 98
+  orig: 152, 98
+  offset: 0, 0
+  index: -1
+m10111_emotion_default_body01
+  rotate: 180
+  xy: 2, 989
+  size: 361, 291
+  orig: 361, 291
+  offset: 0, 0
+  index: -1
+m10111_emotion_default_body02
+  rotate: 180
+  xy: 37, 521
+  size: 309, 196
+  orig: 309, 196
+  offset: 0, 0
+  index: -1
+m10111_emotion_default_body03
+  rotate: 180
+  xy: 17, 69
+  size: 349, 177
+  orig: 349, 177
+  offset: 0, 0
+  index: -1
+m10111_emotion_default_crown_crown
+  rotate: 180
+  xy: 2, 716
+  size: 294, 276
+  orig: 294, 276
+  offset: 0, 0
+  index: -1
+m10111_emotion_default_eye01
+  rotate: true
+  xy: 285, 427
+  size: 99, 105
+  orig: 103, 109
+  offset: 2, 2
+  index: -1
+m10111_emotion_default_eye02
+  rotate: false
+  xy: 2, 7
+  size: 106, 59
+  orig: 111, 63
+  offset: 2, 2
+  index: -1
+m10111_emotion_default_mouth02
+  rotate: 270
+  xy: 258, 691
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
