@@ -1,0 +1,2215 @@
+fileFormatVersion: 2
+guid: d51484b26ed739e4d8b978888b5460b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1029074013476302106
+    second: worldmap_ep01_0
+  - first:
+      213: -1645614892137622103
+    second: worldmap_ep01_1
+  - first:
+      213: -7887164299843616086
+    second: worldmap_ep01_2
+  - first:
+      213: 8873261671729805006
+    second: worldmap_ep01_3
+  - first:
+      213: 442789300416238992
+    second: worldmap_ep01_7
+  - first:
+      213: 8482792267876640398
+    second: worldmap_ep01_8
+  - first:
+      213: -5074979290545564594
+    second: worldmap_ep01_9
+  - first:
+      213: -810669831602237752
+    second: worldmap_ep01_10
+  - first:
+      213: 2308835621216834045
+    second: worldmap_ep01_11
+  - first:
+      213: 358938924184773210
+    second: worldmap_ep01_12
+  - first:
+      213: -1702893353470587085
+    second: worldmap_ep01_13
+  - first:
+      213: -8269709291115016397
+    second: worldmap_ep01_14
+  - first:
+      213: -9023048360957285057
+    second: worldmap_ep01_15
+  - first:
+      213: 4451538693736601430
+    second: worldmap_ep01_22
+  - first:
+      213: 5445824157017422397
+    second: worldmap_ep01_25
+  - first:
+      213: 3139006080428462771
+    second: worldmap_ep01_27
+  - first:
+      213: -367233579669951313
+    second: worldmap_ep01_28
+  - first:
+      213: -7347690424274656355
+    second: worldmap_ep01_29
+  - first:
+      213: 2376942025946188234
+    second: worldmap_ep01_30
+  - first:
+      213: 8136756766854379621
+    second: worldmap_ep01_31
+  - first:
+      213: 6047118563881593330
+    second: worldmap_ep01_32
+  - first:
+      213: -1664840172301552336
+    second: worldmap_ep01_34
+  - first:
+      213: 2905574751429735634
+    second: worldmap_ep01_38
+  - first:
+      213: -5264773814283231299
+    second: worldmap_ep01_39
+  - first:
+      213: -7680880471161659857
+    second: worldmap_ep01_40
+  - first:
+      213: 6336777122414020529
+    second: worldmap_ep01_45
+  - first:
+      213: -3663695404961977451
+    second: worldmap_ep01_46
+  - first:
+      213: 3487125396720562102
+    second: worldmap_ep01_47
+  - first:
+      213: -6351156196496519586
+    second: worldmap_ep01_56
+  - first:
+      213: -2231635802371385595
+    second: worldmap_ep01_57
+  - first:
+      213: 7060006408200928236
+    second: worldmap_ep01_58
+  - first:
+      213: 8254487218107812207
+    second: worldmap_ep01_59
+  - first:
+      213: -5160737492839228471
+    second: worldmap_ep01_60
+  - first:
+      213: -8068351696093595391
+    second: worldmap_ep01_61
+  - first:
+      213: 2524999851167059443
+    second: worldmap_ep01_62
+  - first:
+      213: 5808711268851267823
+    second: worldmap_ep01_63
+  - first:
+      213: -1856661654525376565
+    second: worldmap_ep01_64
+  - first:
+      213: -6475350919462906905
+    second: worldmap_ep01_65
+  - first:
+      213: -5565143109399973487
+    second: worldmap_ep01_66
+  - first:
+      213: 7607446724987667489
+    second: worldmap_ep01_67
+  - first:
+      213: -318060559670700476
+    second: worldmap_ep01_68
+  - first:
+      213: -831760907892426326
+    second: worldmap_ep01_69
+  - first:
+      213: -34675099554804838
+    second: worldmap_ep01_70
+  - first:
+      213: 7834658948168320913
+    second: worldmap_ep01_71
+  - first:
+      213: -2275196741093149029
+    second: worldmap_ep01_72
+  - first:
+      213: 342311432639838416
+    second: worldmap_ep01_73
+  - first:
+      213: 3181559865527976675
+    second: worldmap_ep01_74
+  - first:
+      213: 9203896539360994926
+    second: worldmap_ep01_75
+  - first:
+      213: 6517530809264275590
+    second: worldmap_ep01_76
+  - first:
+      213: -137240011323803020
+    second: worldmap_ep01_77
+  - first:
+      213: -1517049856049046123
+    second: worldmap_ep01_78
+  - first:
+      213: -8689267331652423999
+    second: worldmap_ep01_79
+  - first:
+      213: -7388349083078793417
+    second: worldmap_ep01_80
+  - first:
+      213: 1653334917210150196
+    second: worldmap_ep01_81
+  - first:
+      213: 890037553371339501
+    second: worldmap_ep01_82
+  - first:
+      213: 6655373483491727716
+    second: worldmap_ep01_83
+  - first:
+      213: -2757361107323207095
+    second: worldmap_ep01_84
+  - first:
+      213: -8216007383024647796
+    second: worldmap_ep01_85
+  - first:
+      213: 8294138173544944647
+    second: worldmap_ep01_86
+  - first:
+      213: -5334984526263971569
+    second: worldmap_ep01_87
+  - first:
+      213: -1896812999561108410
+    second: worldmap_ep01_88
+  - first:
+      213: -8739466645011326749
+    second: worldmap_ep01_89
+  - first:
+      213: 4465319739108315968
+    second: worldmap_ep01_93
+  - first:
+      213: 121544201978565579
+    second: worldmap_ep01_97
+  - first:
+      213: -4448037252235781477
+    second: worldmap_ep01_101
+  - first:
+      213: 3873680761012182460
+    second: worldmap_ep01_102
+  - first:
+      213: -8416263649513095340
+    second: worldmap_ep01_103
+  - first:
+      213: -5577837972105144216
+    second: worldmap_ep01_104
+  - first:
+      213: -6968929074420295351
+    second: worldmap_ep01_105
+  - first:
+      213: -3221521939103082802
+    second: worldmap_ep01_106
+  - first:
+      213: 2123313650319522736
+    second: worldmap_ep01_107
+  - first:
+      213: 4140703123709762740
+    second: worldmap_ep01_108
+  - first:
+      213: -231750003659812336
+    second: worldmap_ep01_109
+  - first:
+      213: -1313758097875365788
+    second: worldmap_ep01_110
+  - first:
+      213: -3735914641758149162
+    second: worldmap_ep01_111
+  - first:
+      213: 6409220479139058903
+    second: worldmap_ep01_112
+  - first:
+      213: -7320937685164185027
+    second: worldmap_ep01_113
+  - first:
+      213: -7010715496626148611
+    second: worldmap_ep01_114
+  - first:
+      213: 3893010459704384533
+    second: worldmap_ep01_115
+  - first:
+      213: 3671090579120187283
+    second: worldmap_ep01_116
+  - first:
+      213: 5039736878407704638
+    second: worldmap_ep01_117
+  - first:
+      213: -7875417924926297961
+    second: worldmap_ep01_4
+  - first:
+      213: -536949300167905146
+    second: worldmap_ep01_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: worldmap_ep01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1783
+        width: 341
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d27dcec51084e00800000000000000
+      internalID: 1029074013476302106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1945
+        width: 88
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a55b0579f99929e0800000000000000
+      internalID: -1645614892137622103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1945
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2cda67bd92b8290800000000000000
+      internalID: -7887164299843616086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_3
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1856
+        width: 235
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec63b865a78242b70800000000000000
+      internalID: 8873261671729805006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_7
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1924
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09557a1d58a152600800000000000000
+      internalID: 442789300416238992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_8
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1924
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86a736bf9ee8b570800000000000000
+      internalID: 8482792267876640398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_9
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1924
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445190493d0299b0800000000000000
+      internalID: -5074979290545564594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_10
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1924
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce0931551cefb4f0800000000000000
+      internalID: -810669831602237752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_11
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1887
+        width: 194
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1d567c3c1aa0020800000000000000
+      internalID: 2308835621216834045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_12
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1882
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a522810cc053bf400800000000000000
+      internalID: 358938924184773210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_13
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1877
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f0300748b1e58e0800000000000000
+      internalID: -1702893353470587085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1784
+        width: 404
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f875be6371c3d80800000000000000
+      internalID: -8269709291115016397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_15
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1784
+        width: 129
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d68f56251b7c280800000000000000
+      internalID: -9023048360957285057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_22
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1858
+        width: 194
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65793105bda07cd30800000000000000
+      internalID: 4451538693736601430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_25
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1786
+        width: 126
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ab344b734739b40800000000000000
+      internalID: 5445824157017422397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_27
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 1804
+        width: 117
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2dab3266dff8b20800000000000000
+      internalID: 3139006080428462771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_28
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1724
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac6d26410357eaf0800000000000000
+      internalID: -367233579669951313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_29
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1720
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93e1952d72c70a90800000000000000
+      internalID: -7347690424274656355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_30
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1660
+        width: 584
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac94834dd289cf020800000000000000
+      internalID: 2376942025946188234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_31
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1716
+        width: 432
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5687c184b219be070800000000000000
+      internalID: 8136756766854379621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_32
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1716
+        width: 127
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f925da7b4eabe350800000000000000
+      internalID: 6047118563881593330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_34
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1765
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0357a2a1fac45e8e0800000000000000
+      internalID: -1664840172301552336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_38
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1725
+        width: 94
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4305f87dca25820800000000000000
+      internalID: 2905574751429735634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1720
+        width: 77
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf9ed02c14cfe6b0800000000000000
+      internalID: -5264773814283231299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_40
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1562
+        width: 114
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e9c2218e7086590800000000000000
+      internalID: -7680880471161659857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 364
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b74f4a1831c0f750800000000000000
+      internalID: 6336777122414020529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_46
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1605
+        width: 654
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ba206b070f72dc0800000000000000
+      internalID: -3663695404961977451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_47
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1585
+        width: 86
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfa5ce9212c46030800000000000000
+      internalID: 3487125396720562102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_56
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1492
+        width: 568
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ecdc2d6192cd7a0800000000000000
+      internalID: -6351156196496519586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_57
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1476
+        width: 616
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5071c9bbf03a701e0800000000000000
+      internalID: -2231635802371385595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_58
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1562
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb3cc83c6e2af160800000000000000
+      internalID: 7060006408200928236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_59
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 1564
+        width: 108
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6981560464dd8270800000000000000
+      internalID: 8254487218107812207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_60
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1496
+        width: 194
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb1740d7906168b0800000000000000
+      internalID: -5160737492839228471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_61
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1496
+        width: 194
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109bb6f51e4770090800000000000000
+      internalID: -8068351696093595391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_62
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1205
+        width: 474
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd0ab29cf99a0320800000000000000
+      internalID: 2524999851167059443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_63
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1320
+        width: 576
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe830b68f10bc9050800000000000000
+      internalID: 5808711268851267823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_64
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1272
+        width: 128
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc70dedef00db36e0800000000000000
+      internalID: -1856661654525376565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_65
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1430
+        width: 194
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e31a6985aee226a0800000000000000
+      internalID: -6475350919462906905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_66
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1370
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1917000d3d3a4c2b0800000000000000
+      internalID: -5565143109399973487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_67
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1428
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124499a8d74139960800000000000000
+      internalID: 7607446724987667489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_68
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1252
+        width: 173
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44614cb2b95069bf0800000000000000
+      internalID: -318060559670700476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_69
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1370
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9f3037cddf474f0800000000000000
+      internalID: -831760907892426326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_70
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 426
+        height: 1196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b0c704e2fc48ff0800000000000000
+      internalID: -34675099554804838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_71
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1045
+        width: 375
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19788e5bdcc4abc60800000000000000
+      internalID: 7834658948168320913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_72
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1153
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9634055e90ec60e0800000000000000
+      internalID: -2275196741093149029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_73
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1152
+        width: 570
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d87d013f6220c400800000000000000
+      internalID: 342311432639838416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_74
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1068
+        width: 128
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e24f6057db272c20800000000000000
+      internalID: 3181559865527976675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_75
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1072
+        width: 144
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e662f02632fcabf70800000000000000
+      internalID: 9203896539360994926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_76
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 644
+        width: 121
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6808cda5dbbe27a50800000000000000
+      internalID: 6517530809264275590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_77
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1166
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47af214dfec681ef0800000000000000
+      internalID: -137240011323803020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_78
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 790
+        width: 536
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d93af813b52fae0800000000000000
+      internalID: -1517049856049046123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_79
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1052
+        width: 49
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce637a4665896780800000000000000
+      internalID: -8689267331652423999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_80
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1072
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737618277af477990800000000000000
+      internalID: -7388349083078793417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_81
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 1078
+        width: 85
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4359f03f853d1f610800000000000000
+      internalID: 1653334917210150196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_82
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 644
+        width: 4
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dead47d607c0a5c00800000000000000
+      internalID: 890037553371339501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_83
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1070
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469141bebe2ac5c50800000000000000
+      internalID: 6655373483491727716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_84
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 765
+        width: 376
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c5889ea2ebb9d0800000000000000
+      internalID: -2757361107323207095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_85
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 840
+        width: 317
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8144deb0d0eafd80800000000000000
+      internalID: -8216007383024647796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_86
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 862
+        width: 118
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704572089b2ba1370800000000000000
+      internalID: 8294138173544944647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_87
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1007
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0194ddd6d356f5b0800000000000000
+      internalID: -5334984526263971569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_88
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 939
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64421db60aa2da5e0800000000000000
+      internalID: -1896812999561108410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_89
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 863
+        width: 44
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e899b9d36d27b680800000000000000
+      internalID: -8739466645011326749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_93
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 780
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043571af4a008fd30800000000000000
+      internalID: 4465319739108315968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_97
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 664
+        width: 260
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3d077cecfcfa100800000000000000
+      internalID: 121544201978565579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_101
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 465
+        width: 428
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a18c09fa56542c0800000000000000
+      internalID: -4448037252235781477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_102
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 486
+        width: 611
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd5565e02412c530800000000000000
+      internalID: 3873680761012182460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_103
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 697
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f3db25dcc633b80800000000000000
+      internalID: -8416263649513095340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_104
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 697
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868dcf1cae98792b0800000000000000
+      internalID: -5577837972105144216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_105
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 577
+        width: 74
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94959460ee3694f90800000000000000
+      internalID: -6968929074420295351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_106
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 496
+        width: 304
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec612af5ddada43d0800000000000000
+      internalID: -3221521939103082802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_107
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 611
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb7802e386877d10800000000000000
+      internalID: 2123313650319522736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_108
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 540
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc12197d8bb67930800000000000000
+      internalID: 4140703123709762740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_109
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 486
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012592b7998a8ccf0800000000000000
+      internalID: -231750003659812336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_110
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 487
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460985778f794cde0800000000000000
+      internalID: -1313758097875365788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_111
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 2
+        width: 472
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d523d25d6d572cc0800000000000000
+      internalID: -3735914641758149162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_112
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 272
+        width: 628
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d41e3a711022f850800000000000000
+      internalID: 6409220479139058903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_113
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 280
+        width: 416
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aa40d96fdc66a90800000000000000
+      internalID: -7320937685164185027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_114
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 4
+        width: 638
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaa542766fe4be90800000000000000
+      internalID: -7010715496626148611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_115
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 8
+        width: 313
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c5f851360c60630800000000000000
+      internalID: 3893010459704384533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_116
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 78
+        width: 74
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397edb27e6552f230800000000000000
+      internalID: 3671090579120187283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_117
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 0
+        width: 94
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e306dee3dfdb0f540800000000000000
+      internalID: 5039736878407704638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1386
+        width: 174
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798260f7f15e4b290800000000000000
+      internalID: -7875417924926297961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: worldmap_ep01_5
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1157
+        width: 133
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680f815d47f5c88f0800000000000000
+      internalID: -536949300167905146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      worldmap_ep01_0: 1029074013476302106
+      worldmap_ep01_1: -1645614892137622103
+      worldmap_ep01_10: -810669831602237752
+      worldmap_ep01_101: -4448037252235781477
+      worldmap_ep01_102: 3873680761012182460
+      worldmap_ep01_103: -8416263649513095340
+      worldmap_ep01_104: -5577837972105144216
+      worldmap_ep01_105: -6968929074420295351
+      worldmap_ep01_106: -3221521939103082802
+      worldmap_ep01_107: 2123313650319522736
+      worldmap_ep01_108: 4140703123709762740
+      worldmap_ep01_109: -231750003659812336
+      worldmap_ep01_11: 2308835621216834045
+      worldmap_ep01_110: -1313758097875365788
+      worldmap_ep01_111: -3735914641758149162
+      worldmap_ep01_112: 6409220479139058903
+      worldmap_ep01_113: -7320937685164185027
+      worldmap_ep01_114: -7010715496626148611
+      worldmap_ep01_115: 3893010459704384533
+      worldmap_ep01_116: 3671090579120187283
+      worldmap_ep01_117: 5039736878407704638
+      worldmap_ep01_12: 358938924184773210
+      worldmap_ep01_13: -1702893353470587085
+      worldmap_ep01_14: -8269709291115016397
+      worldmap_ep01_15: -9023048360957285057
+      worldmap_ep01_2: -7887164299843616086
+      worldmap_ep01_22: 4451538693736601430
+      worldmap_ep01_25: 5445824157017422397
+      worldmap_ep01_27: 3139006080428462771
+      worldmap_ep01_28: -367233579669951313
+      worldmap_ep01_29: -7347690424274656355
+      worldmap_ep01_3: 8873261671729805006
+      worldmap_ep01_30: 2376942025946188234
+      worldmap_ep01_31: 8136756766854379621
+      worldmap_ep01_32: 6047118563881593330
+      worldmap_ep01_34: -1664840172301552336
+      worldmap_ep01_38: 2905574751429735634
+      worldmap_ep01_39: -5264773814283231299
+      worldmap_ep01_4: -7875417924926297961
+      worldmap_ep01_40: -7680880471161659857
+      worldmap_ep01_45: 6336777122414020529
+      worldmap_ep01_46: -3663695404961977451
+      worldmap_ep01_47: 3487125396720562102
+      worldmap_ep01_5: -536949300167905146
+      worldmap_ep01_56: -6351156196496519586
+      worldmap_ep01_57: -2231635802371385595
+      worldmap_ep01_58: 7060006408200928236
+      worldmap_ep01_59: 8254487218107812207
+      worldmap_ep01_60: -5160737492839228471
+      worldmap_ep01_61: -8068351696093595391
+      worldmap_ep01_62: 2524999851167059443
+      worldmap_ep01_63: 5808711268851267823
+      worldmap_ep01_64: -1856661654525376565
+      worldmap_ep01_65: -6475350919462906905
+      worldmap_ep01_66: -5565143109399973487
+      worldmap_ep01_67: 7607446724987667489
+      worldmap_ep01_68: -318060559670700476
+      worldmap_ep01_69: -831760907892426326
+      worldmap_ep01_7: 442789300416238992
+      worldmap_ep01_70: -34675099554804838
+      worldmap_ep01_71: 7834658948168320913
+      worldmap_ep01_72: -2275196741093149029
+      worldmap_ep01_73: 342311432639838416
+      worldmap_ep01_74: 3181559865527976675
+      worldmap_ep01_75: 9203896539360994926
+      worldmap_ep01_76: 6517530809264275590
+      worldmap_ep01_77: -137240011323803020
+      worldmap_ep01_78: -1517049856049046123
+      worldmap_ep01_79: -8689267331652423999
+      worldmap_ep01_8: 8482792267876640398
+      worldmap_ep01_80: -7388349083078793417
+      worldmap_ep01_81: 1653334917210150196
+      worldmap_ep01_82: 890037553371339501
+      worldmap_ep01_83: 6655373483491727716
+      worldmap_ep01_84: -2757361107323207095
+      worldmap_ep01_85: -8216007383024647796
+      worldmap_ep01_86: 8294138173544944647
+      worldmap_ep01_87: -5334984526263971569
+      worldmap_ep01_88: -1896812999561108410
+      worldmap_ep01_89: -8739466645011326749
+      worldmap_ep01_9: -5074979290545564594
+      worldmap_ep01_93: 4465319739108315968
+      worldmap_ep01_97: 121544201978565579
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
