@@ -1,0 +1,6 @@
+key,name,level,hp,attack,defence,critical,type,position,rarity
+1,Brave,1,100,10,5,0.1,0,0,0
+2,Candy,1,200,5,10,0.1,1,0,0
+3,Ninja,1,100,20,5,0.3,2,1,0
+4,Princess,1,150,15,0,0.1,0,0,1
+5,Angel,1,100,10,5,0.1,4,2,0
