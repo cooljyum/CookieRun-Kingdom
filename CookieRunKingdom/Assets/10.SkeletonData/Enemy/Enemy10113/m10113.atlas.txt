@@ -1,0 +1,90 @@
+
+m10113.png
+size: 136,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: true
+  xy: 99, 4
+  size: 32, 31
+  orig: 32, 32
+  offset: 0, 1
+  index: -1
+arm2
+  rotate: true
+  xy: 99, 4
+  size: 32, 31
+  orig: 32, 32
+  offset: 0, 1
+  index: -1
+berry_1
+  rotate: true
+  xy: 87, 78
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: -1
+berry_2
+  rotate: false
+  xy: 99, 38
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 64
+  size: 83, 84
+  orig: 83, 84
+  offset: 0, 0
+  index: -1
+face1
+  rotate: true
+  xy: 87, 112
+  size: 36, 35
+  orig: 36, 35
+  offset: 0, 0
+  index: -1
+face2
+  rotate: true
+  xy: 100, 189
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 2, 150
+  size: 109, 96
+  orig: 109, 96
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 100, 162
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
+leg3
+  rotate: false
+  xy: 100, 162
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 100, 225
+  size: 29, 34
+  orig: 29, 34
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: true
+  xy: 2, 2
+  size: 60, 95
+  orig: 60, 95
+  offset: 0, 0
+  index: -1

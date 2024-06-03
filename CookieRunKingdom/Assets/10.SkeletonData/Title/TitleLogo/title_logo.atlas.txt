@@ -1,0 +1,167 @@
+
+title_logo.png
+size: 1928,756
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+logo_cn_07
+  rotate: true
+  xy: 372, 28
+  size: 723, 192
+  orig: 725, 194
+  offset: 1, 1
+  index: -1
+logo_cn_08
+  rotate: true
+  xy: 566, 43
+  size: 708, 169
+  orig: 708, 169
+  offset: 0, 0
+  index: -1
+logo_cn_back
+  rotate: false
+  xy: 566, 8
+  size: 266, 33
+  orig: 268, 35
+  offset: 1, 1
+  index: -1
+logo_en_02
+  rotate: true
+  xy: 1072, 217
+  size: 534, 148
+  orig: 534, 148
+  offset: 0, 0
+  index: -1
+logo_en_05
+  rotate: false
+  xy: 1443, 565
+  size: 412, 98
+  orig: 414, 100
+  offset: 1, 1
+  index: -1
+logo_en_06
+  rotate: true
+  xy: 1305, 261
+  size: 399, 80
+  orig: 402, 88
+  offset: 1, 7
+  index: -1
+logo_en_06_2
+  rotate: true
+  xy: 1222, 261
+  size: 399, 81
+  orig: 402, 88
+  offset: 1, 1
+  index: -1
+logo_en_07
+  rotate: true
+  xy: 2, 4
+  size: 747, 193
+  orig: 749, 195
+  offset: 1, 1
+  index: -1
+logo_en_08
+  rotate: true
+  xy: 197, 17
+  size: 734, 173
+  orig: 734, 173
+  offset: 0, 0
+  index: -1
+logo_jp_02
+  rotate: true
+  xy: 923, 200
+  size: 551, 147
+  orig: 551, 147
+  offset: 0, 0
+  index: -1
+logo_jp_05
+  rotate: false
+  xy: 1443, 665
+  size: 415, 86
+  orig: 417, 88
+  offset: 1, 1
+  index: -1
+logo_jp_06
+  rotate: true
+  xy: 1857, 260
+  size: 403, 68
+  orig: 405, 77
+  offset: 1, 8
+  index: -1
+logo_jp_06_2
+  rotate: false
+  xy: 1451, 490
+  size: 403, 73
+  orig: 405, 77
+  offset: 1, 1
+  index: -1
+logo_jp_07
+  rotate: true
+  xy: 737, 161
+  size: 590, 184
+  orig: 592, 186
+  offset: 1, 1
+  index: -1
+logo_jp_08
+  rotate: false
+  xy: 864, 2
+  size: 577, 157
+  orig: 577, 157
+  offset: 0, 0
+  index: -1
+logo_kr_01
+  rotate: false
+  xy: 737, 43
+  size: 125, 116
+  orig: 143, 136
+  offset: 9, 11
+  index: -1
+logo_kr_02
+  rotate: false
+  xy: 1443, 5
+  size: 382, 155
+  orig: 382, 161
+  offset: 0, 0
+  index: -1
+logo_kr_03
+  rotate: false
+  xy: 1827, 10
+  size: 95, 123
+  orig: 115, 144
+  offset: 10, 11
+  index: -1
+logo_kr_04
+  rotate: false
+  xy: 1827, 135
+  size: 99, 123
+  orig: 119, 144
+  offset: 10, 11
+  index: -1
+logo_kr_05
+  rotate: false
+  xy: 1222, 162
+  size: 227, 96
+  orig: 247, 116
+  offset: 10, 10
+  index: -1
+logo_kr_06
+  rotate: false
+  xy: 1222, 662
+  size: 219, 89
+  orig: 237, 107
+  offset: 9, 9
+  index: -1
+logo_kr_07
+  rotate: true
+  xy: 1451, 169
+  size: 319, 195
+  orig: 339, 215
+  offset: 10, 10
+  index: -1
+logo_kr_08
+  rotate: true
+  xy: 1648, 178
+  size: 310, 171
+  orig: 328, 189
+  offset: 9, 9
+  index: -1

@@ -1,0 +1,41 @@
+
+building_rollcakewood.png
+size: 632,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_rollcakewood_01
+  rotate: false
+  xy: 544, 118
+  size: 43, 69
+  orig: 43, 69
+  offset: 0, 0
+  index: -1
+building_rollcakewood_03
+  rotate: false
+  xy: 544, 279
+  size: 84, 113
+  orig: 84, 113
+  offset: 0, 0
+  index: -1
+building_rollcakewood_04
+  rotate: false
+  xy: 544, 189
+  size: 77, 88
+  orig: 84, 90
+  offset: 0, 2
+  index: -1
+building_rollcakewood_05
+  rotate: false
+  xy: 2, 2
+  size: 540, 390
+  orig: 540, 408
+  offset: 0, 0
+  index: -1
+working2
+  rotate: false
+  xy: 544, 86
+  size: 42, 30
+  orig: 44, 32
+  offset: 1, 1
+  index: -1

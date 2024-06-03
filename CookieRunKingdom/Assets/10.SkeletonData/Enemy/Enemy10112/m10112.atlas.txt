@@ -1,0 +1,90 @@
+
+m10112.png
+size: 236,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 120, 37
+  size: 32, 31
+  orig: 32, 32
+  offset: 0, 1
+  index: -1
+arm2
+  rotate: false
+  xy: 120, 37
+  size: 32, 31
+  orig: 32, 32
+  offset: 0, 1
+  index: -1
+berry_1
+  rotate: true
+  xy: 2, 11
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: -1
+berry_2
+  rotate: false
+  xy: 47, 5
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 100, 70
+  size: 83, 84
+  orig: 83, 84
+  offset: 0, 0
+  index: -1
+face1
+  rotate: true
+  xy: 83, 7
+  size: 36, 35
+  orig: 36, 35
+  offset: 0, 0
+  index: -1
+face2
+  rotate: false
+  xy: 147, 5
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 2, 45
+  size: 109, 96
+  orig: 109, 96
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: true
+  xy: 120, 2
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
+leg3
+  rotate: true
+  xy: 120, 2
+  size: 33, 25
+  orig: 33, 25
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 154, 34
+  size: 29, 34
+  orig: 29, 34
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 185, 13
+  size: 48, 141
+  orig: 48, 141
+  offset: 0, 0
+  index: -1

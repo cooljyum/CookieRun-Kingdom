@@ -1,0 +1,83 @@
+
+building_dairy.png
+size: 616,428
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_dairy_01
+  rotate: true
+  xy: 587, 110
+  size: 44, 25
+  orig: 44, 25
+  offset: 0, 0
+  index: -1
+building_dairy_02
+  rotate: false
+  xy: 544, 156
+  size: 43, 54
+  orig: 43, 54
+  offset: 0, 0
+  index: -1
+building_dairy_03
+  rotate: true
+  xy: 589, 171
+  size: 39, 25
+  orig: 39, 25
+  offset: 0, 0
+  index: -1
+building_dairy_04
+  rotate: true
+  xy: 544, 212
+  size: 66, 45
+  orig: 66, 45
+  offset: 0, 0
+  index: -1
+building_dairy_05
+  rotate: true
+  xy: 591, 218
+  size: 60, 20
+  orig: 60, 20
+  offset: 0, 0
+  index: -1
+building_dairy_06
+  rotate: false
+  xy: 544, 280
+  size: 46, 78
+  orig: 46, 78
+  offset: 0, 0
+  index: -1
+building_dairy_07
+  rotate: true
+  xy: 544, 36
+  size: 118, 41
+  orig: 118, 41
+  offset: 0, 0
+  index: -1
+building_dairy_08
+  rotate: false
+  xy: 589, 159
+  size: 21, 10
+  orig: 21, 10
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: true
+  xy: 544, 360
+  size: 63, 60
+  orig: 63, 60
+  offset: 0, 0
+  index: -1
+layer_02
+  rotate: false
+  xy: 2, 2
+  size: 540, 421
+  orig: 540, 421
+  offset: 0, 0
+  index: -1
+working
+  rotate: false
+  xy: 544, 4
+  size: 41, 30
+  orig: 42, 31
+  offset: 1, 0
+  index: -1

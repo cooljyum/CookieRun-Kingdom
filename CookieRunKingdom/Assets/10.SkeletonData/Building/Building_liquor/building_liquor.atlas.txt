@@ -1,0 +1,48 @@
+
+building_liquor.png
+size: 604,420
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+building_liquor_chimney
+  rotate: false
+  xy: 544, 322
+  size: 55, 95
+  orig: 55, 95
+  offset: 0, 0
+  index: -1
+building_liquor_chimney_in
+  rotate: false
+  xy: 544, 153
+  size: 24, 13
+  orig: 24, 13
+  offset: 0, 0
+  index: -1
+building_liquor_chimney_ol
+  rotate: false
+  xy: 544, 260
+  size: 50, 60
+  orig: 50, 60
+  offset: 0, 0
+  index: -1
+building_liquor_chimney_up
+  rotate: true
+  xy: 544, 201
+  size: 57, 49
+  orig: 57, 49
+  offset: 0, 0
+  index: -1
+layer_01
+  rotate: false
+  xy: 2, 2
+  size: 540, 415
+  orig: 540, 415
+  offset: 0, 0
+  index: -1
+working
+  rotate: false
+  xy: 544, 168
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1

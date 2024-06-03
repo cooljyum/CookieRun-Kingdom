@@ -1,0 +1,342 @@
+
+cookie0502.png
+size: 1336,272
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+J_1
+  rotate: true
+  xy: 1153, 88
+  size: 51, 52
+  orig: 51, 53
+  offset: 0, 0
+  index: -1
+J_2
+  rotate: true
+  xy: 1291, 219
+  size: 51, 41
+  orig: 51, 42
+  offset: 0, 0
+  index: -1
+Layer 17
+  rotate: false
+  xy: 1254, 55
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+TownCookieShadow
+  rotate: true
+  xy: 762, 12
+  size: 110, 69
+  orig: 117, 75
+  offset: 2, 4
+  index: -1
+arm_up
+  rotate: true
+  xy: 1142, 3
+  size: 47, 63
+  orig: 47, 63
+  offset: 0, 0
+  index: -1
+arm_up2
+  rotate: false
+  xy: 561, 6
+  size: 48, 87
+  orig: 48, 87
+  offset: 0, 0
+  index: -1
+arm_up3
+  rotate: false
+  xy: 671, 3
+  size: 55, 93
+  orig: 55, 93
+  offset: 0, 0
+  index: -1
+axe
+  rotate: false
+  xy: 611, 2
+  size: 58, 94
+  orig: 142, 142
+  offset: 45, 4
+  index: -1
+body
+  rotate: false
+  xy: 342, 9
+  size: 69, 79
+  orig: 69, 83
+  offset: 0, 0
+  index: -1
+body_back
+  rotate: true
+  xy: 1035, 47
+  size: 92, 66
+  orig: 92, 69
+  offset: 0, 0
+  index: -1
+body_cloath
+  rotate: false
+  xy: 59, 65
+  size: 12, 12
+  orig: 14, 14
+  offset: 1, 1
+  index: -1
+broom
+  rotate: false
+  xy: 2, 49
+  size: 55, 221
+  orig: 55, 221
+  offset: 0, 0
+  index: -1
+face_default_BOTTOM_1
+  rotate: false
+  xy: 850, 127
+  size: 30, 12
+  orig: 30, 12
+  offset: 0, 0
+  index: -1
+face_default_MID_1_2
+  rotate: false
+  xy: 936, 2
+  size: 72, 32
+  orig: 72, 32
+  offset: 0, 0
+  index: -1
+face_eat_mid
+  rotate: false
+  xy: 1207, 140
+  size: 71, 33
+  orig: 71, 33
+  offset: 0, 0
+  index: -1
+face_hang_MID
+  rotate: true
+  xy: 413, 4
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+face_happy_MID_4
+  rotate: false
+  xy: 1010, 2
+  size: 72, 32
+  orig: 72, 32
+  offset: 0, 0
+  index: -1
+face_lie_MID_3
+  rotate: false
+  xy: 1181, 54
+  size: 71, 32
+  orig: 71, 32
+  offset: 0, 0
+  index: -1
+face_pick_mid2
+  rotate: false
+  xy: 1024, 141
+  size: 71, 32
+  orig: 71, 32
+  offset: 0, 0
+  index: -1
+face_pick_mid3
+  rotate: false
+  xy: 1097, 141
+  size: 71, 32
+  orig: 71, 32
+  offset: 0, 0
+  index: -1
+face_touch_mid
+  rotate: false
+  xy: 950, 141
+  size: 72, 32
+  orig: 72, 32
+  offset: 0, 0
+  index: -1
+hammer
+  rotate: false
+  xy: 850, 141
+  size: 98, 129
+  orig: 170, 227
+  offset: 36, 8
+  index: -1
+hand
+  rotate: true
+  xy: 1153, 52
+  size: 34, 26
+  orig: 34, 26
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: true
+  xy: 362, 90
+  size: 180, 114
+  orig: 180, 114
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: true
+  xy: 478, 95
+  size: 175, 111
+  orig: 175, 111
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: true
+  xy: 211, 90
+  size: 180, 149
+  orig: 180, 149
+  offset: 0, 0
+  index: -1
+hat_back
+  rotate: true
+  xy: 591, 98
+  size: 172, 122
+  orig: 172, 122
+  offset: 0, 0
+  index: -1
+hat_in
+  rotate: true
+  xy: 214, 2
+  size: 86, 51
+  orig: 86, 51
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 833, 14
+  size: 108, 101
+  orig: 108, 101
+  offset: 0, 0
+  index: -1
+head_black
+  rotate: true
+  xy: 936, 36
+  size: 103, 97
+  orig: 103, 97
+  offset: 0, 0
+  index: -1
+interactiondeco_cookie0502
+  rotate: false
+  xy: 950, 175
+  size: 339, 95
+  orig: 341, 98
+  offset: 1, 1
+  index: -1
+mush01
+  rotate: true
+  xy: 1207, 89
+  size: 49, 59
+  orig: 49, 59
+  offset: 0, 0
+  index: -1
+mush02
+  rotate: true
+  xy: 1207, 3
+  size: 49, 59
+  orig: 49, 59
+  offset: 0, 0
+  index: -1
+mush_body
+  rotate: true
+  xy: 413, 15
+  size: 73, 95
+  orig: 73, 95
+  offset: 0, 0
+  index: -1
+mush_hat
+  rotate: true
+  xy: 59, 79
+  size: 191, 150
+  orig: 191, 151
+  offset: 0, 0
+  index: -1
+n2_arm_1
+  rotate: true
+  xy: 1268, 91
+  size: 47, 35
+  orig: 47, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_1
+  rotate: true
+  xy: 1291, 161
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_2
+  rotate: false
+  xy: 1084, 10
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_arm_2_3
+  rotate: false
+  xy: 1268, 18
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+n2_arm_hand
+  rotate: true
+  xy: 1170, 143
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: -1
+pickax
+  rotate: false
+  xy: 715, 124
+  size: 133, 146
+  orig: 211, 215
+  offset: 43, 10
+  index: -1
+shadow
+  rotate: false
+  xy: 510, 2
+  size: 49, 91
+  orig: 50, 91
+  offset: 0, 0
+  index: -1
+skirt_down
+  rotate: true
+  xy: 1103, 52
+  size: 87, 48
+  orig: 87, 48
+  offset: 0, 0
+  index: -1
+skirt_down2
+  rotate: true
+  xy: 293, 7
+  size: 81, 47
+  orig: 82, 50
+  offset: 1, 2
+  index: -1
+straw
+  rotate: false
+  xy: 728, 3
+  size: 32, 119
+  orig: 98, 169
+  offset: 33, 26
+  index: -1
+vest01
+  rotate: true
+  xy: 2, 6
+  size: 41, 85
+  orig: 41, 85
+  offset: 0, 0
+  index: -1
+vest02
+  rotate: false
+  xy: 267, 3
+  size: 24, 85
+  orig: 24, 85
+  offset: 0, 0
+  index: -1
+wateringcan
+  rotate: false
+  xy: 89, 2
+  size: 123, 75
+  orig: 177, 127
+  offset: 17, 22
+  index: -1
