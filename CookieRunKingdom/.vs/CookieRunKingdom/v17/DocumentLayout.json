@@ -10,16 +10,20 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\git\\cookierun-kingdom\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\manager\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\manager\\battlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\git\\cookierun-kingdom\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|c:\\git\\cookierun-kingdom\\cookierun-kingdom\\cookierunkingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|solutionrelative:assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,8 +33,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CharacterData.cs",
+              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:12:52.797Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -39,7 +55,7 @@
               "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\DataManager.cs",
               "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\DataManager.cs",
               "RelativeToolTip": "Assets\\2.Scripts\\Manager\\DataManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvxAAAAAFAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAUwDEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T05:11:26.569Z",
               "EditorCaption": ""
@@ -54,12 +70,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T05:11:05.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T05:11:05.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BattleManager.cs",
               "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs",
               "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\BattleManager.cs",
@@ -72,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\GameManager.cs",
@@ -80,12 +95,11 @@
               "RelativeToolTip": "Assets\\2.Scripts\\Manager\\GameManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T04:42:18.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T04:42:18.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "SpinePreferences.cs",
               "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "RelativeDocumentMoniker": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
@@ -93,8 +107,7 @@
               "RelativeToolTip": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "ViewState": "AQIAAGkAAAAAAAAAAADgv3gAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T14:42:21.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T14:42:21.637Z"
             }
           ]
         },

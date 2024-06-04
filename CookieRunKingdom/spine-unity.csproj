@@ -107,8 +107,8 @@
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowSkeletonUtilityRootRotation.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Json.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityConstraint.cs" />
-    <Compile Include="Assets\11.Spine\Runtime\spine-csharp\IUpdatable.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\SpineAttributes.cs" />
+    <Compile Include="Assets\11.Spine\Runtime\spine-csharp\IUpdatable.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Utility\TimelineExtensions.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs" />
@@ -143,8 +143,8 @@
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Animation.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
-    <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+    <Compile Include="Assets\11.Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-csharp\MathUtils.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Utility\MaterialChecks.cs" />
     <Compile Include="Assets\11.Spine\Runtime\spine-unity\Utility\SkinUtilities.cs" />
