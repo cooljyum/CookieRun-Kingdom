@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class BattleManager : Singleton<BattleManager>
 {
+    [Header ("BattleCookie")]
     [SerializeField]
     private List<int> _battleCookieKeys = new List<int>(); // 배틀 쿠키 키 리스트
 
     [SerializeField]
     private List<GameObject> _battleCookies = new List<GameObject>(); // 배틀 쿠키 리스트
 
+    
     private void Start()
     {
         CreateBattle(); // 배틀 오브젝트 생성 함수 호출
@@ -56,15 +58,14 @@ public class BattleManager : Singleton<BattleManager>
         {
             int key = _battleCookieKeys[i];
 
-                _battleCookies[i].SetActive(true); // 각 배틀 쿠키 활성화
-                SkeletonDataAsset skeletonDataAsset = CookieSkeletonManager.Instance.GetSkeletonData(key);
-                SkeletonAnimation skeletonAnimation = _battleCookies[i].GetComponentInChildren<SkeletonAnimation>();
-                if (skeletonAnimation != null && skeletonDataAsset != null)
-                {
-                    skeletonAnimation.skeletonDataAsset = skeletonDataAsset;
-                    skeletonAnimation.Initialize(true); // 새로운 SkeletonDataAsset을 적용하기 위해 초기화
-                }
-
+            _battleCookies[i].SetActive(true); // 각 배틀 쿠키 활성화
+            CharacterData characterData = DataManager.Instance.GetCharacterData(key);
+            SkeletonAnimation skeletonAnimation = _battleCookies[i].GetComponentInChildren<SkeletonAnimation>();
+            if (skeletonAnimation != null && characterData.SkeletonDataAsset != null)
+            {
+                skeletonAnimation.skeletonDataAsset = characterData.SkeletonDataAsset;
+                skeletonAnimation.Initialize(true); // 새로운 SkeletonDataAsset을 적용하기 위해 초기화
+            }
         }
     }
 }

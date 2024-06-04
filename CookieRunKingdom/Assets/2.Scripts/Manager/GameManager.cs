@@ -12,10 +12,9 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         DontDestroyOnLoad(this);
-    }
 
-    private void Start()
-    {
+        //Load Manager 
         DataManager.Instance.LoadData();
     }
+
 }

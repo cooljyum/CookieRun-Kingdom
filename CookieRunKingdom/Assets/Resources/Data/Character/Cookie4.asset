@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642c55870301d914683bb17306016302, type: 3}
-  m_Name: Cookie1
+  m_Name: Cookie4
   m_EditorClassIdentifier: 
-  Key: 1
-  Name: "\uC6A9\uAC10\uD55C\uCFE0\uD0A4"
+  Key: 4
+  Name: "\uACF5\uC8FC\uB9DB\uCFE0\uD0A4"
   Level: 1
-  Hp: 100
-  Attack: 10
-  Defence: 5
+  Hp: 150
+  Attack: 15
+  Defence: 0
   Critical: 0.1
   Type: 0
   Position: 0
-  Rarity: 0
-  SkeletonDataAsset: {fileID: 11400000, guid: f47a014c9f4f4af42b9237caec4a4abf, type: 2}
+  Rarity: 1
+  SkeletonDataAsset: {fileID: 11400000, guid: eec816ba041f8904c9858e4261de9cb4, type: 2}

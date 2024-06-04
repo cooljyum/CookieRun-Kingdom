@@ -1,68 +1,46 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class DataManager : Singleton<DataManager>
-{   
-
-    private Dictionary<int, CharacterData> characterDatas = new Dictionary<int, CharacterData>();
+{
+    private Dictionary<int, CharacterData> _characterDatas = new Dictionary<int, CharacterData>();
 
     public CharacterData GetCharacterData(int key)
     {
-        return characterDatas[key];
+        if (_characterDatas.ContainsKey(key))
+        {
+            return _characterDatas[key];
+        }
+        else
+        {
+            Debug.LogWarning("CharacterData with key " + key + " not found.");
+            return null;
+        }
     }
 
     public void LoadData()
     {
+        print("=== DataManager::LoadData() ===");
         LoadCookieCharacterTable();
     }
 
     private void LoadCookieCharacterTable()
     {
-        TextAsset textAsset = Resources.Load<TextAsset>("TextData/CookieCharacterTable");
+        _characterDatas.Clear();
+        CharacterData[] characterDataArray = Resources.LoadAll<CharacterData>("Data/Character");
 
-        string temp = textAsset.text.Replace("\r\n", "\n");
-
-        string[] str = temp.Split('\n');
-
-        print("===== DataManager::LoadCookieCharacterTable() =====");
-
-        for (int i = 1; i < str.Length; i++)
+        foreach (CharacterData data in characterDataArray)
         {
-            if (str[i].Length == 0)
-                return;
-
-            string[] data = str[i].Split(',');
-
-            CharacterData characterData;
-/*            characterData.Key = int.Parse(data[0]);
-            characterData.Name = data[1];
-            characterData.Level = int.Parse(data[2]);
-            characterData.Hp = float.Parse(data[3]);            
-            characterData.Attack = float.Parse(data[4]);            
-            characterData.Defence = float.Parse(data[5]);            
-            characterData.Critical = float.Parse(data[6]);            
-            characterData.Type = int.Parse(data[7]);            
-            characterData.Position = int.Parse(data[8]);            
-            characterData.Rarity = int.Parse(data[9]);            
-
-            characterDatas.Add(characterData.Key, characterData);
-
-            //PrintData
-            print("{ Key: "+ characterData.Key 
-                + ",Name:" + characterData.Name 
-                + ",Level:" + characterData.Level 
-                + ",Hp:" + characterData.Hp 
-                + ",Attack:" + characterData.Attack 
-                + ",Defence:" + characterData.Defence 
-                + ",Critical:" + characterData.Critical 
-                + ",Type:" + characterData.Type 
-                + ",Position:" + characterData.Position 
-                + ",Rarity:" + characterData.Rarity 
-                + "}");*/
+            if (!_characterDatas.ContainsKey(data.Key))
+            {
+                _characterDatas.Add(data.Key, data);
+            }
+            else
+            {
+                Debug.LogWarning("Duplicate CharacterData Name: " + data.Name);
+            }
         }
-
-        print("==========================================");
     }
 }

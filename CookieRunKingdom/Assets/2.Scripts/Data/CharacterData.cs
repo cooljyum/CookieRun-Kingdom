@@ -16,5 +16,5 @@ public class CharacterData : ScriptableObject
     public int Type;
     public int Position;
     public int Rarity;
-    public SkeletonDataAsset skeletonDataAsset;
+    public SkeletonDataAsset SkeletonDataAsset;
 }
