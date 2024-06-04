@@ -1,0 +1,521 @@
+fileFormatVersion: 2
+guid: 0252f3d3516ca42489ac3026f134bce0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2178098878525660813
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_0
+  - first:
+      213: 4560445336861601976
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_1
+  - first:
+      213: -1260671648334343693
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_2
+  - first:
+      213: -193288521237017700
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_3
+  - first:
+      213: 4794747831215412731
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_4
+  - first:
+      213: 7833268406465392434
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_5
+  - first:
+      213: -5019916360289206846
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_6
+  - first:
+      213: 5735966836226761558
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_7
+  - first:
+      213: -2013071727232315552
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_8
+  - first:
+      213: 3075173273847109
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_9
+  - first:
+      213: 8306032007068576067
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_10
+  - first:
+      213: -4376864825212452181
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_11
+  - first:
+      213: -7841709484605977413
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_12
+  - first:
+      213: -4971168552348910329
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_13
+  - first:
+      213: 5270226845863150957
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_14
+  - first:
+      213: 7597718371591015908
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_15
+  - first:
+      213: -8872644895023902989
+    second: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 258
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3712dcb2c96d5c1e0800000000000000
+      internalID: -2178098878525660813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 299
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0f8312fd4f94f30800000000000000
+      internalID: 4560445336861601976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 877
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f110aea0d1318ee0800000000000000
+      internalID: -1260671648334343693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 581
+        width: 214
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc1803d1d415df0800000000000000
+      internalID: -193288521237017700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 793
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf55b23bfbd5a8240800000000000000
+      internalID: 4794747831215412731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 580
+        width: 204
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fe8adfc1c55bc60800000000000000
+      internalID: 7833268406465392434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 300
+        width: 278
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd3acebaaca55ab0800000000000000
+      internalID: -5019916360289206846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 428
+        width: 111
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653a7b4727f3a9f40800000000000000
+      internalID: 5735966836226761558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 363
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f8fe60ee12014e0800000000000000
+      internalID: -2013071727232315552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 294
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5454c929adcea0000800000000000000
+      internalID: 3075173273847109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 285
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349e85a6a14f44370800000000000000
+      internalID: 8306032007068576067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 260
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbccf3a55c6ac2390800000000000000
+      internalID: -7841709484605977413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 140
+        width: 136
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d76ae3a8cd20bb0800000000000000
+      internalID: -4971168552348910329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 144
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658669b46b932940800000000000000
+      internalID: 5270226845863150957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 182
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fecaed2a780ed480800000000000000
+      internalID: -8872644895023902989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_0: -2178098878525660813
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_1: 4560445336861601976
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_10: 8306032007068576067
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_12: -7841709484605977413
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_13: -4971168552348910329
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_14: 5270226845863150957
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_16: -8872644895023902989
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_2: -1260671648334343693
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_3: -193288521237017700
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_4: 4794747831215412731
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_5: 7833268406465392434
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_6: -5019916360289206846
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_7: 5735966836226761558
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_8: -2013071727232315552
+      sactx-512x1024-ETC2-TownEditSpriteAtlas-b11f2e6a #6070_9: 3075173273847109
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

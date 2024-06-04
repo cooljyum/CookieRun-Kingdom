@@ -1,0 +1,1083 @@
+fileFormatVersion: 2
+guid: b065820abd14709438b3cb21e85b0901
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3708819161161470934
+    second: userkingdom_distant_bg_tex_0
+  - first:
+      213: 7537401367622599842
+    second: userkingdom_distant_bg_tex_1
+  - first:
+      213: 7059789029186296873
+    second: userkingdom_distant_bg_tex_2
+  - first:
+      213: 8872711180041281611
+    second: userkingdom_distant_bg_tex_3
+  - first:
+      213: -8451326774847140099
+    second: userkingdom_distant_bg_tex_4
+  - first:
+      213: -8287581860921720735
+    second: userkingdom_distant_bg_tex_5
+  - first:
+      213: -5367221723011383046
+    second: userkingdom_distant_bg_tex_6
+  - first:
+      213: -2564393906830181452
+    second: userkingdom_distant_bg_tex_7
+  - first:
+      213: -2720270554426765708
+    second: userkingdom_distant_bg_tex_8
+  - first:
+      213: 8693327131627358479
+    second: userkingdom_distant_bg_tex_9
+  - first:
+      213: -4217328836452909675
+    second: userkingdom_distant_bg_tex_10
+  - first:
+      213: -1877451695854411926
+    second: userkingdom_distant_bg_tex_11
+  - first:
+      213: 7940905841574862211
+    second: userkingdom_distant_bg_tex_12
+  - first:
+      213: -5875820899136882831
+    second: userkingdom_distant_bg_tex_13
+  - first:
+      213: 3894600067480944259
+    second: userkingdom_distant_bg_tex_14
+  - first:
+      213: 7125574349181486689
+    second: userkingdom_distant_bg_tex_15
+  - first:
+      213: 5433992342430420930
+    second: userkingdom_distant_bg_tex_16
+  - first:
+      213: -6000007054895136265
+    second: userkingdom_distant_bg_tex_17
+  - first:
+      213: -7811299421829608632
+    second: userkingdom_distant_bg_tex_18
+  - first:
+      213: 2004711257896258185
+    second: userkingdom_distant_bg_tex_19
+  - first:
+      213: 8895295817665541786
+    second: userkingdom_distant_bg_tex_20
+  - first:
+      213: -8340185738352031220
+    second: userkingdom_distant_bg_tex_21
+  - first:
+      213: 5405732574332284680
+    second: userkingdom_distant_bg_tex_22
+  - first:
+      213: -7281297422007175639
+    second: userkingdom_distant_bg_tex_23
+  - first:
+      213: 852380655307380564
+    second: userkingdom_distant_bg_tex_24
+  - first:
+      213: -8355280868401011893
+    second: userkingdom_distant_bg_tex_25
+  - first:
+      213: -8376354460406474990
+    second: userkingdom_distant_bg_tex_26
+  - first:
+      213: -371799347983949793
+    second: userkingdom_distant_bg_tex_27
+  - first:
+      213: 315469301967708663
+    second: userkingdom_distant_bg_tex_28
+  - first:
+      213: -1968213028068096879
+    second: userkingdom_distant_bg_tex_29
+  - first:
+      213: 5223384554070793372
+    second: userkingdom_distant_bg_tex_30
+  - first:
+      213: 8854217899895856186
+    second: userkingdom_distant_bg_tex_31
+  - first:
+      213: 4014148323905457112
+    second: userkingdom_distant_bg_tex_32
+  - first:
+      213: 5848898529874165820
+    second: userkingdom_distant_bg_tex_33
+  - first:
+      213: 6496724060981369771
+    second: userkingdom_distant_bg_tex_34
+  - first:
+      213: -5648716807750609008
+    second: userkingdom_distant_bg_tex_35
+  - first:
+      213: 4511983545010598587
+    second: userkingdom_distant_bg_tex_36
+  - first:
+      213: -1856550378376952683
+    second: userkingdom_distant_bg_tex_37
+  - first:
+      213: -6197368196433618267
+    second: userkingdom_distant_bg_tex_38
+  - first:
+      213: 6140435684796559524
+    second: userkingdom_distant_bg_tex_39
+  - first:
+      213: -5655351022182572400
+    second: userkingdom_distant_bg_tex_40
+  - first:
+      213: 4473710671461799586
+    second: userkingdom_distant_bg_tex_41
+  - first:
+      213: 1988546135640622444
+    second: userkingdom_distant_bg_tex_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1975
+        width: 84
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3113d706f587330800000000000000
+      internalID: 3708819161161470934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1922
+        width: 198
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a440b6eb9a3a9860800000000000000
+      internalID: 7537401367622599842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1163
+        width: 231
+        height: 742
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c59d9b7b869f160800000000000000
+      internalID: 7059789029186296873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1830
+        width: 287
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b406ff00fc3322b70800000000000000
+      internalID: 8872711180041281611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1164
+        width: 241
+        height: 756
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe0d78431bd6ba80800000000000000
+      internalID: -8451326774847140099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_5
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1776
+        width: 223
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1604accf4389cfc80800000000000000
+      internalID: -8287581860921720735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_6
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1777
+        width: 78
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af08529974cc385b0800000000000000
+      internalID: -5367221723011383046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_9
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1176
+        width: 184
+        height: 564
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f090aec87f6e4a870800000000000000
+      internalID: 8693327131627358479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1580
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f94a931a3f1f5e0800000000000000
+      internalID: -1877451695854411926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_12
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1093
+        width: 104
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dd4e94ac3c33e60800000000000000
+      internalID: 7940905841574862211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_13
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1119
+        width: 322
+        height: 709
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177312f0604e47ea0800000000000000
+      internalID: -5875820899136882831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_14
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1332
+        width: 228
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ef96c70266c0630800000000000000
+      internalID: 3894600067480944259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_15
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1195
+        width: 261
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166099f1e1023e260800000000000000
+      internalID: 7125574349181486689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_16
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1152
+        width: 216
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf02c2be3b696b40800000000000000
+      internalID: 5433992342430420930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_17
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1212
+        width: 131
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1432b7f51bbbca0800000000000000
+      internalID: -6000007054895136265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_19
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1042
+        width: 260
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a0224844a22db10800000000000000
+      internalID: 2004711257896258185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_20
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1151
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96f8f7ba60727b70800000000000000
+      internalID: 8895295817665541786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_21
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1011
+        width: 133
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a8fb85245b14c80800000000000000
+      internalID: -8340185738352031220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 737
+        width: 786
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f65d3b225050b40800000000000000
+      internalID: 5405732574332284680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_24
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1008
+        width: 220
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457d20d90b344db00800000000000000
+      internalID: 852380655307380564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_25
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 742
+        width: 233
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43275081541c0c80800000000000000
+      internalID: -8355280868401011893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_26
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 747
+        width: 129
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21796b28ff531cb80800000000000000
+      internalID: -8376354460406474990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_27
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 754
+        width: 108
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10e1bf767a17daf0800000000000000
+      internalID: -371799347983949793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_29
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 788
+        width: 392
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19484b3dda08fa4e0800000000000000
+      internalID: -1968213028068096879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_30
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 800
+        width: 364
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cd6a6c3903d7840800000000000000
+      internalID: 5223384554070793372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_31
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 788
+        width: 92
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c923fa44080ea70800000000000000
+      internalID: 8854217899895856186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 509
+        width: 1049
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db4d1af1ae15b730800000000000000
+      internalID: 4014148323905457112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_33
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 510
+        width: 263
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30447069367b2150800000000000000
+      internalID: 5848898529874165820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_34
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 509
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab1782cc10092a50800000000000000
+      internalID: 6496724060981369771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_35
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 452
+        width: 584
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0971f35ddf9bb91b0800000000000000
+      internalID: -5648716807750609008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 1367
+        height: 503
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2b3c0f029cd9e30800000000000000
+      internalID: 4511983545010598587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_37
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 8
+        width: 577
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594893d64453c36e0800000000000000
+      internalID: -1856550378376952683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_38
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 4
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa554dd5768ef9a0800000000000000
+      internalID: -6197368196433618267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_39
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 4
+        width: 17
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a07e6ec8b5373550800000000000000
+      internalID: 6140435684796559524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_40
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 4
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e5aaa65382481b0800000000000000
+      internalID: -5655351022182572400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_41
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1479
+        width: 147
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6da582720d51e30800000000000000
+      internalID: 4473710671461799586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: userkingdom_distant_bg_tex_42
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1090
+        width: 141
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65c552bc2cb89b10800000000000000
+      internalID: 1988546135640622444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      userkingdom_distant_bg_tex_0: 3708819161161470934
+      userkingdom_distant_bg_tex_1: 7537401367622599842
+      userkingdom_distant_bg_tex_11: -1877451695854411926
+      userkingdom_distant_bg_tex_12: 7940905841574862211
+      userkingdom_distant_bg_tex_13: -5875820899136882831
+      userkingdom_distant_bg_tex_14: 3894600067480944259
+      userkingdom_distant_bg_tex_15: 7125574349181486689
+      userkingdom_distant_bg_tex_16: 5433992342430420930
+      userkingdom_distant_bg_tex_17: -6000007054895136265
+      userkingdom_distant_bg_tex_19: 2004711257896258185
+      userkingdom_distant_bg_tex_2: 7059789029186296873
+      userkingdom_distant_bg_tex_20: 8895295817665541786
+      userkingdom_distant_bg_tex_21: -8340185738352031220
+      userkingdom_distant_bg_tex_22: 5405732574332284680
+      userkingdom_distant_bg_tex_24: 852380655307380564
+      userkingdom_distant_bg_tex_25: -8355280868401011893
+      userkingdom_distant_bg_tex_26: -8376354460406474990
+      userkingdom_distant_bg_tex_27: -371799347983949793
+      userkingdom_distant_bg_tex_29: -1968213028068096879
+      userkingdom_distant_bg_tex_3: 8872711180041281611
+      userkingdom_distant_bg_tex_30: 5223384554070793372
+      userkingdom_distant_bg_tex_31: 8854217899895856186
+      userkingdom_distant_bg_tex_32: 4014148323905457112
+      userkingdom_distant_bg_tex_33: 5848898529874165820
+      userkingdom_distant_bg_tex_34: 6496724060981369771
+      userkingdom_distant_bg_tex_35: -5648716807750609008
+      userkingdom_distant_bg_tex_36: 4511983545010598587
+      userkingdom_distant_bg_tex_37: -1856550378376952683
+      userkingdom_distant_bg_tex_38: -6197368196433618267
+      userkingdom_distant_bg_tex_39: 6140435684796559524
+      userkingdom_distant_bg_tex_4: -8451326774847140099
+      userkingdom_distant_bg_tex_40: -5655351022182572400
+      userkingdom_distant_bg_tex_41: 4473710671461799586
+      userkingdom_distant_bg_tex_42: 1988546135640622444
+      userkingdom_distant_bg_tex_5: -8287581860921720735
+      userkingdom_distant_bg_tex_6: -5367221723011383046
+      userkingdom_distant_bg_tex_9: 8693327131627358479
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
