@@ -2,19 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct CharacterData
-{
-    public int Key;
-    public string Name;
-    public int Level;
-    public float Hp;
-    public float Attack;
-    public float Defence;
-    public float Critical;
-    public int Type;
-    public int Position;
-    public int Rarity;
-}
 
 public class DataManager : Singleton<DataManager>
 {   
@@ -49,7 +36,7 @@ public class DataManager : Singleton<DataManager>
             string[] data = str[i].Split(',');
 
             CharacterData characterData;
-            characterData.Key = int.Parse(data[0]);
+/*            characterData.Key = int.Parse(data[0]);
             characterData.Name = data[1];
             characterData.Level = int.Parse(data[2]);
             characterData.Hp = float.Parse(data[3]);            
@@ -73,7 +60,7 @@ public class DataManager : Singleton<DataManager>
                 + ",Type:" + characterData.Type 
                 + ",Position:" + characterData.Position 
                 + ",Rarity:" + characterData.Rarity 
-                + "}");
+                + "}");*/
         }
 
         print("==========================================");
