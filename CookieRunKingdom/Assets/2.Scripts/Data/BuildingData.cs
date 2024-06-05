@@ -14,4 +14,5 @@ public class BuildingData : ScriptableObject
     public int Point;
     public int RequiredGold;
     public float RequiredTime;
+    public SkeletonDataAsset SkeletonDataAsset;
 }
