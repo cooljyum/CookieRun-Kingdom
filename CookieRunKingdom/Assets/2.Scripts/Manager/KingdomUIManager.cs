@@ -7,38 +7,14 @@ public class KingdomUIManager : MonoBehaviour
 {
     static public KingdomUIManager Instance;
 
-    private BuildingData _buildingData;
-    private List<BuildingButton> _buildingList = new List<BuildingButton> ();
-
-    private Transform _mainUI;
-    private Button _constructBtn;
-    //private Image _selectBuilding;
-    private BuildingButton _selectBuildingBtn;
+    [SerializeField]
+    private GameObject _storePanel;    
 
     private void Awake()
     {
         Instance = this;
 
-        //∏ﬁ¿ŒUI
-        _mainUI = GetComponentInChildren<Transform>();
-        Transform[] childen = _mainUI.GetComponentsInChildren<Transform>();
-
-        foreach (Transform child in childen)
-        {
-            string name = child.name;
-
-            if (name == "ConstructButton")
-            {
-                _constructBtn = child.GetComponent<Button>();
-            }
-            else if (name == "")
-            {
-                
-            }
-        }
-
-        //_buildingBtnPrefab = Resources.Load<GameObject>("Prefabs/BuildingBtn");
-        //_selectBuilding.gameObject.SetActive(false);
+        
     }
 
     //private void Start()
@@ -82,4 +58,9 @@ public class KingdomUIManager : MonoBehaviour
     //
     //    return key;
     //}
+
+    public void OnClickBuildingBtn()
+    {
+        _storePanel.SetActive(true);
+    }
 }
