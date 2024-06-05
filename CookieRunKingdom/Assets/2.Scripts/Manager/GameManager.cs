@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public List<int> myCards = new List<int>();
     private void Awake()
     {
         Instance = this;

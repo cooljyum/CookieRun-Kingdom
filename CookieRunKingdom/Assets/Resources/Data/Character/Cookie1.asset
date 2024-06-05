@@ -23,3 +23,4 @@ MonoBehaviour:
   Position: 0
   Rarity: 0
   SkeletonDataAsset: {fileID: 11400000, guid: f47a014c9f4f4af42b9237caec4a4abf, type: 2}
+  profileImage: {fileID: 21300000, guid: 2f933468da660664a913a1ea52b25ccb, type: 3}

@@ -17,4 +17,5 @@ public class CharacterData : ScriptableObject
     public int Position;
     public int Rarity;
     public SkeletonDataAsset SkeletonDataAsset;
+    public Sprite profileImage;
 }
