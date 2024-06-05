@@ -46,6 +46,9 @@ public class Gizmo : MonoBehaviour
 
             // 텍스트를 그림
             Handles.Label(textPosition, GizmoText);
+
+            //텍스트를 개체명으로 변경
+            GizmoText = this.gameObject.name;
         }
     }
 

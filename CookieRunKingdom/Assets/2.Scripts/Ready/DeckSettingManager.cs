@@ -6,6 +6,10 @@ public class DeckSettingManager : MonoBehaviour
 {
     [SerializeField]
     private Transform _deckBtnContent;
+
+    private CharacterData _characterData;
+
+
    
 
     private void Start()
