@@ -17,6 +17,15 @@ public class DeckSettingManager : MonoBehaviour
         SetDeckBtn();
     }
 
+    private void Update()
+    {
+        SetStandingCharacters();        
+    }
+
+    private void SetStandingCharacters()
+    {
+
+    }
     private void SetDeckBtn()
     {
         GameObject btnPrefab = Resources.Load<GameObject>("Prefabs/BattleReady/DeckBtn");

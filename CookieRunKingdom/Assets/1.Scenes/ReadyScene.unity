@@ -1778,6 +1778,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8061536147968579412, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
+      propertyPath: _animationName
+      value: personal1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
