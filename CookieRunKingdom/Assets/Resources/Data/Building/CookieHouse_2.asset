@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bd8f3197b4c674da2f0c18f947ed0a, type: 3}
+  m_Name: CookieHouse_2
+  m_EditorClassIdentifier: 
+  Key: 101
+  Name: CookieHouse
+  Type: Normal
+  Level: 1
+  Size: 8
+  Point: 9
+  RequiredGold: 1000
+  RequiredMaterialName: Wood
+  RequiredMaterialCount: 3
+  RequiredEquipmentName: 0
+  RequiredEquipmentCount: 0
+  RequiredTime: 60
+  ProductName: ExpCandy
+  ProductCount: 1
+  ProductRequiredTime: 10
+  SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}

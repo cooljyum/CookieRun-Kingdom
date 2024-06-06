@@ -6,6 +6,7 @@ using UnityEngine;
 public class DataManager : Singleton<DataManager>
 {
     private Dictionary<int, CharacterData> _characterDatas = new Dictionary<int, CharacterData>();
+    private Dictionary<int, BuildingData> _buildingDatas = new Dictionary<int, BuildingData>();
 
     public CharacterData GetCharacterData(int key)
     {
@@ -20,10 +21,24 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    public BuildingData GetBuildingData(int key)
+    {
+        if (_buildingDatas.ContainsKey(key))
+        {
+            return _buildingDatas[key];
+        }
+        else
+        {
+            Debug.LogWarning("BuildingData with key " + key + " not found.");
+            return null;
+        }
+    }
+
     public void LoadData()
     {
         print("=== DataManager::LoadData() ===");
         LoadCookieCharacterTable();
+        LoadBuildingTable();
     }
 
     private void LoadCookieCharacterTable()
@@ -40,6 +55,24 @@ public class DataManager : Singleton<DataManager>
             else
             {
                 Debug.LogWarning("Duplicate CharacterData Name: " + data.Name);
+            }
+        }
+    }
+
+    private void LoadBuildingTable()
+    {
+        _buildingDatas.Clear();
+        BuildingData[] buildingDataArray = Resources.LoadAll<BuildingData>("Data/Building");
+
+        foreach (BuildingData data in buildingDataArray)
+        {
+            if (!_buildingDatas.ContainsKey(data.Key))
+            {
+                _buildingDatas.Add(data.Key, data);
+            }
+            else
+            {
+                Debug.LogWarning("Duplicate BuildingData Name: " + data.Name);
             }
         }
     }

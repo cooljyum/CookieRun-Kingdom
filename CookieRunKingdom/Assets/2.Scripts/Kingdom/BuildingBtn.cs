@@ -5,10 +5,10 @@ using UnityEngine;
 public class BuildingBtn : MonoBehaviour
 {
     [SerializeField]
-    private BuildingData _buildingData;
+    public BuildingData BuildingData;
 
     public void OnClickBtn()
     {
-
+        KingdomManager.Instance.SelectBuilding(this);
     }
 }
