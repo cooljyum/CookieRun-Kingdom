@@ -39,16 +39,20 @@ public class Gizmo : MonoBehaviour
             Gizmos.DrawWireCube(positionWithOffset, GizmoSize);
 
             // Handles의 색상을 설정
-            Handles.color = TextColor;
+            GUIStyle style = new GUIStyle();
+            style.normal.textColor = TextColor;
 
             // 텍스트를 그릴 위치를 계산
             Vector3 textPosition = positionWithOffset + TextOffset;
 
             // 텍스트를 그림
-            Handles.Label(textPosition, GizmoText);
+            Handles.Label(textPosition, GizmoText, style);
 
             //텍스트를 개체명으로 변경
-            GizmoText = this.gameObject.name;
+            if (string.IsNullOrEmpty(GizmoText))
+            {
+                GizmoText = gameObject.name;
+            }
         }
     }
 

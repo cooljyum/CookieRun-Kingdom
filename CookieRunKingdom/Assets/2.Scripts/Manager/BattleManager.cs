@@ -5,67 +5,171 @@ using UnityEngine;
 
 public class BattleManager : Singleton<BattleManager>
 {
-    [Header ("BattleCookie")]
+    //BattkeCookie
+    [Header("BattleCookie")]
+    [Tooltip("Settings related to battle cookies.")]
+
+    #if UNITY_EDITOR
     [SerializeField]
-    private List<int> _battleCookieKeys = new List<int>(); // 배틀 쿠키 키 리스트
+    private TeamData _cookieTeam = new TeamData();
+
+#endif
+    private BattleCookies _cookiesManager;
+    private List<List<int>> _battleCookieKeys = new List<List<int>>();
+    private List<List<GameObject>> _battleCookies = new List<List<GameObject>>();
+
+    [Header("-------------------")]
+    //Enemy
+    [Header("Enemy")]
+    [Tooltip("Settings related to battle enemies.")]
 
     [SerializeField]
-    private List<GameObject> _battleCookies = new List<GameObject>(); // 배틀 쿠키 리스트
+    private int _stage = 1;
+#if UNITY_EDITOR
+    [SerializeField]
+    private List<TeamData> _enemiesTeamList = new List<TeamData>();
 
-    
-    private void Start()
+#endif
+    private BattleEnemies _enemiesManager;
+    private List<List<List<int>>> _battleEnemiesKeys  = new List<List<List<int>>>();
+  
+
+    [System.Serializable]
+    public class TeamData
     {
-        CreateBattle(); // 배틀 오브젝트 생성 함수 호출
-        Init(); // 초기화 함수 호출
-        TestGame();
-        StartBattle(); // 배틀 시작 함수 호출
+        [SerializeField]
+        public PositionData Front = new PositionData();
+        [SerializeField]
+        public PositionData Middle = new PositionData();
+        [SerializeField]
+        public PositionData Back = new PositionData();
+
+        public void Clear()
+        {
+            Front.Clear();
+            Middle.Clear();
+            Back.Clear();
+        }
     }
 
-    private void CreateBattle() 
+    [System.Serializable]
+    public class PositionData
     {
-        GameObject battleCookiesObject = GameObject.Find("BattleCookies");
-        if (battleCookiesObject == null)
+        public List<int> CookieKey = new List<int>();
+        public List<GameObject> CookieObj = new List<GameObject>();
+
+        public void Clear()
         {
-            Debug.LogError("BattleCookies object not found!");
-            return;
+            CookieKey.Clear();
+            CookieObj.Clear();
         }
+    }
 
-        GameObject battleCookiePrefab = Resources.Load<GameObject>("Prefabs/BattleCookie");
-
-        foreach (Transform child in battleCookiesObject.transform)
-        {
-            _battleCookies.Add(child.gameObject);
-
-            // child.gameObject의 자식으로 battleCookiePrefab을 추가
-            GameObject newCookiePrefab = Instantiate(battleCookiePrefab, child);
-            newCookiePrefab.transform.localPosition = Vector3.zero; // 위치를 조정할 필요가 있을 경우
-        }
+    private void Start()
+    {
+        Init(); // 초기화 함수 호출
     }
 
     private void Init()
     {
-        _battleCookieKeys.Clear(); // 배틀 쿠키 키 리스트 초기화
+        TestGame();
+        CreateBattle(); // 배틀 오브젝트 생성 함수 호출
+    }
+
+    private void CreateBattle() 
+    {
+        SetCookieData();
+
+        _enemiesManager = new BattleEnemies();
+        _enemiesManager.CreateBattleEnemiesGroup(_stage);
+        _battleEnemiesKeys = _enemiesManager.BattleEnemiesKeysList;
+        PopulateEnemiesTeamList();
+    }
+
+
+    //Data설정
+    private void SetCookieData()
+    {
+        //Set _cookiesManager
+        _cookiesManager = new BattleCookies();
+        _cookiesManager.CreateBattleCookies(_battleCookieKeys);
+        _battleCookies = _cookiesManager.BattleCookieList;
+
+        // Clear
+        _cookieTeam.Clear();
+
+        for (int i = 0; i < _battleCookieKeys.Count; i++)
+        {
+            PositionData positionData = null;
+
+            switch (i)
+            {
+                case 0:
+                    positionData = _cookieTeam.Front;
+                    break;
+                case 1:
+                    positionData = _cookieTeam.Middle;
+                    break;
+                case 2:
+                    positionData = _cookieTeam.Back;
+                    break;
+                default:
+                    Debug.LogWarning($"More _battleCookieKeys entries than expected. Ignoring entry at index {i}.");
+                    continue;
+            }
+
+            // Setup position data
+            if (positionData != null)
+            {
+                SetPositionData(positionData, i, _battleCookieKeys[i].Count); // startIndex는 0부터 시작
+            }
+        }
+    }
+    private void SetPositionData(PositionData positionData, int index , int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            positionData.CookieKey.Add(_battleCookieKeys[index][i]);
+            positionData.CookieObj.Add(_battleCookies[index][i]);
+        }
+    }
+
+    private void PopulateEnemiesTeamList()
+    {
+        _enemiesTeamList.Clear();
+
+        for (int i = 0; i < _battleEnemiesKeys.Count; i++)
+        {
+            TeamData teamData = new TeamData();
+
+            for (int j = 0; j < _battleEnemiesKeys[i].Count; j++)
+            {
+                if (j == 0) // Front
+                {
+                    teamData.Front.CookieKey = _battleEnemiesKeys[i][j];
+                }
+                else if (j == 1) // Middle
+                {
+                    teamData.Middle.CookieKey = _battleEnemiesKeys[i][j];
+                }
+                else if (j == 2) // Back
+                {
+                    teamData.Back.CookieKey = _battleEnemiesKeys[i][j];
+                }
+            }
+
+            _enemiesTeamList.Add(teamData);
+        }
     }
 
     private void TestGame() 
     {
-        _battleCookieKeys = new List<int> { 1,2,3,4,5 };
-    }
-
-    private void StartBattle()
-    {
-        for (int i = 0; i < _battleCookieKeys.Count; i++)
-        {
-            int key = _battleCookieKeys[i];
-
-            _battleCookies[i].SetActive(true); // 각 배틀 쿠키 활성화
-            CharacterData characterData = DataManager.Instance.GetCharacterData(key);
-            SkeletonAnimation skeletonAnimation = _battleCookies[i].GetComponentInChildren<SkeletonAnimation>();
-            if (skeletonAnimation != null && characterData.SkeletonDataAsset != null)
-            {
-                skeletonAnimation.skeletonDataAsset = characterData.SkeletonDataAsset;
-                skeletonAnimation.Initialize(true); // 새로운 SkeletonDataAsset을 적용하기 위해 초기화
-            }
-        }
+        _battleCookieKeys.Clear();
+        // 예제 데이터 설정
+        _battleCookieKeys = new List<List<int>> {
+            new List<int> { 1, 2 },   // Front
+            new List<int> { 3, 4 },   // Middle
+            new List<int> { 5 }       // Back
+        };
     }
 }

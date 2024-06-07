@@ -1768,7 +1768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6754840672927024229, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_Name
-      value: BattleCookie
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 6754840672927024229, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_IsActive
