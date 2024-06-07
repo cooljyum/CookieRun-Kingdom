@@ -23,7 +23,6 @@ public class KingdomManager : MonoBehaviour
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
-    private float _cameraSpeed = 3.0f;
 
     private void Awake()
     {
@@ -58,24 +57,7 @@ public class KingdomManager : MonoBehaviour
 
     private void Update()
     {
-        float posX = Camera.main.GetComponent<Transform>().position.x;
-        float posY = Camera.main.GetComponent<Transform>().position.y;
-        if (Input.GetKey(KeyCode.A))
-        {
-            posX -= _cameraSpeed * Time.deltaTime;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            posX += _cameraSpeed * Time.deltaTime;
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            posY += _cameraSpeed * Time.deltaTime;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            posY -= _cameraSpeed * Time.deltaTime;
-        }
+
     }
 
     public void SelectBuilding(BuildingBtn buildingBtn)
