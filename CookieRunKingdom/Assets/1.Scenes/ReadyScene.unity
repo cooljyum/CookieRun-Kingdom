@@ -520,7 +520,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 406309615}
+  - {fileID: 818851325}
   m_Father: {fileID: 481324348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205463431
@@ -564,7 +564,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1049240106}
+  - {fileID: 906423088}
   m_Father: {fileID: 481324348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317746953
@@ -748,8 +750,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 906423088}
-  - {fileID: 1049240106}
   - {fileID: 1249683773}
   - {fileID: 205463430}
   - {fileID: 317746952}
@@ -1931,7 +1931,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 205463430}
+    m_TransformParent: {fileID: 1249683773}
     m_Modifications:
     - target: {fileID: 860515010475900181, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2184,7 +2184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 942672886}
-  - {fileID: 818851325}
+  - {fileID: 406309615}
   m_Father: {fileID: 481324348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1249683774
@@ -2315,7 +2315,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 481324348}
+    m_TransformParent: {fileID: 317746952}
     m_Modifications:
     - target: {fileID: 860515010475900181, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2526,7 +2526,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1249683773}
+    m_TransformParent: {fileID: 205463430}
     m_Modifications:
     - target: {fileID: 860515010475900181, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3705,7 +3705,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 481324348}
+    m_TransformParent: {fileID: 317746952}
     m_Modifications:
     - target: {fileID: 860515010475900181, guid: 99df659da52dbb541a9dddc91c6709a4, type: 3}
       propertyPath: m_LocalPosition.x
