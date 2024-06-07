@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 338487839}
   - component: {fileID: 338487838}
   m_Layer: 5
-  m_Name: BuyBtn
+  m_Name: BuildingBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1524,7 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
+  BuildingData: {fileID: 11400000, guid: a1c115113e7aeb54e87fb8de1c11e17e, type: 2}
 --- !u!114 &338487839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1568,7 +1568,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 338487840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 338487838}
+        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &338487840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,7 +1996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &486091767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2056,7 +2068,7 @@ GameObject:
   - component: {fileID: 510765462}
   - component: {fileID: 510765465}
   m_Layer: 5
-  m_Name: BuyBtn
+  m_Name: BuildingBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2123,10 +2135,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 510765466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 510765465}
+        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &510765464
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2147,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
+  BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
 --- !u!114 &510765466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3683,7 +3707,7 @@ GameObject:
   - component: {fileID: 903522161}
   - component: {fileID: 903522160}
   m_Layer: 5
-  m_Name: BuyBtn
+  m_Name: BuildingBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3722,7 +3746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
+  BuildingData: {fileID: 11400000, guid: 96dde2b19b6a0f94e859bec20eab68c9, type: 2}
 --- !u!114 &903522161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3766,7 +3790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903522162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 903522160}
+        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &903522162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4445,7 +4481,7 @@ GameObject:
   - component: {fileID: 1014123632}
   - component: {fileID: 1014123631}
   m_Layer: 5
-  m_Name: BuyBtn
+  m_Name: BuildingBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4484,7 +4520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
+  BuildingData: {fileID: 11400000, guid: b15c9144c5e34e443abf25f0e431289e, type: 2}
 --- !u!114 &1014123632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4528,7 +4564,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1014123633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1014123631}
+        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1014123633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,7 +4766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1028136487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5318,7 +5366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1142649731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6309,7 +6357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1366329199
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6635,6 +6683,7 @@ GameObject:
   - component: {fileID: 1382748829}
   - component: {fileID: 1382748828}
   - component: {fileID: 1382748827}
+  - component: {fileID: 1382748830}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6716,6 +6765,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382748830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382748826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1385781398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7328,7 +7421,7 @@ GameObject:
   - component: {fileID: 1515828042}
   - component: {fileID: 1515828041}
   m_Layer: 5
-  m_Name: BuyBtn
+  m_Name: BuildingBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7367,7 +7460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
+  BuildingData: {fileID: 11400000, guid: 50393f0a09f3eb445aa4c60e7bf37199, type: 2}
 --- !u!114 &1515828042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7411,7 +7504,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1515828043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1515828041}
+        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1515828043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8042,8 +8147,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1257929987}
-        m_TargetAssemblyTypeName: KingdomUIManager, Assembly-CSharp
-        m_MethodName: OnClickBuildingBtn
+        m_TargetAssemblyTypeName: KingdomManager, Assembly-CSharp
+        m_MethodName: OnClickConstructBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9578,7 +9683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1910863123
 RectTransform:
   m_ObjectHideFlags: 0

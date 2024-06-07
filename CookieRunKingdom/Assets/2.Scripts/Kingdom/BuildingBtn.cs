@@ -7,8 +7,9 @@ public class BuildingBtn : MonoBehaviour
     [SerializeField]
     public BuildingData BuildingData;
 
-    public void OnClickBtn()
+    public void OnClickBuildingBtn()
     {
+        print("Btn Click");
         KingdomManager.Instance.SelectBuilding(this);
     }
 }

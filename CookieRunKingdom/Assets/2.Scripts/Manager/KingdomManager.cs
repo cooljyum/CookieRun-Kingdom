@@ -1,5 +1,7 @@
+using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
@@ -14,10 +16,14 @@ public class KingdomManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> _myBuildingList = new List<GameObject>(); //내 빌딩 리스트
 
-    private Transform _buildingBtnContent;
     private GameObject _selectedBuilding;
     private BuildingBtn _selectedBuildingBtn;
-    private SkeletonAsset _selectedBuildingSA;
+    private SkeletonAnimation _selectedBuildingSA;
+    private Transform _buildingBtnContent;
+    private TextMeshProUGUI _buildingCost;
+    private TextMeshProUGUI _buildingPoint;
+    private TextMeshProUGUI _buildingCurCount;
+    private float _cameraSpeed = 3.0f;
 
     private void Awake()
     {
@@ -33,31 +39,52 @@ public class KingdomManager : MonoBehaviour
             {
                 _buildingBtnContent = child;
             }
-            
+
         }
     }
 
     private void Start()
     {
         _selectedBuilding = GameObject.Find("SelectedBuilding");
-        _selectedBuilding.gameObject.SetActive(false);
+        _selectedBuilding.SetActive(false);
+        _selectedBuildingSA = _selectedBuilding.GetComponent<SkeletonAnimation>();
 
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(BuildingControl());
     }
 
     private void Update()
     {
-        _selectedBuilding.transform.position = Input.mousePosition;
+        float posX = Camera.main.GetComponent<Transform>().position.x;
+        float posY = Camera.main.GetComponent<Transform>().position.y;
+        if (Input.GetKey(KeyCode.A))
+        {
+            posX -= _cameraSpeed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            posX += _cameraSpeed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            posY += _cameraSpeed * Time.deltaTime;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            posY -= _cameraSpeed * Time.deltaTime;
+        }
     }
 
     public void SelectBuilding(BuildingBtn buildingBtn)
     {
-        _selectedBuildingSA = _selectedBuilding.GetComponent<SkeletonAsset>();
-
         _storePanel.SetActive(false);
         _selectedBuildingBtn = buildingBtn;
-    
-        string file = buildingBtn.BuildingData.Name + "_SkeletonData";
-        SkeletonAsset skas = Resources.Load<SkeletonAsset>(file);
+        
+        string file = "SkeletonData/" + buildingBtn.BuildingData.Name + "_SkeletonData";
+        SkeletonAnimation skas = Resources.Load<SkeletonAnimation>(file);
         _selectedBuildingSA = skas;
         _selectedBuilding.SetActive(true);
     }
@@ -69,15 +96,27 @@ public class KingdomManager : MonoBehaviour
     
         int key = _selectedBuildingBtn.BuildingData.Key;
     
-        //_selectedBuildingBtn.SetActive(true);  //?//Sibling..을 어케 접근하지
+        _selectedBuildingBtn.transform.parent.GetChild(4).gameObject.SetActive(true);  //이렇게 접근하는 게 맞나
         _selectedBuildingBtn = null;
-        _selectedBuilding.gameObject.SetActive(false);
+        _selectedBuilding.SetActive(false);
     
         return key;
     }
 
     public void OnClickConstructBtn()
     {
+        print("Btn Click");
         _storePanel.SetActive(true);
+    }
+
+    private IEnumerator BuildingControl()
+    {
+        while (_selectedBuilding != null) 
+        {
+            //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            _selectedBuilding.transform.position = Input.mousePosition;
+
+            yield return null;
+        }
     }
 }
