@@ -7,7 +7,6 @@ public class BattleCookies : MonoBehaviour
 {
     [SerializeField]
     private List<List<GameObject>> _battleCookies = new List<List<GameObject>>(); // 배틀 쿠키 리스트
-
     public List<List<GameObject>> BattleCookieList => _battleCookies;
 
     public void CreateBattleCookies(List<List<int>> cookieKeys)
