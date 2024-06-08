@@ -14,9 +14,9 @@ public class StandingCharacter : MonoBehaviour
         transform.position = _transform.position;
     }
 
-    public void SetPos(Vector3 pos)
+    public void SetTransform(Transform transform)
     {
-        transform.position = pos;
+        _transform = transform;
     }
 
     public void SetData(CharacterData characterData)

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class StandingManager : MonoBehaviour
 {
-    private List<List<int>> positions;
+    protected List<List<Transform>> positions;
 
     [SerializeField]
     private List<GameObject> characters;
 
     private void Start()
     {
-        positions = new List<List<int>>();
+        positions = new List<List<Transform>>();
 
         for(int i = 0; i < transform.childCount; i++)
         {
