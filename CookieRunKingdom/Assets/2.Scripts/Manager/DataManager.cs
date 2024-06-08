@@ -9,7 +9,7 @@ public class DataManager : Singleton<DataManager>
     private Dictionary<int, BuildingData> _buildingDatas = new Dictionary<int, BuildingData>();
 
     //Battle
-    private Dictionary<int, MonsterData> _monsterDatas = new Dictionary<int, MonsterData>();
+   // private Dictionary<int, MonsterData> _monsterDatas = new Dictionary<int, MonsterData>();
     private Dictionary<int, MonsterGroupData> _monsterGroupDatas = new Dictionary<int, MonsterGroupData>();
     private Dictionary<int, StageData> _stageDatas = new Dictionary<int, StageData>();
 
@@ -41,7 +41,7 @@ public class DataManager : Singleton<DataManager>
     }
 
     //Battle
-    public MonsterData GetMonsterData(int key)
+/*    public MonsterData GetMonsterData(int key)
     {
         if (_monsterDatas.ContainsKey(key))
         {
@@ -52,7 +52,7 @@ public class DataManager : Singleton<DataManager>
             Debug.LogWarning("MonsterData with key " + key + " not found.");
             return null;
         }
-    }
+    }*/
     public MonsterGroupData GetMonsterGroupData(int key)
     {
         if (_monsterGroupDatas.ContainsKey(key))
@@ -128,11 +128,11 @@ public class DataManager : Singleton<DataManager>
     //Battle
     private void LoadBattleTables() 
     {
-        LoadMonsterTable();
+       // LoadMonsterTable();
         LoadMonsterGroupTable();
         LoadStageTable();
     }
-    private void LoadMonsterTable()
+/*    private void LoadMonsterTable()
     {
         _monsterDatas.Clear();
         MonsterData[] monsterDataArray = Resources.LoadAll<MonsterData>("Data/Battle/Monster");
@@ -148,7 +148,7 @@ public class DataManager : Singleton<DataManager>
                 Debug.LogWarning("Duplicate MonsterData Name: " + data.Name);
             }
         }
-    }
+    }*/
 
     private void LoadMonsterGroupTable()
     {
