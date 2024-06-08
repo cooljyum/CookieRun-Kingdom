@@ -134,13 +134,13 @@ public class BattleEnemies : MonoBehaviour
                 newCookiePrefab.transform.localPosition = Vector3.zero;
 
                 // key에 따라 캐릭터 설정
-/*                MonsterData monsterData = DataManager.Instance.GetMonsterData(cookies[i]);
+                CharacterData monsterData = DataManager.Instance.GetMonsterData(cookies[i]);
                 SkeletonAnimation skeletonAnimation = newCookiePrefab.GetComponentInChildren<SkeletonAnimation>();
                 if (skeletonAnimation != null && monsterData.SkeletonDataAsset != null)
                 {
                     skeletonAnimation.skeletonDataAsset = monsterData.SkeletonDataAsset;
                     skeletonAnimation.Initialize(true); // 새로운 SkeletonDataAsset을 적용하기 위해 초기화
-                }*/
+                }
             }
             else
             {

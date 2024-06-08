@@ -9,21 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b88764a2c0cdc4593e7ecf0654f6cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 642c55870301d914683bb17306016302, type: 3}
   m_Name: Monster2
   m_EditorClassIdentifier: 
   Key: 2
-  Name: "\uCF00\uC774\uD06C\uB291\uB300"
-  Type: 0
-  Hp: 10
-  Attack: 1
+  Name: 
+  Hp: 0
+  Attack: 0
   Defence: 0
-  Critical: 0.05
-  Speed: 10
+  Critical: 0
+  Type: 0
+  Rarity: 0
   AttackType: 0
-  AttackDamage: 1
-  AttackInterval: 1
+  AttackDamage: 0
+  AttackInterval: 0
   SpecialAttacks: []
-  ExperiencePoints: 10
-  LootTable: []
-  SkeletonDataAsset: {fileID: 11400000, guid: 143e7c3036eabf449815bbf072d0a412, type: 2}
+  SkeletonDataAsset: {fileID: 11400000, guid: 2fbebbf7793fbdf4fa0ff58116d03c62, type: 2}
+  profileImage: {fileID: 0}
+  typeImage: {fileID: 0}
