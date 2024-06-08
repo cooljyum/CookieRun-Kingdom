@@ -29,7 +29,7 @@ public class DeckSettingBtn : MonoBehaviour
     public void SetData(CharacterData characterData)
     {
         _profileImage.sprite = characterData.profileImage;
-        _levelData.text = characterData.Level.ToString();
+      //  _levelData.text = characterData.Level.ToString();
         _typeImage.sprite = characterData.typeImage;
     }
 
