@@ -24,7 +24,8 @@ public class StandingCharacter : MonoBehaviour
     public void SetData(CharacterData characterData)
     {
         _characterData = characterData;
-        _skeletonAnimation.SkeletonDataAsset.FillStateData
-        
+        var skeletonDataAsset = Resources.Load<SkeletonDataAsset>("SkeletonData/Character/" + characterData.Key);
+        _skeletonAnimation.skeletonDataAsset = skeletonDataAsset;
+        _skeletonAnimation.Initialize(true);
     }
 }
