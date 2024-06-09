@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1441418785498199899}
   - component: {fileID: 3516892295096313288}
   - component: {fileID: 2954551767504657529}
+  - component: {fileID: 7916869857727945077}
   m_Layer: 0
   m_Name: BattleEnemy
   m_TagString: Untagged
@@ -120,9 +121,24 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: default
+  _animationName: 
   loop: 1
   timeScale: 1
+--- !u!114 &7916869857727945077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160067528177309916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae8174d6368cac4a8759c0ca0a28f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 0}
+  target: {fileID: 0}
+  attackRange: 5
 --- !u!1 &8647774128232776301
 GameObject:
   m_ObjectHideFlags: 0

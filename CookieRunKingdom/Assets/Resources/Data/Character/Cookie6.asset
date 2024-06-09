@@ -27,3 +27,14 @@ MonoBehaviour:
   SkeletonDataAsset: {fileID: 11400000, guid: 5fb3f13d63881354d89f9ca1eb00dad4, type: 2}
   profileImage: {fileID: 21300000, guid: c7945028cef975f4c85e391ed62fc15b, type: 3}
   typeImage: {fileID: 21300000, guid: c8cbbf7ffd996804696c62b310dd117a, type: 3}
+  AnimationMappings:
+  - Key: Battle_Idle
+    AnimationName: battle_idle_back
+  - Key: Battle_Attack
+    AnimationName: skill1_back
+  - Key: Battle_Hit
+    AnimationName: skill1
+  - Key: Battle_Skill
+    AnimationName: skill1
+  - Key: Battle_Die
+    AnimationName: skill1

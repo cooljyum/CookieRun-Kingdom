@@ -14,14 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 3
   Name: "\uB2CC\uC790\uB9DB\uCFE0\uD0A4"
-  Level: 1
   Hp: 100
   Attack: 20
   Defence: 5
   Critical: 0.3
   Type: 2
-  Position: 1
   Rarity: 0
+  AttackType: 0
+  AttackDamage: 0
+  AttackInterval: 0
+  SpecialAttacks: []
   SkeletonDataAsset: {fileID: 11400000, guid: 6a5203d900ee26245a293c7347a21df7, type: 2}
   profileImage: {fileID: 21300000, guid: 0ab2e53026f03e64fa047160de1dec04, type: 3}
   typeImage: {fileID: 21300000, guid: d4a822d4e232b42409d38ebaacab8838, type: 3}
+  AnimationMappings:
+  - Key: Battle_Idle
+    AnimationName: battle_idle_back
+  - Key: Battle_Attack
+    AnimationName: skill1_back
+  - Key: Battle_Hit
+    AnimationName: skill1
+  - Key: Battle_Skill
+    AnimationName: skill1
+  - Key: Battle_Die
+    AnimationName: skill1

@@ -30,6 +30,9 @@ public class CharacterData : ScriptableObject
     public SkeletonDataAsset SkeletonDataAsset;
     public Sprite profileImage;
     public Sprite typeImage;
+
+    [Header("Animation Info")]
+    public List<AnimationMapping> AnimationMappings = new List<AnimationMapping>(); // 애니메이션 이름 매핑 리스트
 }
 
 
@@ -48,4 +51,12 @@ public enum AttackType
     Melee, // 근거리 공격
     Ranged, // 원거리 공격
     Magical // 마법 공격
+}
+
+// 애니메이션 매핑 클래스
+[System.Serializable]
+public class AnimationMapping
+{
+    public string Key; // 애니메이션 키
+    public string AnimationName; // 애니메이션 이름
 }

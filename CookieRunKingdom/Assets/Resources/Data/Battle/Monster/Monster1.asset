@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Monster1
   m_EditorClassIdentifier: 
   Key: 1
-  Name: 
+  Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD130"
   Hp: 0
   Attack: 0
   Defence: 0
@@ -27,3 +27,12 @@ MonoBehaviour:
   SkeletonDataAsset: {fileID: 11400000, guid: 3549b20f23f387745876e9f3d46f18ab, type: 2}
   profileImage: {fileID: 0}
   typeImage: {fileID: 0}
+  AnimationMappings:
+  - Key: Battle_Idle
+    AnimationName: default
+  - Key: Battle_Attack
+    AnimationName: angry_talk
+  - Key: Battle_Hit
+    AnimationName: 
+  - Key: Battle_Die
+    AnimationName: 

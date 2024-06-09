@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7945316053122105691}
   - component: {fileID: 3220208752756051034}
   - component: {fileID: 8061536147968579412}
+  - component: {fileID: 998417883454783656}
   m_Layer: 0
   m_Name: BattleCookie
   m_TagString: Untagged
@@ -204,6 +205,21 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: battle_idle_back
+  _animationName: 
   loop: 1
   timeScale: 1
+--- !u!114 &998417883454783656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754840672927024229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae8174d6368cac4a8759c0ca0a28f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 0}
+  target: {fileID: 0}
+  attackRange: 5
