@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class DeckSettingBtn : MonoBehaviour
 {
     static public DeckSettingBtn Instance;
-    public DeckData DeckData;
 
     private CharacterData _characterData;
 
@@ -48,6 +47,8 @@ public class DeckSettingBtn : MonoBehaviour
                 _profileImage.color = Color.gray;
             }
 
+            GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
+
             BattlePower += _characterData.Attack;
         }
         else
@@ -56,6 +57,8 @@ public class DeckSettingBtn : MonoBehaviour
             ReadyManager.Instance.Remove(_characterData);
             _check.gameObject.SetActive(false);
             _profileImage.color = Color.white;
+
+            GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key); //키값 삭제
 
             BattlePower -= _characterData.Attack;
         }

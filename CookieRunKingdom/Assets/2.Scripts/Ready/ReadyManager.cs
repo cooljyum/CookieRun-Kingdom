@@ -42,6 +42,21 @@ public class ReadyManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        foreach (var character in GameManager.Instance.CurPlayerData.DeckKeyLists)
+        {
+            CharacterData characterData = DataManager.Instance.GetCharacterData(character);
+            if (characterData != null)
+            {
+                Add(characterData);
+            }
+            else 
+            {
+                print($"ReadyManager::Character data not found for key: {characterData.Key}");
+            }
+        }
+    }
     public void OnClickDeckSetting()
     {
         readyPanel.SetActive(false);
