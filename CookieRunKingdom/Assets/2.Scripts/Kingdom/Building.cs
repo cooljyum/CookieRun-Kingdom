@@ -18,7 +18,6 @@ public class Building : MonoBehaviour
     {
         _buildingData = buildingData;
         _skeletonAnimation.skeletonDataAsset = buildingData.SkeletonDataAsset;
-        _skeletonAnimation.AnimationName = "loop_back";
         _skeletonAnimation.Initialize(true);
         transform.position = pos;
         gameObject.SetActive(true);
@@ -27,6 +26,6 @@ public class Building : MonoBehaviour
     public void OnClickBtn() //건물 클릭 -> 생산 창
     {
         print("Btn Click");
-        KingdomManager.Instance.CraftPanel.SetActive(true);
+        KingdomManager.Instance.ProducePanel.SetActive(true);
     }
 }

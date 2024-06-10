@@ -18,7 +18,7 @@ public class KingdomManager : MonoBehaviour
     private GameObject _buildingInfoPanel;
 
     [SerializeField]
-    public GameObject CraftPanel;
+    public GameObject ProducePanel;
 
     [SerializeField]
     private GameObject _kingdomPlayPanel;
@@ -35,6 +35,8 @@ public class KingdomManager : MonoBehaviour
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
+
+    private BuildingData _clickedBuildingData;
 
     private void Awake()
     {
@@ -86,6 +88,12 @@ public class KingdomManager : MonoBehaviour
         return key;
     }
 
+    public void Produce(BuildingData buildingData)
+    {
+        _clickedBuildingData = buildingData;
+
+    }
+
     public void OnClickConstructBtn()
     {
         print("Btn Click");
@@ -96,5 +104,11 @@ public class KingdomManager : MonoBehaviour
     {
         print("Btn Click");
         _storePanel.SetActive(false);
+    }
+
+    public void OnClickProduceBtn()
+    {
+        print("Btn Click");
+        //Produce();
     }
 }
