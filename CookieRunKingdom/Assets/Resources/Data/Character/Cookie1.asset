@@ -38,3 +38,5 @@ MonoBehaviour:
     AnimationName: skill1
   - Key: Battle_Die
     AnimationName: skill1
+  - Key: Battle_Run
+    AnimationName: run_back

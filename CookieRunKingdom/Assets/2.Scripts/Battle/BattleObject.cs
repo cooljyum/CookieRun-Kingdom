@@ -2,81 +2,119 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
+using static UnityEngine.GraphicsBuffer;
 
 public class BattleObject : MonoBehaviour
 {
     [SerializeField]
-    private CharacterData characterData;
-    private SkeletonAnimation skeletonAnimation;
-    private Status currentStatus = Status.Idle;
-    private CharacterAnimation characterAnimation;
+    private bool _isEnemy = false;
+
+    public bool IsEnemy 
+    {
+        get { return _isEnemy; }
+        set { _isEnemy = value; }
+    }
+
+    [SerializeField]
+    private float _attackRange = 1f;
+
+    [SerializeField]
+    private float moveSpeed = 2f;
+
+    [SerializeField]
+    private CharacterData _characterData;
+
+    [SerializeField]
+    private Transform _target;
+
+    [SerializeField]
+    private Status _curStatus = Status.Idle;
 
     public enum Status
     {
         Idle,
         Attack,
+        Run,
         Defend
     }
 
-    [SerializeField]
-    private Transform target;  // The target to attack
-    [SerializeField]
-    private float attackRange = 5f;  // The range within which the attack will start
+    private SkeletonAnimation _skeletonAni;
+    private CharacterAnimation _characterAni;
 
-    public void SetCharacterData(CharacterData newCharacterData)
-    {
-        characterData = newCharacterData;
-    }
-
+    //Start
     private void Start()
     {
-        Debug.Log("Character Initialized: " + characterData.Name);
-        skeletonAnimation = GetComponent<SkeletonAnimation>();
-        characterAnimation = new CharacterAnimation();
-        characterAnimation.Initialize(characterData, skeletonAnimation);
+        Debug.Log("Character Initialized: " + _characterData.Name);
+        _skeletonAni = GetComponent<SkeletonAnimation>();
+        _characterAni = new CharacterAnimation();
+        _characterAni.Initialize(_characterData, _skeletonAni);
 
-        SetStatus(Status.Attack);
+        SetStatus(Status.Run);
     }
 
+    //Update
     private void Update()
     {
-        if (target != null && currentStatus == Status.Idle)
+        if (_target != null )
         {
-            float distanceToTarget = Vector3.Distance(transform.position, target.position);
-            if (distanceToTarget <= attackRange)
+            float distanceToTarget = Vector3.Distance(transform.position, _target.position);
+            if (distanceToTarget <= _attackRange)
             {
                 SetStatus(Status.Attack);
             }
+            else if (_curStatus != Status.Run)
+            {
+                SetStatus(Status.Run);
+            }
+
+            if (_isEnemy && _curStatus == Status.Run)
+            {
+                MoveTowardsTarget();
+            }
         }
-        // Handle other status-based behaviors here
     }
 
+    //Set
+    public void SetTarget(Transform newTarget)
+    {
+        _target = newTarget;
+    }
+    public void SetCharacterData(CharacterData newCharacterData)
+    {
+        _characterData = newCharacterData;
+    }
     private void SetStatus(Status newStatus)
     {
-        currentStatus = newStatus;
-        characterAnimation.PlayAnimation("Battle", currentStatus.ToString());
+        _curStatus = newStatus;
+        _characterAni.PlayAnimation("Battle", _curStatus.ToString());
 
-        switch (currentStatus)
+        switch (_curStatus)
         {
             case Status.Idle:
-                // Handle idle behavior
                 break;
-            case Status.Attack:
+            case Status.Run:
                 AttackTarget();
                 break;
-            case Status.Defend:
-                // Handle defending behavior
+            case Status.Attack:
                 break;
-            // Add cases for other statuses as needed
+            case Status.Defend:
+                break;
             default:
                 break;
         }
     }
 
+    private void MoveTowardsTarget()
+    {
+        if (_target != null)
+        {
+            Vector3 direction = (_target.position - transform.position).normalized;
+            transform.position += direction * moveSpeed * Time.deltaTime;
+        }
+    }
+
     private void AttackTarget()
     {
-        // Implement your attack logic here
-        // Debug.Log("Attacking target: " + target.name);
-        // Example: Reduce the target's HP, play attack animation, etc.
+        
     }
 }

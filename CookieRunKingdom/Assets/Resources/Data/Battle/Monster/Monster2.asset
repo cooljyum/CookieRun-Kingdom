@@ -36,3 +36,5 @@ MonoBehaviour:
     AnimationName: 
   - Key: Battle_Die
     AnimationName: 
+  - Key: Battle_Run
+    AnimationName: run

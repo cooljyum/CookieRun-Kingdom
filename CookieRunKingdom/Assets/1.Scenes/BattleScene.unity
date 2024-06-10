@@ -2255,7 +2255,7 @@ PrefabInstance:
     - target: {fileID: 3220208752756051034, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3fdeec886cd56434db2cf7f22b26ff74, type: 2}
+      objectReference: {fileID: 2100000, guid: b8936370d47530441b9d3eecd148ca01, type: 2}
     - target: {fileID: 6754840672927024229, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
       propertyPath: m_Name
       value: BattleCookie
@@ -2266,12 +2266,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8061536147968579412, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
       propertyPath: _animationName
-      value: default_talk
+      value: angry_bridge
       objectReference: {fileID: 0}
     - target: {fileID: 8061536147968579412, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
       propertyPath: skeletonDataAsset
       value: 
-      objectReference: {fileID: 11400000, guid: f47a014c9f4f4af42b9237caec4a4abf, type: 2}
+      objectReference: {fileID: 11400000, guid: 3549b20f23f387745876e9f3d46f18ab, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

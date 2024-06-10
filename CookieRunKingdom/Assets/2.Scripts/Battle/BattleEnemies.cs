@@ -9,6 +9,10 @@ public class BattleEnemies : BattleEntitiesBase
     private List<List<List<int>>> _battleEnemiesKeys = new List<List<List<int>>>();
     public List<List<List<int>>> BattleEnemiesKeysList => _battleEnemiesKeys;
 
+    private List<List<List<GameObject>>> _battleEnemiesObjects = new List<List<List<GameObject>>>();
+    public List<List<List<GameObject>>> BattleEnemiesObjectsList => _battleEnemiesObjects;
+
+
     protected override CharacterData GetCharacterData(int key)
     {
         return DataManager.Instance.GetMonsterData(key);
@@ -31,11 +35,20 @@ public class BattleEnemies : BattleEntitiesBase
 
             Vector2 teamPosition = basePosition + (offset * i);
             CreateBattleEnemies(monsterGroupList, teamPosition);
+
+            // Create a new list and add the elements from BattleEntitiesList
+            List<List<GameObject>> battleEntitiesList = new List<List<GameObject>>();
+            foreach (var sublist in BattleEntitiesList)
+            {
+                List<GameObject> newSublist = new List<GameObject>(sublist);
+                battleEntitiesList.Add(newSublist);
+            }
+            _battleEnemiesObjects.Add(battleEntitiesList);
         }
     }
 
     public void CreateBattleEnemies(List<List<int>> enemyKeys, Vector2 position)
     {
-        CreateBattleEntities(enemyKeys, "BattleEnemies", "Prefabs/Battle/BattleEnemy", true, position, true);
+        CreateBattleEntities(enemyKeys, "BattleEnemies", "Prefabs/Battle/BattleEnemy", true, position, true, true);
     }
 }

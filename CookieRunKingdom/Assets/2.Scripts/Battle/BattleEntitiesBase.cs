@@ -8,7 +8,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
     protected List<List<GameObject>> _battleEntities = new List<List<GameObject>>();
     public List<List<GameObject>> BattleEntitiesList => _battleEntities;
 
-    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath, bool isSpawnEntitiyObj = false, Vector2 position = default, bool hasSquad = false)
+    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath, bool isSpawnEntitiyObj = false, Vector2 position = default, bool hasSquad = false, bool isEnemy = false)
     {
         GameObject battleEntitiesObject = GameObject.Find(parentObjectName);
         if (battleEntitiesObject == null)
@@ -37,6 +37,8 @@ public abstract class BattleEntitiesBase : MonoBehaviour
 
         string[] positions = { "Front", "Middle", "Back" };
 
+        _battleEntities.Clear();
+
         for (int i = 0; i < entityKeys.Count; i++)
         {
             Transform positionTransform = battleEntitiesObject.transform.GetChild(i);
@@ -58,21 +60,21 @@ public abstract class BattleEntitiesBase : MonoBehaviour
                 soloObject.SetActive(true);
                 duoObject.SetActive(false);
                 if (hasSquad) squadObject.SetActive(false);
-                AddEntitiesToObject(soloObject.transform, entityPrefab, entities, i);
+                AddEntitiesToObject(soloObject.transform, entityPrefab, entities, i, isEnemy);
             }
             else if (entities.Count == 2)
             {
                 soloObject.SetActive(false);
                 duoObject.SetActive(true);
                 if (hasSquad) squadObject.SetActive(false);
-                AddEntitiesToObject(duoObject.transform, entityPrefab, entities, i);
+                AddEntitiesToObject(duoObject.transform, entityPrefab, entities, i, isEnemy);
             }
             else if (hasSquad && entities.Count == 3)
             {
                 soloObject.SetActive(false);
                 duoObject.SetActive(false);
                 squadObject.SetActive(true);
-                AddEntitiesToObject(squadObject.transform, entityPrefab, entities, i);
+                AddEntitiesToObject(squadObject.transform, entityPrefab, entities, i, isEnemy);
             }
             else
             {
@@ -83,7 +85,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
         }
     }
 
-    protected void AddEntitiesToObject(Transform parent, GameObject prefab, List<int> entities, int positionIndex)
+    protected void AddEntitiesToObject(Transform parent, GameObject prefab, List<int> entities, int positionIndex, bool isEnemy = false)
     {
         int childCount = parent.childCount;
 
@@ -97,6 +99,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
 
                 CharacterData characterData = GetCharacterData(entities[i]);
                 newEntityPrefab.GetComponent<BattleObject>().SetCharacterData(characterData);
+                newEntityPrefab.GetComponent<BattleObject>().IsEnemy = isEnemy;
                 SkeletonAnimation skeletonAnimation = newEntityPrefab.GetComponentInChildren<SkeletonAnimation>();
                 if (skeletonAnimation != null && characterData.SkeletonDataAsset != null)
                 {

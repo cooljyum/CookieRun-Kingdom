@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
@@ -31,17 +32,26 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
 #endif
     private BattleEnemies _enemiesManager;
     private List<List<List<int>>> _battleEnemiesKeys = new List<List<List<int>>>();
+    private List<List<List<GameObject>>> _battleEnemiesObjectsList = new List<List<List<GameObject>>>();
+    public List<List<GameObject>> GetBattleCookies()
+    {
+        return _battleCookies;
+    }
 
+    public List<TeamData> GetEnemiesTeamList()
+    {
+        return _enemiesTeamList;
+    }
 
     [System.Serializable]
     public class TeamData
     {
         [SerializeField]
-        public PositionData Front = new PositionData();
+        public BattleObjPosData Front = new BattleObjPosData();
         [SerializeField]
-        public PositionData Middle = new PositionData();
+        public BattleObjPosData Middle = new BattleObjPosData();
         [SerializeField]
-        public PositionData Back = new PositionData();
+        public BattleObjPosData Back = new BattleObjPosData();
 
         public void Clear()
         {
@@ -52,15 +62,15 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     }
 
     [System.Serializable]
-    public class PositionData
+    public class BattleObjPosData
     {
-        public List<int> CookieKey = new List<int>();
-        public List<GameObject> CookieObj = new List<GameObject>();
+        public List<int> BattleKey = new List<int>();
+        public List<GameObject> BattleObj = new List<GameObject>();
 
         public void Clear()
         {
-            CookieKey.Clear();
-            CookieObj.Clear();
+            BattleKey.Clear();
+            BattleObj.Clear();
         }
     }
 
@@ -82,6 +92,7 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
         _enemiesManager = new BattleEnemies();
         _enemiesManager.CreateBattleEnemiesGroup(_stage);
         _battleEnemiesKeys = _enemiesManager.BattleEnemiesKeysList;
+        _battleEnemiesObjectsList = _enemiesManager.BattleEnemiesObjectsList;
         PopulateEnemiesTeamList();
     }
 
@@ -99,7 +110,7 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
 
         for (int i = 0; i < _battleCookieKeys.Count; i++)
         {
-            PositionData positionData = null;
+            BattleObjPosData positionData = null;
 
             switch (i)
             {
@@ -124,12 +135,12 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             }
         }
     }
-    private void SetPositionData(PositionData positionData, int index, int count)
+    private void SetPositionData(BattleObjPosData positionData, int index, int count)
     {
         for (int i = 0; i < count; i++)
         {
-            positionData.CookieKey.Add(_battleCookieKeys[index][i]);
-            positionData.CookieObj.Add(_battleCookies[index][i]);
+            positionData.BattleKey.Add(_battleCookieKeys[index][i]);
+            positionData.BattleObj.Add(_battleCookies[index][i]);
         }
     }
 
@@ -145,15 +156,18 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             {
                 if (j == 0) // Front
                 {
-                    teamData.Front.CookieKey = _battleEnemiesKeys[i][j];
+                    teamData.Front.BattleKey = _battleEnemiesKeys[i][j];
+                    teamData.Front.BattleObj = _battleEnemiesObjectsList[i][j];
                 }
                 else if (j == 1) // Middle
                 {
-                    teamData.Middle.CookieKey = _battleEnemiesKeys[i][j];
+                    teamData.Middle.BattleKey = _battleEnemiesKeys[i][j];
+                    teamData.Middle.BattleObj = _battleEnemiesObjectsList[i][j];
                 }
                 else if (j == 2) // Back
                 {
-                    teamData.Back.CookieKey = _battleEnemiesKeys[i][j];
+                    teamData.Back.BattleKey = _battleEnemiesKeys[i][j];
+                    teamData.Back.BattleObj = _battleEnemiesObjectsList[i][j];
                 }
             }
 
