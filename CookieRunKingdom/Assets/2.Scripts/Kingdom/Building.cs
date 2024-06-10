@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    private ScriptableObject _buildingData;
+    private BuildingData _buildingData;
     private SkeletonAnimation _skeletonAnimation;
 
     private void Awake()

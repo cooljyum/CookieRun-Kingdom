@@ -1,29 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\git\\cookierun-kingdom\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\manager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\kim\\class\\project\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\kingdom\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\kingdom\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\kim\\class\\project\\cookierun-kingdom\\cookierunkingdom\\assets\\2.scripts\\data\\buildingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\data\\buildingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\kingdom\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\kingdom\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\ready\\standingcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\ready\\standingcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\ready\\readymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\ready\\readymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\ready\\decksettingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\ready\\decksettingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\ready\\decksettingbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\ready\\decksettingbtn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\ready\\readysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\ready\\readysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\etc\\gizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\etc\\gizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|solutionrelative:assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\manager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\manager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:assets\\2.scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}|spine-unity-editor.csproj|solutionrelative:assets\\11.spine\\editor\\spine-unity\\editor\\windows\\spinepreferences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\2.scripts\\data\\characterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0D9D44-94DF-5CDF-1BC5-6E897FAD9F9E}|Assembly-CSharp.csproj|solutionrelative:Assets\\2.Scripts\\Manager\\BattleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,65 +69,173 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CharacterData.cs",
-              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
-              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Data\\CharacterData.cs",
-              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
-              "RelativeToolTip": "Assets\\2.Scripts\\Data\\CharacterData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T05:12:52.797Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataManager.cs",
-              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\DataManager.cs",
-              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\DataManager.cs",
-              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\DataManager.cs",
-              "RelativeToolTip": "Assets\\2.Scripts\\Manager\\DataManager.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAUwDEAAAAAAAAA",
+              "Title": "ProductUI.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Kingdom\\ProductUI.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Kingdom\\ProductUI.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Kingdom\\ProductUI.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Kingdom\\ProductUI.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T05:11:26.569Z",
+              "WhenOpened": "2024-06-10T06:00:42.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BuildingData.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\BuildingData.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Data\\BuildingData.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\BuildingData.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Data\\BuildingData.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:52:30.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Building.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Kingdom\\Building.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Kingdom\\Building.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Kingdom\\Building.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Kingdom\\Building.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T05:51:47.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StandingCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\StandingCharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Ready\\StandingCharacter.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\StandingCharacter.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Ready\\StandingCharacter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:36:34.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeckSettingManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\DeckSettingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Ready\\DeckSettingManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\DeckSettingManager.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Ready\\DeckSettingManager.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T04:10:48.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReadyManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\ReadyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Ready\\ReadyManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\ReadyManager.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Ready\\ReadyManager.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAA7wGUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:50:47.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeckSettingBtn.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\DeckSettingBtn.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Ready\\DeckSettingBtn.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\DeckSettingBtn.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Ready\\DeckSettingBtn.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAvwCoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:50:07.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Gizmo.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Etc\\Gizmo.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Etc\\Gizmo.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Etc\\Gizmo.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Etc\\Gizmo.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwCIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:39:47.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReadySort.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\ReadySort.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Ready\\ReadySort.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Ready\\ReadySort.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Ready\\ReadySort.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAswC4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:32:51.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CharacterData.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Data\\CharacterData.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:12:52.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\DataManager.cs",
+              "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\DataManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\DataManager.cs",
+              "RelativeToolTip": "Assets\\2.Scripts\\Manager\\DataManager.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAUwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T05:11:26.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CharacterDataObject.cs",
               "DocumentMoniker": "C:\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
               "ToolTip": "C:\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Users\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\rlawn\\AppData\\Local\\Temp\\_AZTMP1_\\CharacterDataObject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T05:11:05.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "BattleManager.cs",
-              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs",
               "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\BattleManager.cs",
-              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\BattleManager.cs",
               "RelativeToolTip": "Assets\\2.Scripts\\Manager\\BattleManager.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAQwDEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T04:42:35.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T04:42:35.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\2.Scripts\\Manager\\GameManager.cs",
-              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\2.Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\2.Scripts\\Manager\\GameManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,29 +243,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "SpinePreferences.cs",
-              "DocumentMoniker": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "RelativeDocumentMoniker": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
-              "ToolTip": "C:\\Git\\CookieRun-Kingdom\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\Kim\\Class\\Project\\CookieRun-Kingdom\\CookieRunKingdom\\Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
               "RelativeToolTip": "Assets\\11.Spine\\Editor\\spine-unity\\Editor\\Windows\\SpinePreferences.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAADgv3gAAABEAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAmwHgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T14:42:21.637Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 193,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

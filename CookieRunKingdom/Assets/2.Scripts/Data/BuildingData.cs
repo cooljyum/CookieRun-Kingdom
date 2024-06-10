@@ -1,7 +1,20 @@
 using Spine.Unity;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+
+[Serializable]
+public struct ProductInfo
+{
+    public Sprite Sprite;
+    public int MakeTime;
+    public bool IsMaterial;
+    public List<Sprite> MaterialImages;
+    public List<int> MateiralCounts;
+    public int Gold;
+}
 
 [CreateAssetMenu(fileName = "Building", menuName = "Scriptable Object/BuildingData")]
 public class BuildingData : ScriptableObject
@@ -26,4 +39,6 @@ public class BuildingData : ScriptableObject
     public string ProductName;
     public int ProductCount;
     public float ProductRequiredTime;
+
+    public List<ProductInfo> Products;
 }

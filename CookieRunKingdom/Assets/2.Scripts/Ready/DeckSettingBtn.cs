@@ -22,12 +22,13 @@ public class DeckSettingBtn : MonoBehaviour
         _levelData = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         _typeImage = transform.GetChild(2).GetComponent<Image>();
         _check = transform.GetChild(3).GetComponent<Image>();
-        _profileImage = GetComponent<Image>();
-        
+        _check.gameObject.SetActive(false);
+        _profileImage = GetComponent<Image>();        
     }
 
     public void SetData(CharacterData characterData)
     {
+        _characterData = characterData;
         _profileImage.sprite = characterData.profileImage;
         //추후 플레이어 데이터에서 값 받아야 함
         //_levelData.text = characterData.Level.ToString();
@@ -36,13 +37,29 @@ public class DeckSettingBtn : MonoBehaviour
 
     public void OnClick()
     {
-        _isSet = !_isSet;
-
-        if(_isSet )
+        if (!_isSet)
         {
-            _check.gameObject.SetActive(true);
-            _profileImage.sprite.GetComponent<Image>().color = Color.gray;
+            if(ReadyManager.Instance.Add(_characterData))
+            {
+                _isSet = true;
+                _check.gameObject.SetActive(true);
+                _profileImage.color = Color.gray;
+            }            
         }
+        else
+        {
+            _isSet = false;
+            ReadyManager.Instance.Remove(_characterData);
+            _check.gameObject.SetActive(false);
+            _profileImage.color = Color.white;
+        }
+        
+        //_isSet = !_isSet;
+        //
+        //if(_isSet )
+        //{
+        
+        //}
     }
 
 }

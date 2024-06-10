@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7945316053122105691}
   - component: {fileID: 3220208752756051034}
   - component: {fileID: 8061536147968579412}
+  - component: {fileID: 4593545702105239077}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -207,3 +208,16 @@ MonoBehaviour:
   _animationName: battle_idle_back
   loop: 1
   timeScale: 1
+--- !u!114 &4593545702105239077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754840672927024229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bbd5ef34384a949935f7dcfec0c734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 0}

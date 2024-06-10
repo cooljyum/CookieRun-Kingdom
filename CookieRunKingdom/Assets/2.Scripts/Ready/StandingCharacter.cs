@@ -6,26 +6,21 @@ using UnityEngine;
 public class StandingCharacter : MonoBehaviour
 {
     private CharacterData _characterData;
+    public CharacterData CharacterData
+    { get { return _characterData; } }
+
     private SkeletonAnimation _skeletonAnimation;
 
-    [SerializeField]
-    private Transform _transform;
-
-    private void Start()
+    private void Awake()
     {
-        transform.position = _transform.position;
-    }
-
-    public void SetTransform(Transform transform)
-    {
-        _transform = transform;
+        _skeletonAnimation = GetComponent<SkeletonAnimation>();
     }
 
     public void SetData(CharacterData characterData)
     {
-        _characterData = characterData;
-        var skeletonDataAsset = Resources.Load<SkeletonDataAsset>("SkeletonData/Character/" + characterData.Key);
-        _skeletonAnimation.skeletonDataAsset = skeletonDataAsset;
-        _skeletonAnimation.Initialize(true);
+        _characterData = characterData;        
+        _skeletonAnimation.skeletonDataAsset = characterData.SkeletonDataAsset;
+        _skeletonAnimation.AnimationName = "idle";
+        _skeletonAnimation.Initialize(true);        
     }
 }
