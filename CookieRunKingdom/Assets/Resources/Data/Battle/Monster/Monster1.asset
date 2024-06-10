@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 1
   Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD130"
-  Hp: 0
+  Hp: -4583
   Attack: 0
   Defence: 0
   Critical: 0
   Type: 0
   Rarity: 0
   AttackType: 0
-  AttackDamage: 0
-  AttackInterval: 0
+  AttackDamage: 1
+  AttackInterval: 1
+  AttackRange: 2
   SpecialAttacks: []
   SkeletonDataAsset: {fileID: 11400000, guid: 3549b20f23f387745876e9f3d46f18ab, type: 2}
   profileImage: {fileID: 0}

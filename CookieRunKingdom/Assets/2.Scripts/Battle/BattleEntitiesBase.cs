@@ -102,6 +102,14 @@ public abstract class BattleEntitiesBase : MonoBehaviour
                 CharacterData characterData = GetCharacterData(entities[i]);
                 newEntityPrefab.GetComponent<BattleObject>().SetCharacterData(characterData);
                 newEntityPrefab.GetComponent<BattleObject>().IsEnemy = isEnemy;
+                if (!isEnemy)
+                {
+                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange + ( + positionIndex);
+                }
+                else 
+                {
+                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange;
+                }
                 SkeletonAnimation skeletonAnimation = newEntityPrefab.GetComponentInChildren<SkeletonAnimation>();
                 if (skeletonAnimation != null && characterData.SkeletonDataAsset != null)
                 {

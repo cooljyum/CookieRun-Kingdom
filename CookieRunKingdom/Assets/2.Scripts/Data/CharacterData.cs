@@ -24,6 +24,7 @@ public class CharacterData : ScriptableObject
     public AttackType AttackType; // 공격 유형 (물리, 마법, 원거리, 근거리)
     public float AttackDamage; // 공격 데미지
     public float AttackInterval; // 공격 간격 (초 단위)
+    public float AttackRange; // 공격 범위
     public List<SpecialAttack> SpecialAttacks; // 특수 공격 목록
 
     [Header("Appearance")]

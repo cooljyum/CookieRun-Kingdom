@@ -1,19 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Spine.Unity;
 using Spine;
 
 public class CharacterAnimation : MonoBehaviour
 {
-    private SkeletonAnimation skeletonAnimation;
-    private CharacterData characterData;
+    private SkeletonAnimation _skeletonAnimation;
+    private CharacterData _characterData;
+
+    private Dictionary<string, string> _aniMappingList = new Dictionary<string, string>();
+
+    public event System.Action OnAttackComplete;
 
     public void Init(CharacterData data, SkeletonAnimation skeleton)
     {
-        characterData = data;
-        skeletonAnimation = skeleton;
-        skeletonAnimation.AnimationState.Event += HandleAnimationEvent;
+        _characterData = data;
+        _skeletonAnimation = skeleton;
+        _skeletonAnimation.state.Event += HandleAnimationEvent;
+
+        foreach (var mapping in _characterData.AnimationMappings)
+        {
+            _aniMappingList.Add(mapping.Key, mapping.AnimationName);
+        }
     }
 
     public void PlayAnimation(string curSceneName, string status)
@@ -21,7 +30,7 @@ public class CharacterAnimation : MonoBehaviour
         string animationName = GetAnimationName(curSceneName, status);
         if (!string.IsNullOrEmpty(animationName))
         {
-            skeletonAnimation.AnimationState.SetAnimation(0, animationName, true);
+            _skeletonAnimation.AnimationState.SetAnimation(0, animationName, true);
         }
         else
         {
@@ -31,52 +40,25 @@ public class CharacterAnimation : MonoBehaviour
 
     private string GetAnimationName(string curSceneName, string status)
     {
-        foreach (var mapping in characterData.AnimationMappings)
+        string key = curSceneName + "_" + status;
+        if (_aniMappingList.TryGetValue(key, out string animationName))
         {
-            if (mapping.Key == curSceneName + "_" + status)
-            {
-
-                return mapping.AnimationName;
-            }
+            return animationName;
         }
         return null;
     }
 
-    public void RegisterAnimationEvent(string animationName, System.Action<TrackEntry, Spine.Event> e)
+    private string GetStatusFromAniName(string aniName)
     {
-        skeletonAnimation.AnimationState.Event += (trackEntry, evt) =>
-        {
-            if (trackEntry.Animation.Name == animationName)
-            {
-                e(trackEntry, evt);
-            }
-        };
-    }
-
-    private string GetStatusFromAniName(string animationName)
-    {
-        foreach (var mapping in characterData.AnimationMappings)
-        {
-            if (mapping.AnimationName == animationName)
-            {
-                string[] parts = mapping.Key.Split('_');
-                if (parts.Length == 2)
-                {
-                    return parts[1];
-                }
-            }
-        }
-        return null;
+        return _aniMappingList.FirstOrDefault(pair => pair.Value == aniName).Key;
     }
 
     private void HandleAnimationEvent(TrackEntry trackEntry, Spine.Event e)
-    { 
-        string status = GetStatusFromAniName(e.Data.Name);
-        if (status == "Attack")
+    {
+        string status = GetStatusFromAniName(trackEntry.Animation.Name);
+        if (status == "Battle_Attack")
         {
             OnAttackComplete?.Invoke();
         }
     }
-
-    public event System.Action OnAttackComplete;
 }

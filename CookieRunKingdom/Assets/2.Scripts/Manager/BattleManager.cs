@@ -1,15 +1,21 @@
 using Spine.Unity;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleManager : Singleton<BattleManager>
+public class BattleManager : MonoBehaviour
 {
     private List<List<GameObject>> _battleCookies;
     private List<List<List<GameObject>>> _enemiesTeamList;
 
     [SerializeField]
-    private int _enemiesTeamCount = 0;
+    private int _currentEnemyTeamIndex = 0;
+
+    public static BattleManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -21,39 +27,59 @@ public class BattleManager : Singleton<BattleManager>
         SetTargetsToEnemies();
     }
 
-    private void SetTargetsToCookies()
+    public void SetTargetsToCookies()
     {
-        SetTargets(_battleCookies, GetEnemyObjectLists());
+        SetTargets(_battleCookies, GetCurrentEnemyObjectLists());
     }
 
-    private void SetTargetsToEnemies()
+    public void SetTargetsToEnemies()
     {
         if (_enemiesTeamList.Count == 0)
+        {
+            Debug.LogWarning("No enemies team list found!");
             return;
+        }
 
-        SetTargets(GetEnemyObjectLists(), _battleCookies);
+        SetTargets(GetCurrentEnemyObjectLists(), _battleCookies);
     }
 
-    private void SetTargets(List<List<GameObject>> objLists, List<List<GameObject>> targetList)
+    private void SetTargets(List<List<GameObject>> objectLists, List<List<GameObject>> targetLists)
     {
-        foreach (var objList in objLists)
+        foreach (var objectList in objectLists)
         {
-            foreach (var obj in objList)
+            foreach (var obj in objectList)
             {
-                BattleObject battleObj = obj.GetComponent<BattleObject>();
-                GameObject closestObj = FindClosestObject(battleObj.transform, targetList);
+                var battleObj = obj.GetComponent<BattleObject>();
+                var closestObj = FindClosestObject(battleObj.transform.parent, targetLists);
                 if (closestObj != null)
                 {
-                    battleObj.SetTarget(closestObj.transform);
+                    battleObj.SetTarget(closestObj);
                 }
             }
         }
     }
 
-    private List<List<GameObject>> GetEnemyObjectLists()
+    public void SetTargetObj(GameObject gameObj, bool isEnemy = false)
     {
-        return _enemiesTeamList[_enemiesTeamCount];
+        var targetLists = isEnemy ? _battleCookies : GetCurrentEnemyObjectLists();
+        var closestObj = FindClosestObject(gameObj.transform.parent, targetLists);
+        if (closestObj != null)
+        {
+            gameObj.GetComponent<BattleObject>().SetTarget(closestObj);
+        }
     }
+
+    private List<List<GameObject>> GetCurrentEnemyObjectLists()
+    {
+        if (_currentEnemyTeamIndex >= _enemiesTeamList.Count)
+        {
+            Debug.LogError("Invalid enemy team index!");
+            return new List<List<GameObject>>();
+        }
+
+        return _enemiesTeamList[_currentEnemyTeamIndex];
+    }
+
     private GameObject FindClosestObject(Transform originTransform, List<List<GameObject>> objectLists)
     {
         GameObject closestObject = null;
