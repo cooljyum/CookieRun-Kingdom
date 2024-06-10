@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class DeckSettingBtn : MonoBehaviour
 {
+    public DeckData DeckData;
+
     private CharacterData _characterData;
 
     private Image _profileImage;
@@ -18,7 +20,6 @@ public class DeckSettingBtn : MonoBehaviour
 
     private void Awake()
     {
-
         _levelData = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         _typeImage = transform.GetChild(2).GetComponent<Image>();
         _check = transform.GetChild(3).GetComponent<Image>();
@@ -44,7 +45,9 @@ public class DeckSettingBtn : MonoBehaviour
                 _isSet = true;
                 _check.gameObject.SetActive(true);
                 _profileImage.color = Color.gray;
-            }            
+            }
+
+            DeckData.CharacterDatas.Add(_characterData);            
         }
         else
         {
@@ -52,6 +55,8 @@ public class DeckSettingBtn : MonoBehaviour
             ReadyManager.Instance.Remove(_characterData);
             _check.gameObject.SetActive(false);
             _profileImage.color = Color.white;
+
+            DeckData.CharacterDatas.Remove(_characterData);
         }
         
         //_isSet = !_isSet;

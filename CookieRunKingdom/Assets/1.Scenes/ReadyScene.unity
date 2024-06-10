@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 103729525}
   - component: {fileID: 103729526}
   m_Layer: 0
-  m_Name: Front (2)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 103729524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.42, y: 0, z: 0}
+  m_LocalPosition: {x: -2.2, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 320057653}
   - component: {fileID: 320057654}
   m_Layer: 0
-  m_Name: Front (1)
+  m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -939,7 +939,7 @@ Transform:
   m_GameObject: {fileID: 320057652}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1362,7 +1362,7 @@ Transform:
   m_GameObject: {fileID: 438055893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.78, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1383,8 +1383,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: FrontTop
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &481324347
@@ -1842,44 +1842,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591319708}
   m_CullTransparentMesh: 1
---- !u!1 &603320202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 603320203}
-  m_Layer: 0
-  m_Name: FrontPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &603320203
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603320202}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1366395692}
-  - {fileID: 1739528282}
-  - {fileID: 1266721006}
-  m_Father: {fileID: 2128204986}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &692951120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,7 +2040,7 @@ Transform:
   m_GameObject: {fileID: 738164328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.089999914, y: 0.060000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2099,63 +2061,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
---- !u!1 &739246710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 739246711}
-  - component: {fileID: 739246712}
-  m_Layer: 0
-  m_Name: MiddleMid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &739246711
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739246710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1676816520}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &739246712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739246710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: MiddleMid
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
+  GizmoText: BackMid
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &749529963
@@ -2235,61 +2142,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749529963}
   m_CullTransparentMesh: 1
---- !u!1 &768833392
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 768833393}
-  - component: {fileID: 768833394}
-  m_Layer: 0
-  m_Name: MiddleTop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &768833393
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768833392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1676816520}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &768833394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768833392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: MiddleTop
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &792453454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,7 +2302,7 @@ Transform:
   m_GameObject: {fileID: 823812350}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -0.65, z: 0}
+  m_LocalPosition: {x: -0.8, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2471,63 +2323,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
---- !u!1 &844297193
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844297194}
-  - component: {fileID: 844297195}
-  m_Layer: 0
-  m_Name: BackBot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &844297194
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844297193}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1862544737}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &844297195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844297193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
   GizmoText: BackBot
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &853783104
@@ -2628,7 +2425,7 @@ Transform:
   m_GameObject: {fileID: 861570420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.78, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2649,8 +2446,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: MiddleTop
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &895733690
@@ -3028,61 +2825,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962446527}
   m_CullTransparentMesh: 1
---- !u!1 &970396326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 970396327}
-  - component: {fileID: 970396328}
-  m_Layer: 0
-  m_Name: BackTop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &970396327
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970396326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1862544737}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &970396328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970396326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: BackTop
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &1045712984
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3118,7 @@ Transform:
   m_GameObject: {fileID: 1249683772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.07, y: 0, z: 0}
+  m_LocalPosition: {x: 2.2, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3397,116 +3139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3b93dc323651b4387842084d9347ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1257002706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1257002707}
-  - component: {fileID: 1257002708}
-  m_Layer: 0
-  m_Name: MiddleBot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1257002707
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257002706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1676816520}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1257002708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257002706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: MiddleBot
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
---- !u!1 &1266721005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266721006}
-  - component: {fileID: 1266721007}
-  m_Layer: 0
-  m_Name: FrontBot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1266721006
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266721005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 603320203}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1266721007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266721005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: FrontBot
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &1288062246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,7 +3165,7 @@ Transform:
   m_GameObject: {fileID: 1288062246}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.089999914, y: 0.060000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3554,8 +3186,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: FrontMid
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &1360189904
@@ -3634,61 +3266,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360189904}
   m_CullTransparentMesh: 1
---- !u!1 &1366395691
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1366395692}
-  - component: {fileID: 1366395693}
-  m_Layer: 0
-  m_Name: FrontTop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1366395692
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366395691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 603320203}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 1}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1366395693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366395691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: FrontTop
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &1371055564
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,7 +3686,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 522666185}
-  - {fileID: 1862544737}
   m_Father: {fileID: 540543205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1423957465
@@ -4450,7 +4026,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1752727441}
-  - {fileID: 1676816520}
   m_Father: {fileID: 540543205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1500549788
@@ -4566,61 +4141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _deckBtnContent: {fileID: 2123357056}
---- !u!1 &1537718206
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1537718207}
-  - component: {fileID: 1537718208}
-  m_Layer: 0
-  m_Name: BackMid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1537718207
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537718206}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1862544737}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1537718208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537718206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: BackMid
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &1574334199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,7 +4301,7 @@ Transform:
   m_GameObject: {fileID: 1607537072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.78, y: 0.9, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4802,8 +4322,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: BackTop
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &1661382985
@@ -4832,7 +4352,7 @@ Transform:
   m_GameObject: {fileID: 1661382985}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.089999914, y: 0.060000002, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4853,8 +4373,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: MiddleMid
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &1675709421
@@ -4985,44 +4505,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1676816519
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1676816520}
-  m_Layer: 0
-  m_Name: MiddlePosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1676816520
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676816519}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 768833393}
-  - {fileID: 739246711}
-  - {fileID: 1257002707}
-  m_Father: {fileID: 1500549787}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1683047647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5049,7 +4531,7 @@ Transform:
   m_GameObject: {fileID: 1683047647}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -0.65, z: 0}
+  m_LocalPosition: {x: -0.8, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5070,8 +4552,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: MiddleBot
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &1734522570
@@ -5118,61 +4600,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1739528281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739528282}
-  - component: {fileID: 1739528283}
-  m_Layer: 0
-  m_Name: FrontMid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1739528282
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739528281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 603320203}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1739528283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739528281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9fa94f3d7d28f478ba368c9974667f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  GizmoSize: {x: 0.5, y: 0.5, z: 0.5}
-  GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: FrontMid
-  TextOffset: {x: -0.5, y: 0.5, z: 0}
-  TextColor: {r: 1, g: 1, b: 1, a: 1}
-  ShowGizmo: 1
 --- !u!1 &1743025411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,44 +5213,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835925738}
   m_CullTransparentMesh: 1
---- !u!1 &1862544736
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1862544737}
-  m_Layer: 0
-  m_Name: BackPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1862544737
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862544736}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 970396327}
-  - {fileID: 1537718207}
-  - {fileID: 844297194}
-  m_Father: {fileID: 1423957464}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1911289976
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,7 +5913,7 @@ Transform:
   m_GameObject: {fileID: 2106226741}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -0.65, z: 0}
+  m_LocalPosition: {x: -0.8, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6545,8 +5934,8 @@ MonoBehaviour:
   GizmoColor: {r: 1, g: 1, b: 1, a: 1}
   GizmoSize: {x: 1, y: 1, z: 1}
   GizmoOffset: {x: 0, y: 0, z: 0}
-  GizmoText: Gizmo Text
-  TextOffset: {x: 0, y: 1, z: 0}
+  GizmoText: FrontBot
+  TextOffset: {x: -0.25, y: 0.7, z: 0}
   TextColor: {r: 1, g: 1, b: 1, a: 1}
   ShowGizmo: 1
 --- !u!1 &2123357055
@@ -6642,7 +6031,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2088020093}
-  - {fileID: 603320203}
   m_Father: {fileID: 540543205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

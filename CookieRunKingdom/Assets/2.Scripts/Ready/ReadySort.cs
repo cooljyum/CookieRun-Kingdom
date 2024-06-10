@@ -6,7 +6,7 @@ public class ReadySort : MonoBehaviour
 {
     //public List<StandingCharacter> Characters;
     //private GameObject _positions;
-
+    
     private List<Transform> _detailPositions = new List<Transform>();
     private List<GameObject> _characters = new List<GameObject>();
     private void Awake()
@@ -22,7 +22,7 @@ public class ReadySort : MonoBehaviour
         if (_characters.Count == 0)
         {
             character.transform.position = _detailPositions[0].position;
-            _characters.Add(character);
+            _characters.Add(character);            
             return;
         }
 
@@ -31,7 +31,7 @@ public class ReadySort : MonoBehaviour
             _characters[0].transform.position = _detailPositions[1].position;
             character.transform.position = _detailPositions[2].position;
 
-            _characters.Add(character);
+            _characters.Add(character);            
             return;
         }
 
@@ -41,7 +41,7 @@ public class ReadySort : MonoBehaviour
 
     public void Remove(GameObject character)
     {
-        _characters.Remove(character);
+        _characters.Remove(character);        
     }
 
     public int GetSize() {  return _characters.Count; }
