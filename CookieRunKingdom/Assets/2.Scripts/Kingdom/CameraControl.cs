@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    private float _cameraSpeed = 3f;
+    private float _cameraSpeed = 5f;
     private Vector2 touchStart; // 터치 시작 지점
     private Vector3 cameraStartPos; // 터치 시작 시 카메라 위치
-    private float _zoomSpeed = 2f;
-    private float _minZoom = 3f; // 최소 줌 값
-    private float _maxZoom = 10f; // 최대 줌 값
+    private float _zoomSpeed = 5f;
+    private float _minZoom = 5f; // 최소 줌 값
+    private float _maxZoom = 20f; // 최대 줌 값
 
     private void Update()
     {

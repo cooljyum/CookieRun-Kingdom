@@ -11,14 +11,22 @@ public class Building : MonoBehaviour
 
     private void Awake()
     {
-        _skeletonAnimation = GetComponent<SkeletonAnimation>();
+        _skeletonAnimation = GetComponentInChildren<SkeletonAnimation>();
     }
 
-    public void Build(BuildingData buildingData)
+    public void Build(BuildingData buildingData, Vector2 pos) //건물 데이터 세팅 & 설치
     {
-        gameObject.SetActive(true);
-
         _buildingData = buildingData;
+        _skeletonAnimation.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _skeletonAnimation.AnimationName = "loop_back";
+        _skeletonAnimation.Initialize(true);
+        transform.position = pos;
+        gameObject.SetActive(true);
+    }
+
+    public void OnClickBtn() //건물 클릭 -> 생산 창
+    {
+        print("Btn Click");
+        KingdomManager.Instance.CraftPanel.SetActive(true);
     }
 }

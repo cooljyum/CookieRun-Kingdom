@@ -10,13 +10,23 @@ public class KingdomManager : MonoBehaviour
 {
     static public KingdomManager Instance;
 
+    [Header("UI Panel")]
     [SerializeField]
     private GameObject _storePanel;
 
     [SerializeField]
+    private GameObject _buildingInfoPanel;
+
+    [SerializeField]
+    public GameObject CraftPanel;
+
+    [SerializeField]
+    private GameObject _kingdomPlayPanel;
+
+    [Header("---------------------------------------------------------")]
+    [SerializeField]
     private List<GameObject> _myBuildingList = new List<GameObject>(); //내 빌딩 리스트
 
-    //private GameObject _selectedBuilding;
     [SerializeField]
     private SkeletonAnimation _selectedBuilding;
 
@@ -40,13 +50,8 @@ public class KingdomManager : MonoBehaviour
             {
                 _buildingBtnContent = child;
             }
-
+           
         }
-    }
-
-    private void OnEnable()
-    {
-        //StartCoroutine(BuildingControl());
     }
 
     private void Update()
@@ -62,21 +67,19 @@ public class KingdomManager : MonoBehaviour
         _storePanel.SetActive(false);
         _selectedBuildingBtn = buildingBtn;
 
-        //string file = "SkeletonData/" + buildingBtn.BuildingData.Name + "_SkeletonData";
-        //SkeletonAnimation skas = Resources.Load<SkeletonAnimation>(file);
         _selectedBuilding.gameObject.SetActive(true);
         _selectedBuilding.skeletonDataAsset = buildingBtn.BuildingData.SkeletonDataAsset;
         _selectedBuilding.Initialize(true);
     }
     
-    public int Building()
+    public int Building() //선택한 건물의 데이터 키 값 반환
     {
         if (_selectedBuildingBtn == null)
             return 0;
     
         int key = _selectedBuildingBtn.BuildingData.Key;
 
-        _selectedBuildingBtn.SetActive(true);
+        _selectedBuildingBtn.SetInActive(true);
         _selectedBuildingBtn = null;
         _selectedBuilding.gameObject.SetActive(false);
     
@@ -89,14 +92,9 @@ public class KingdomManager : MonoBehaviour
         _storePanel.SetActive(true);
     }
 
-    //private IEnumerator BuildingControl()
-    //{
-    //    while (_selectedBuilding != null) 
-    //    {
-    //        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //        _selectedBuilding.transform.position = Input.mousePosition;
-    //
-    //        yield return null;
-    //    }
-    //}
+    public void OnClickExitBtn()
+    {
+        print("Btn Click");
+        _storePanel.SetActive(false);
+    }
 }

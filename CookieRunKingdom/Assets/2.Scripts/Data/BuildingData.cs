@@ -12,14 +12,18 @@ public class BuildingData : ScriptableObject
     public int Level;
     public int Size;
     public int Point;
+    public SkeletonDataAsset SkeletonDataAsset;
+
+    [Header("Build And Level Up")]
     public int RequiredGold;
     public string RequiredMaterialName;
     public int RequiredMaterialCount;
     public string RequiredEquipmentName;
     public int RequiredEquipmentCount;
     public float RequiredTime;
+
+    [Header("Productive")]
     public string ProductName;
     public int ProductCount;
     public float ProductRequiredTime;
-    public SkeletonDataAsset SkeletonDataAsset;
 }
