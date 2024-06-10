@@ -6,100 +6,72 @@ using UnityEngine;
 public class BattleManager : Singleton<BattleManager>
 {
     private List<List<GameObject>> _battleCookies;
-    private List<BattleObjectSpawnManager.TeamData> _enemiesTeamList;
+    private List<List<List<GameObject>>> _enemiesTeamList;
+
+    [SerializeField]
+    private int _enemiesTeamCount = 0;
 
     private void Start()
     {
         BattleObjectSpawnManager.Instance.Init();
         _battleCookies = BattleObjectSpawnManager.Instance.GetBattleCookies();
-        _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesTeamList();
+        _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesObjList();
 
-        AssignTargetsToCookies();
-        AssignTargetsToEnemies();
+        SetTargetsToCookies();
+        SetTargetsToEnemies();
     }
 
-    private void AssignTargetsToCookies()
+    private void SetTargetsToCookies()
     {
-        foreach (var cookieList in _battleCookies)
-        {
-            foreach (var cookie in cookieList)
-            {
-                BattleObject cookieObject = cookie.GetComponent<BattleObject>();
-                GameObject closestEnemy = FindClosestEnemy(cookieObject.transform);
-                if (closestEnemy != null)
-                {
-                    cookieObject.SetTarget(closestEnemy.transform);
-                }
-            }
-        }
+        SetTargets(_battleCookies, GetEnemyObjectLists());
     }
 
-    private void AssignTargetsToEnemies()
+    private void SetTargetsToEnemies()
     {
         if (_enemiesTeamList.Count == 0)
             return;
 
-        var firstEnemyTeam = _enemiesTeamList[0];
-        List<GameObject> enemies = new List<GameObject>();
-        enemies.AddRange(firstEnemyTeam.Front.BattleObj);
-        enemies.AddRange(firstEnemyTeam.Middle.BattleObj);
-        enemies.AddRange(firstEnemyTeam.Back.BattleObj);
+        SetTargets(GetEnemyObjectLists(), _battleCookies);
+    }
 
-        foreach (var enemy in enemies)
+    private void SetTargets(List<List<GameObject>> objLists, List<List<GameObject>> targetList)
+    {
+        foreach (var objList in objLists)
         {
-            BattleObject enemyObject = enemy.GetComponent<BattleObject>();
-            GameObject closestCookie = FindClosestCookie(enemyObject.transform);
-            if (closestCookie != null)
+            foreach (var obj in objList)
             {
-                enemyObject.SetTarget(closestCookie.transform);
+                BattleObject battleObj = obj.GetComponent<BattleObject>();
+                GameObject closestObj = FindClosestObject(battleObj.transform, targetList);
+                if (closestObj != null)
+                {
+                    battleObj.SetTarget(closestObj.transform);
+                }
             }
         }
     }
 
-    private GameObject FindClosestEnemy(Transform cookieTransform)
+    private List<List<GameObject>> GetEnemyObjectLists()
     {
-        GameObject closestEnemy = null;
-        float minDistance = float.MaxValue;
-
-        foreach (var team in _enemiesTeamList)
-        {
-            List<GameObject> enemies = new List<GameObject>();
-            enemies.AddRange(team.Front.BattleObj);
-            enemies.AddRange(team.Middle.BattleObj);
-            enemies.AddRange(team.Back.BattleObj);
-
-            foreach (var enemy in enemies)
-            {
-                float distance = Vector3.Distance(cookieTransform.position, enemy.transform.position);
-                if (distance < minDistance)
-                {
-                    minDistance = distance;
-                    closestEnemy = enemy;
-                }
-            }
-        }
-
-        return closestEnemy;
+        return _enemiesTeamList[_enemiesTeamCount];
     }
-
-    private GameObject FindClosestCookie(Transform enemyTransform)
+    private GameObject FindClosestObject(Transform originTransform, List<List<GameObject>> objectLists)
     {
-        GameObject closestCookie = null;
+        GameObject closestObject = null;
         float minDistance = float.MaxValue;
 
-        foreach (var cookieList in _battleCookies)
+        foreach (var objectList in objectLists)
         {
-            foreach (var cookie in cookieList)
+            foreach (var obj in objectList)
             {
-                float distance = Vector3.Distance(enemyTransform.position, cookie.transform.position);
+                float distance = Vector3.Distance(originTransform.position, obj.transform.position);
                 if (distance < minDistance)
                 {
                     minDistance = distance;
-                    closestCookie = cookie;
+                    closestObject = obj;
                 }
             }
         }
 
-        return closestCookie;
+        return closestObject;
     }
 }

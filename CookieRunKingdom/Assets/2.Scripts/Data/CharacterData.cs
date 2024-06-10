@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+[System.Serializable]
 [CreateAssetMenu(fileName = "Data", menuName = "Scriptable Object/CharacterData", order = 1)]
 public class CharacterData : ScriptableObject
 {

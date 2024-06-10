@@ -38,6 +38,11 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
         return _battleCookies;
     }
 
+    public List<List<List<GameObject>>> GetEnemiesObjList()
+    {
+        return _battleEnemiesObjectsList;
+
+    }
     public List<TeamData> GetEnemiesTeamList()
     {
         return _enemiesTeamList;

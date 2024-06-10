@@ -74,6 +74,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Front
       objectReference: {fileID: 0}
+    - target: {fileID: 8311601424259103954, guid: 35d2098f1610ec64bac37b5aa41b4a82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311601424259103954, guid: 35d2098f1610ec64bac37b5aa41b4a82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.59
+      objectReference: {fileID: 0}
     - target: {fileID: 8450165576537416564, guid: 35d2098f1610ec64bac37b5aa41b4a82, type: 3}
       propertyPath: m_IsActive
       value: 1

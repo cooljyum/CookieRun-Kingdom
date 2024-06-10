@@ -15,8 +15,7 @@ public class BattleObject : MonoBehaviour
         set { _isEnemy = value; }
     }
 
-    [SerializeField]
-    private float _attackRange = 1f;
+    private float _attackRange = 2f;
 
     [SerializeField]
     private float moveSpeed = 2f;
@@ -25,10 +24,56 @@ public class BattleObject : MonoBehaviour
     private CharacterData _characterData;
 
     [SerializeField]
+    private Stats _stats;
+
+    [System.Serializable]
+    private struct Stats
+    {
+        [SerializeField]
+        private float _hp;
+        [SerializeField]
+        private float _attack;
+        [SerializeField]
+        private float _defence;
+        [SerializeField]
+        private float _critical;
+
+        public float Hp
+        {
+            get { return _hp; }
+            set { _hp = value; }
+        }
+
+        public float Attack
+        {
+            get { return _attack; }
+            set { _attack = value; }
+        }
+
+        public float Defence
+        {
+            get { return _defence; }
+            set { _defence = value; }
+        }
+
+        public float Critical
+        {
+            get { return _critical; }
+            set { _critical = value; }
+        }
+    }
+
+
+    [SerializeField]
     private Transform _target;
 
     [SerializeField]
     private Status _curStatus = Status.Idle;
+
+    public Status CurStatus 
+    {
+        get { return _curStatus; }
+    }
 
     public enum Status
     {
@@ -47,7 +92,13 @@ public class BattleObject : MonoBehaviour
         Debug.Log("Character Initialized: " + _characterData.Name);
         _skeletonAni = GetComponent<SkeletonAnimation>();
         _characterAni = new CharacterAnimation();
-        _characterAni.Initialize(_characterData, _skeletonAni);
+        _characterAni.Init(_characterData, _skeletonAni);
+
+        //SetStats
+        _stats.Hp = _characterData.Hp;
+
+
+       _characterAni.OnAttackComplete += AttackEnd;
 
         SetStatus(Status.Run);
     }
@@ -57,7 +108,7 @@ public class BattleObject : MonoBehaviour
     {
         if (_target != null )
         {
-            float distanceToTarget = Vector3.Distance(transform.position, _target.position);
+            float distanceToTarget = Vector3.Distance(transform.position, _target.parent.position);
             if (distanceToTarget <= _attackRange)
             {
                 SetStatus(Status.Attack);
@@ -85,6 +136,7 @@ public class BattleObject : MonoBehaviour
     }
     private void SetStatus(Status newStatus)
     {
+        if (_curStatus == newStatus) return;
         _curStatus = newStatus;
         _characterAni.PlayAnimation("Battle", _curStatus.ToString());
 
@@ -93,7 +145,6 @@ public class BattleObject : MonoBehaviour
             case Status.Idle:
                 break;
             case Status.Run:
-                AttackTarget();
                 break;
             case Status.Attack:
                 break;
@@ -108,11 +159,24 @@ public class BattleObject : MonoBehaviour
     {
         if (_target != null)
         {
-            Vector3 direction = (_target.position - transform.position).normalized;
-            transform.position += direction * moveSpeed * Time.deltaTime;
+            Vector3 direction = (_target.position - transform.parent.position).normalized;
+            transform.parent.position += direction * moveSpeed * Time.deltaTime;
         }
     }
+    private void AttackEnd()
+    {
+        Debug.Log("Damage dealt to the target");
+        if (_target != null)
+        {
+            _target.GetComponent<BattleObject>().Damege(_characterData.AttackDamage);
+        }
 
+    }
+
+    public void Damege(float damege)
+    {
+        _characterData.Hp -= damege;
+    }
     private void AttackTarget()
     {
         

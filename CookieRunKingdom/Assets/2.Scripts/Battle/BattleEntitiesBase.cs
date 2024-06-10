@@ -8,8 +8,9 @@ public abstract class BattleEntitiesBase : MonoBehaviour
     protected List<List<GameObject>> _battleEntities = new List<List<GameObject>>();
     public List<List<GameObject>> BattleEntitiesList => _battleEntities;
 
-    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath, bool isSpawnEntitiyObj = false, Vector2 position = default, bool hasSquad = false, bool isEnemy = false)
+    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath, bool isSpawnTeam = false, Vector2 position = default, bool hasSquad = false, bool isEnemy = false)
     {
+        //예외처리
         GameObject battleEntitiesObject = GameObject.Find(parentObjectName);
         if (battleEntitiesObject == null)
         {
@@ -24,7 +25,8 @@ public abstract class BattleEntitiesBase : MonoBehaviour
             return;
         }
 
-        if (isSpawnEntitiyObj)
+        //Team Prefeb
+        if (isSpawnTeam)
         {
             GameObject teamPrefab = Resources.Load<GameObject>("Prefabs/Battle/Team");
             GameObject teamPrefabObject = Instantiate(teamPrefab, battleEntitiesObject.transform);

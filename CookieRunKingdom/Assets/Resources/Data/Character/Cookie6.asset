@@ -32,11 +32,9 @@ MonoBehaviour:
     AnimationName: battle_idle_back
   - Key: Battle_Attack
     AnimationName: skill1_back
-  - Key: Battle_Hit
-    AnimationName: skill1
   - Key: Battle_Skill
-    AnimationName: skill1
+    AnimationName: 
   - Key: Battle_Die
-    AnimationName: skill1
+    AnimationName: 
   - Key: Battle_Run
     AnimationName: run_back
