@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DeckSettingManager : MonoBehaviour
@@ -8,18 +7,21 @@ public class DeckSettingManager : MonoBehaviour
     private Transform _deckBtnContent;
 
     private CharacterData _characterData;
-
-
+    private GameObject _teamPower;
+    private TextMeshProUGUI _teamPowerText;
    
 
     private void Start()
     {
         SetDeckBtn();
+        _teamPower = GameObject.Find("TeamPower");
+        _teamPowerText = _teamPower.GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
     {
         SetStandingCharacters();        
+        
     }
 
     private void SetStandingCharacters()

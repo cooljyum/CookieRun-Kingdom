@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class DeckSettingBtn : MonoBehaviour
 {
+    static public DeckSettingBtn Instance;
     public DeckData DeckData;
 
     private CharacterData _characterData;
@@ -15,6 +16,8 @@ public class DeckSettingBtn : MonoBehaviour
     private Image _typeImage;
     private Image _check;
     private TextMeshProUGUI _levelData;
+
+    public float BattlePower;
 
     private bool _isSet = false;
 
@@ -31,8 +34,6 @@ public class DeckSettingBtn : MonoBehaviour
     {
         _characterData = characterData;
         _profileImage.sprite = characterData.profileImage;
-        //추후 플레이어 데이터에서 값 받아야 함
-        //_levelData.text = characterData.Level.ToString();
         _typeImage.sprite = characterData.typeImage;
     }
 
@@ -47,7 +48,7 @@ public class DeckSettingBtn : MonoBehaviour
                 _profileImage.color = Color.gray;
             }
 
-            DeckData.CharacterDatas.Add(_characterData);            
+            BattlePower += _characterData.Attack;
         }
         else
         {
@@ -56,15 +57,8 @@ public class DeckSettingBtn : MonoBehaviour
             _check.gameObject.SetActive(false);
             _profileImage.color = Color.white;
 
-            DeckData.CharacterDatas.Remove(_characterData);
+            BattlePower -= _characterData.Attack;
         }
-        
-        //_isSet = !_isSet;
-        //
-        //if(_isSet )
-        //{
-        
-        //}
     }
 
 }

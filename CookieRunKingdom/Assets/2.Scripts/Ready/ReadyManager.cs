@@ -100,4 +100,10 @@ public class ReadyManager : MonoBehaviour
 
         _selectedCharacters.Remove(characterData.Key);
     }
+
+     public void Clear()
+    {
+        
+            
+    }
 }
