@@ -15,7 +15,6 @@ public class ReadyManager : MonoBehaviour
 
     [SerializeField]
     private List<ReadySort> _readySorts;
-
     private GameObject _characterPrefab;
 
     private Dictionary<int, GameObject> _selectedCharacters = new Dictionary<int, GameObject>();
@@ -24,22 +23,7 @@ public class ReadyManager : MonoBehaviour
     {
         Instance = this;
 
-        _characterPrefab = Resources.Load<GameObject>("Prefabs/Character");
-
-        //Transform[] children = GetComponentsInChildren<Transform>();
-        //
-        //foreach (Transform child in children)
-        //{
-        //    if(child.name == "BattleReadyPanel")
-        //    {
-        //        readyPanel = child.gameObject;
-        //    }
-        //    else if(child.name == "DeckSettingPanel")
-        //    {
-        //        deckPanel = child.gameObject;
-        //    }
-        //}
-
+        _characterPrefab = Resources.Load<GameObject>("Prefabs/Character");        
     }
 
     private void Start()
@@ -116,9 +100,10 @@ public class ReadyManager : MonoBehaviour
         _selectedCharacters.Remove(characterData.Key);
     }
 
-     public void Clear()
+     public int GetPos(CharacterData characterData)
     {
-        
-            
+        //알맞은 값 반환하도록 수정필요
+        return _readySorts[characterData.Key].GetSize();
     }
+
 }

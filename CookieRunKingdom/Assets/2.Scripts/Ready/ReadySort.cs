@@ -5,10 +5,10 @@ using UnityEngine;
 public class ReadySort : MonoBehaviour
 {
     //public List<StandingCharacter> Characters;
-    //private GameObject _positions;
-    
+    //private GameObject _positions;  
+
     private List<Transform> _detailPositions = new List<Transform>();
-    private List<GameObject> _characters = new List<GameObject>();
+    public List<Transform> DetailPositions {  get { return _detailPositions; } }    private List<GameObject> _characters = new List<GameObject>();
     private void Awake()
     {
         for (int i = 0; i < 3; i++)

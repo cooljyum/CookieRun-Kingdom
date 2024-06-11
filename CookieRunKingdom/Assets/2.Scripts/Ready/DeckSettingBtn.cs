@@ -55,6 +55,7 @@ public class DeckSettingBtn : MonoBehaviour
             }
 
             GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
+            
 
             BattlePower += _characterData.Attack;
         }

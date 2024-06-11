@@ -1,13 +1,17 @@
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StandingCharacter : MonoBehaviour
 {
     private CharacterData _characterData;
     public CharacterData CharacterData
     { get { return _characterData; } }
+
+
 
     private SkeletonAnimation _skeletonAnimation;
 
@@ -23,4 +27,6 @@ public class StandingCharacter : MonoBehaviour
         _skeletonAnimation.AnimationName = "idle";
         _skeletonAnimation.Initialize(true);        
     }
+
+
 }
