@@ -21,12 +21,21 @@ public class DeckSettingBtn : MonoBehaviour
     private bool _isSet = false;
 
     private void Awake()
-    {
+    {    
         _levelData = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         _typeImage = transform.GetChild(2).GetComponent<Image>();
         _check = transform.GetChild(3).GetComponent<Image>();
         _check.gameObject.SetActive(false);
-        _profileImage = GetComponent<Image>();        
+        _profileImage = GetComponent<Image>(); 
+        
+    }
+    private void Start()
+    {
+        foreach (int key in GameManager.Instance.CurPlayerData.DeckKeyLists)
+        {
+            if (key == _characterData.Key)
+                ButtonOn();
+        }
     }
 
     public void SetData(CharacterData characterData)
@@ -42,9 +51,7 @@ public class DeckSettingBtn : MonoBehaviour
         {
             if(ReadyManager.Instance.Add(_characterData))
             {
-                _isSet = true;
-                _check.gameObject.SetActive(true);
-                _profileImage.color = Color.gray;
+                ButtonOn();
             }
 
             GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
@@ -53,10 +60,8 @@ public class DeckSettingBtn : MonoBehaviour
         }
         else
         {
-            _isSet = false;
             ReadyManager.Instance.Remove(_characterData);
-            _check.gameObject.SetActive(false);
-            _profileImage.color = Color.white;
+            ButtonOff();
 
             GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key); //키값 삭제
 
@@ -64,4 +69,17 @@ public class DeckSettingBtn : MonoBehaviour
         }
     }
 
+    private void ButtonOn()
+    {
+        _isSet = true;
+        _check.gameObject.SetActive(true);
+        _profileImage.color = Color.gray;
+    }
+
+    private void ButtonOff()
+    {
+        _isSet = false;        
+        _check.gameObject.SetActive(false);
+        _profileImage.color = Color.white;
+    }
 }
