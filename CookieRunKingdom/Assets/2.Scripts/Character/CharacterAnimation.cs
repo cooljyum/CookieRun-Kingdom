@@ -6,18 +6,19 @@ using Spine;
 
 public class CharacterAnimation : MonoBehaviour
 {
-    private SkeletonAnimation _skeletonAnimation;
+    private SkeletonAnimation _skeletonAni;
     private CharacterData _characterData;
 
     private Dictionary<string, string> _aniMappingList = new Dictionary<string, string>();
 
-    public event System.Action OnAttackComplete;
+    public event System.Action OnAttackEnd;
 
-    public void Init(CharacterData data, SkeletonAnimation skeleton)
+    //캐릭터 애니메이션 Init
+    public void Init(CharacterData data, SkeletonAnimation skeletonAni)
     {
         _characterData = data;
-        _skeletonAnimation = skeleton;
-        _skeletonAnimation.state.Event += HandleAnimationEvent;
+        _skeletonAni = skeletonAni;
+        _skeletonAni.state.Event += HandleAniEvent;
 
         foreach (var mapping in _characterData.AnimationMappings)
         {
@@ -25,22 +26,25 @@ public class CharacterAnimation : MonoBehaviour
         }
     }
 
-    public void PlayAnimation(string curSceneName, string status)
+    //Ani 재생
+    public void PlayAni(string curSceneName, string status)
     {
-        string animationName = GetAnimationName(curSceneName, status);
+        string animationName = GetAniName(curSceneName, status);
         if (!string.IsNullOrEmpty(animationName))
         {
-            _skeletonAnimation.AnimationState.SetAnimation(0, animationName, true);
+            _skeletonAni.AnimationState.SetAnimation(0, animationName, true);
         }
         else
         {
-            Debug.LogWarning($"애니메이션 키 '{status}'에 대한 애니메이션 이름을 찾을 수 없습니다.");
+            Debug.LogWarning($"Not Found! Ani Key: '{status}'");
         }
     }
 
-    private string GetAnimationName(string curSceneName, string status)
+    //key따른 Ani 재생
+    private string GetAniName(string curSceneName, string status)
     {
         string key = curSceneName + "_" + status;
+
         if (_aniMappingList.TryGetValue(key, out string animationName))
         {
             return animationName;
@@ -48,17 +52,20 @@ public class CharacterAnimation : MonoBehaviour
         return null;
     }
 
+    //AniName에따른 키값 부르기
     private string GetStatusFromAniName(string aniName)
     {
         return _aniMappingList.FirstOrDefault(pair => pair.Value == aniName).Key;
     }
 
-    private void HandleAnimationEvent(TrackEntry trackEntry, Spine.Event e)
+    //Ani
+    private void HandleAniEvent(TrackEntry trackEntry, Spine.Event e)
     {
         string status = GetStatusFromAniName(trackEntry.Animation.Name);
+     
         if (status == "Battle_Attack")
         {
-            OnAttackComplete?.Invoke();
+            OnAttackEnd();
         }
     }
 }

@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Spine.Unity;
+using UnityEngine;
 
 public class BattleObject : MonoBehaviour
 {
@@ -16,12 +14,12 @@ public class BattleObject : MonoBehaviour
 
     [SerializeField]
     private float _attackRange = 2f;
-
     public float AttackRange 
     {
         get { return _attackRange; }
         set { _attackRange = value; }
     }
+
     [SerializeField]
     private float moveSpeed = 2f;
 
@@ -59,14 +57,19 @@ public class BattleObject : MonoBehaviour
 
     private float _attackCooldownTimer = 0f;
 
+    private void Awake()
+    {
+        _skeletonAni = GetComponent<SkeletonAnimation>();
+        _characterAni = new CharacterAnimation();
+    }
+
     // Start
     private void Start()
     {
         Debug.Log("Character Initialized: " + _characterData.Name);
-        _skeletonAni = GetComponent<SkeletonAnimation>();
-        _characterAni = new CharacterAnimation();
         _characterAni.Init(_characterData, _skeletonAni);
-        _characterAni.OnAttackComplete += AttackEnd;
+        _characterAni.OnAttackEnd += AttackAniEnd;
+
         SetStatus(Status.Run);
     }
 
@@ -75,20 +78,43 @@ public class BattleObject : MonoBehaviour
     {
         if (_target != null)
         {
-            if (_isKnockedBack && _isEnemy)
+            if (_isEnemy)
             {
-                HandleKnockBack();
+                if (_isKnockedBack)
+                    MoveKnockBackPos();
+
+                if (_curStatus == Status.Run)
+                    MoveToTarget();
             }
-            else
-            {
-                HandleMovementAndAttack();
-            }
-            BattleManager.Instance.SetTargetObj(gameObject, _isEnemy);
+
+            SetTarget();
         }
 
+        UpdateStatus();
+    }
+    
+    //Target세팅 
+    private void SetTarget()
+    {
+        if (_target && _target.activeSelf == true)
+        {
+            float distance = GetDistanceToTarget();
+
+            if (distance <= _attackRange)
+                return;
+        }
+
+        BattleManager.Instance.SetTargetObj(gameObject, _isEnemy);
     }
 
-    private void HandleKnockBack()
+    //타겟과의 거리를 얻음
+    private float GetDistanceToTarget()
+    {
+        return Vector3.Distance(transform.position, _target.transform.position);
+    }
+
+    //넉백 이동
+    private void MoveKnockBackPos()
     {
         _knockBackTimer -= Time.deltaTime;
         if (_knockBackTimer > 0)
@@ -101,29 +127,52 @@ public class BattleObject : MonoBehaviour
         }
     }
 
-    private void HandleMovementAndAttack()
+    //Status을 체크
+    private void UpdateStatus()
     {
-        _targetDistance = Vector3.Distance(transform.position, _target.transform.parent.position);
-       // if (_targetDistance <= _attackRange && _attackCooldownTimer <= 0)
-        if (_targetDistance <= _attackRange )
+        if (_target && _target.activeSelf == true)
         {
-            SetStatus(Status.Attack);
+            _targetDistance = GetDistanceToTarget();
+
+            if (_targetDistance <= _attackRange)
+            {
+                SetStatus(Status.Attack);
+            }
+            else if (_curStatus != Status.Run)
+            {
+                SetStatus(Status.Run);
+            }
         }
-        else if (_curStatus != Status.Run)
+        else
         {
             SetStatus(Status.Run);
-            _attackCooldownTimer = 0;
+        }
+    }
+
+    //Status를 세팅
+    private void SetStatus(Status newStatus)
+    {
+        if (_curStatus == newStatus) return;
+
+        _curStatus = newStatus;
+
+        switch (_curStatus)
+        {
+            case Status.Idle:
+                break;
+            case Status.Run:
+                break;
+            case Status.Attack:
+                Attack();
+                break;
+            case Status.Defend:
+                break;
+            default:
+                break;
         }
 
-        if (_isEnemy && _curStatus == Status.Run)
-        {
-            MoveTowardsTarget();
-        }
-
-        if (_curStatus == Status.Attack)
-        {
-            _attackCooldownTimer -= Time.deltaTime;
-        }
+        //Status
+        _characterAni.PlayAni("Battle", _curStatus.ToString());
     }
 
     // Set
@@ -137,29 +186,7 @@ public class BattleObject : MonoBehaviour
         _characterData = newCharacterData;
     }
 
-    private void SetStatus(Status newStatus)
-    {
-        if (_curStatus == newStatus) return;
-        _curStatus = newStatus;
-        _characterAni.PlayAnimation("Battle", _curStatus.ToString());
-
-        switch (_curStatus)
-        {
-            case Status.Idle:
-                break;
-            case Status.Run:
-                break;
-            case Status.Attack:
-                PerformAttack();
-                break;
-            case Status.Defend:
-                break;
-            default:
-                break;
-        }
-    }
-
-    private void MoveTowardsTarget()
+    private void MoveToTarget()
     {
         if (_target != null)
         {
@@ -168,7 +195,7 @@ public class BattleObject : MonoBehaviour
         }
     }
 
-    private void PerformAttack()
+    private void Attack()
     {
         //switch (_characterData.AttackType)
         //{
@@ -228,16 +255,14 @@ public class BattleObject : MonoBehaviour
         return damage;
     }
 
-    private void AttackEnd()
+    private void AttackAniEnd()
     {
-        Debug.Log("Damage dealt to the target");
         if (_target != null&& _curStatus  == Status.Attack)
         {
             _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
         }
 
-        // Set attack cooldown timer here
-        _attackCooldownTimer = _characterData.AttackInterval;
+       // _attackCooldownTimer = _characterData.AttackInterval;
     }
 
     public void Damage(float damage)
@@ -249,15 +274,23 @@ public class BattleObject : MonoBehaviour
 
         if (_characterData.Hp <= 0)
         {
-            // 캐릭터가 죽었을 때
-            Debug.Log("Character died");
+            Die();
         }
-
-        KnockBack();
-
     }
 
-    private void KnockBack()
+    private void Die() 
+    {
+        // 캐릭터가 죽었을 때
+        Debug.Log("Character died");
+
+        _characterData.Hp = 0;
+
+        BattleManager.Instance.UpdateKillBattleInfo(_isEnemy);
+
+        gameObject.SetActive(false);
+    }
+
+    private void KnockBack() // 넉백
     {
         _knockBackDirection = new Vector3(transform.parent.localScale.x, transform.parent.localScale.y * 0.5f, 0) * 50f;
         _isKnockedBack = true;
