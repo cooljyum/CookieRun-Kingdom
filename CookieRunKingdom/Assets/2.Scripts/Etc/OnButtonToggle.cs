@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class OnButtonToggle : MonoBehaviour
 {
     public Button ClearButton;
-    private CharacterData _characterData;
+    private StandingCharacter _character;
     public bool isOn = false;
 
     public void Awake()
     {
-        _characterData = base.GetComponent<CharacterData>();
-        
+        _character = GetComponent<StandingCharacter>();        
     }
     public void OneButtonToggle()
     {

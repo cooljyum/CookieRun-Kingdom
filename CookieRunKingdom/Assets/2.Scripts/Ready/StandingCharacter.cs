@@ -14,10 +14,25 @@ public class StandingCharacter : MonoBehaviour
 
 
     private SkeletonAnimation _skeletonAnimation;
+    private BoxCollider2D _collider;
 
     private void Awake()
     {
         _skeletonAnimation = GetComponent<SkeletonAnimation>();
+        _collider = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if(_collider.bounds.Contains(worldPos))
+            {
+                print(_characterData.name);
+            }
+        }
     }
 
     public void SetData(CharacterData characterData)

@@ -17,29 +17,49 @@ public class ReadyManager : MonoBehaviour
     private List<ReadySort> _readySorts;
     private GameObject _characterPrefab;
 
+    private DeckSettingManager _deckSettingManager;
+
     private Dictionary<int, GameObject> _selectedCharacters = new Dictionary<int, GameObject>();
 
     private void Awake()
     {
         Instance = this;
 
-        _characterPrefab = Resources.Load<GameObject>("Prefabs/Character");        
+        _characterPrefab = Resources.Load<GameObject>("Prefabs/Character");
+        _deckSettingManager = GetComponentInChildren<DeckSettingManager>();
     }
 
     private void Start()
     {
-        foreach (var character in GameManager.Instance.CurPlayerData.DeckKeyLists)
+        LoadDeck();
+    }
+
+    public void LoadDeck()
+    {
+        List<int> deckLists = GameManager.Instance.CurPlayerData.DeckKeyLists;
+
+        foreach (int character in deckLists)
         {
-            CharacterData characterData = DataManager.Instance.GetCharacterData(character);
-            if (characterData != null)
-            {
-                Add(characterData);
-            }
-            else 
-            {
-                print($"ReadyManager::Character data not found for key: {characterData.Key}");
-            }
+            _deckSettingManager.GetDeckBtn(character).AddCharacter();
         }
+    }
+
+    public void Exit()
+    {
+        SaveDeck();
+
+    }
+
+    public void SaveDeck()
+    {
+        GameManager.Instance.CurPlayerData.DeckKeyLists.Clear();
+
+        foreach(KeyValuePair<int, GameObject> selectCharacter in _selectedCharacters)
+        {
+            GameManager.Instance.CurPlayerData.DeckKeyLists.Add(selectCharacter.Key);
+        }
+
+
     }
     public void OnClickDeckSetting()
     {

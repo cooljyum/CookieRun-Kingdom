@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
         set { _curPlayerData = value; }
     }
 
-    public List<int> MyCards = new List<int>();
     public List<int> MyBuildings = new List<int>();
     public List<int> MyItems = new List<int>();
 
@@ -53,8 +52,8 @@ public class GameManager : MonoBehaviour
 
     private void LoadMyCards()
     {
-        List<int> myCardsList = new List<int>();
-        myCardsList = PlayerDataManager
+        //List<int> myCardsList = new List<int>();
+        //myCardsList = PlayerDataManager
     }
 
     public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 

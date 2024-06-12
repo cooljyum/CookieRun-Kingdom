@@ -31,11 +31,11 @@ public class DeckSettingBtn : MonoBehaviour
     }
     private void Start()
     {
-        foreach (int key in GameManager.Instance.CurPlayerData.DeckKeyLists)
-        {
-            if (key == _characterData.Key)
-                ButtonOn();
-        }
+        //foreach (int key in GameManager.Instance.CurPlayerData.DeckKeyLists)
+        //{
+        //    if (key == _characterData.Key)
+        //        ButtonOn();
+        //}
     }
 
     public void SetData(CharacterData characterData)
@@ -49,25 +49,36 @@ public class DeckSettingBtn : MonoBehaviour
     {
         if (!_isSet)
         {
-            if(ReadyManager.Instance.Add(_characterData))
-            {
-                ButtonOn();
-            }
-
-            GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
-            
-
-            BattlePower += _characterData.Attack;
+            AddCharacter();
         }
         else
         {
-            ReadyManager.Instance.Remove(_characterData);
-            ButtonOff();
-
-            GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key); //키값 삭제
-
-            BattlePower -= _characterData.Attack;
+            RemoveCharacter();
         }
+    }
+
+    public void AddCharacter()
+    {
+        if (_isSet) return;
+
+        if (ReadyManager.Instance.Add(_characterData))
+        {
+            ButtonOn();
+            //GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
+            BattlePower += _characterData.Attack;
+        }        
+    }
+
+    public void RemoveCharacter()
+    {
+        if(!_isSet) return;
+
+        ReadyManager.Instance.Remove(_characterData);
+        ButtonOff();
+
+        //GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key); //키값 삭제
+
+        BattlePower -= _characterData.Attack;
     }
 
     private void ButtonOn()
