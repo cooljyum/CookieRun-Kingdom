@@ -32,7 +32,7 @@ public class DeckSettingManager : MonoBehaviour
     {
         GameObject btnPrefab = Resources.Load<GameObject>("Prefabs/BattleReady/DeckBtn");
 
-        foreach(int myCard in )
+        foreach(int myCard in GameManager.Instance.MyCards )
         {
             CharacterData data = DataManager.Instance.GetCharacterData(myCard);
 

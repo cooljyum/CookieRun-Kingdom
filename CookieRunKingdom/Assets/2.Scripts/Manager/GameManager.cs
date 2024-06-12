@@ -35,8 +35,6 @@ public class GameManager : MonoBehaviour
         _playerDataManager = new PlayerDataManager();
         _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
 
-        
-
         // MyBuildings 리스트 초기화
         InitializeMyBuildings();
     }
@@ -51,6 +49,12 @@ public class GameManager : MonoBehaviour
         {
             MyBuildings.Add(buildingData.Key);
         }
+    }
+
+    private void LoadMyCards()
+    {
+        List<int> myCardsList = new List<int>();
+        myCardsList = PlayerDataManager
     }
 
     public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 
