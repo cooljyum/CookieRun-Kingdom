@@ -87,8 +87,8 @@ Material:
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
-    - _TextureHeight: 512
-    - _TextureWidth: 512
+    - _TextureHeight: 4096
+    - _TextureWidth: 4096
     - _UnderlayDilate: 0.15
     - _UnderlayOffsetX: 0
     - _UnderlayOffsetY: -0.1
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_FreeGlyphRects:
   - m_X: 0
     m_Y: 0
-    m_Width: 511
-    m_Height: 511
+    m_Width: 4095
+    m_Height: 4095
   m_fontInfo:
     Name: 
     PointSize: 0
@@ -187,8 +187,8 @@ MonoBehaviour:
     AtlasWidth: 0
     AtlasHeight: 0
   atlas: {fileID: 0}
-  m_AtlasWidth: 512
-  m_AtlasHeight: 512
+  m_AtlasWidth: 4096
+  m_AtlasHeight: 4096
   m_AtlasPadding: 5
   m_AtlasRenderMode: 4165
   m_glyphInfoList: []
@@ -205,8 +205,8 @@ MonoBehaviour:
     pointSize: 60
     padding: 5
     packingMode: 0
-    atlasWidth: 512
-    atlasHeight: 512
+    atlasWidth: 4096
+    atlasHeight: 4096
     characterSetSelectionMode: 0
     characterSequence: 32 - 126, 160, 8203, 8230, 9633
     referencedFontAssetGUID: 

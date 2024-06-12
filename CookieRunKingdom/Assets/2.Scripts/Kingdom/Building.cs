@@ -26,6 +26,6 @@ public class Building : MonoBehaviour
     public void OnClickBtn() //건물 클릭 -> 생산 창
     {
         print("Btn Click");
-        KingdomManager.Instance.ProducePanel.SetActive(true);
+        KingdomManager.Instance.CraftPanel.SetActive(true);
     }
 }

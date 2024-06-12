@@ -49,6 +49,7 @@ public class PlayerDataManager : MonoBehaviour
         playerData.Level = 1;
         playerData.Exp = 0;
         playerData.DeckKeyLists = new System.Collections.Generic.List<int>();
+        playerData.BuildingKeyLists = new System.Collections.Generic.List<int>();
         playerData.PosIndexLists = new System.Collections.Generic.List<List<int>>();
         return playerData;
     }

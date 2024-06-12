@@ -20,7 +20,9 @@ public class GameManager : MonoBehaviour
         set { _curPlayerData = value; }
     }
 
-    public List<int> myCards = new List<int>();
+    public List<int> MyCards = new List<int>();
+    public List<int> MyBuildings = new List<int>();
+    public List<int> MyItems = new List<int>();
 
     private void Awake()
     {
@@ -32,6 +34,21 @@ public class GameManager : MonoBehaviour
 
         _playerDataManager = new PlayerDataManager();
         _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
+
+        // MyBuildings 리스트 초기화
+        InitializeMyBuildings();
+    }
+
+    private void InitializeMyBuildings()
+    {
+        //BuildingData 로드
+        BuildingData[] buildingDataArray = Resources.LoadAll<BuildingData>("Data/Building");
+
+        //MyBuildings 리스트 초기화
+        foreach (BuildingData buildingData in buildingDataArray)
+        {
+            MyBuildings.Add(buildingData.Key);
+        }
     }
 
     public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 

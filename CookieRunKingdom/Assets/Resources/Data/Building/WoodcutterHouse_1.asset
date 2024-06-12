@@ -25,29 +25,10 @@ MonoBehaviour:
   RequiredEquipmentName: 0
   RequiredEquipmentCount: 0
   RequiredTime: 4
-  ProductName: Wood
-  ProductCount: 3
-  ProductRequiredTime: 12
-  Products:
-  - Sprite: {fileID: 21300000, guid: 4c48a2373ac1ae94ab24316c8f7c799a, type: 3}
-    MakeTime: 90
+  CraftInfos:
+  - RenderTexture: {fileID: 8400000, guid: 7734083bc724a4f4b974e485ea9dff7c, type: 2}
+    RequiredTime: 0
     IsMaterial: 1
-    MaterialImages:
-    - {fileID: 21300000, guid: 4c48a2373ac1ae94ab24316c8f7c799a, type: 3}
-    MateiralCounts: 03000000
-    Gold: 100
-  - Sprite: {fileID: 21300000, guid: aa4c59131fb671a459e292a7614d7fc2, type: 3}
-    MakeTime: 180
-    IsMaterial: 1
-    MaterialImages:
-    - {fileID: 21300000, guid: 4c48a2373ac1ae94ab24316c8f7c799a, type: 3}
-    MateiralCounts: 09000000
-    Gold: 500
-  - Sprite: {fileID: 21300000, guid: 66713adcb1c0e42489cfd778a3d1b35a, type: 3}
-    MakeTime: 180
-    IsMaterial: 0
-    MaterialImages:
-    - {fileID: 21300000, guid: 4c48a2373ac1ae94ab24316c8f7c799a, type: 3}
-    - {fileID: 21300000, guid: 738243da7cbb51041ab47b88391f4da9, type: 3}
-    MateiralCounts: 0300000005000000
-    Gold: 1000
+    ItemImages: []
+    ItemCounts: 
+    Cost: 0

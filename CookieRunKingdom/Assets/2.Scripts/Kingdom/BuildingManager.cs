@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class BuildingManager : MonoBehaviour
 {
-    private GameObject _buildingPrefab;
     private Collider2D _collider;
     private Building _building;
 
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
-        _buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Building");
+    }
 
-        GameObject buildingObj = Instantiate(_buildingPrefab, transform);
-        buildingObj.transform.localPosition = Vector3.zero;
+    private void Start()
+    {
+        GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Building");
+        GameObject buildingObj = Instantiate(buildingPrefab, transform);
         _building = buildingObj.GetComponent<Building>();
+
+        buildingObj.transform.localPosition = Vector3.zero;
         buildingObj.SetActive(false);
     }
 

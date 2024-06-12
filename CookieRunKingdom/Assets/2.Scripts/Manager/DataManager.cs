@@ -2,11 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static BattleObjectSpawnManager;
 
 public class DataManager : Singleton<DataManager>
 {
     private Dictionary<int, CharacterData> _characterDatas = new Dictionary<int, CharacterData>();
+
+    //Kingdom
     private Dictionary<int, BuildingData> _buildingDatas = new Dictionary<int, BuildingData>();
+    private Dictionary<int, ItemData> _itemDatas = new Dictionary<int, ItemData>();
 
     //Battle
     private Dictionary<int, CharacterData> _monsterDatas = new Dictionary<int, CharacterData>();
@@ -27,6 +31,7 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    //Kingdom
     public BuildingData GetBuildingData(int key)
     {
         if (_buildingDatas.ContainsKey(key))
@@ -36,6 +41,18 @@ public class DataManager : Singleton<DataManager>
         else
         {
             Debug.LogWarning("BuildingData with key " + key + " not found.");
+            return null;
+        }
+    }
+    public ItemData GetItemData(int key)
+    {
+        if (_itemDatas.ContainsKey(key))
+        {
+            return _itemDatas[key];
+        }
+        else
+        {
+            Debug.LogWarning("ItemData with key " + key + " not found.");
             return null;
         }
     }
@@ -83,7 +100,10 @@ public class DataManager : Singleton<DataManager>
     {
         print("=== DataManager::LoadData() ===");
         LoadCookieCharacterTable();
+
+        //Kingdom
         LoadBuildingTable();
+        LoadItemTable();
 
         //Battle
         LoadBattleTables();
@@ -107,6 +127,7 @@ public class DataManager : Singleton<DataManager>
         }
     }
 
+    //Kingdom
     private void LoadBuildingTable()
     {
         _buildingDatas.Clear();
@@ -121,6 +142,23 @@ public class DataManager : Singleton<DataManager>
             else
             {
                 Debug.LogWarning("Duplicate BuildingData Name: " + data.Name);
+            }
+        }
+    }
+    private void LoadItemTable()
+    {
+        _itemDatas.Clear();
+        ItemData[] itemDataArray = Resources.LoadAll<ItemData>("Data/Item");
+
+        foreach (ItemData data in itemDataArray)
+        {
+            if (!_itemDatas.ContainsKey(data.Key))
+            {
+                _itemDatas.Add(data.Key, data);
+            }
+            else
+            {
+                Debug.LogWarning("Duplicate ItemData Name: " + data.Name);
             }
         }
     }

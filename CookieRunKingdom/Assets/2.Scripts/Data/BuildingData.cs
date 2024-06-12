@@ -6,14 +6,14 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [Serializable]
-public struct ProductInfo
+public struct CraftItemInfo //아이템 생산 정보
 {
-    public Sprite Sprite;
-    public int MakeTime;
+    public RenderTexture RenderTexture;
+    public int RequiredTime;
     public bool IsMaterial;
-    public List<Sprite> MaterialImages;
-    public List<int> MateiralCounts;
-    public int Gold;
+    public List<Sprite> ItemImages;
+    public List<int> ItemCounts;
+    public int Cost;
 }
 
 [CreateAssetMenu(fileName = "Building", menuName = "Scriptable Object/BuildingData")]
@@ -27,7 +27,7 @@ public class BuildingData : ScriptableObject
     public int Point;
     public SkeletonDataAsset SkeletonDataAsset;
 
-    [Header("Build And Level Up")]
+    [Header("Build And Level Up")] //건설 및 레벨 업 조건
     public int RequiredGold;
     public string RequiredMaterialName;
     public int RequiredMaterialCount;
@@ -35,10 +35,6 @@ public class BuildingData : ScriptableObject
     public int RequiredEquipmentCount;
     public float RequiredTime;
 
-    [Header("Productive")]
-    public string ProductName;
-    public int ProductCount;
-    public float ProductRequiredTime;
-
-    public List<ProductInfo> Products;
+    [Header("Productive Building")] //생산적 건물
+    public List<CraftItemInfo> CraftInfos;
 }
