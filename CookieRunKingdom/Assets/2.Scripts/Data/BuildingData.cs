@@ -10,10 +10,10 @@ public struct CraftItemInfo //아이템 생산 정보
 {
     public RenderTexture RenderTexture;
     public int RequiredTime;
-    public bool IsMaterial;
-    public List<Sprite> ItemImages;
-    public List<int> ItemCounts;
-    public int Cost;
+    public bool IsMaterial;    
+    public int Cost;    
+    public ItemData ResultItem;
+    public int ResultCount;
 }
 
 [CreateAssetMenu(fileName = "Building", menuName = "Scriptable Object/BuildingData")]
