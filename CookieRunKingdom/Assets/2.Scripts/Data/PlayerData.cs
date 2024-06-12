@@ -9,4 +9,5 @@ public class PlayerData
     public List<int> DeckKeyLists;
     public List<int> BuildingKeyLists;
     public List<List<int>> PosIndexLists;
+    public List<int> MyCardsLists;
 }

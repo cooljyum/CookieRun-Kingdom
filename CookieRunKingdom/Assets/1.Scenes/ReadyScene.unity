@@ -1884,7 +1884,11 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     DeckKeyLists: 
-  myCards: 0100000002000000030000000400000005000000
+    BuildingKeyLists: 
+    MyCardsLists: 
+  MyCards: 
+  MyBuildings: 
+  MyItems: 
 --- !u!4 &529245862
 Transform:
   m_ObjectHideFlags: 0

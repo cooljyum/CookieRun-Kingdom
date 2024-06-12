@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
         _playerDataManager = new PlayerDataManager();
         _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
 
+        
+
         // MyBuildings 리스트 초기화
         InitializeMyBuildings();
     }
