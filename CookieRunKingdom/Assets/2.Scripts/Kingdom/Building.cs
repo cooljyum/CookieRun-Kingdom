@@ -8,10 +8,24 @@ public class Building : MonoBehaviour
 {
     private BuildingData _buildingData;
     private SkeletonAnimation _skeletonAnimation;
+    private BoxCollider2D _collider;
 
     private void Awake()
     {
         _skeletonAnimation = GetComponentInChildren<SkeletonAnimation>();
+        _collider = GetComponent<BoxCollider2D>();
+    }
+
+    private void Update()
+    {
+        if(Input.GetMouseButtonUp(0))
+        {
+            Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if(_collider.bounds.Contains(worldPos))
+            {
+                OnClickBtn();
+            }
+        }
     }
 
     public void Build(BuildingData buildingData, Vector2 pos) //건물 데이터 세팅 & 설치
@@ -25,7 +39,6 @@ public class Building : MonoBehaviour
 
     public void OnClickBtn() //건물 클릭 -> 생산 창
     {
-        print("Btn Click");
-        KingdomManager.Instance.CraftPanel.SetActive(true);
+        KingdomManager.Instance.OnClickBuilding(_buildingData);
     }
 }

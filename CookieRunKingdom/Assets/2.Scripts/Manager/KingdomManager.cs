@@ -1,6 +1,7 @@
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEditor.Animations;
 using UnityEditor.SceneManagement;
@@ -22,7 +23,7 @@ public class KingdomManager : MonoBehaviour
     private GameObject _buildingInfoPanel;
 
     [SerializeField]
-    public GameObject CraftPanel;
+    private CraftUI _craftUI;
 
     [SerializeField]
     private GameObject _kingdomPlayPanel;
@@ -31,37 +32,20 @@ public class KingdomManager : MonoBehaviour
     [SerializeField]
     private SkeletonAnimation _selectedBuilding;
 
-    private StoreBuildingUI _selectedBuildingUI;    
+    [SerializeField]
     private Transform _cTypeBuildingContent; //건설 타입(constrctType)
-    private Transform _dTypeBuildingContent; //꾸미기 타입(decorateType)
-    private Transform _itemCellContent;
+    [SerializeField]
+    private Transform _dTypeBuildingContent; //꾸미기 타입(decorateType)    
+
+    private StoreBuildingUI _selectedBuildingUI;    
+    
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
 
     private void Awake()
     {
-        Instance = this;
-
-        Transform[] childen = GetComponentsInChildren<Transform>();
-
-        foreach (Transform child in childen)
-        {
-            string name = child.name;
-
-            if (name == "ConstructContent")
-            {
-                _cTypeBuildingContent = child;
-            }
-            else if (name == "DecorateContent")
-            {
-                _dTypeBuildingContent = child;
-            }
-            else if (name == "ProduceContent")
-            {
-                _itemCellContent = child;
-            }
-        }
+        Instance = this;               
     }
 
     private void Start()
@@ -86,13 +70,7 @@ public class KingdomManager : MonoBehaviour
             GameObject buildingObj = Instantiate(dTypeBuildingPrefab, _dTypeBuildingContent);
         }
 
-        //건물 생산 칸 생성
-        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/CraftItemCell");
         
-        for(int i = 0; i < 3; i++)
-        {
-            GameObject itemObj = Instantiate(itemPrefab, _itemCellContent);
-        }
     }
 
     private void Update()
@@ -153,5 +131,11 @@ public class KingdomManager : MonoBehaviour
         print("DecorateTypeBtn Click");
         _cTypeBuildingContent.gameObject.SetActive(false);
         _dTypeBuildingContent.gameObject.SetActive(true);
+    }
+
+    public void OnClickBuilding(BuildingData data)
+    {
+        _craftUI.gameObject.SetActive(true);
+        _craftUI.CreateCraftItem(data);
     }
 }

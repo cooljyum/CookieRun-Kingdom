@@ -67,11 +67,11 @@ public class CraftItemUI : MonoBehaviour
 
     private void Start()
     {
-        CraftItemInfo craftItemInfo = _buildingData.CraftInfos[_craftIndex];
-        SetData(craftItemInfo, _itemData);
+        //CraftItemInfo craftItemInfo = _buildingData.CraftInfos[_craftIndex];
+        //SetData(craftItemInfo, _itemData);
     }
 
-    private void SetData(CraftItemInfo craftItemInfo, ItemData itemData)
+    public void SetData(CraftItemInfo craftItemInfo)
     {
         if (craftItemInfo.IsMaterial)
         {
@@ -97,6 +97,6 @@ public class CraftItemUI : MonoBehaviour
     public void OnClickExitBtn() //Craft-³ª°¡±â
     {
         print("ExitBtn Click");
-        KingdomManager.Instance.CraftPanel.SetActive(false);
+        //KingdomManager.Instance.CraftPanel.SetActive(false);
     }
 }

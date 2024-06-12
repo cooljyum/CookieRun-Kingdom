@@ -8,11 +8,9 @@ public class ItemData : ScriptableObject
     [Header("Material & Equipment")]
     public int Key;
     public string Name;
-    public int Amount;
+    public Sprite Image;
 
     [Header("Equipment : Required Information")]
-    public string RequiredMaterial1Name;
-    public int RequiredMaterial1Amount;
-    public string RequiredMaterial2Name;
-    public int RequiredMaterial2Amount;
+    public List<int> MateiralKeys;
+    public List<int> MateiralAmounts;
 }
