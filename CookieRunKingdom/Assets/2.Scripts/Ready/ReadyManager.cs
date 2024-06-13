@@ -44,6 +44,16 @@ public class ReadyManager : MonoBehaviour
         }
     }
 
+    public void LoadReady()
+    {
+        List<int> deckLists = GameManager.Instance.CurPlayerData.DeckKeyLists;
+
+        foreach (int character in deckLists)
+        {
+            Add(DataManager.Instance.GetCharacterData(character));
+        }
+    }
+
     public void Exit()
     {
         SaveDeck();
@@ -57,18 +67,31 @@ public class ReadyManager : MonoBehaviour
         foreach(KeyValuePair<int, GameObject> selectCharacter in _selectedCharacters)
         {
             GameManager.Instance.CurPlayerData.DeckKeyLists.Add(selectCharacter.Key);
+            Destroy(selectCharacter.Value);
+        }
+
+        _selectedCharacters.Clear();
+        foreach (ReadySort readySort in _readySorts)
+        {
+            readySort.Clear();
         }
     }
 
+    //Enter Ready Panel
     public void ExitDeckPanel()
     {
         readyPanel.SetActive(true);
         deckPanel.SetActive(false);
+
+        LoadReady();
     }
     public void OnClickDeckSetting()
     {
         readyPanel.SetActive(false);
         deckPanel.SetActive(true);
+
+        SaveDeck();
+        LoadDeck();        
     }    
     
     public bool Add(CharacterData characterData)
