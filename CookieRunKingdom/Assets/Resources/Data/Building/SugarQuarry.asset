@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bd8f3197b4c674da2f0c18f947ed0a, type: 3}
+  m_Name: SugarQuarry
+  m_EditorClassIdentifier: 
+  Key: 30
+  Name: "\uAC01\uC124\uD0D5 \uCC44\uC11D\uC7A5"
+  Type: Productive
+  Size: 12
+  Point: 24
+  SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+  RequiredGold: 1500
+  RequiredMaterial: {fileID: 11400000, guid: 4c353fee5149d114eb523a7df2d4bd36, type: 2}
+  RequiredMaterialCount: 6
+  RequiredEquipment: {fileID: 11400000, guid: 1ae1d764f813975489d74bfd070f3190, type: 2}
+  RequiredEquipmentCount: 2
+  RequiredTime: 240
+  CraftInfos:
+  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+    RequiredTime: 90
+    IsMaterial: 1
+    Cost: 80
+    ResultItem: {fileID: 11400000, guid: bbb98c2b915b4ef40815586288d4436a, type: 2}
+    ResultCount: 3
+  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+    RequiredTime: 840
+    IsMaterial: 1
+    Cost: 240
+    ResultItem: {fileID: 11400000, guid: b274eedf6b955f94fb64681942642a1f, type: 2}
+    ResultCount: 9
+  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+    RequiredTime: 6300
+    IsMaterial: 1
+    Cost: 540
+    ResultItem: {fileID: 11400000, guid: db60761f94926d248994fd98b7511bdd, type: 2}
+    ResultCount: 20

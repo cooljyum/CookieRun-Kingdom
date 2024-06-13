@@ -8,10 +8,10 @@ using UnityEngine.UIElements;
 [Serializable]
 public struct CraftItemInfo //아이템 생산 정보
 {
-    public RenderTexture RenderTexture;
+    public SkeletonDataAsset SkeletonDataAsset;
     public int RequiredTime;
-    public bool IsMaterial;    
-    public int Cost;    
+    public bool IsMaterial;
+    public int Cost;
     public ItemData ResultItem;
     public int ResultCount;
 }
@@ -22,19 +22,19 @@ public class BuildingData : ScriptableObject
     public int Key;
     public string Name;
     public string Type;
-    public int Level;
+    //public int Level;
     public int Size;
     public int Point;
     public SkeletonDataAsset SkeletonDataAsset;
 
     [Header("Build And Level Up")] //건설 및 레벨 업 조건
     public int RequiredGold;
-    public string RequiredMaterialName;
+    public ItemData RequiredMaterial;
     public int RequiredMaterialCount;
-    public string RequiredEquipmentName;
+    public ItemData RequiredEquipment;
     public int RequiredEquipmentCount;
     public float RequiredTime;
 
-    [Header("Productive Building")] //생산적 건물
+    [Header("Productive Building")] //생산성 건물
     public List<CraftItemInfo> CraftInfos;
 }

@@ -7,8 +7,6 @@ using UnityEngine.UI;
 
 public class StoreBuildingUI : MonoBehaviour
 {
-    public BuildingData BuildingData;
-
     [SerializeField]
     private SkeletonGraphic _buildingImage;
     [SerializeField]
@@ -22,33 +20,32 @@ public class StoreBuildingUI : MonoBehaviour
     [SerializeField]
     private GameObject _inactiveImage;
 
+    public BuildingData BuildingData;
+    private bool _isCType;
+    
     private void Awake()
     {
-        //_buildingImage = transform.GetChild(1).GetComponent<SkeletonGraphic>();
-        //_costText = transform.GetChild(2).GetComponentInChildren<TextMeshProUGUI>();
-        //_buildingName = transform.GetChild(3).GetChild(0).GetComponent<TextMeshProUGUI>();
-        //_environmentPoint = transform.GetChild(3).GetChild(3).GetComponent<TextMeshProUGUI>();
-        //_curCount = transform.GetChild(3).GetChild(5).GetComponent<TextMeshProUGUI>();
-        //_inactiveImage = transform.parent.GetChild(4).gameObject;
+
     }
 
     private void Start()
     {
-        //BuildingData buildingData = BuildingData;
-        //SetData(BuildingData);
+
     }
 
-    public void SetData(BuildingData buildingData)
+    public void SetData(BuildingData buildingData, bool isCType)
     {
-        RenderTexture[] _renderTextures = Resources.LoadAll<RenderTexture>("RenderTextures");
-        //_buildingImage.texture = _renderTextures[buildingData.Key/100];
+        _isCType = isCType;
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.startingAnimation = "off";
         _buildingImage.Initialize(true);
         _costText.text = buildingData.RequiredGold.ToString();
         _buildingName.text = buildingData.Name;
         _environmentPoint.text = buildingData.Point.ToString();
-        //_curCount.text = GameManager.Instance.CurPlayerData.  //*설치완료 -> _curCount++;
+        if (_isCType)
+        {
+            //_curCount.text = GameManager.Instance.CurPlayerData.  //*설치완료 -> _curCount++;
+        }
     }
 
     public void OnClickBuildingBtn() //Store-건물

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 087fd614f8fea6248b629147eb6c1d8d, type: 3}
-  m_Name: Item1
+  m_Name: Wood1
   m_EditorClassIdentifier: 
-  Key: 1
+  Key: 21
   Name: "\uB864\uCF00\uC774\uD06C \uB098\uBB34\uC870\uAC01"
   Image: {fileID: 21300000, guid: 4c48a2373ac1ae94ab24316c8f7c799a, type: 3}
   MateiralKeys: 

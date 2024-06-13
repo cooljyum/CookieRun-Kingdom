@@ -222,6 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _buildingImage: {fileID: 0}
+  _costText: {fileID: 0}
+  _buildingName: {fileID: 0}
+  _environmentPoint: {fileID: 0}
+  _curCount: {fileID: 0}
+  _inactiveImage: {fileID: 0}
   BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
 --- !u!1 &2821097655167690678
 GameObject:
@@ -519,6 +525,7 @@ GameObject:
   - component: {fileID: 8795006625703206055}
   - component: {fileID: 2772247344703403701}
   - component: {fileID: 4802960342436109047}
+  - component: {fileID: -7140117751759177293}
   m_Layer: 5
   m_Name: StoreDTypeBuildingCell
   m_TagString: Untagged
@@ -602,6 +609,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: -20, w: -10}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &-7140117751759177293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782974001846333930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buildingImage: {fileID: 0}
+  _costText: {fileID: 0}
+  _buildingName: {fileID: 0}
+  _environmentPoint: {fileID: 0}
+  _curCount: {fileID: 0}
+  _inactiveImage: {fileID: 0}
+  BuildingData: {fileID: 0}
 --- !u!1 &6420483917640108755
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7194640492613609087
 RectTransform:
   m_ObjectHideFlags: 0
