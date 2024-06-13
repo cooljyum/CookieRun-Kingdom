@@ -432,6 +432,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
+  _buildingImage: {fileID: 0}
+  _costText: {fileID: 0}
+  _buildingName: {fileID: 0}
+  _environmentPoint: {fileID: 0}
+  _curCount: {fileID: 0}
+  _inactiveImage: {fileID: 0}
 --- !u!1 &2821097655167690678
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +868,7 @@ GameObject:
   - component: {fileID: 8795006625703206055}
   - component: {fileID: 2772247344703403701}
   - component: {fileID: 5331102021962304681}
+  - component: {fileID: 7549167015120476337}
   m_Layer: 5
   m_Name: StoreCTypeBuildingCell
   m_TagString: Untagged
@@ -945,6 +952,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 15, y: 0, z: 15, w: 0}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &7549167015120476337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782974001846333930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildingData: {fileID: 0}
+  _buildingImage: {fileID: 1370732863687893119}
+  _costText: {fileID: 931388637630065233}
+  _buildingName: {fileID: 4242691650682107284}
+  _environmentPoint: {fileID: 6092919335123251714}
+  _curCount: {fileID: 1973855463936505334}
+  _inactiveImage: {fileID: 7331707085936940367}
 --- !u!1 &6420483917640108755
 GameObject:
   m_ObjectHideFlags: 0

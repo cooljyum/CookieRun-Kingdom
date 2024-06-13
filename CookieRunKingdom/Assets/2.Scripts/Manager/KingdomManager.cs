@@ -58,6 +58,7 @@ public class KingdomManager : MonoBehaviour
             BuildingData data = DataManager.Instance.GetBuildingData(myBuilding);
 
             GameObject buildingObj = Instantiate(cTypeBuildingPrefab, _cTypeBuildingContent);
+            buildingObj.GetComponent<StoreBuildingUI>().SetData(data);
         }
 
         //꾸미기 타입 건물 칸 생성
