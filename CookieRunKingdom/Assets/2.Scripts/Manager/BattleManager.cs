@@ -74,9 +74,9 @@ public class BattleManager : MonoBehaviour
         if (_curEnemyTeamIdx >= _enemiesTeamList.Count)
         {
             Debug.LogError("Invalid enemy team index!");
-            return new List<List<GameObject>>();
+            return null;
         }
-
+        _cntCurBattleEnemies = _enemiesTeamList[_curEnemyTeamIdx].Count;
         return _enemiesTeamList[_curEnemyTeamIdx];
     }
 
@@ -109,11 +109,63 @@ public class BattleManager : MonoBehaviour
             _killedEnemies++;
             _killedCurBattleEnemies++;
             if (_cntCurBattleEnemies == _killedCurBattleEnemies)
-                _curEnemyTeamIdx++;
+            {
+                UpdateEnemyTeams();
+                SetTargetsToEnemies();
+            }
         }
         else 
         {
             _killedCookie++;
+        }
+    }
+
+
+    void UpdateEnemyTeams()
+    {
+        // 현재 팀의 모든 게임 오브젝트 비활성화
+        foreach (var subList in _enemiesTeamList[_curEnemyTeamIdx])
+        {
+            foreach (var enemy in subList)
+            {
+                enemy.SetActive(false);
+            }
+        }
+
+        // 나머지 팀의 게임 오브젝트들을 부모의 부모 위치로 이동
+        for (int teamIdx = 0; teamIdx < _enemiesTeamList.Count; teamIdx++)
+        {
+            if (teamIdx == _curEnemyTeamIdx) continue;
+
+            List<List<GameObject>> team = _enemiesTeamList[teamIdx];
+            for (int subListIdx = 0; subListIdx < team.Count; subListIdx++)
+            {
+                List<GameObject> subList = team[subListIdx];
+                for (int objIdx = 0; objIdx < subList.Count; objIdx++)
+                {
+                    if (teamIdx - 1 >= 0)
+                    {
+                        // 부모의 부모의 위치로 이동
+                        Transform parentTransform = subList[objIdx].transform.parent;
+                        if (parentTransform != null)
+                        {
+                            Transform grandParentTransform = parentTransform.parent;
+                            if (grandParentTransform != null)
+                            {
+                                subList[objIdx].transform.position = grandParentTransform.position;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // _curEnemyTeamIdx 증가
+        _curEnemyTeamIdx++;
+        // 필요에 따라 _curEnemyTeamIdx가 _enemiesTeamList의 범위를 넘지 않도록 처리
+        if (_curEnemyTeamIdx >= _enemiesTeamList.Count)
+        {
+            _curEnemyTeamIdx = 0; // 예를 들어 순환하려면 0으로 설정
         }
     }
 }
