@@ -8,7 +8,9 @@ public class ReadySort : MonoBehaviour
     //private GameObject _positions;  
 
     private List<Transform> _detailPositions = new List<Transform>();
-    public List<Transform> DetailPositions {  get { return _detailPositions; } }    private List<GameObject> _characters = new List<GameObject>();
+    public List<Transform> DetailPositions
+    {  get { return _detailPositions; } } 
+    private List<GameObject> _characters = new List<GameObject>();
     private void Awake()
     {
         for (int i = 0; i < 3; i++)
@@ -42,6 +44,11 @@ public class ReadySort : MonoBehaviour
     public void Remove(GameObject character)
     {
         _characters.Remove(character);        
+    }
+
+    public void Clear()
+    {
+        _characters.Clear();
     }
 
     public int GetSize() {  return _characters.Count; }
