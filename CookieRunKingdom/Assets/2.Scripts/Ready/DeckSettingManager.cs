@@ -11,7 +11,7 @@ public class DeckSettingManager : MonoBehaviour
     private GameObject _teamPower;
     private TextMeshProUGUI _teamPowerText;
 
-    private Dictionary<int, DeckSettingBtn> _deckBtns = new();
+    private Dictionary<int, DeckSettingBtn> _deckBtns = new(); 
 
     private void OnEnable()
     {

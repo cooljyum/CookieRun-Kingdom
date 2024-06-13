@@ -47,7 +47,7 @@ public class ReadyManager : MonoBehaviour
     public void Exit()
     {
         SaveDeck();
-
+        ExitDeckPanel();
     }
 
     public void SaveDeck()
@@ -58,15 +58,19 @@ public class ReadyManager : MonoBehaviour
         {
             GameManager.Instance.CurPlayerData.DeckKeyLists.Add(selectCharacter.Key);
         }
+    }
 
-
+    public void ExitDeckPanel()
+    {
+        readyPanel.SetActive(true);
+        deckPanel.SetActive(false);
     }
     public void OnClickDeckSetting()
     {
         readyPanel.SetActive(false);
         deckPanel.SetActive(true);
     }    
-
+    
     public bool Add(CharacterData characterData)
     {
         if(_selectedCharacters.Count == 5)
