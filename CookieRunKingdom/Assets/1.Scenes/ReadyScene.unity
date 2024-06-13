@@ -1676,8 +1676,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC804\uCCB4 \uD574\uC81C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3a0b4b973d520b749bb47749c1efde7b, type: 2}
-  m_sharedMaterial: {fileID: -2635408584007158541, guid: 3a0b4b973d520b749bb47749c1efde7b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d407df2db5136d746b3e5ccd0c154737, type: 2}
+  m_sharedMaterial: {fileID: -2635408584007158541, guid: d407df2db5136d746b3e5ccd0c154737, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3001,7 +3001,7 @@ GameObject:
   - component: {fileID: 1741655174}
   - component: {fileID: 1741655173}
   m_Layer: 5
-  m_Name: CloseBtn
+  m_Name: "CloseBtn\uC774\uAC70 \uD14D\uC2A4\uCCD0 \uBC14\uAFD4\uC57C\uD568 \u314B\u314B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3102,7 +3102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6207d9da9abee344787e73033fd80ba8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e2aacd55bfbb7a46a3d825a98b4d097, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3132,7 +3132,7 @@ GameObject:
   - component: {fileID: 1744360339}
   - component: {fileID: 1744360338}
   m_Layer: 5
-  m_Name: RenderTarget (1)
+  m_Name: RenderTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 9a3bfe64f6188c441913cac332329fc1, type: 2}
+  m_Texture: {fileID: 8400000, guid: 12462a4ce70fae448a599d07aa1f8d5a, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3403,8 +3403,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uCD94\uCC9C \uC870\uD569"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3a0b4b973d520b749bb47749c1efde7b, type: 2}
-  m_sharedMaterial: {fileID: -2635408584007158541, guid: 3a0b4b973d520b749bb47749c1efde7b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d407df2db5136d746b3e5ccd0c154737, type: 2}
+  m_sharedMaterial: {fileID: -2635408584007158541, guid: d407df2db5136d746b3e5ccd0c154737, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3667,7 +3667,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 9a3bfe64f6188c441913cac332329fc1, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 12462a4ce70fae448a599d07aa1f8d5a, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
