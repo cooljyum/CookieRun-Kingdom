@@ -3,13 +3,12 @@ using TMPro;
 using UnityEngine;
 
 public class DeckSettingManager : MonoBehaviour
-{
+{//팀 설정 패널 관리 스크립트
     [SerializeField]
-    private Transform _deckBtnContent;
-
+    private Transform _deckBtnContent; //스크롤뷰 삽입 카드 목록
     private CharacterData _characterData;
-    private GameObject _teamPower;
-    private TextMeshProUGUI _teamPowerText;
+    private GameObject _teamPower; //전투력 표시 오브젝트
+    private TextMeshProUGUI _teamPowerText;//전투력 텍스트
 
     private Dictionary<int, DeckSettingBtn> _deckBtns = new(); 
 
@@ -24,20 +23,9 @@ public class DeckSettingManager : MonoBehaviour
         _teamPower = GameObject.Find("TeamPower");
         _teamPowerText = _teamPower.GetComponent<TextMeshProUGUI>();
     }
-
-    private void Update()
-    {
-        SetStandingCharacters();        
-        
-    }
-
-    private void SetStandingCharacters()
-    {
-
-    }
-
+    
     private void ClearCard()
-    {
+    {//카드 초기화 함수: 팀 설정 패널 활성화 시 초기화 실행
         foreach(KeyValuePair<int, DeckSettingBtn> deckBtn in _deckBtns)
         {
             Destroy(deckBtn.Value.gameObject);
@@ -47,7 +35,7 @@ public class DeckSettingManager : MonoBehaviour
     }
 
     private void SetDeckBtn()
-    {
+    {//팀 설정 패널 진입 시 스크롤뷰에 소유 중인 카드 활성화
         GameObject btnPrefab = Resources.Load<GameObject>("Prefabs/BattleReady/DeckBtn");
 
         foreach(int myCard in GameManager.Instance.CurPlayerData.MyCardsLists )
@@ -63,4 +51,5 @@ public class DeckSettingManager : MonoBehaviour
     }
 
     public DeckSettingBtn GetDeckBtn(int key) { return _deckBtns[key]; }
+    //카드 반환 함수
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 
 public class ReadyManager : MonoBehaviour
-{
+{//전투 준비 창 관리 스크립트
     static public ReadyManager Instance;
 
     [SerializeField]
