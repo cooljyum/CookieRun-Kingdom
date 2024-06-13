@@ -67,8 +67,6 @@ public class CraftItemUI : MonoBehaviour
 
     private void Start()
     {
-        //CraftItemInfo craftItemInfo = _buildingData.CraftInfos[_craftIndex];
-        //SetData(craftItemInfo, _itemData);
     }
 
     public void SetData(CraftItemInfo craftItemInfo)
@@ -94,9 +92,4 @@ public class CraftItemUI : MonoBehaviour
         //CraftStart()
     }
 
-    public void OnClickExitBtn() //Craft-³ª°¡±â
-    {
-        print("ExitBtn Click");
-        //KingdomManager.Instance.CraftPanel.SetActive(false);
-    }
 }

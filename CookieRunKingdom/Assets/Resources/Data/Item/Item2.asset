@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item2
   m_EditorClassIdentifier: 
   Key: 2
-  Name: "\uB3C4\uB07C"
-  Image: {fileID: 21300000, guid: 66713adcb1c0e42489cfd778a3d1b35a, type: 3}
+  Name: "\uB864\uCF00\uC774\uD06C \uB098\uBB34 \uBB36\uC74C"
+  Image: {fileID: 21300000, guid: aa4c59131fb671a459e292a7614d7fc2, type: 3}
   MateiralKeys: 01000000
   MateiralAmounts: 03000000

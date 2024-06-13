@@ -861,6 +861,7 @@ GameObject:
   - component: {fileID: 2005498010482806576}
   - component: {fileID: 8795006625703206055}
   - component: {fileID: 2772247344703403701}
+  - component: {fileID: 5331102021962304681}
   m_Layer: 5
   m_Name: StoreCTypeBuildingCell
   m_TagString: Untagged
@@ -890,7 +891,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 550, y: 900}
+  m_SizeDelta: {x: 600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8795006625703206055
 CanvasRenderer:
@@ -930,6 +931,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5331102021962304681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782974001846333930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 15, y: 0, z: 15, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &6420483917640108755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6293746656533541296}
   - component: {fileID: 4054561088659365820}
-  - component: {fileID: 7611022612545585743}
+  - component: {fileID: 1370732863687893119}
   m_Layer: 5
   m_Name: BuildingImage
   m_TagString: Untagged
@@ -1166,7 +1181,7 @@ RectTransform:
   m_GameObject: {fileID: 7186169087183558045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005498010482806576}
@@ -1184,7 +1199,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7186169087183558045}
   m_CullTransparentMesh: 1
---- !u!114 &7611022612545585743
+--- !u!114 &1370732863687893119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1193,10 +1208,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7186169087183558045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1204,13 +1219,32 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: d210748b39936d0439d030782684a6a5, type: 2}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  skeletonDataAsset: {fileID: 11400000, guid: f2849f634e78b4045961bca35d2bd379, type: 2}
+  initialSkinName: 
+  initialFlipX: 0
+  initialFlipY: 0
+  startingAnimation: 
+  startingLoop: 0
+  timeScale: 1
+  freeze: 0
+  updateMode: 3
+  updateWhenInvisible: 3
+  unscaledTime: 0
+  allowMultipleCanvasRenderers: 0
+  canvasRenderers: []
+  separatorSlotNames: []
+  enableSeparatorSlots: 0
+  separatorParts: []
+  updateSeparatorPartLocation: 1
+  meshGenerator:
+    settings:
+      useClipping: 1
+      zSpacing: 0
+      pmaVertexColors: 1
+      tintBlack: 0
+      calculateTangents: 0
+      addNormals: 0
+      immutableTriangles: 0
 --- !u!1 &7331707085936940367
 GameObject:
   m_ObjectHideFlags: 0

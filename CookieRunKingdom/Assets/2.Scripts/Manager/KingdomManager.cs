@@ -133,8 +133,9 @@ public class KingdomManager : MonoBehaviour
         _dTypeBuildingContent.gameObject.SetActive(true);
     }
 
-    public void OnClickBuilding(BuildingData data)
+    public void OnClickBuilding(BuildingData data) //설치된 건물
     {
+        print("Building Click");
         _craftUI.gameObject.SetActive(true);
         _craftUI.CreateCraftItem(data);
     }

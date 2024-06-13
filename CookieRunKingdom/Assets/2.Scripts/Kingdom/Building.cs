@@ -18,12 +18,13 @@ public class Building : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonUp(0))
+        if(Input.GetMouseButtonUp(0)) //설치된 건물 클릭
         {
-            Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if(_collider.bounds.Contains(worldPos))
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if(_collider.bounds.Contains(mousePos))
             {
-                OnClickBtn();
+                KingdomManager.Instance.OnClickBuilding(_buildingData);
             }
         }
     }
@@ -37,8 +38,4 @@ public class Building : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    public void OnClickBtn() //건물 클릭 -> 생산 창
-    {
-        KingdomManager.Instance.OnClickBuilding(_buildingData);
-    }
 }

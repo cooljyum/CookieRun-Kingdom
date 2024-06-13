@@ -18,13 +18,17 @@ MonoBehaviour:
   Level: 1
   Size: 8
   Point: 9
+  SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
   RequiredGold: 1000
   RequiredMaterialName: Wood
   RequiredMaterialCount: 3
   RequiredEquipmentName: 0
   RequiredEquipmentCount: 0
   RequiredTime: 60
-  ProductName: ExpCandy
-  ProductCount: 1
-  ProductRequiredTime: 10
-  SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  CraftInfos:
+  - RenderTexture: {fileID: 0}
+    RequiredTime: 0
+    IsMaterial: 0
+    Cost: 0
+    ResultItem: {fileID: 0}
+    ResultCount: 0

@@ -13,7 +13,8 @@ public class CraftUI : MonoBehaviour
     {
         _itemPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/CraftItemCell");
     }
-    public void CreateCraftItem(BuildingData data)
+
+    public void CreateCraftItem(BuildingData data) //건물 데이터에 맞춰 생산 칸 삭제 & 생성
     {
         for(int i = 0; i < _itemCellContent.childCount; i++)
         {
@@ -25,5 +26,12 @@ public class CraftUI : MonoBehaviour
             GameObject itemObj = Instantiate(_itemPrefab, _itemCellContent);
             itemObj.GetComponent<CraftItemUI>().SetData(data.CraftInfos[i]);
         }
+    }
+
+
+    public void OnClickExitBtn() //Craft-나가기
+    {
+        print("ExitBtn Click");
+        gameObject.SetActive(false);
     }
 }
