@@ -89,10 +89,9 @@ public class BattleObject : MonoBehaviour
 
         // HPBar 프리팹을 스폰하고 HPBarController 설정
         GameObject hpBarInstance = Instantiate(_hpBarPrefab, transform.position, Quaternion.identity);
-        hpBarInstance.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        hpBarInstance.transform.SetParent(GameObject.Find("HPBarCanvas").transform, false);
         
         _hpBarController = hpBarInstance.GetComponent<HPBarController>();
-        _hpBarController.SetTarget(this.gameObject);
     }
 
     // Start
@@ -103,6 +102,8 @@ public class BattleObject : MonoBehaviour
         _characterAni.OnAttackEnd += AttackAniEnd;
 
         SetStatus(Status.Run);
+
+        _hpBarController.SetTarget(this.gameObject, _isEnemy);
 
         _maxHp = _characterData.Hp;
         _hp = _maxHp;
