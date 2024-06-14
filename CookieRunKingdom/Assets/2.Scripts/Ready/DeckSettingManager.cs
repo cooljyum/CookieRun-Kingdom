@@ -4,29 +4,35 @@ using UnityEngine;
 
 public class DeckSettingManager : MonoBehaviour
 {//팀 설정 패널 관리 스크립트
+    static public DeckSettingManager Instance;
+
     [SerializeField]
     private Transform _deckBtnContent; //스크롤뷰 삽입 카드 목록
     private CharacterData _characterData;
     private GameObject _teamPower; //전투력 표시 오브젝트
     private TextMeshProUGUI _teamPowerText;//전투력 텍스트
+    private float _power;
 
-    private Dictionary<int, DeckSettingBtn> _deckBtns = new(); 
+    private Dictionary<int, GameObject> _deckBtns = new(); 
 
     private void OnEnable()
     {
         ClearCard();
         SetDeckBtn();
+        SetTeamPower();
     }
 
     private void Start()
-    {        
+    {
+        Instance = this;
+
         _teamPower = GameObject.Find("TeamPower");
         _teamPowerText = _teamPower.GetComponent<TextMeshProUGUI>();
     }
     
     private void ClearCard()
     {//카드 초기화 함수: 팀 설정 패널 활성화 시 초기화 실행
-        foreach(KeyValuePair<int, DeckSettingBtn> deckBtn in _deckBtns)
+        foreach(KeyValuePair<int, GameObject> deckBtn in _deckBtns)
         {
             Destroy(deckBtn.Value.gameObject);
         }
@@ -43,13 +49,46 @@ public class DeckSettingManager : MonoBehaviour
             CharacterData data = DataManager.Instance.GetCharacterData(myCard);
 
             GameObject btnObj = Instantiate(btnPrefab, _deckBtnContent);
-            DeckSettingBtn btn = btnObj.GetComponent<DeckSettingBtn>();
-            btn.SetData(data);
+            
+            btnObj.GetComponent<DeckSettingBtn>().SetData(data);
 
-            _deckBtns[myCard] = btn;
+            _deckBtns[myCard] = btnObj;
         }
     }
 
-    public DeckSettingBtn GetDeckBtn(int key) { return _deckBtns[key]; }
+    public GameObject GetDeckBtn(int key) { return _deckBtns[key]; }
     //카드 반환 함수
+
+    public void RemoveCharacter(int key)
+    {
+        _deckBtns[key].gameObject.GetComponent<DeckSettingBtn>().RemoveCharacter();
+    }
+
+    public void ClearCharacters()
+    {
+        foreach(KeyValuePair<int, GameObject> deckBtn in _deckBtns)
+        {
+            
+            if(deckBtn.Value.GetComponent<DeckSettingBtn>().IsSet() == true)
+            {
+                deckBtn.Value.GetComponent<DeckSettingBtn>().RemoveCharacter();
+            }
+        }
+    }
+
+    public void SetTeamPower()
+    {
+        _power = 0.0f;
+
+        foreach (KeyValuePair<int, GameObject> deckBtn in _deckBtns)
+        {
+            if (deckBtn.Value.GetComponent<DeckSettingBtn>().IsSet() == true)
+            {
+                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Attack;
+            }
+        }
+
+        _teamPowerText.text = _power.ToString();
+    }
+
 }

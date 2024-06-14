@@ -40,7 +40,7 @@ public class ReadyManager : MonoBehaviour
 
         foreach (int character in deckLists)
         {
-            _deckSettingManager.GetDeckBtn(character).AddCharacter();
+            _deckSettingManager.GetDeckBtn(character).GetComponent<DeckSettingBtn>().AddCharacter();
         }
     }
 
@@ -122,35 +122,50 @@ public class ReadyManager : MonoBehaviour
 
     private bool PushSort(int index, CharacterData characterData)
     {
-        if (_readySorts[index].GetSize() == 2)
+        //if (_readySorts[index].GetSize() == 2)
+        //{
+        //    //예외처리
+        //    return false;
+        //}
+        //
+        //GameObject character = Instantiate(_characterPrefab, null);
+        //character.GetComponent<StandingCharacter>().SetData(characterData);
+        //
+        //_selectedCharacters.Add(characterData.Key, character);
+        //_readySorts[index].Add(character);
+        //
+        //return true;
+        for (int i = index; i < _readySorts.Count; i++)
         {
-            //예외처리
-            return false;
+            if (_readySorts[i].GetSize() < 2)
+            {
+                // 비어있는 ReadySort를 찾았으므로 여기서 캐릭터를 추가합니다
+                GameObject character = Instantiate(_characterPrefab, null);
+                character.GetComponent<StandingCharacter>().SetData(characterData);
+
+                _selectedCharacters.Add(characterData.Key, character);
+                _readySorts[i].Add(character);
+
+                return true;
+            }
         }
 
-        GameObject character = Instantiate(_characterPrefab, null);
-        character.GetComponent<StandingCharacter>().SetData(characterData);
-
-        _selectedCharacters.Add(characterData.Key, character);
-        _readySorts[index].Add(character);
-
-        return true;        
+        return false;
     }
-
     public void Remove(CharacterData characterData)
     {
         foreach (ReadySort sort in _readySorts)
-            sort.Remove(_selectedCharacters[characterData.Key]);
+        {
+            if (sort.Contains(_selectedCharacters[characterData.Key]))
+            { 
+                sort.Remove(_selectedCharacters[characterData.Key]);
+                break;
+            }
+        }
 
         Destroy(_selectedCharacters[characterData.Key]);
 
         _selectedCharacters.Remove(characterData.Key);
-    }
-
-     public int GetPos(CharacterData characterData)
-    {
-        //알맞은 값 반환하도록 수정필요
-        return _readySorts[characterData.Key].GetSize();
     }
 
 }

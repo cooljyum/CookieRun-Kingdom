@@ -10,6 +10,7 @@ public class DeckSettingBtn : MonoBehaviour
     static public DeckSettingBtn Instance;
 
     private CharacterData _characterData;
+    public CharacterData CharacterData {  get { return _characterData; } }
 
     private Image _profileImage;
     private Image _typeImage;
@@ -64,8 +65,7 @@ public class DeckSettingBtn : MonoBehaviour
         if (ReadyManager.Instance.Add(_characterData))
         {
             ButtonOn();
-            //GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key); //키값 저장
-            BattlePower += _characterData.Attack;
+            DeckSettingManager.Instance.SetTeamPower();
         }        
     }
 
@@ -76,9 +76,7 @@ public class DeckSettingBtn : MonoBehaviour
         ReadyManager.Instance.Remove(_characterData);
         ButtonOff();
 
-        //GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key); //키값 삭제
-
-        BattlePower -= _characterData.Attack;
+        DeckSettingManager.Instance.SetTeamPower();
     }
 
     private void ButtonOn()
@@ -94,4 +92,6 @@ public class DeckSettingBtn : MonoBehaviour
         _check.gameObject.SetActive(false);
         _profileImage.color = Color.white;
     }
+
+    public bool IsSet() { return _isSet; }
 }

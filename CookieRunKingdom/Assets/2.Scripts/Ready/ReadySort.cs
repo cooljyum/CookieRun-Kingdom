@@ -36,16 +36,22 @@ public class ReadySort : MonoBehaviour
             _characters.Add(character);            
             return;
         }
-
-        //숫서비교해서 
-        
     }
 
     public void Remove(GameObject character)
     {
-        _characters.Remove(character);        
+        if (_characters.Count > 1)
+        {
+            _characters.Remove(character);
+            _characters[0].transform.position = _detailPositions[0].position;
+        }
+        _characters.Remove(character);      
     }
 
+    public bool Contains(GameObject character)
+    {
+        return _characters.Contains(character);
+    }
     public void Clear()
     {
         _characters.Clear();

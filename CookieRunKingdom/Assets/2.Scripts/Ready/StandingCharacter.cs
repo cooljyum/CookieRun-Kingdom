@@ -30,7 +30,8 @@ public class StandingCharacter : MonoBehaviour
 
             if(_collider.bounds.Contains(worldPos))
             {
-                print(_characterData.name);
+                //해제 이벤트 호출
+                DeckSettingManager.Instance.RemoveCharacter(_characterData.Key);
             }
         }
     }
