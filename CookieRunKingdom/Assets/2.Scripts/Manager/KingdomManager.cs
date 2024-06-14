@@ -92,4 +92,11 @@ public class KingdomManager : MonoBehaviour
         _craftUI.gameObject.SetActive(true);
         _craftUI.CreateCraftItem(data);
     }
+
+    public void OnClickOkayBtn()
+    {
+        print("OkayBtn Click");
+        _buildingInfoPanel.SetActive(true);
+
+    }
 }

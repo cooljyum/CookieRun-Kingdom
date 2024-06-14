@@ -295,8 +295,8 @@ GameObject:
   - component: {fileID: 8772403701426507634}
   - component: {fileID: 6532951070526241133}
   - component: {fileID: 2460708383821351125}
-  - component: {fileID: 5684384114655795100}
   - component: {fileID: 2545359986557989427}
+  - component: {fileID: 5684384114655795100}
   m_Layer: 5
   m_Name: BuildingBtn
   m_TagString: Untagged
@@ -363,6 +363,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2545359986557989427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587615188785050099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buildingImage: {fileID: 1370732863687893119}
+  _costText: {fileID: 931388637630065233}
+  _buildingName: {fileID: 4242691650682107284}
+  _environmentPoint: {fileID: 6092919335123251714}
+  _curCount: {fileID: 1973855463936505334}
+  _inactiveImage: {fileID: 7331707085936940367}
+  BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
 --- !u!114 &5684384114655795100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,9 +426,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2545359986557989427}
+      - m_Target: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
         m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
-        m_MethodName: OnClickBuildingBtn
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -419,25 +438,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2545359986557989427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2587615188785050099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
-  _buildingImage: {fileID: 0}
-  _costText: {fileID: 0}
-  _buildingName: {fileID: 0}
-  _environmentPoint: {fileID: 0}
-  _curCount: {fileID: 0}
-  _inactiveImage: {fileID: 0}
 --- !u!1 &2821097655167690678
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,13 +964,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingData: {fileID: 0}
   _buildingImage: {fileID: 1370732863687893119}
   _costText: {fileID: 931388637630065233}
   _buildingName: {fileID: 4242691650682107284}
   _environmentPoint: {fileID: 6092919335123251714}
   _curCount: {fileID: 1973855463936505334}
   _inactiveImage: {fileID: 7331707085936940367}
+  BuildingData: {fileID: 0}
 --- !u!1 &6420483917640108755
 GameObject:
   m_ObjectHideFlags: 0

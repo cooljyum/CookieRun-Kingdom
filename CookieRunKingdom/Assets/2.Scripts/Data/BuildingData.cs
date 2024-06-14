@@ -26,6 +26,7 @@ public class BuildingData : ScriptableObject
     public int Size;
     public int Point;
     public SkeletonDataAsset SkeletonDataAsset;
+    public string Information;
 
     [Header("Build And Level Up")] //건설 및 레벨 업 조건
     public int RequiredGold;

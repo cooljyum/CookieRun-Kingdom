@@ -6,7 +6,7 @@ public class CraftUI : MonoBehaviour
 {
     [SerializeField]
     private Transform _itemCellContent;
-
+    
     private GameObject _itemPrefab;
 
     private void Awake()

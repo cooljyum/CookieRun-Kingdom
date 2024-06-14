@@ -621,10 +621,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buildingImage: {fileID: 0}
-  _costText: {fileID: 0}
-  _buildingName: {fileID: 0}
-  _environmentPoint: {fileID: 0}
+  _buildingImage: {fileID: 6859995571857481533}
+  _costText: {fileID: 931388637630065233}
+  _buildingName: {fileID: 4242691650682107284}
+  _environmentPoint: {fileID: 6092919335123251714}
   _curCount: {fileID: 0}
   _inactiveImage: {fileID: 0}
   BuildingData: {fileID: 0}
