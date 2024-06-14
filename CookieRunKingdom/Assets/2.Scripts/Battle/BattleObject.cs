@@ -55,12 +55,29 @@ public class BattleObject : MonoBehaviour
     private SkeletonAnimation _skeletonAni;
     private CharacterAnimation _characterAni;
 
+    private HPBarController _hpBarController;
+
+    [SerializeField]
+    private GameObject _hpBarPrefab;
+
     private float _attackCooldownTimer = 0f;
+
+    private float _maxHp;
 
     private void Awake()
     {
         _skeletonAni = GetComponent<SkeletonAnimation>();
         _characterAni = new CharacterAnimation();
+
+        // Resources 폴더에서 HPBar 프리팹 로드
+        _hpBarPrefab = Resources.Load<GameObject>("Prefabs/Battle/HPBar");
+
+        // HPBar 프리팹을 스폰하고 HPBarController 설정
+        GameObject hpBarInstance = Instantiate(_hpBarPrefab, transform.position, Quaternion.identity);
+        hpBarInstance.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        
+        _hpBarController = hpBarInstance.GetComponent<HPBarController>();
+        _hpBarController.SetTarget(this.gameObject);
     }
 
     // Start
@@ -71,6 +88,13 @@ public class BattleObject : MonoBehaviour
         _characterAni.OnAttackEnd += AttackAniEnd;
 
         SetStatus(Status.Run);
+
+        _maxHp = _characterData.Hp;
+    }
+
+    private void OnEnable()
+    {
+        _hpBarController.SetHP(_characterData.Hp, _maxHp);
     }
 
     // Update
@@ -271,6 +295,8 @@ public class BattleObject : MonoBehaviour
         actualDamage = Mathf.Max(actualDamage, 0); // 데미지가 0보다 작지 않도록 설정
 
         _characterData.Hp -= actualDamage;
+
+        _hpBarController.SetHP(_characterData.Hp, _maxHp);
 
         if (_characterData.Hp <= 0)
         {
