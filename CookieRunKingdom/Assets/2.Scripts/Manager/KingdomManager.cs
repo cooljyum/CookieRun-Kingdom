@@ -23,7 +23,7 @@ public class KingdomManager : MonoBehaviour
     [SerializeField]
     private CraftUI _craftUI;
     [SerializeField]
-    private GameObject _kingdomPlayPanel;
+    private GameObject _kingdomPlayPanel;    
 
     [Header("---------------------------------------------------------")]
     [SerializeField]
@@ -37,7 +37,7 @@ public class KingdomManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;               
+        Instance = this;
     }
 
     private void Start()
@@ -59,7 +59,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuildingUI = buildingUI;
 
         _selectedBuilding.gameObject.SetActive(true);
-        _selectedBuilding.skeletonDataAsset = buildingUI.BuildingData.SkeletonDataAsset;
+        _selectedBuilding.skeletonDataAsset = buildingUI.GetBuildingData().SkeletonDataAsset;
         _selectedBuilding.Initialize(true);
     }
     
@@ -68,7 +68,7 @@ public class KingdomManager : MonoBehaviour
         if (_selectedBuildingUI == null)
             return 0;
     
-        int key = _selectedBuildingUI.BuildingData.Key;
+        int key = _selectedBuildingUI.GetBuildingData().Key;
 
         //if(_selectedBuildingUI._curCount == _maxCount) //*현재 개수 = 최대 개수 -> 비활성화*//
         _selectedBuildingUI.SetInActive(true);

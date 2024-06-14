@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
-using UnityEngine;
-
 [CreateAssetMenu(fileName = "MagicSkill", menuName = "Scriptable Object/Skills/MagicSkill")]
 public class MagicSkill : SkillBase
 {

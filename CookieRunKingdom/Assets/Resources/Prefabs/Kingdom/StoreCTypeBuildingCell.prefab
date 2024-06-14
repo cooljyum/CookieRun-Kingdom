@@ -426,9 +426,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ab05c8b53573ec44fb26b2c88cbc5b25, type: 3}
-        m_TargetAssemblyTypeName: BuildingBtn, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 7549167015120476337}
+        m_TargetAssemblyTypeName: StoreBuildingUI, Assembly-CSharp
+        m_MethodName: OnClickBuildingBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -20,7 +20,9 @@ public class StoreBuildingUI : MonoBehaviour
     [SerializeField]
     private GameObject _inactiveImage;
 
-    public BuildingData BuildingData;
+    private BuildingData _buildingData;
+    public BuildingData GetBuildingData() { return _buildingData; }
+
     private bool _isCType;
     
     private void Awake()
@@ -35,6 +37,8 @@ public class StoreBuildingUI : MonoBehaviour
 
     public void SetData(BuildingData buildingData, bool isCType)
     {
+        _buildingData = buildingData;
+
         _isCType = isCType;
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.startingAnimation = "off";

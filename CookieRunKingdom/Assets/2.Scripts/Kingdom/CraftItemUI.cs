@@ -70,13 +70,15 @@ public class CraftItemUI : MonoBehaviour
     {
         _craftItemInfo = craftItemInfo;
 
+        _itemImage.sprite = craftItemInfo.ResultItem.Sprite;
+
         if (craftItemInfo.IsMaterial) //재료 세팅
         {
             _materialSetting.SetActive(true);
             _equipmentSetting.SetActive(false);
             _costText.text = craftItemInfo.Cost.ToString();
             _resultImage.sprite = craftItemInfo.ResultItem.Sprite;
-            _resultAmountText.text = craftItemInfo.ResultCount.ToString();
+            _resultAmountText.text = craftItemInfo.ResultCount.ToString();            
         }
         else //도구 세팅
         {
