@@ -84,7 +84,10 @@ public class DeckSettingManager : MonoBehaviour
         {
             if (deckBtn.Value.GetComponent<DeckSettingBtn>().IsSet() == true)
             {
-                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Attack;
+                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Attack * 2;
+                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Hp * 0.5f;
+                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Critical * 3.0f;
+                _power += deckBtn.Value.GetComponent<DeckSettingBtn>().CharacterData.Defence;
             }
         }
 

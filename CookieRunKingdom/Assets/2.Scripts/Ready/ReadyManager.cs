@@ -31,11 +31,11 @@ public class ReadyManager : MonoBehaviour
 
     private void Start()
     {
-        LoadDeck();
+        LoadReady();
     }
 
     public void LoadDeck()
-    {
+    {     
         List<int> deckLists = GameManager.Instance.CurPlayerData.DeckKeyLists;
 
         foreach (int character in deckLists)
