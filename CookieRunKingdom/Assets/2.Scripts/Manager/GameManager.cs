@@ -63,6 +63,6 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationQuit() //앱 종료시 호출
     {
-        SavePlayerData();
+        //SavePlayerData();
     }
 }

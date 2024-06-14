@@ -22,7 +22,7 @@ public class BattleEnemies : BattleEntitiesBase
     {
         StageData stageData = DataManager.Instance.GetStageData(stage);
         Vector2 basePosition = new Vector2(0, 0);
-        Vector2 offset = new Vector2(20, 10);
+        Vector2 offset = new Vector2(10, 5);
 
         for (int i = 0; i < stageData.MonsterGroupList.Count; i++)
         {

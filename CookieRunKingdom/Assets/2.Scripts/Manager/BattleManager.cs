@@ -9,15 +9,22 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField]
     private int _curEnemyTeamIdx = 0;
-
-    [SerializeField]
-    private int _killedEnemies = 0;
     [SerializeField]
     private int _cntCurBattleEnemies = 0;
+    [SerializeField]
+    private int _killedEnemies = 0;
     [SerializeField]
     private int _killedCurBattleEnemies = 0;
     [SerializeField]
     private int _killedCookie = 0;
+
+    [SerializeField]
+    private bool _isOnBattle = false;
+    public bool IsOnBattle 
+    {
+        get { return _isOnBattle; }
+        set { _isOnBattle = value; }
+    }
 
     public static BattleManager Instance { get; private set; }
 
@@ -43,6 +50,7 @@ public class BattleManager : MonoBehaviour
 
     public void SetTargetsToEnemies()
     {
+        SetCurBattleEnemies();
         SetTargets(GetCurrentEnemyObjLists(), _battleCookies);
     }
 
@@ -76,8 +84,17 @@ public class BattleManager : MonoBehaviour
             Debug.LogError("Invalid enemy team index!");
             return null;
         }
-        _cntCurBattleEnemies = _enemiesTeamList[_curEnemyTeamIdx].Count;
+
         return _enemiesTeamList[_curEnemyTeamIdx];
+    }
+
+    private void SetCurBattleEnemies() 
+    {
+        //받아올때 현재 적 수 받아오기
+        for (int i = 0; i < _enemiesTeamList[_curEnemyTeamIdx].Count; i++)
+        {
+            _cntCurBattleEnemies += _enemiesTeamList[_curEnemyTeamIdx][i].Count;
+        }
     }
 
     private GameObject FindClosestObj(Transform originTransform, List<List<GameObject>> objectLists)
@@ -104,6 +121,7 @@ public class BattleManager : MonoBehaviour
     //업데이트 죽은 배틀 정보 관리
     public void UpdateKillBattleInfo(bool isEnemy)
     {
+
         if (isEnemy)
         {
             _killedEnemies++;
@@ -112,6 +130,7 @@ public class BattleManager : MonoBehaviour
             {
                 UpdateEnemyTeams();
                 SetTargetsToEnemies();
+                BattleManager.Instance.IsOnBattle = false;
             }
         }
         else 
@@ -132,40 +151,32 @@ public class BattleManager : MonoBehaviour
             }
         }
 
+        print(_enemiesTeamList[_curEnemyTeamIdx][0][0].transform.parent.parent.parent.parent.gameObject.name);
+        _enemiesTeamList[_curEnemyTeamIdx][0][0].transform.parent.parent.parent.parent.gameObject.SetActive(false);
+
+        List<List<List<GameObject>>> _enemiesTeamListPos = new List<List<List<GameObject>>>();
+        _enemiesTeamListPos =  _enemiesTeamList;
+
         // 나머지 팀의 게임 오브젝트들을 부모의 부모 위치로 이동
-        for (int teamIdx = 0; teamIdx < _enemiesTeamList.Count; teamIdx++)
+        for (int teamIdx = _enemiesTeamListPos.Count-1; teamIdx >= 2; teamIdx--)
         {
             if (teamIdx == _curEnemyTeamIdx) continue;
 
             List<List<GameObject>> team = _enemiesTeamList[teamIdx];
-            for (int subListIdx = 0; subListIdx < team.Count; subListIdx++)
-            {
-                List<GameObject> subList = team[subListIdx];
-                for (int objIdx = 0; objIdx < subList.Count; objIdx++)
-                {
-                    if (teamIdx - 1 >= 0)
-                    {
-                        // 부모의 부모의 위치로 이동
-                        Transform parentTransform = subList[objIdx].transform.parent;
-                        if (parentTransform != null)
-                        {
-                            Transform grandParentTransform = parentTransform.parent;
-                            if (grandParentTransform != null)
-                            {
-                                subList[objIdx].transform.position = grandParentTransform.position;
-                            }
-                        }
-                    }
-                }
-            }
+            List<List<GameObject>> team_ = _enemiesTeamListPos[teamIdx-1];
+
+            GameObject subList = team[0][0];
+            GameObject subList_ = team_[0][0];
+            Transform  pos = subList_.transform.parent.parent.parent.parent;
+            subList.transform.parent.parent.parent.parent.transform.position = pos.position;
         }
 
-        // _curEnemyTeamIdx 증가
         _curEnemyTeamIdx++;
-        // 필요에 따라 _curEnemyTeamIdx가 _enemiesTeamList의 범위를 넘지 않도록 처리
+
+        // _curEnemyTeamIdx체크 _enemiesTeamList
         if (_curEnemyTeamIdx >= _enemiesTeamList.Count)
         {
-            _curEnemyTeamIdx = 0; // 예를 들어 순환하려면 0으로 설정
+            _curEnemyTeamIdx = 0; 
         }
     }
 }

@@ -42,6 +42,8 @@ public class BattleMapScrolling : MonoBehaviour
 
     void Update()
     {
+        if (BattleManager.Instance.IsOnBattle) return;
+
         // 타일을 대각선으로 이동
         Vector3 movement = new Vector3(-_speed, -_speed / _speedFactorY, 0) * Time.deltaTime;
         _map1.transform.position += movement;

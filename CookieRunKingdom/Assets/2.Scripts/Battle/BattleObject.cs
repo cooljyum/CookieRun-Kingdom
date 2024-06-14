@@ -3,47 +3,26 @@ using UnityEngine;
 
 public class BattleObject : MonoBehaviour
 {
+    // 상태 관련 변수
+    [Header("Status")]
     [SerializeField]
     private bool _isEnemy = false;
-
     public bool IsEnemy
     {
         get { return _isEnemy; }
         set { _isEnemy = value; }
     }
 
-    [SerializeField]
-    private float _attackRange = 2f;
-    public float AttackRange 
-    {
-        get { return _attackRange; }
-        set { _attackRange = value; }
-    }
-
-    [SerializeField]
-    private float moveSpeed = 2f;
-
+    // 캐릭터 데이터
     [SerializeField]
     private CharacterData _characterData;
 
-    private bool _isKnockedBack = false;
-    private float _knockBackDuration = 0.2f;
-    private float _knockBackTimer = 0f;
-    private Vector3 _knockBackDirection;
-
-    [SerializeField]
-    private GameObject _target;
-    [SerializeField]
-    private float _targetDistance;
-
     [SerializeField]
     private Status _curStatus = Status.Idle;
-
     public Status CurStatus
     {
         get { return _curStatus; }
     }
-
     public enum Status
     {
         Idle,
@@ -52,17 +31,53 @@ public class BattleObject : MonoBehaviour
         Defend
     }
 
+    // 체력 관련 변수
+    [Header("Health")]
+    private float _hp;
+    private float _maxHp;
+
+    // 캐릭터 이동 관련 변수
+    [Header("Movement")]
+    [SerializeField]
+    private float moveSpeed = 2f;
+
+    [Header("KnockBack")]
+    // 넉백 관련 변수
+    private bool _isKnockedBack = false;
+    private float _knockBackDuration = 0.2f;
+    private float _knockBackTimer = 0f;
+    private Vector3 _knockBackDirection;
+
+    // 타겟 관련 변수
+    [Header("Target")]
+    [SerializeField]
+    private GameObject _target;
+    [SerializeField]
+    private float _targetDistance;
+
+    // 애니메이션 관련 변수
+    [Header("Animation")]
     private SkeletonAnimation _skeletonAni;
     private CharacterAnimation _characterAni;
 
+    // HP 바 관련 변수
+    [Header("HP Bar")]
     private HPBarController _hpBarController;
-
     [SerializeField]
     private GameObject _hpBarPrefab;
 
+    // 공격 쿨다운 관련 변수
+    [Header("Attack Cooldown")]
     private float _attackCooldownTimer = 0f;
 
-    private float _maxHp;
+    [Header("AttackRange")]
+    [SerializeField]
+    private float _attackRange = 2f;
+    public float AttackRange
+    {
+        get { return _attackRange; }
+        set { _attackRange = value; }
+    }
 
     private void Awake()
     {
@@ -90,11 +105,12 @@ public class BattleObject : MonoBehaviour
         SetStatus(Status.Run);
 
         _maxHp = _characterData.Hp;
+        _hp = _maxHp;
     }
 
     private void OnEnable()
     {
-        _hpBarController.SetHP(_characterData.Hp, _maxHp);
+       // _hpBarController.SetHP(_characterData.Hp, _maxHp);
     }
 
     // Update
@@ -221,6 +237,11 @@ public class BattleObject : MonoBehaviour
 
     private void Attack()
     {
+        if (!BattleManager.Instance.IsOnBattle)
+            BattleManager.Instance.IsOnBattle = true;
+
+       
+
         //switch (_characterData.AttackType)
         //{
         //    case AttackType.Melee:
@@ -281,12 +302,15 @@ public class BattleObject : MonoBehaviour
 
     private void AttackAniEnd()
     {
-        if (_target != null&& _curStatus  == Status.Attack)
-        {
-            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
-        }
+        if (_characterData.Skill.IsPlay) return;
 
-       // _attackCooldownTimer = _characterData.AttackInterval;
+        _characterData.Skill.UseSkill(gameObject, _target);
+        /*        if (_target != null&& _curStatus  == Status.Attack)
+                {
+                    _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+                }*/
+
+        // _attackCooldownTimer = _characterData.AttackInterval;
     }
 
     public void Damage(float damage)
@@ -294,11 +318,11 @@ public class BattleObject : MonoBehaviour
         float actualDamage = damage - _characterData.Defence;
         actualDamage = Mathf.Max(actualDamage, 0); // 데미지가 0보다 작지 않도록 설정
 
-        _characterData.Hp -= actualDamage;
+        _hp -= actualDamage;
 
-        _hpBarController.SetHP(_characterData.Hp, _maxHp);
+        _hpBarController.SetHP(_hp, _maxHp);
 
-        if (_characterData.Hp <= 0)
+        if (_hp <= 0)
         {
             Die();
         }
@@ -309,7 +333,7 @@ public class BattleObject : MonoBehaviour
         // 캐릭터가 죽었을 때
         Debug.Log("Character died");
 
-        _characterData.Hp = 0;
+        _hp = 0;
 
         BattleManager.Instance.UpdateKillBattleInfo(_isEnemy);
 

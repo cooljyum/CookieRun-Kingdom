@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 1
   Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD130"
-  Hp: -4583
+  Hp: 100
   Attack: 0
   Defence: 0
   Critical: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   AttackDamage: 1
   AttackInterval: 1
   AttackRange: 2
-  SpecialAttacks: []
+  Skill: {fileID: 0}
   SkeletonDataAsset: {fileID: 11400000, guid: 3549b20f23f387745876e9f3d46f18ab, type: 2}
   profileImage: {fileID: 0}
   typeImage: {fileID: 0}

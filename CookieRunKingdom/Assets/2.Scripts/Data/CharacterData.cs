@@ -25,7 +25,7 @@ public class CharacterData : ScriptableObject
     public float AttackDamage; // 공격 데미지
     public float AttackInterval; // 공격 간격 (초 단위)
     public float AttackRange; // 공격 범위
-    public List<SpecialAttack> SpecialAttacks; // 특수 공격 목록
+    public SkillBase Skill; // 특수 스킬
 
     [Header("Appearance")]
     public SkeletonDataAsset SkeletonDataAsset;
@@ -34,16 +34,7 @@ public class CharacterData : ScriptableObject
 
     [Header("Animation Info")]
     public List<AnimationMapping> AnimationMappings = new List<AnimationMapping>(); // 애니메이션 이름 매핑 리스트
-}
 
-
-// 특수 공격 클래스
-[System.Serializable]
-public class SpecialAttack
-{
-    public string Name; // 특수 공격 이름
-    public int Damage; // 특수 공격 피해량
-    public float Cooldown; // 특수 공격 재사용 대기시간 (초 단위)
 }
 
 // 공격 유형 열거형
