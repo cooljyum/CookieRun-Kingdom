@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     }
 
     public List<int> MyBuildings = new List<int>();
-    public List<int> MyItems = new List<int>();
+    public Inventory PlayerInventory { get; private set; }
 
     private void Awake()
     {
@@ -34,8 +34,11 @@ public class GameManager : MonoBehaviour
         _playerDataManager = new PlayerDataManager();
         _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
 
-        // MyBuildings 리스트 초기화
         InitializeMyBuildings();
+
+        // 인벤토리 초기화
+        PlayerInventory = new Inventory();
+        LoadPlayerInventory();
     }
 
     private void InitializeMyBuildings()
@@ -56,8 +59,18 @@ public class GameManager : MonoBehaviour
         //myCardsList = PlayerDataManager
     }
 
+    private void LoadPlayerInventory()
+    {
+        //플레이어의 인벤토리를 _curPlayerData에서 가져오기
+        foreach (var item in _curPlayerData.InventoryItems)
+        {
+            PlayerInventory.AddItem(item.Key, item.Value);
+        }
+    }
+
     public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 
     {
+        _curPlayerData.InventoryItems = PlayerInventory.GetAllItems();
         _playerDataManager.SavePlayerData(_curPlayerData, _playerDataName);
     }
 

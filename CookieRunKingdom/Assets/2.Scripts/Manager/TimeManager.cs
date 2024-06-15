@@ -33,4 +33,18 @@ public class TimeManager : Singleton<TimeManager>
     {
         return _totalTimer[buildingKey][itemKey];
     }
+
+    public static string ConvertTime(int totalSeconds)
+    {
+        int hours = totalSeconds / 3600;
+        int minutes = (totalSeconds % 3600) / 60;
+        int seconds = totalSeconds % 60;
+
+        string result = "";
+        if (hours > 0) result += $"{hours}시간 ";
+        if (minutes > 0) result += $"{minutes}분 ";
+        if (seconds > 0) result += $"{seconds}초";
+
+        return result.Trim();
+    }
 }

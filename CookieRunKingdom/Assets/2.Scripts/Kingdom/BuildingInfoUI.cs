@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class BuildingInfoUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnClickOkayBtn() //Info-확인
     {
-        
+        print("OkayBtn Click");
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickExitBtn() //Info-나가기
     {
-        
+        print("ExitBtn Click");
+        gameObject.SetActive(false);
     }
 }

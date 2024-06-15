@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -193,11 +193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -508.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -250,6 +250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _craftingImage: {fileID: 0}
+  _checkImage: {fileID: 0}
+  _timeProgressBar: {fileID: 0}
+  _fastBtn: {fileID: 0}
+  _timeText: {fileID: 0}
 --- !u!1 &38649111
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,8 +337,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1257929987}
-        m_TargetAssemblyTypeName: KingdomManager, Assembly-CSharp
+      - m_Target: {fileID: 6488733003371776913}
+        m_TargetAssemblyTypeName: BuildingInfoUI, Assembly-CSharp
         m_MethodName: OnClickExitBtn
         m_Mode: 1
         m_Arguments:
@@ -2020,7 +2025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2028,7 +2033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2068,11 +2073,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2098,10 +2103,7 @@ PrefabInstance:
     - {fileID: 8781430310623301238, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3198481445203106025, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1876831628}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
 --- !u!224 &709935433 stripped
 RectTransform:
@@ -3668,7 +3670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3676,7 +3678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3716,11 +3718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -800.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3773,6 +3775,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _craftingImage: {fileID: 0}
+  _checkImage: {fileID: 0}
+  _timeProgressBar: {fileID: 0}
+  _fastBtn: {fileID: 0}
+  _timeText: {fileID: 0}
 --- !u!1 &1381171135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4208,7 +4215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4216,7 +4223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4256,11 +4263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -216.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4313,6 +4320,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _craftingImage: {fileID: 0}
+  _checkImage: {fileID: 0}
+  _timeProgressBar: {fileID: 0}
+  _fastBtn: {fileID: 0}
+  _timeText: {fileID: 0}
 --- !u!1 &1442318452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,7 +4335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442318453}
   - component: {fileID: 1442318455}
-  - component: {fileID: 1442318454}
+  - component: {fileID: 1442318456}
   m_Layer: 5
   m_Name: BuildingImage
   m_TagString: Untagged
@@ -4350,33 +4362,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1442318454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442318452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 7734083bc724a4f4b974e485ea9dff7c, type: 2}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!222 &1442318455
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4385,6 +4370,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442318452}
   m_CullTransparentMesh: 1
+--- !u!114 &1442318456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442318452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  skeletonDataAsset: {fileID: 11400000, guid: f2849f634e78b4045961bca35d2bd379, type: 2}
+  initialSkinName: 
+  initialFlipX: 0
+  initialFlipY: 0
+  startingAnimation: off
+  startingLoop: 0
+  timeScale: 1
+  freeze: 0
+  updateMode: 3
+  updateWhenInvisible: 3
+  unscaledTime: 0
+  allowMultipleCanvasRenderers: 0
+  canvasRenderers: []
+  separatorSlotNames: []
+  enableSeparatorSlots: 0
+  separatorParts: []
+  updateSeparatorPartLocation: 1
+  meshGenerator:
+    settings:
+      useClipping: 1
+      zSpacing: 0
+      pmaVertexColors: 1
+      tintBlack: 0
+      calculateTangents: 0
+      addNormals: 0
+      immutableTriangles: 0
 --- !u!4 &1469370161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 752066242647374085, guid: aee6748bf7d65eb45b3de07f03d2bd87, type: 3}
@@ -4977,7 +5008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4985,7 +5016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -5025,11 +5056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -362.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5082,6 +5113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _craftingImage: {fileID: 0}
+  _checkImage: {fileID: 0}
+  _timeProgressBar: {fileID: 0}
+  _fastBtn: {fileID: 0}
+  _timeText: {fileID: 0}
 --- !u!1 &1679904120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,24 +5340,6 @@ MonoBehaviour:
     BuildingKeyLists: 
     MyCardsLists: 
   MyBuildings: 
-  MyItems: 
---- !u!1 &1876831624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3198481445203106025, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
-  m_PrefabInstance: {fileID: 709935432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1876831628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876831624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1914394367
 GameObject:
   m_ObjectHideFlags: 0
@@ -115260,7 +115278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.x
@@ -115268,7 +115286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -115308,11 +115326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -654.5
       objectReference: {fileID: 0}
     - target: {fileID: 1796247520384916369, guid: d6dc6d5faf63fd2488a9adcc2870a02b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -115365,6 +115383,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _craftingImage: {fileID: 0}
+  _checkImage: {fileID: 0}
+  _timeProgressBar: {fileID: 0}
+  _fastBtn: {fileID: 0}
+  _timeText: {fileID: 0}
 --- !u!1 &2090845180
 GameObject:
   m_ObjectHideFlags: 0
@@ -122853,7 +122876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2484253497608488270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122905,6 +122928,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemCellContent: {fileID: 7954445917262411719}
+  _craftingContent: {fileID: 7902480170314926983}
+  _buildingName: {fileID: 410737559098259362}
+  _buildingImage: {fileID: 1442318456}
+  _coinText: {fileID: 512104093822492072}
+  _diaText: {fileID: 8308616895338143260}
 --- !u!212 &2511379215770716283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -124318,7 +124346,7 @@ GameObject:
   - component: {fileID: 5133527041422791705}
   - component: {fileID: 1630293889441946121}
   m_Layer: 5
-  m_Name: MoneyImage
+  m_Name: CoinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130429,7 +130457,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 400}
-  m_SizeDelta: {x: 400, y: 200}
+  m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5531969938507425487
 GameObject:
@@ -132455,7 +132483,7 @@ GameObject:
   - component: {fileID: 1978974650986442525}
   - component: {fileID: 7212161496765133649}
   m_Layer: 5
-  m_Name: MoneyInfo
+  m_Name: CoinInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133331,7 +133359,7 @@ GameObject:
   - component: {fileID: 2382550058544637504}
   - component: {fileID: 512104093822492072}
   m_Layer: 5
-  m_Name: MoneyText
+  m_Name: CoinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138002,7 +138030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8635641854812733636}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6488733003371776913}
+        m_TargetAssemblyTypeName: BuildingInfoUI, Assembly-CSharp
+        m_MethodName: OnClickOkayBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8325658919692392836
 GameObject:
   m_ObjectHideFlags: 0

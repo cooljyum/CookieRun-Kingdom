@@ -10,4 +10,10 @@ public class PlayerData
     public List<int> BuildingKeyLists;
     public List<List<int>> PosIndexLists;
     public List<int> MyCardsLists;
+
+    public Dictionary<int, int> InventoryItems;
+    public PlayerData()
+    {
+        InventoryItems = new Dictionary<int, int>();
+    }
 }

@@ -40,11 +40,6 @@ public class KingdomManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-
-    }
-
     private void Update()
     {
         if (!_selectedBuilding.gameObject.activeSelf) return;
@@ -90,13 +85,16 @@ public class KingdomManager : MonoBehaviour
     {
         print("Building Click");
         _craftUI.gameObject.SetActive(true);
+        _craftUI.SetData(data);
         _craftUI.CreateCraftItem(data);
+        //_buildingInfoPanel.SetActive(true);
     }
 
     public void OnClickOkayBtn()
     {
         print("OkayBtn Click");
-        _buildingInfoPanel.SetActive(true);
-
-    }
+        _buildingInfoPanel.SetActive(false);
+        //_craftUI.SetData(data);
+        //_craftUI.gameObject.SetActive(true);
+    }   //_craftUI.CreateCraftItem(data);
 }

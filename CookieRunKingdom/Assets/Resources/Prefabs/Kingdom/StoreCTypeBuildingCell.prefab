@@ -381,7 +381,6 @@ MonoBehaviour:
   _environmentPoint: {fileID: 6092919335123251714}
   _curCount: {fileID: 1973855463936505334}
   _inactiveImage: {fileID: 7331707085936940367}
-  BuildingData: {fileID: 11400000, guid: 28965a48031beac48ac54912a7c94336, type: 2}
 --- !u!114 &5684384114655795100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,7 +969,6 @@ MonoBehaviour:
   _environmentPoint: {fileID: 6092919335123251714}
   _curCount: {fileID: 1973855463936505334}
   _inactiveImage: {fileID: 7331707085936940367}
-  BuildingData: {fileID: 0}
 --- !u!1 &6420483917640108755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,7 +1304,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 550, y: 900}
+  m_SizeDelta: {x: 600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4862362490235283425
 CanvasRenderer:

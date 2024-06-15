@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -6,8 +7,6 @@ using UnityEngine.UI;
 
 public class CraftItemUI : MonoBehaviour
 {
-    [SerializeField]
-    private Transform _craftingContent;
     [SerializeField]
     private GameObject _materialSetting;
     [SerializeField]
@@ -32,91 +31,102 @@ public class CraftItemUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _requiredMaterial1AmountText;
     [SerializeField]
+    private GameObject _material2Object;
+    [SerializeField]
     private Image _requiredMaterial2Image;
     [SerializeField]
     private TextMeshProUGUI _requiredMaterial2AmountText;
     [SerializeField]
     private TextMeshProUGUI _curAmount;
-    [Header("Crafting")]
+    [Header("ETC")]
     [SerializeField]
-    private Image _craftingImage;
-    [SerializeField]
-    private Image _checkImage;
-    [SerializeField]
-    private Slider _timeProgressBar;
-    [SerializeField]
-    private Button _fastBtn;
-    [SerializeField]
-    private TextMeshProUGUI _timeText;
+    private CraftUI _craftUI;
 
-    private BuildingData _buildingData;
     private CraftItemInfo _craftItemInfo;
-    private int _craftIndex;
-    private int _itemKey;
-
-    public Dictionary<ItemData, int> myItems; //?//
-
-    private void Awake()
-    {
-        
-    }
-
-    private void Start()
-    {
-        
-    }
-
+    
     public void SetData(CraftItemInfo craftItemInfo) //생성한 Craft 칸 데이터 세팅
     {
         _craftItemInfo = craftItemInfo;
 
         _itemImage.sprite = craftItemInfo.ResultItem.Sprite;
+        _itemNameText.text = craftItemInfo.ResultItem.Name;
+        _requiredTimeText.text = TimeManager.ConvertTime(craftItemInfo.RequiredTime);
 
         if (craftItemInfo.IsMaterial) //재료 세팅
         {
             _materialSetting.SetActive(true);
             _equipmentSetting.SetActive(false);
             _costText.text = craftItemInfo.Cost.ToString();
-            _resultImage.sprite = craftItemInfo.ResultItem.Sprite;
-            _resultAmountText.text = craftItemInfo.ResultCount.ToString();            
+            _resultImage.sprite = GetItemData(craftItemInfo.ResultItem.MaterialKeys[0]).Sprite;
+            _resultAmountText.text = "X" + craftItemInfo.ResultCount.ToString();            
         }
         else //도구 세팅
         {
             _materialSetting.SetActive(false);
             _equipmentSetting.SetActive(true);
-            ItemData itemData = new ItemData();
-            _requiredMaterial1Image.sprite = itemData.GetItemSprite(craftItemInfo.ResultItem.MaterialKeys[0]);
-            _requiredMaterial1AmountText.text = craftItemInfo.ResultItem.MateiralAmounts[0].ToString();
-            _requiredMaterial2Image.sprite = itemData.GetItemSprite(craftItemInfo.ResultItem.MaterialKeys[1]);
-            _requiredMaterial2AmountText.text = craftItemInfo.ResultItem.MateiralAmounts[1].ToString();
-            //_curAmount.text;
+
+            int material1Key = craftItemInfo.ResultItem.MaterialKeys[0];
+            ItemData material1Data = GetItemData(material1Key);
+            int material1Count = GameManager.Instance.PlayerInventory.GetItemCount(material1Key);
+
+            //재료1 데이터 존재 확인
+            if (material1Data != null)
+            {
+                _requiredMaterial1Image.sprite = material1Data.Sprite;
+                _requiredMaterial1AmountText.text = material1Count.ToString() + "/" + craftItemInfo.ResultItem.MateiralAmounts[0].ToString();
+            }
+            else
+            {
+                Debug.LogWarning("Material 1 data not found.");
+            }
+
+            //재료 데이터 개수 확인
+            if (craftItemInfo.ResultItem.MaterialKeys.Count > 1)
+            {
+                int material2Key = craftItemInfo.ResultItem.MaterialKeys[1];
+                ItemData material2Data = GetItemData(material2Key);
+                int material2Count = GameManager.Instance.PlayerInventory.GetItemCount(material2Key);
+
+                //재료2 데이터 존재 확인
+                if (material2Data != null)
+                {
+                    _requiredMaterial2Image.sprite = material2Data.Sprite;
+                    _requiredMaterial2AmountText.text = material2Count.ToString() + "/" + craftItemInfo.ResultItem.MateiralAmounts[1].ToString();
+                }
+                else
+                {
+                    Debug.LogWarning("Material 2 data not found.");
+                }
+            }
+            else
+            {
+                _material2Object.SetActive(false);
+            }
+
+            _curAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(craftItemInfo.ResultItem.Key).ToString();
         }
 
-
     }
 
-    private void Update()
-    {
-        
-    }
-
-    public void CraftStart() //Crafting칸 세팅
-    {
-        _craftingImage.sprite = _craftItemInfo.ResultItem.Sprite;
-        _timeProgressBar.value = _craftItemInfo.RequiredTime;
-        
-        _timeProgressBar.gameObject.SetActive(true);
-    }
-
-    public void OnClickCraftBtn() //Craft-제작
+    public void OnClickCraftBtn(CraftItemInfo craftItemInfo) //Craft-제작
     {
         print("CraftBtn Click");
-        CraftStart();
+        _craftUI.CraftStart(craftItemInfo);
     }
 
-    public void OnClickFastBtn() //Crafting-시간 축소
+    private ItemData GetItemData(int key)
     {
-        print("FastBtn Click");
-        _timeProgressBar.value -= 10000f;
+        ItemData[] allItemData = Resources.LoadAll<ItemData>("Data/Item");
+
+        foreach (ItemData itemData in allItemData)
+        {
+            if (itemData.Key == key)
+            {
+                return itemData;
+            }
+        }
+
+        Debug.LogWarning($"ItemData with key {key} not found.");
+        return null;
     }
 }

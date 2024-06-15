@@ -109,7 +109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7227640075737637339
 RectTransform:
   m_ObjectHideFlags: 0
@@ -210,7 +210,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7627349683895044153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3620153894243662751}
+        m_TargetAssemblyTypeName: CraftingItemUI, Assembly-CSharp
+        m_MethodName: OnClickCraftedItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3198481445203106025
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +234,7 @@ GameObject:
   - component: {fileID: 1796247520384916369}
   - component: {fileID: 7179332617860273527}
   - component: {fileID: 2241109045407346732}
-  - component: {fileID: 8781430310623301238}
+  - component: {fileID: 3620153894243662751}
   m_Layer: 5
   m_Name: CraftingCell
   m_TagString: Untagged
@@ -290,7 +302,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8781430310623301238
+--- !u!114 &3620153894243662751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,23 +311,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3198481445203106025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e1228c27ea31d04fb731c742d883c26, type: 3}
+  m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _craftingContent: {fileID: 0}
-  _materialSetting: {fileID: 0}
-  _equipmentSetting: {fileID: 0}
-  _itemImage: {fileID: 0}
-  _itemNameText: {fileID: 0}
-  _requiredTimeText: {fileID: 0}
-  _costText: {fileID: 0}
-  _resultImage: {fileID: 0}
-  _resultAmountText: {fileID: 0}
-  _requiredMaterial1Image: {fileID: 0}
-  _requiredMaterial1AmountText: {fileID: 0}
-  _requiredMaterial2Image: {fileID: 0}
-  _requiredMaterial2AmountText: {fileID: 0}
-  _curAmount: {fileID: 0}
   _craftingImage: {fileID: 7627349683895044153}
   _checkImage: {fileID: 5551460555514394869}
   _timeProgressBar: {fileID: 4815612226289979958}
@@ -836,8 +834,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8781430310623301238}
-        m_TargetAssemblyTypeName: CraftItemUI, Assembly-CSharp
+      - m_Target: {fileID: 3620153894243662751}
+        m_TargetAssemblyTypeName: CraftingItemUI, Assembly-CSharp
         m_MethodName: OnClickFastBtn
         m_Mode: 1
         m_Arguments:
