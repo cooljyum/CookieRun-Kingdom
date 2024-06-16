@@ -20,78 +20,84 @@ public class CraftingItemUI : MonoBehaviour
     private TextMeshProUGUI _timeText;
     public Image CraftingItemImage => _craftingImage;
 
-    private CraftItemInfo _craftItemInfo;
-    private Stopwatch _stopwatch;
-    private float _requiredTime;
+    private CraftItemInfo? _craftItemInfo;
+    private int _buildingKey;
+    private bool _isCraftingComplete;
 
     private void OnEnable()
     {
-        _stopwatch = new Stopwatch();
-        StartCoroutine(Crafting());
+        StartCoroutine(UpdateCraftingProgress());
     }
 
-    public void CraftStart(CraftItemInfo craftItemInfo) //Crafting칸 세팅
+    public void CraftStart(int buildingKey, CraftItemInfo craftItemInfo) // Crafting칸 세팅
     {
+        _buildingKey = buildingKey;
         _craftItemInfo = craftItemInfo;
-        _craftingImage.sprite = _craftItemInfo.ResultItem.Sprite;
-        _requiredTime = _craftItemInfo.RequiredTime;
-        _timeText.text = TimeManager.ConvertTime(_craftItemInfo.RequiredTime);
-        _timeProgressBar.maxValue = _requiredTime;
-        _timeProgressBar.value = _requiredTime;
-        TimeManager.Instance.AddTime(0, craftItemInfo);
+        _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
+
+        float remainingTime = TimeManager.Instance.GetRemainTime(buildingKey, craftItemInfo.ResultItem.Key);
+        if (remainingTime <= 0)
+        {
+            remainingTime = _craftItemInfo.Value.RequiredTime;
+            TimeManager.Instance.AddTime(buildingKey, craftItemInfo);
+        }
+
+        _timeProgressBar.maxValue = _craftItemInfo.Value.RequiredTime;
+        _timeProgressBar.value = 0.0f;
+        _timeText.text = TimeManager.ConvertTime((int)remainingTime);
+
         _craftingImage.gameObject.SetActive(true);
         _timeProgressBar.gameObject.SetActive(true);
-
-        _stopwatch.Start();
+        _fastBtn.gameObject.SetActive(true);
+        _checkImage.gameObject.SetActive(false);
     }
 
-    public IEnumerator Crafting() //Crafting 시간 세팅
+    private IEnumerator UpdateCraftingProgress()
     {
-        while (_stopwatch.IsRunning)
+        while (true)
         {
-            float elapsedSeconds = (float)_stopwatch.Elapsed.TotalSeconds;
-            _timeProgressBar.value = Mathf.Max(_requiredTime - elapsedSeconds, 0);
-            _timeText.text = TimeManager.ConvertTime((int)_timeProgressBar.value);
-
-            if (_timeProgressBar.value <= 0)
+            if (_craftItemInfo.HasValue && !_isCraftingComplete)
             {
-                _stopwatch.Stop();
-                OnCraftingComplete();
-            }
+                float elapsedTime = _craftItemInfo.Value.RequiredTime - TimeManager.Instance.GetRemainTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
+                _timeProgressBar.value = elapsedTime;
+                _timeText.text = TimeManager.ConvertTime((int)(_craftItemInfo.Value.RequiredTime - elapsedTime));
 
-            yield return null;
+                if (_craftItemInfo.Value.RequiredTime - elapsedTime <= 0)
+                {
+                    OnCraftingComplete();
+                }
+            }
+            yield return new WaitForSeconds(1f);
         }
     }
 
-    public void OnClickFastBtn() //Crafting-시간 축소
+    public void OnClickFastBtn() // Crafting-시간 축소
     {
+        if (!_craftItemInfo.HasValue) return;
+
         print("FastBtn Click");
-        float newRequiredTime = _requiredTime - 10000;
-        if (newRequiredTime < 0)
+        float remainingTime = TimeManager.Instance.GetRemainTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
+        remainingTime -= 10000;
+
+        if (remainingTime < 0)
         {
-            newRequiredTime = 0;
+            remainingTime = 0;
         }
 
-        _requiredTime = newRequiredTime;
-        _timeProgressBar.value = _requiredTime;
-        _timeText.text = TimeManager.ConvertTime((int)_requiredTime);
-
-        if (_requiredTime > 0)
-        {
-            _stopwatch.Restart();
-        }
-        else
-        {
-            OnCraftingComplete();
-        }
+        TimeManager.Instance.AddTime(_buildingKey, new CraftItemInfo { ResultItem = _craftItemInfo.Value.ResultItem, RequiredTime = (int)remainingTime });
+        float elapsedTime = _craftItemInfo.Value.RequiredTime - remainingTime;
+        _timeProgressBar.value = elapsedTime;
+        _timeText.text = TimeManager.ConvertTime((int)(_craftItemInfo.Value.RequiredTime - elapsedTime));
     }
 
     private void OnCraftingComplete()
     {
+        if (_isCraftingComplete) return;
+
         print("Crafting Complete");
+        _isCraftingComplete = true;
         _checkImage.gameObject.SetActive(true);
         _timeProgressBar.gameObject.SetActive(false);
-        _fastBtn.gameObject.SetActive(false);
     }
 
     public void OnClickCraftedItem()
@@ -100,7 +106,7 @@ public class CraftingItemUI : MonoBehaviour
 
         _craftingImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
-        GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.ResultItem.Key, _craftItemInfo.ResultCount);
-        print($"Item {_craftItemInfo.ResultItem.Name} added to inventory.");
+        GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key, _craftItemInfo.Value.ResultCount);
+        print($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
     }
 }

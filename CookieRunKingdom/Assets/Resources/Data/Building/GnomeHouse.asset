@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6bd8f3197b4c674da2f0c18f947ed0a, type: 3}
+  m_Name: GnomeHouse
+  m_EditorClassIdentifier: 
+  Key: 1000
+  Name: "\uC124\uD0D5\uB178\uC6C0\uC758 \uC9D1"
+  Type: Decorative
+  Size: 4
+  Point: 40
+  SkeletonDataAsset: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 52e658680f03e864c9c107ce46a7b9df, type: 3}
+  Information: 
+  RequiredGold: 0
+  RequiredMaterial: {fileID: 0}
+  RequiredMaterialCount: 0
+  RequiredEquipment: {fileID: 0}
+  RequiredEquipmentCount: 0
+  RequiredTime: 0
+  CraftInfos: []

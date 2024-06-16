@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         set { _curPlayerData = value; }
     }
 
-    public List<int> MyBuildings = new List<int>();
+    public Dictionary<int, int> MyBuildings = new Dictionary<int, int>();
     public Inventory PlayerInventory { get; private set; }
 
     private void Awake()
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         //MyBuildings 리스트 초기화
         foreach (BuildingData buildingData in buildingDataArray)
         {
-            MyBuildings.Add(buildingData.Key);
+            MyBuildings[buildingData.Key] = 0;
         }
     }
 
@@ -77,5 +77,26 @@ public class GameManager : MonoBehaviour
     private void OnApplicationQuit() //앱 종료시 호출
     {
         //SavePlayerData();
+    }
+
+    public void AddBuilding(int buildingKey)
+    {
+        if (MyBuildings.ContainsKey(buildingKey))
+        {
+            MyBuildings[buildingKey]++;
+        }
+        else
+        {
+            MyBuildings[buildingKey] = 1;
+        }
+    }
+
+    public int GetBuildingCount(int buildingKey)
+    {
+        if (MyBuildings.ContainsKey(buildingKey))
+        {
+            return MyBuildings[buildingKey];
+        }
+        return 0;
     }
 }

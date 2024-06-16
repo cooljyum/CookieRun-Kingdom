@@ -22,10 +22,10 @@ public class BuildingData : ScriptableObject
     public int Key;
     public string Name;
     public string Type;
-    //public int Level;
     public int Size;
     public int Point;
     public SkeletonDataAsset SkeletonDataAsset;
+    public Sprite Sprite;
     public string Information;
 
     [Header("Build And Level Up")] //건설 및 레벨 업 조건

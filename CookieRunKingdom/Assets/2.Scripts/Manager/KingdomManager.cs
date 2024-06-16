@@ -19,18 +19,19 @@ public class KingdomManager : MonoBehaviour
     [SerializeField]
     private StoreUI _storeUI;
     [SerializeField]
-    private GameObject _buildingInfoPanel;
+    private BuildingInfoUI _buildingInfoPanel;
     [SerializeField]
     private CraftUI _craftUI;
     [SerializeField]
-    private GameObject _kingdomPlayPanel;    
+    private GameObject _kingdomPlayPanel;
 
     [Header("---------------------------------------------------------")]
     [SerializeField]
     private SkeletonAnimation _selectedBuilding;
 
-    private StoreBuildingUI _selectedBuildingUI;    
-    
+    private StoreBuildingUI _selectedBuildingUI;
+    private BuildingData _selectedBuildingData;
+
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
@@ -57,20 +58,36 @@ public class KingdomManager : MonoBehaviour
         _selectedBuilding.skeletonDataAsset = buildingUI.GetBuildingData().SkeletonDataAsset;
         _selectedBuilding.Initialize(true);
     }
-    
+
+    public void SelectBuilding(BuildingData data) //선택한 건물 출현 세팅
+    {
+        _storeUI.gameObject.SetActive(false);
+        _selectedBuildingData = data;
+
+        _selectedBuilding.gameObject.SetActive(true);
+        _selectedBuilding.skeletonDataAsset = _selectedBuildingData.SkeletonDataAsset;
+        _selectedBuilding.Initialize(true);
+    }
+
     public int Building() //선택한 건물의 데이터 키 값 반환
     {
         if (_selectedBuildingUI == null)
             return 0;
-    
+
         int key = _selectedBuildingUI.GetBuildingData().Key;
 
-        //if(_selectedBuildingUI._curCount == _maxCount) //*현재 개수 = 최대 개수 -> 비활성화*//
-        _selectedBuildingUI.SetInActive(true);
+        //건물 설치 개수 증가
+        GameManager.Instance.AddBuilding(key);
+        int currentCount = GameManager.Instance.GetBuildingCount(key);
+
+        if (currentCount >= _selectedBuildingUI.MaxCount)
+        {
+            _selectedBuildingUI.SetInActive(true);
+        }
 
         _selectedBuildingUI = null;
         _selectedBuilding.gameObject.SetActive(false);
-    
+
         return key;
     }
 
@@ -81,20 +98,30 @@ public class KingdomManager : MonoBehaviour
         _storeUI.CreateCTypeBuilding();
     }
 
+    public void ClickStoreBuildingBtn(BuildingData data)
+    {
+        _storeUI.gameObject.SetActive(false);
+        _buildingInfoPanel.SetData(data);
+    }
+
     public void OnClickBuilding(BuildingData data) //설치된 건물
     {
         print("Building Click");
-        _craftUI.gameObject.SetActive(true);
-        _craftUI.SetData(data);
-        _craftUI.CreateCraftItem(data);
-        //_buildingInfoPanel.SetActive(true);
+
+        if (data.Type == "Decorative")
+        { 
+            //ToastMessage
+        }
+        else
+        {
+            _craftUI.gameObject.SetActive(true);
+            _craftUI.CreateCraftItem(data);
+            _craftUI.SetData(data);
+        }
     }
 
-    public void OnClickOkayBtn()
+    public void ClickCraftBtn(CraftItemInfo craftItemInfo)
     {
-        print("OkayBtn Click");
-        _buildingInfoPanel.SetActive(false);
-        //_craftUI.SetData(data);
-        //_craftUI.gameObject.SetActive(true);
-    }   //_craftUI.CreateCraftItem(data);
+        _craftUI.CraftStart(craftItemInfo);
+    }
 }

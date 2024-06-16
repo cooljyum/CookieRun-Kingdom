@@ -12,5 +12,5 @@ public class ItemData : ScriptableObject
 
     [Header("Equipment : Required Information")]
     public List<int> MaterialKeys;
-    public List<int> MateiralAmounts;
+    public List<int> MaterialAmounts;
 }

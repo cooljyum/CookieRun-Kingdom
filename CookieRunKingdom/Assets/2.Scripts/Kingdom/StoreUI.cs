@@ -24,29 +24,39 @@ public class StoreUI : MonoBehaviour
 
     public void CreateCTypeBuilding() //건물 데이터에 맞춰 건설 타입 건물 칸 생성
     {
-        for (int i = 0; i < _cTypeBuildingContent.childCount; i++)
+        //cTypeBuildingContent의 기존 자식 오브젝트 삭제
+        for (int i = _cTypeBuildingContent.childCount - 1; i >= 0; i--)
         {
-            Destroy(_cTypeBuildingContent.GetChild(i));
+            Destroy(_cTypeBuildingContent.GetChild(i).gameObject);
         }
 
+        //buildingDataArray중에서 C타입 건물 생성
         foreach (BuildingData buildingData in _buildingDataArray)
         {
-            GameObject buildingObj = Instantiate(_cTypeBuildingPrefab, _cTypeBuildingContent);
-            buildingObj.GetComponent<StoreBuildingUI>().SetData(buildingData, true);
+            if (buildingData.Type != "Decorative")
+            {
+                GameObject buildingObj = Instantiate(_cTypeBuildingPrefab, _cTypeBuildingContent);
+                buildingObj.GetComponent<StoreBuildingUI>().SetData(buildingData);
+            }
         }
     }
 
     public void CreateDTypeBuilding() //건물 데이터에 맞춰 꾸미기 타입 건물 칸 생성
     {
-        for (int i = 0; i < _dTypeBuildingContent.childCount; i++)
+        //dTypeBuildingContent의 기존 자식 오브젝트 삭제
+        for (int i = _dTypeBuildingContent.childCount - 1; i >= 0; i--)
         {
-            Destroy(_dTypeBuildingContent.GetChild(i));
+            Destroy(_dTypeBuildingContent.GetChild(i).gameObject);
         }
 
+        //buildingDataArray중에서 D타입 건물 생성
         foreach (BuildingData buildingData in _buildingDataArray)
         {
-            GameObject buildingObj = Instantiate(_dTypeBuildingPrefab, _dTypeBuildingContent);
-            buildingObj.GetComponent<StoreBuildingUI>().SetData(buildingData, false);
+            if (buildingData.Type == "Decorative")
+            {
+                GameObject buildingObj = Instantiate(_dTypeBuildingPrefab, _dTypeBuildingContent);
+                buildingObj.GetComponent<StoreBuildingUI>().SetData(buildingData);
+            }
         }
     }
 

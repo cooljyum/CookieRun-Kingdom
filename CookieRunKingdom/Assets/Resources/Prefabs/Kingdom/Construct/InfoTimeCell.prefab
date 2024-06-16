@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6614403908554949282}
   - component: {fileID: 5623504596765414844}
   - component: {fileID: 6456053832605778370}
+  - component: {fileID: 6285032092998028952}
   m_Layer: 5
   m_Name: InfoTimeCell
   m_TagString: Untagged
@@ -77,6 +78,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6285032092998028952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412761083217509124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb36b8409149764a9f89a23e98c5bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ingredientImage: {fileID: 0}
+  _ingridientAmount: {fileID: 0}
+  _requiredTime: {fileID: 4068428353568298071}
 --- !u!1 &6073240625293116523
 GameObject:
   m_ObjectHideFlags: 0

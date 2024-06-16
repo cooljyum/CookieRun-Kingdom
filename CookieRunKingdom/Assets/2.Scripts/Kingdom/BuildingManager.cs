@@ -5,21 +5,11 @@ using UnityEngine;
 public class BuildingManager : MonoBehaviour
 {
     private Collider2D _collider;
-    private Building _building;
+    private List<Building> _buildings = new List<Building>();
 
     private void Awake()
     {
         _collider = GetComponent<Collider2D>();
-    }
-
-    private void Start()
-    {
-        GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Building");
-        GameObject buildingObj = Instantiate(buildingPrefab, transform);
-        _building = buildingObj.GetComponent<Building>();
-
-        buildingObj.transform.localPosition = Vector3.zero;
-        buildingObj.SetActive(false);
     }
 
     private void Update()
@@ -33,30 +23,17 @@ public class BuildingManager : MonoBehaviour
                 int key = KingdomManager.Instance.Building();
 
                 if (key != 0)
-                    _building.Build(DataManager.Instance.GetBuildingData(key), mousePos);
+                {
+                    //새로운 빌딩을 생성하고 리스트에 추가
+                    GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Building");
+                    GameObject buildingObj = Instantiate(buildingPrefab, transform);
+                    Building newBuilding = buildingObj.GetComponent<Building>();
+                    newBuilding.Build(DataManager.Instance.GetBuildingData(key), mousePos);
+
+                    _buildings.Add(newBuilding);
+                }
             }
         }
 
-        //디버깅용
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            _building.Build(DataManager.Instance.GetBuildingData(101), new Vector3(0, -10, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            _building.Build(DataManager.Instance.GetBuildingData(201), new Vector3(10, -10, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            _building.Build(DataManager.Instance.GetBuildingData(301), new Vector3(20, -10, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            _building.Build(DataManager.Instance.GetBuildingData(401), new Vector3(30, -10, 0));
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            _building.Build(DataManager.Instance.GetBuildingData(501), new Vector3(40, -10, 0));
-        }
     }
 }

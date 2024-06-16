@@ -24,38 +24,57 @@ public class StoreBuildingUI : MonoBehaviour
     public BuildingData GetBuildingData() { return _buildingData; }
 
     private bool _isCType;
-    
-    private void Awake()
-    {
+    public int MaxCount { get; private set; }
+    private int _buildingLevel = 1;
 
-    }
-
-    private void Start()
-    {
-
-    }
-
-    public void SetData(BuildingData buildingData, bool isCType)
+    public void SetData(BuildingData buildingData)
     {
         _buildingData = buildingData;
-
-        _isCType = isCType;
+        if (_buildingData.Type == "Decorative")
+        {
+            _isCType = false;
+        }
+        else
+        {
+            _isCType = true;
+        }
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.startingAnimation = "off";
         _buildingImage.Initialize(true);
         _costText.text = buildingData.RequiredGold.ToString();
         _buildingName.text = buildingData.Name;
         _environmentPoint.text = buildingData.Point.ToString();
+        MaxCount = _buildingLevel;
+
         if (_isCType)
         {
-            //_curCount.text = GameManager.Instance.CurPlayerData.  //*설치완료 -> _curCount++;
+            int currentCount = GameManager.Instance.GetBuildingCount(buildingData.Key);
+            _curCount.text = currentCount.ToString();
+
+            // 최대 개수에 도달하면 버튼 비활성화
+            if (currentCount >= MaxCount)
+            {
+                SetInActive(true);
+            }
+            else
+            {
+                SetInActive(false);
+            }
         }
     }
 
     public void OnClickBuildingBtn() //Store-건물
     {   
         print("BuildingBtn Click");
-        KingdomManager.Instance.SelectBuilding(this);
+
+        if (_isCType)
+        {
+            KingdomManager.Instance.ClickStoreBuildingBtn(_buildingData);
+        }
+        else
+        {
+            KingdomManager.Instance.SelectBuilding(this);
+        }
     }
 
     public void SetInActive(bool isActive) //상점 내 건물 버튼 비활성화

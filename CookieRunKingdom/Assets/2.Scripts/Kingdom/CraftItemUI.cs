@@ -37,10 +37,7 @@ public class CraftItemUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _requiredMaterial2AmountText;
     [SerializeField]
-    private TextMeshProUGUI _curAmount;
-    [Header("ETC")]
-    [SerializeField]
-    private CraftUI _craftUI;
+    private TextMeshProUGUI _curEquipmentAmount;
 
     private CraftItemInfo _craftItemInfo;
     
@@ -73,7 +70,7 @@ public class CraftItemUI : MonoBehaviour
             if (material1Data != null)
             {
                 _requiredMaterial1Image.sprite = material1Data.Sprite;
-                _requiredMaterial1AmountText.text = material1Count.ToString() + "/" + craftItemInfo.ResultItem.MateiralAmounts[0].ToString();
+                _requiredMaterial1AmountText.text = material1Count.ToString() + "/" + craftItemInfo.ResultItem.MaterialAmounts[0].ToString();
             }
             else
             {
@@ -91,7 +88,7 @@ public class CraftItemUI : MonoBehaviour
                 if (material2Data != null)
                 {
                     _requiredMaterial2Image.sprite = material2Data.Sprite;
-                    _requiredMaterial2AmountText.text = material2Count.ToString() + "/" + craftItemInfo.ResultItem.MateiralAmounts[1].ToString();
+                    _requiredMaterial2AmountText.text = material2Count.ToString() + "/" + craftItemInfo.ResultItem.MaterialAmounts[1].ToString();
                 }
                 else
                 {
@@ -103,15 +100,15 @@ public class CraftItemUI : MonoBehaviour
                 _material2Object.SetActive(false);
             }
 
-            _curAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(craftItemInfo.ResultItem.Key).ToString();
+            _curEquipmentAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(craftItemInfo.ResultItem.Key).ToString();
         }
 
     }
 
-    public void OnClickCraftBtn(CraftItemInfo craftItemInfo) //Craft-제작
+    public void OnClickCraftBtn() //Craft-제작
     {
         print("CraftBtn Click");
-        _craftUI.CraftStart(craftItemInfo);
+        KingdomManager.Instance.ClickCraftBtn(_craftItemInfo);
     }
 
     private ItemData GetItemData(int key)

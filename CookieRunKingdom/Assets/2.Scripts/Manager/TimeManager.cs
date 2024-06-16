@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TimeManager : Singleton<TimeManager>
@@ -8,30 +9,56 @@ public class TimeManager : Singleton<TimeManager>
 
     private void Update()
     {
-        foreach(KeyValuePair<int, Dictionary<int, float>> timers in _totalTimer)
-        {
-            foreach (KeyValuePair<int, float> timer in timers.Value)
-            {
-                _totalTimer[timers.Key][timer.Key] -= Time.deltaTime;
+        List<(int buildingKey, int itemKey)> completedTimers = new List<(int, int)>();
 
-                if(_totalTimer[timers.Key][timer.Key] <= 0.0f)
+        foreach (var buildingTimers in _totalTimer.ToList())
+        {
+            int buildingKey = buildingTimers.Key;
+            foreach (var itemTimer in buildingTimers.Value.ToList())
+            {
+                int itemKey = itemTimer.Key;
+                _totalTimer[buildingKey][itemKey] -= Time.deltaTime;
+
+                if (_totalTimer[buildingKey][itemKey] <= 0.0f)
                 {
-                    //timers.Key : 해당건물
-                    //timer.key : 아이템                    
+                    completedTimers.Add((buildingKey, itemKey));
                 }
+            }
+        }
+
+        foreach (var completedTimer in completedTimers)
+        {
+            int buildingKey = completedTimer.buildingKey;
+            int itemKey = completedTimer.itemKey;
+
+            Debug.Log($"Timer completed for building {buildingKey}, item {itemKey}");
+            _totalTimer[buildingKey].Remove(itemKey);
+
+            if (_totalTimer[buildingKey].Count == 0)
+            {
+                _totalTimer.Remove(buildingKey);
             }
         }
     }
 
     public void AddTime(int buildingKey, CraftItemInfo craftItemInfo)
     {
-        _totalTimer.Add(buildingKey, null);
-        _totalTimer[buildingKey].Add(craftItemInfo.ResultItem.Key, craftItemInfo.RequiredTime);
+        if (!_totalTimer.ContainsKey(buildingKey))
+        {
+            _totalTimer[buildingKey] = new Dictionary<int, float>();
+        }
+
+        _totalTimer[buildingKey][craftItemInfo.ResultItem.Key] = craftItemInfo.RequiredTime;
     }
 
     public float GetRemainTime(int buildingKey, int itemKey)
     {
-        return _totalTimer[buildingKey][itemKey];
+        if (_totalTimer.ContainsKey(buildingKey) && _totalTimer[buildingKey].ContainsKey(itemKey))
+        {
+            return _totalTimer[buildingKey][itemKey];
+        }
+
+        return 0.0f;
     }
 
     public static string ConvertTime(int totalSeconds)

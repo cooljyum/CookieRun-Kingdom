@@ -19,6 +19,12 @@ public class CraftUI : MonoBehaviour
     private TextMeshProUGUI _coinText;
     [SerializeField]
     private TextMeshProUGUI _diaText;
+    [SerializeField]
+    private Image _curMaterialImage;
+    [SerializeField]
+    private TextMeshProUGUI _curMaterialAmount;
+    [SerializeField]
+    private GameObject _curMaterialObject;
 
     private GameObject _itemPrefab;
     private BuildingData _buildingData;
@@ -34,13 +40,24 @@ public class CraftUI : MonoBehaviour
         _buildingData = buildingData;
         _buildingName.text = buildingData.Name.ToString();
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
+        _buildingImage.Initialize(true);
+
+        if (buildingData.Key / 10 < 10) //1n번대 -> 재료
+        {
+            _curMaterialImage.sprite = buildingData.CraftInfos[0].ResultItem.Sprite;
+            _curMaterialAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(buildingData.CraftInfos[0].ResultItem.Key).ToString();
+        }
+        else
+        {
+            _curMaterialObject.SetActive(false);
+        }
     }
 
     public void CreateCraftItem(BuildingData data) //건물 데이터에 맞춰 생산 칸 삭제 & 생성
     {
-        for(int i = 0; i < _itemCellContent.childCount; i++)
+        for (int i = _itemCellContent.childCount - 1; i >= 0; i--)
         {
-            Destroy(_itemCellContent.GetChild(i));
+            Destroy(_itemCellContent.GetChild(i).gameObject);
         }
 
         for (int i = 0; i < data.CraftInfos.Count; i++)
@@ -57,7 +74,7 @@ public class CraftUI : MonoBehaviour
             var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
             if (!craftingItemUI.CraftingItemImage.gameObject.activeSelf)
             {
-                craftingItemUI.CraftStart(craftItemInfo);
+                craftingItemUI.CraftStart(_buildingData.Key, craftItemInfo);
                 break;
             }
         }
