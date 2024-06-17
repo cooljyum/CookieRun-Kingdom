@@ -28,6 +28,10 @@ MonoBehaviour:
   SkeletonDataAsset: {fileID: 11400000, guid: a2d78c92c48a22e42957564eed42083c, type: 2}
   profileImage: {fileID: 21300000, guid: abdecd6ffb94dd44281ca9b36223549c, type: 3}
   typeImage: {fileID: 21300000, guid: c8cbbf7ffd996804696c62b310dd117a, type: 3}
+  SkillBtnImg:
+    OnImg: {fileID: 21300000, guid: 0f8a673555d80ec4cb919314798aac91, type: 3}
+    OffImg: {fileID: 21300000, guid: 26155235d9379b54ebc4665759749a51, type: 3}
+    SkillImg: {fileID: 21300000, guid: 74c3af0cd5ef2f245bd96b8c7ab0caed, type: 3}
   AnimationMappings:
   - Key: Battle_Idle
     AnimationName: battle_idle_back

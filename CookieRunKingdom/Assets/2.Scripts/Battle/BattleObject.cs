@@ -15,7 +15,7 @@ public class BattleObject : MonoBehaviour
 
     // 캐릭터 데이터
     [SerializeField]
-    private CharacterData _characterData;
+    protected CharacterData _characterData;
 
     [SerializeField]
     private Status _curStatus = Status.Idle;
@@ -33,8 +33,9 @@ public class BattleObject : MonoBehaviour
 
     // 체력 관련 변수
     [Header("Health")]
-    private float _hp;
-    private float _maxHp;
+    [SerializeField]
+    protected float _hp;
+    protected float _maxHp;
 
     // 캐릭터 이동 관련 변수
     [Header("Movement")]
@@ -82,22 +83,22 @@ public class BattleObject : MonoBehaviour
     private void Awake()
     {
         _skeletonAni = GetComponent<SkeletonAnimation>();
-        _characterAni = new CharacterAnimation();
 
         // Resources 폴더에서 HPBar 프리팹 로드
         _hpBarPrefab = Resources.Load<GameObject>("Prefabs/Battle/HPBar");
 
         // HPBar 프리팹을 스폰하고 HPBarController 설정
         GameObject hpBarInstance = Instantiate(_hpBarPrefab, transform.position, Quaternion.identity);
-        hpBarInstance.transform.SetParent(GameObject.Find("HPBarCanvas").transform, false);
+        hpBarInstance.transform.SetParent(GameObject.Find("HPBars").transform, false);
         
         _hpBarController = hpBarInstance.GetComponent<HPBarController>();
     }
 
     // Start
-    private void Start()
+    protected void Start()
     {
         Debug.Log("Character Initialized: " + _characterData.Name);
+        _characterAni = new CharacterAnimation();
         _characterAni.Init(_characterData, _skeletonAni);
         _characterAni.OnAttackEnd += AttackAniEnd;
 
@@ -109,13 +110,8 @@ public class BattleObject : MonoBehaviour
         _hp = _maxHp;
     }
 
-    private void OnEnable()
-    {
-       // _hpBarController.SetHP(_characterData.Hp, _maxHp);
-    }
-
     // Update
-    private void Update()
+    protected void Update()
     {
         if (_target != null)
         {
@@ -212,6 +208,7 @@ public class BattleObject : MonoBehaviour
                 break;
         }
 
+        //if (!_isEnemy) return;
         //Status
         _characterAni.PlayAni("Battle", _curStatus.ToString());
     }
@@ -303,13 +300,19 @@ public class BattleObject : MonoBehaviour
 
     private void AttackAniEnd()
     {
-        if (_characterData.Skill.IsPlay) return;
+       // if (_characterData.Skill.IsPlay) return;
 
         _characterData.Skill.UseSkill(gameObject, _target);
-        /*        if (_target != null&& _curStatus  == Status.Attack)
-                {
-                    _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
-                }*/
+
+        if (_isEnemy)
+        {
+            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+        }
+
+        if (_target != null && _curStatus == Status.Attack)
+        {
+            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+        }
 
         // _attackCooldownTimer = _characterData.AttackInterval;
     }

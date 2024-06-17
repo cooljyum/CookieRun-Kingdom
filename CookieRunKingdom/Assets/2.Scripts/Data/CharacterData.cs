@@ -31,6 +31,8 @@ public class CharacterData : ScriptableObject
     public SkeletonDataAsset SkeletonDataAsset;
     public Sprite profileImage;
     public Sprite typeImage;
+    public SkillBtnImg SkillBtnImg;
+
 
     [Header("Animation Info")]
     public List<AnimationMapping> AnimationMappings = new List<AnimationMapping>(); // 애니메이션 이름 매핑 리스트
@@ -51,4 +53,13 @@ public class AnimationMapping
 {
     public string Key; // 애니메이션 키
     public string AnimationName; // 애니메이션 이름
+}
+
+// 스킬 버튼 이미지
+[System.Serializable]
+public class SkillBtnImg
+{
+    public Sprite OnImg;
+    public Sprite OffImg;
+    public Sprite SkillImg;
 }

@@ -15,22 +15,33 @@ public class MagicSkill : SkillBase
         Debug.Log($"MagicSkill({SkillName}):{user.name}->{target.name}, [Damage:{MagicDamage}, Duration:{EffectDuration}]");
         
         IsPlay=true;
-        MagicEffect(target);
+        MagicEffect(target, true);
         // CoroutineRunner.Instance.StartCoroutine(MagicEffect(target));
     }
 
-    private void MagicEffect(GameObject target)
+    private void MagicEffect(GameObject target, bool isActive = true)
     {
         Debug.Log("MagicEffect!") ;
         IsPlay = false;
         target.GetComponent<BattleObject>().Damage(MagicDamage);
 
+        if (EffectObj == null) return;
+
+        EffectObj.transform.position = target.transform.position;
+        EffectObj.SetActive(isActive);
 
         float elapsed = 0f;
-/*        while (elapsed < _effectDuration)
-        {
-            target.GetComponent<BattleObject>().Damage(_magicDamage);
-            elapsed += Time.deltaTime;
-        }*/
+        /*        while (elapsed < _effectDuration)
+                {
+                    target.GetComponent<BattleObject>().Damage(_magicDamage);
+                    elapsed += Time.deltaTime;
+                }*/
+        CoroutineRunner.Instance.StartCoroutine(DeactivateEffectAfterTime(1f));
+    }
+
+    private IEnumerator DeactivateEffectAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        EffectObj.SetActive(false);
     }
 }

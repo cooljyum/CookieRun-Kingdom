@@ -13,12 +13,18 @@ public class CharacterAnimation : MonoBehaviour
 
     public event System.Action OnAttackEnd;
 
+    private void Awake()
+    {
+        // 모든 애니메이션 상태에 이벤트 핸들러 등록
+        _skeletonAni.state.Event += HandleAniEvent;
+        Debug.Log("Event handler registered in Awake");
+    }
+
     //캐릭터 애니메이션 Init
     public void Init(CharacterData data, SkeletonAnimation skeletonAni)
     {
         _characterData = data;
         _skeletonAni = skeletonAni;
-        _skeletonAni.state.Event += HandleAniEvent;
 
         foreach (var mapping in _characterData.AnimationMappings)
         {
@@ -29,10 +35,12 @@ public class CharacterAnimation : MonoBehaviour
     //Ani 재생
     public void PlayAni(string curSceneName, string status)
     {
+        
         string animationName = GetAniName(curSceneName, status);
         if (!string.IsNullOrEmpty(animationName))
         {
             _skeletonAni.AnimationState.SetAnimation(0, animationName, true);
+            _skeletonAni.state.Event += HandleAniEvent;
         }
         else
         {
@@ -61,6 +69,7 @@ public class CharacterAnimation : MonoBehaviour
     //Ani
     private void HandleAniEvent(TrackEntry trackEntry, Spine.Event e)
     {
+        Debug.Log($"Event: {e.Data.Name}, Animation: {trackEntry.Animation.Name}");
         string status = GetStatusFromAniName(trackEntry.Animation.Name);
      
         if (status == "Battle_Attack")

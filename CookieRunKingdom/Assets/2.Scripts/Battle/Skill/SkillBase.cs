@@ -9,5 +9,9 @@ public abstract class SkillBase : ScriptableObject
     public string SkillName;
     public float Cooldown;
 
+    [SerializeField]
+    public GameObject EffectPrefab;
+    public GameObject EffectObj;
+
     public abstract void UseSkill(GameObject user, GameObject target);
 }
