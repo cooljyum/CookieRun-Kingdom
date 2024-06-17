@@ -1,4 +1,5 @@
 using Spine.Unity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,7 @@ public class BattleManager : MonoBehaviour
     private int _killedCookie = 0;
 
     [SerializeField]
-    private bool _isOnBattle = false;
+    private bool _isOnBattle = true;
     public bool IsOnBattle 
     {
         get { return _isOnBattle; }
@@ -39,9 +40,23 @@ public class BattleManager : MonoBehaviour
         _battleCookies = BattleObjectSpawnManager.Instance.GetBattleCookies();
         _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesObjList();
 
+        _isOnBattle = true;
+
+        StartCoroutine(StartGameInit());
+    }
+
+    private IEnumerator StartGameInit()
+    {
+        yield return new WaitForSeconds(3f);
+
         SetTargetsToCookies();
         SetTargetsToEnemies();
+
+        BattleUIManager.Instance.SetTimer(180f);
+
+        _isOnBattle = false;
     }
+
 
     public void SetTargetsToCookies()
     {
@@ -150,8 +165,6 @@ public class BattleManager : MonoBehaviour
                 enemy.SetActive(false);
             }
         }
-
-        print(_enemiesTeamList[_curEnemyTeamIdx][0][0].transform.parent.parent.parent.parent.gameObject.name);
         _enemiesTeamList[_curEnemyTeamIdx][0][0].transform.parent.parent.parent.parent.gameObject.SetActive(false);
 
         List<List<List<GameObject>>> _enemiesTeamListPos = new List<List<List<GameObject>>>();

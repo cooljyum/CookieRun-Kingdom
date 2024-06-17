@@ -15,7 +15,6 @@ public class BattleCookie : BattleObject
     [SerializeField]
     private float _skillMaxCooldownTimer;
 
-
     private void Start()
     {
         base.Start();
@@ -52,6 +51,8 @@ public class BattleCookie : BattleObject
     public void Damage(float damage)
     {
         base.Damage(damage);
+
+        
         _skillBtn.SetHPBarUI(_hp/_maxHp);
     }
 

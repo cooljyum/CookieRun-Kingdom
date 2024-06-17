@@ -18,13 +18,14 @@ public class BattleObject : MonoBehaviour
     protected CharacterData _characterData;
 
     [SerializeField]
-    private Status _curStatus = Status.Idle;
+    private Status _curStatus = Status.None;
     public Status CurStatus
     {
         get { return _curStatus; }
     }
     public enum Status
     {
+        None,
         Idle,
         Attack,
         Run,
@@ -98,16 +99,16 @@ public class BattleObject : MonoBehaviour
     protected void Start()
     {
         Debug.Log("Character Initialized: " + _characterData.Name);
-        _characterAni = new CharacterAnimation();
+        _characterAni = gameObject.AddComponent<CharacterAnimation>();
         _characterAni.Init(_characterData, _skeletonAni);
         _characterAni.OnAttackEnd += AttackAniEnd;
-
-        SetStatus(Status.Run);
 
         _hpBarController.SetTarget(this.gameObject, _isEnemy);
 
         _maxHp = _characterData.Hp;
         _hp = _maxHp;
+
+        SetStatus(Status.Idle);
     }
 
     // Update
@@ -179,10 +180,6 @@ public class BattleObject : MonoBehaviour
             {
                 SetStatus(Status.Run);
             }
-        }
-        else
-        {
-            SetStatus(Status.Run);
         }
     }
 
@@ -300,18 +297,24 @@ public class BattleObject : MonoBehaviour
 
     private void AttackAniEnd()
     {
-       // if (_characterData.Skill.IsPlay) return;
+        // if (_characterData.Skill.IsPlay) return;
 
-        _characterData.Skill.UseSkill(gameObject, _target);
 
-        if (_isEnemy)
-        {
-            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
-        }
+
+        //   _characterData.Skill.UseSkill(gameObject, _target);
+
+
 
         if (_target != null && _curStatus == Status.Attack)
         {
-            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+            if (_isEnemy)
+            {
+                Debug.Log("Enemy Attack End" + _target.ToString());
+                _target.GetComponent<BattleCookie>().Damage(CalculateDamage(_characterData.AttackDamage));
+            }
+            else { 
+                _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+            }
         }
 
         // _attackCooldownTimer = _characterData.AttackInterval;

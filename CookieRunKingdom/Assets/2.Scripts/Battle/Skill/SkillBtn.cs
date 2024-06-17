@@ -74,6 +74,10 @@ public class SkillBtn : MonoBehaviour
                 break;
             case SkillBtnState.Off:
                 _btn.image.sprite = _offImg;
+                _btn.image.material = null;
+                _particle.SetActive(false);
+                _hpBar.SetActive(false);
+                _btn.interactable = false;
                 break;
             case SkillBtnState.Wait:
                 _hpBar.SetActive(true);
@@ -121,6 +125,9 @@ public class SkillBtn : MonoBehaviour
         if (_hpBar != null) 
         {
             _hpBar.GetComponent<Slider>().value = value;
+
+            if (value <= 0)
+                SetState(SkillBtnState.Off);
         }
     }
 }

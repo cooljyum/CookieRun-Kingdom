@@ -38,6 +38,7 @@ public class HPBarController : MonoBehaviour
     public void SetHP(float hp, float maxHp)
     {
         if (_hpBar.value < 1) gameObject.SetActive(true); 
+
         // HP 값을 Slider에 반영
         _hpBar.value = hp / maxHp;
     }
@@ -48,7 +49,7 @@ public class HPBarController : MonoBehaviour
 
         if (_target.activeSelf != false)
         {
-          //  UpdatePosition(_target.transform.position, _hpBarOffset);
+            UpdatePosition(_target.transform.position, _hpBarOffset);
         }
         else 
         {

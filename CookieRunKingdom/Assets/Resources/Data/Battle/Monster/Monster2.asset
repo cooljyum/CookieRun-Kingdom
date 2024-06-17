@@ -15,19 +15,23 @@ MonoBehaviour:
   Key: 2
   Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD1302"
   Hp: 100
-  Attack: 0
+  Attack: 10
   Defence: 0
   Critical: 0
   Type: 0
   Rarity: 0
   AttackType: 0
-  AttackDamage: 1
+  AttackDamage: 10
   AttackInterval: 1
   AttackRange: 2
   Skill: {fileID: 0}
   SkeletonDataAsset: {fileID: 11400000, guid: 2fbebbf7793fbdf4fa0ff58116d03c62, type: 2}
-  profileImage: {fileID: 0}
-  typeImage: {fileID: 0}
+  ProfileImage: {fileID: 0}
+  TypeImage: {fileID: 0}
+  SkillBtnImg:
+    OnImg: {fileID: 0}
+    OffImg: {fileID: 0}
+    SkillImg: {fileID: 0}
   AnimationMappings:
   - Key: Battle_Idle
     AnimationName: battle_idle

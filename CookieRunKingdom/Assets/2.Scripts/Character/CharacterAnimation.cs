@@ -3,21 +3,33 @@ using System.Linq;
 using UnityEngine;
 using Spine.Unity;
 using Spine;
+using System.Runtime.Serialization.Formatters;
 
 public class CharacterAnimation : MonoBehaviour
 {
     private SkeletonAnimation _skeletonAni;
+
     private CharacterData _characterData;
 
     private Dictionary<string, string> _aniMappingList = new Dictionary<string, string>();
 
     public event System.Action OnAttackEnd;
 
-    private void Awake()
+    private void Update()
     {
-        // 모든 애니메이션 상태에 이벤트 핸들러 등록
-        _skeletonAni.state.Event += HandleAniEvent;
-        Debug.Log("Event handler registered in Awake");
+        TrackEntry trackEntry = _skeletonAni.state.GetCurrent(0);
+
+        if (trackEntry != null)
+        {
+            // 애니메이션의 총 길이
+            float animationDuration = trackEntry.AnimationEnd - trackEntry.AnimationStart;
+
+            if (trackEntry.TrackTime > animationDuration) 
+            {
+                trackEntry.TrackTime -= animationDuration;
+                OnAniEndEvent();
+            }
+        }
     }
 
     //캐릭터 애니메이션 Init
@@ -40,7 +52,6 @@ public class CharacterAnimation : MonoBehaviour
         if (!string.IsNullOrEmpty(animationName))
         {
             _skeletonAni.AnimationState.SetAnimation(0, animationName, true);
-            _skeletonAni.state.Event += HandleAniEvent;
         }
         else
         {
@@ -67,11 +78,9 @@ public class CharacterAnimation : MonoBehaviour
     }
 
     //Ani
-    private void HandleAniEvent(TrackEntry trackEntry, Spine.Event e)
+    private void OnAniEndEvent()
     {
-        Debug.Log($"Event: {e.Data.Name}, Animation: {trackEntry.Animation.Name}");
-        string status = GetStatusFromAniName(trackEntry.Animation.Name);
-     
+        string status = GetStatusFromAniName(_skeletonAni.state.ToString());
         if (status == "Battle_Attack")
         {
             OnAttackEnd();
