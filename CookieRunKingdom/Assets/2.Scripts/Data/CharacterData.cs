@@ -29,8 +29,8 @@ public class CharacterData : ScriptableObject
 
     [Header("Appearance")]
     public SkeletonDataAsset SkeletonDataAsset;
-    public Sprite profileImage;
-    public Sprite typeImage;
+    public Sprite ProfileImage;
+    public Sprite TypeImage;
     public SkillBtnImg SkillBtnImg;
 
 

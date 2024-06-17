@@ -26,8 +26,8 @@ MonoBehaviour:
   AttackRange: 3
   Skill: {fileID: 11400000, guid: f28c7c260b2916547874133f8021d7ec, type: 2}
   SkeletonDataAsset: {fileID: 11400000, guid: 7f63c316721cf8646ba9fea4d54a2c72, type: 2}
-  profileImage: {fileID: 21300000, guid: e3daf313ad199774fa33c517613eb0d7, type: 3}
-  typeImage: {fileID: 21300000, guid: 053a5ca9a7d0a424c99964d4fd83fee7, type: 3}
+  ProfileImage: {fileID: 21300000, guid: e3daf313ad199774fa33c517613eb0d7, type: 3}
+  TypeImage: {fileID: 21300000, guid: 053a5ca9a7d0a424c99964d4fd83fee7, type: 3}
   SkillBtnImg:
     OnImg: {fileID: 21300000, guid: e52603accb590eb49bd2577c6f50d611, type: 3}
     OffImg: {fileID: 21300000, guid: 18c0aa2fbc705d647bb259a7d0e721da, type: 3}

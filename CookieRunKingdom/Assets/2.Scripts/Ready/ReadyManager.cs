@@ -57,7 +57,12 @@ public class ReadyManager : MonoBehaviour
     public void Exit()
     {
         SaveDeck();
-        ExitDeckPanel();
+        EnterReadyPanel();
+    }
+    public void EnterDeck()
+    {
+        SaveDeck();
+        EnterDeckSettingPanel();
     }
 
     public void SaveDeck()
@@ -78,19 +83,18 @@ public class ReadyManager : MonoBehaviour
     }
 
     //Enter Ready Panel
-    public void ExitDeckPanel()
+    public void EnterReadyPanel()
     {
         readyPanel.SetActive(true);
         deckPanel.SetActive(false);
 
         LoadReady();
     }
-    public void OnClickDeckSetting()
-    {
+    public void EnterDeckSettingPanel()
+    {  
         readyPanel.SetActive(false);
         deckPanel.SetActive(true);
 
-        SaveDeck();
         LoadDeck();        
     }    
     

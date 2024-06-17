@@ -42,8 +42,8 @@ public class DeckSettingBtn : MonoBehaviour
     public void SetData(CharacterData characterData)
     {
         _characterData = characterData;
-        _profileImage.sprite = characterData.profileImage;
-        _typeImage.sprite = characterData.typeImage;
+        _profileImage.sprite = characterData.ProfileImage;
+        _typeImage.sprite = characterData.TypeImage;
     }
 
     public void OnClick()

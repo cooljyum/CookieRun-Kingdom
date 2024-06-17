@@ -2130,7 +2130,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 509133249}
         m_TargetAssemblyTypeName: ReadyManager, Assembly-CSharp
-        m_MethodName: OnClickDeckSetting
+        m_MethodName: EnterDeck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
