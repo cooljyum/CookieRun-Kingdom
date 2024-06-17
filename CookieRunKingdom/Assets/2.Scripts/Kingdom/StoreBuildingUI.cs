@@ -73,7 +73,7 @@ public class StoreBuildingUI : MonoBehaviour
         }
         else
         {
-            KingdomManager.Instance.SelectBuilding(this);
+            KingdomManager.Instance.SelectDTypeBuilding(this);
         }
     }
 

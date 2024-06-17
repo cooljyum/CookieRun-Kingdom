@@ -26,8 +26,8 @@ public class BuildingInfoUI : MonoBehaviour
 
     private void Awake()
     {
-        _itemCellPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/InfoItemCell");
-        _timeCellPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/InfoTimeCell");
+        _itemCellPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Construct/InfoItemCell");
+        _timeCellPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Construct/InfoTimeCell");
     }
 
     public void SetData(BuildingData data)
@@ -76,7 +76,7 @@ public class BuildingInfoUI : MonoBehaviour
     {
         print("OkayBtn Click");
         gameObject.SetActive(false);
-        KingdomManager.Instance.SelectBuilding(_buildingData);
+        KingdomManager.Instance.SelectCTypeBuilding(_buildingData);
     }
 
     public void OnClickExitBtn() //Info-³ª°¡±â

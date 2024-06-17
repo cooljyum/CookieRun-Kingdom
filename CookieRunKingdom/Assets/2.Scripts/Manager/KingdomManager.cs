@@ -28,6 +28,10 @@ public class KingdomManager : MonoBehaviour
     [Header("---------------------------------------------------------")]
     [SerializeField]
     private SkeletonAnimation _selectedBuilding;
+    [SerializeField]
+    private SpriteRenderer _previewImage;
+    [SerializeField]
+    private GameObject _editUI;
 
     private StoreBuildingUI _selectedBuildingUI;
     private BuildingData _selectedBuildingData;
@@ -49,7 +53,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuilding.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
     }
 
-    public void SelectBuilding(StoreBuildingUI buildingUI) //선택한 건물 출현 세팅
+    public void SelectDTypeBuilding(StoreBuildingUI buildingUI) //선택한 D타입 건물 출현 세팅
     {
         _storeUI.gameObject.SetActive(false);
         _selectedBuildingUI = buildingUI;
@@ -59,7 +63,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuilding.Initialize(true);
     }
 
-    public void SelectBuilding(BuildingData data) //선택한 건물 출현 세팅
+    public void SelectCTypeBuilding(BuildingData data) //선택한 C타입 건물 출현 세팅
     {
         _storeUI.gameObject.SetActive(false);
         _selectedBuildingData = data;
@@ -71,23 +75,43 @@ public class KingdomManager : MonoBehaviour
 
     public int Building() //선택한 건물의 데이터 키 값 반환
     {
-        if (_selectedBuildingUI == null)
-            return 0;
+        int key = 0;
 
-        int key = _selectedBuildingUI.GetBuildingData().Key;
-
-        //건물 설치 개수 증가
-        GameManager.Instance.AddBuilding(key);
-        int currentCount = GameManager.Instance.GetBuildingCount(key);
-
-        if (currentCount >= _selectedBuildingUI.MaxCount)
+        if (_selectedBuildingUI != null)
         {
-            _selectedBuildingUI.SetInActive(true);
+            _selectedBuildingData = _selectedBuildingUI.GetBuildingData();
+            key = _selectedBuildingData.Key;
+            Debug.Log($"Selected Building Key (from UI): {key}");
+
+            //건물 설치 개수 증가
+            GameManager.Instance.AddBuilding(key);
+            int currentCount = GameManager.Instance.GetBuildingCount(key);
+
+            if (currentCount >= _selectedBuildingUI.MaxCount)
+            {
+                _selectedBuildingUI.SetInActive(true);
+            }
+
+            _selectedBuildingUI = null;
+        }
+        else if (_selectedBuildingData != null)
+        {
+            key = _selectedBuildingData.Key;
+            Debug.Log($"Selected Building Key (from Data): {key}");
+
+            //건물 설치 개수 증가
+            GameManager.Instance.AddBuilding(key);
+            int currentCount = GameManager.Instance.GetBuildingCount(key);
+
+            if (_selectedBuildingUI != null && currentCount >= _selectedBuildingUI.MaxCount)
+            {
+                _selectedBuildingUI.SetInActive(true);
+            }
+
+            _selectedBuildingData = null;
         }
 
-        _selectedBuildingUI = null;
         _selectedBuilding.gameObject.SetActive(false);
-
         return key;
     }
 

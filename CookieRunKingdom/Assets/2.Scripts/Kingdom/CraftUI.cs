@@ -32,7 +32,7 @@ public class CraftUI : MonoBehaviour
 
     private void Awake()
     {
-        _itemPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/CraftItemCell");
+        _itemPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Craft/CraftItemCell");
     }
 
     public void SetData(BuildingData buildingData)

@@ -16,4 +16,4 @@ MonoBehaviour:
   Name: "\uD2BC\uD2BC \uACE1\uAD2D\uC774"
   Sprite: {fileID: 21300000, guid: 5f705d4d8438d984b93b32fe2b503025, type: 3}
   MaterialKeys: 150000001f000000
-  MateiralAmounts: 0300000003000000
+  MaterialAmounts: 0300000003000000

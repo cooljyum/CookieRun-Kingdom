@@ -16,8 +16,8 @@ public class StoreUI : MonoBehaviour
 
     private void Awake()
     {
-        _cTypeBuildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/StoreCTypeBuildingCell");
-        _dTypeBuildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/StoreDTypeBuildingCell");
+        _cTypeBuildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Construct/StoreCTypeBuildingCell");
+        _dTypeBuildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Construct/StoreDTypeBuildingCell");
 
         _buildingDataArray = Resources.LoadAll<BuildingData>("Data/Building");
     }

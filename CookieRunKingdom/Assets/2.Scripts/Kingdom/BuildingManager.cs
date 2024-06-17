@@ -25,7 +25,7 @@ public class BuildingManager : MonoBehaviour
                 if (key != 0)
                 {
                     //새로운 빌딩을 생성하고 리스트에 추가
-                    GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Building");
+                    GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
                     GameObject buildingObj = Instantiate(buildingPrefab, transform);
                     Building newBuilding = buildingObj.GetComponent<Building>();
                     newBuilding.Build(DataManager.Instance.GetBuildingData(key), mousePos);
@@ -34,6 +34,5 @@ public class BuildingManager : MonoBehaviour
                 }
             }
         }
-
     }
 }
