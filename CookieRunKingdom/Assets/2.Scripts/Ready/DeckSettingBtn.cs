@@ -32,11 +32,11 @@ public class DeckSettingBtn : MonoBehaviour
     }
     private void Start()
     {
-        //foreach (int key in GameManager.Instance.CurPlayerData.DeckKeyLists)
-        //{
-        //    if (key == _characterData.Key)
-        //        ButtonOn();
-        //}
+        foreach (int key in GameManager.Instance.CurPlayerData.DeckKeyLists)
+        {
+            if (key == _characterData.Key)
+                ButtonOn();
+        }
     }
 
     public void SetData(CharacterData characterData)
@@ -56,6 +56,7 @@ public class DeckSettingBtn : MonoBehaviour
         {
             RemoveCharacter();
         }
+   
     }
 
     public void AddCharacter()
@@ -64,8 +65,7 @@ public class DeckSettingBtn : MonoBehaviour
 
         if (ReadyManager.Instance.Add(_characterData))
         {
-            ButtonOn();
-            DeckSettingManager.Instance.SetTeamPower();
+            ButtonOn();            
         }        
     }
 
@@ -76,7 +76,7 @@ public class DeckSettingBtn : MonoBehaviour
         ReadyManager.Instance.Remove(_characterData);
         ButtonOff();
 
-        DeckSettingManager.Instance.SetTeamPower();
+        
     }
 
     private void ButtonOn()
@@ -84,6 +84,7 @@ public class DeckSettingBtn : MonoBehaviour
         _isSet = true;
         _check.gameObject.SetActive(true);
         _profileImage.color = Color.gray;
+        DeckSettingManager.Instance.SetTeamPower();
     }
 
     private void ButtonOff()
@@ -91,6 +92,7 @@ public class DeckSettingBtn : MonoBehaviour
         _isSet = false;        
         _check.gameObject.SetActive(false);
         _profileImage.color = Color.white;
+        DeckSettingManager.Instance.SetTeamPower();
     }
 
     public bool IsSet() { return _isSet; }

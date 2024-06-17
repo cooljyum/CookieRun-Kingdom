@@ -1162,6 +1162,7 @@ MonoBehaviour:
   - {fileID: 1249683774}
   - {fileID: 320057654}
   - {fileID: 103729526}
+  _deckSettingManager: {fileID: 1518459499}
 --- !u!1 &522666184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,8 +1282,6 @@ MonoBehaviour:
     DeckKeyLists: 
     BuildingKeyLists: 
     MyCardsLists: 
-  MyBuildings: 
-  MyItems: 
 --- !u!4 &529245862
 Transform:
   m_ObjectHideFlags: 0

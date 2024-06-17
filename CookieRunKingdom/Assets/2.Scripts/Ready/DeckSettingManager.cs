@@ -13,7 +13,7 @@ public class DeckSettingManager : MonoBehaviour
     private TextMeshProUGUI _teamPowerText;//전투력 텍스트
     private float _power;
 
-    private Dictionary<int, GameObject> _deckBtns = new(); 
+    private Dictionary<int, GameObject> _deckBtns = new();
 
     private void OnEnable()
     {
@@ -22,14 +22,13 @@ public class DeckSettingManager : MonoBehaviour
         SetTeamPower();
     }
 
-    private void Start()
+    private void Awake()
     {
-        Instance = this;
-
+        Instance = this;        
         _teamPower = GameObject.Find("TeamPower");
         _teamPowerText = _teamPower.GetComponent<TextMeshProUGUI>();
     }
-    
+        
     private void ClearCard()
     {//카드 초기화 함수: 팀 설정 패널 활성화 시 초기화 실행
         foreach(KeyValuePair<int, GameObject> deckBtn in _deckBtns)
@@ -46,11 +45,11 @@ public class DeckSettingManager : MonoBehaviour
 
         foreach(int myCard in GameManager.Instance.CurPlayerData.MyCardsLists )
         {
-            CharacterData data = DataManager.Instance.GetCharacterData(myCard);
+            _characterData = DataManager.Instance.GetCharacterData(myCard);
 
             GameObject btnObj = Instantiate(btnPrefab, _deckBtnContent);
             
-            btnObj.GetComponent<DeckSettingBtn>().SetData(data);
+            btnObj.GetComponent<DeckSettingBtn>().SetData(_characterData);
 
             _deckBtns[myCard] = btnObj;
         }

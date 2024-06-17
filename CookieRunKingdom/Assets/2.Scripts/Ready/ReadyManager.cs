@@ -16,7 +16,7 @@ public class ReadyManager : MonoBehaviour
     [SerializeField]
     private List<ReadySort> _readySorts;
     private GameObject _characterPrefab;
-
+    [SerializeField]
     private DeckSettingManager _deckSettingManager;
 
     private Dictionary<int, GameObject> _selectedCharacters = new Dictionary<int, GameObject>();
@@ -26,7 +26,6 @@ public class ReadyManager : MonoBehaviour
         Instance = this;
 
         _characterPrefab = Resources.Load<GameObject>("Prefabs/Character");
-        _deckSettingManager = GetComponentInChildren<DeckSettingManager>();
     }
 
     private void Start()
@@ -37,7 +36,7 @@ public class ReadyManager : MonoBehaviour
     public void LoadDeck()
     {     
         List<int> deckLists = GameManager.Instance.CurPlayerData.DeckKeyLists;
-
+        
         foreach (int character in deckLists)
         {
             _deckSettingManager.GetDeckBtn(character).GetComponent<DeckSettingBtn>().AddCharacter();
@@ -61,7 +60,7 @@ public class ReadyManager : MonoBehaviour
     }
     public void EnterDeck()
     {
-        SaveDeck();
+        //SaveDeck();
         EnterDeckSettingPanel();
     }
 
@@ -82,20 +81,19 @@ public class ReadyManager : MonoBehaviour
         }
     }
 
-    //Enter Ready Panel
     public void EnterReadyPanel()
     {
         readyPanel.SetActive(true);
         deckPanel.SetActive(false);
-
         LoadReady();
+
     }
     public void EnterDeckSettingPanel()
     {  
         readyPanel.SetActive(false);
         deckPanel.SetActive(true);
-
         LoadDeck();        
+
     }    
     
     public bool Add(CharacterData characterData)
@@ -126,24 +124,11 @@ public class ReadyManager : MonoBehaviour
 
     private bool PushSort(int index, CharacterData characterData)
     {
-        //if (_readySorts[index].GetSize() == 2)
-        //{
-        //    //예외처리
-        //    return false;
-        //}
-        //
-        //GameObject character = Instantiate(_characterPrefab, null);
-        //character.GetComponent<StandingCharacter>().SetData(characterData);
-        //
-        //_selectedCharacters.Add(characterData.Key, character);
-        //_readySorts[index].Add(character);
-        //
-        //return true;
         for (int i = index; i < _readySorts.Count; i++)
         {
             if (_readySorts[i].GetSize() < 2)
             {
-                // 비어있는 ReadySort를 찾았으므로 여기서 캐릭터를 추가합니다
+                // 비어있는 ReadySort에 캐릭터를 추가
                 GameObject character = Instantiate(_characterPrefab, null);
                 character.GetComponent<StandingCharacter>().SetData(characterData);
 
