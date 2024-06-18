@@ -57,22 +57,23 @@ public class DeckSettingManager : MonoBehaviour
 
     public GameObject GetDeckBtn(int key) { return _deckBtns[key]; }
     //카드 반환 함수
-
+      
     public void RemoveCharacter(int key)
     {
         _deckBtns[key].gameObject.GetComponent<DeckSettingBtn>().RemoveCharacter();
+
     }
 
     public void ClearCharacters()
-    {
+    {        
         foreach(KeyValuePair<int, GameObject> deckBtn in _deckBtns)
-        {
-            
+        {            
             if(deckBtn.Value.GetComponent<DeckSettingBtn>().IsSet() == true)
             {
                 deckBtn.Value.GetComponent<DeckSettingBtn>().RemoveCharacter();
             }
         }
+
     }
 
     public void SetTeamPower()

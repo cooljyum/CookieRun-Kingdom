@@ -79,6 +79,7 @@ public class ReadyManager : MonoBehaviour
         {
             readySort.Clear();
         }
+        GameManager.Instance.SavePlayerData();
     }
 
     public void EnterReadyPanel()
@@ -124,6 +125,8 @@ public class ReadyManager : MonoBehaviour
 
     private bool PushSort(int index, CharacterData characterData)
     {
+        if (_selectedCharacters.ContainsKey(characterData.Key)) return false;
+
         for (int i = index; i < _readySorts.Count; i++)
         {
             if (_readySorts[i].GetSize() < 2)

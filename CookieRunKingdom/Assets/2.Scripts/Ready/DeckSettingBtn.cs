@@ -65,7 +65,8 @@ public class DeckSettingBtn : MonoBehaviour
 
         if (ReadyManager.Instance.Add(_characterData))
         {
-            ButtonOn();            
+            ButtonOn();
+            GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_characterData.Key);            
         }        
     }
 
@@ -74,6 +75,7 @@ public class DeckSettingBtn : MonoBehaviour
         if(!_isSet) return;
 
         ReadyManager.Instance.Remove(_characterData);
+        GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key);
         ButtonOff();
 
         
