@@ -14,6 +14,10 @@ public class Building : MonoBehaviour
 
     private GameObject _bubbleItemPrefab;
     private BuildingData _buildingData;
+    public BuildingData BuildingData
+    {
+        get { return _buildingData; }
+    }
     private CraftItemInfo _craftItemInfo;
     private SkeletonAnimation _skeletonAnimation;
     private SpriteRenderer _spriteRenderer;
@@ -21,6 +25,12 @@ public class Building : MonoBehaviour
     private Animator _effectAnimator;
     private Animator _bubbleAnimator;
     private Sprite _bubbleItemImage;
+
+    private List<CraftItemInfo> _craftingItems = new();
+    public List<CraftItemInfo> CraftingItems
+    {
+        get { return _craftingItems; }
+    }
 
     private void Awake()
     {
@@ -47,9 +57,14 @@ public class Building : MonoBehaviour
 
             if(_collider.bounds.Contains(mousePos))
             {
-                KingdomManager.Instance.OnClickBuilding(_buildingData);
+                KingdomManager.Instance.OnClickBuilding(this);
             }
         }
+    }
+
+    public void AddCraftItem(CraftItemInfo item)
+    {
+        _craftingItems.Add(item);
     }
 
     public void Build(BuildingData buildingData, Vector2 pos) //건물 데이터 세팅 & 설치

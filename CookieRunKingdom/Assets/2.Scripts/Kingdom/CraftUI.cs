@@ -42,7 +42,7 @@ public class CraftUI : MonoBehaviour
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.Initialize(true);
 
-        if (buildingData.Key / 10 < 10) //1n번대 -> 재료
+        if (buildingData.Key != 0 && buildingData.Key < 100) //1n번대 -> 재료
         {
             _curMaterialImage.sprite = buildingData.CraftInfos[0].ResultItem.Sprite;
             _curMaterialAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(buildingData.CraftInfos[0].ResultItem.Key).ToString();
@@ -67,6 +67,18 @@ public class CraftUI : MonoBehaviour
         }
     }
 
+    public void SetCraftingItem(Building building)
+    {
+        List<CraftItemInfo> craftringItems = building.CraftingItems;
+
+
+    }
+
+    void ClearCraftingItem()
+    {
+
+    }
+
     public void CraftStart(CraftItemInfo craftItemInfo)
     {
         foreach (Transform craftingCell in _craftingContent)
@@ -74,7 +86,8 @@ public class CraftUI : MonoBehaviour
             var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
             if (!craftingItemUI.CraftingItemImage.gameObject.activeSelf)
             {
-                craftingItemUI.CraftStart(_buildingData.Key, craftItemInfo);
+                craftingItemUI.CraftStart(craftItemInfo);
+                KingdomManager.Instance.SelectBuilding.AddCraftItem(craftItemInfo);
                 break;
             }
         }

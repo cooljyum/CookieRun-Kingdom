@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 [Serializable]
 public struct CraftItemInfo //아이템 생산 정보
 {
+    public int BuildingKey;
     public SkeletonDataAsset SkeletonDataAsset;
     public int RequiredTime;
     public bool IsMaterial;

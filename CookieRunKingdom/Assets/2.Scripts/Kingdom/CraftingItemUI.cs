@@ -29,17 +29,17 @@ public class CraftingItemUI : MonoBehaviour
         StartCoroutine(UpdateCraftingProgress());
     }
 
-    public void CraftStart(int buildingKey, CraftItemInfo craftItemInfo) // CraftingÄ­ ¼¼ÆÃ
+    public void CraftStart(CraftItemInfo craftItemInfo) // CraftingÄ­ ¼¼ÆÃ
     {
-        _buildingKey = buildingKey;
+        _buildingKey = craftItemInfo.BuildingKey;
         _craftItemInfo = craftItemInfo;
         _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
 
-        float remainingTime = TimeManager.Instance.GetRemainTime(buildingKey, craftItemInfo.ResultItem.Key);
+        float remainingTime = TimeManager.Instance.GetRemainTime(_buildingKey, craftItemInfo.ResultItem.Key);
         if (remainingTime <= 0)
         {
             remainingTime = _craftItemInfo.Value.RequiredTime;
-            TimeManager.Instance.AddTime(buildingKey, craftItemInfo);
+            TimeManager.Instance.AddTime(_buildingKey, craftItemInfo);
         }
 
         _timeProgressBar.maxValue = _craftItemInfo.Value.RequiredTime;

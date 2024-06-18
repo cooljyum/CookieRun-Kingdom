@@ -34,11 +34,17 @@ public class KingdomManager : MonoBehaviour
     private GameObject _editUI;
 
     private StoreBuildingUI _selectedBuildingUI;
-    private BuildingData _selectedBuildingData;
+    private BuildingData _selectedBuildingData;    
 
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
+
+    private Building _selectBuilding;
+    public Building SelectBuilding
+    {
+        get { return _selectBuilding; }
+    }
 
     private void Awake()
     {
@@ -128,8 +134,11 @@ public class KingdomManager : MonoBehaviour
         _buildingInfoPanel.SetData(data);
     }
 
-    public void OnClickBuilding(BuildingData data) //설치된 건물
+    public void OnClickBuilding(Building building) //설치된 건물
     {
+        _selectBuilding = building;
+        BuildingData data = building.BuildingData;
+
         print("Building Click");
 
         if (data.Type == "Decorative")
