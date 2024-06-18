@@ -1,13 +1,36 @@
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
-    private List<List<GameObject>> _battleCookies;
-    private List<List<List<GameObject>>> _enemiesTeamList;
+    public static BattleManager Instance;
 
+
+    [Header("Staus")]
+    [SerializeField]
+    private bool _isOnBattle = true;
+    public bool IsOnBattle { get; set; }
+    [SerializeField]
+    private bool _isStop = false;
+    public bool IsStop { get; set; }
+    
+
+    [Header("Stage")]
+    [SerializeField]
+    private int _stage = 1;
+    public int Stage { get; set; } = 1;
+
+    [Header("BattleObj Cnt")]
+    [Header("-Cookie")]
+    [SerializeField]
+    private int _killedCookies = 0;
+    public int KilledCookies { get; set; }
+    private int _cntCurCookies = 0;
+    public int CntCurCookies { get; set; }
+    [Header("-Enemies")]
     [SerializeField]
     private int _curEnemyTeamIdx = 0;
     [SerializeField]
@@ -16,18 +39,15 @@ public class BattleManager : MonoBehaviour
     private int _killedEnemies = 0;
     [SerializeField]
     private int _killedCurBattleEnemies = 0;
-    [SerializeField]
-    private int _killedCookie = 0;
 
     [SerializeField]
-    private bool _isOnBattle = true;
-    public bool IsOnBattle 
-    {
-        get { return _isOnBattle; }
-        set { _isOnBattle = value; }
-    }
+    private float _cntBattleEnemies = 0;
 
-    public static BattleManager Instance { get; private set; }
+    public float KillEnemiesGuage { get { return ((_curEnemyTeamIdx + 1) / _cntBattleEnemies); } }
+
+    private List<List<GameObject>> _battleCookies;
+    private List<List<List<GameObject>>> _enemiesTeamList;
+
 
     private void Awake()
     {
@@ -41,6 +61,8 @@ public class BattleManager : MonoBehaviour
         _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesObjList();
 
         _isOnBattle = true;
+
+        _cntBattleEnemies = _enemiesTeamList.Count;
 
         StartCoroutine(StartGameInit());
     }
@@ -150,8 +172,10 @@ public class BattleManager : MonoBehaviour
         }
         else 
         {
-            _killedCookie++;
+            _killedCookies++;
         }
+
+        CheckResult();
     }
 
 
@@ -192,4 +216,14 @@ public class BattleManager : MonoBehaviour
             _curEnemyTeamIdx = 0; 
         }
     }
+
+    private void CheckResult() 
+    {
+        
+        if (_cntCurCookies == _killedCookies)
+        {
+            BattleUIManager.Instance.SetResultUI(false);
+        }
+    }
+
 }

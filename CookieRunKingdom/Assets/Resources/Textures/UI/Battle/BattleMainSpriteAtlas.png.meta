@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: 6a164c9b09cc5b648a3f90a3095c1051
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3391305653436716465
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_0
+  - first:
+      213: -212279354276192145
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_1
+  - first:
+      213: 2145937515813282771
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_2
+  - first:
+      213: 6559911592424063710
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_3
+  - first:
+      213: -7681253078945998904
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_4
+  - first:
+      213: 2531250144059595162
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_5
+  - first:
+      213: -5211184557012619165
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_6
+  - first:
+      213: 7608906632404105006
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_7
+  - first:
+      213: 7207079052860966370
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_8
+  - first:
+      213: 6686648115382744475
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_9
+  - first:
+      213: 3981015814761348366
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_10
+  - first:
+      213: 9101484956355267131
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_11
+  - first:
+      213: -2978186433041765584
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_12
+  - first:
+      213: 7814385318301129634
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_13
+  - first:
+      213: 653913772412173316
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_14
+  - first:
+      213: -2814813671513229532
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_15
+  - first:
+      213: -3319376716067293927
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_16
+  - first:
+      213: 1791563674524616887
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_17
+  - first:
+      213: 8256964831463006007
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_18
+  - first:
+      213: 6472753114472205372
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_19
+  - first:
+      213: 1310558654158231416
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_20
+  - first:
+      213: -1973496083923712412
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_21
+  - first:
+      213: 8654119921712859088
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_22
+  - first:
+      213: 6210580446286140586
+    second: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_0
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 504
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b59edd1686501f20800000000000000
+      internalID: 3391305653436716465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_1
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 256
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 116, y: 0, z: 115, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60e73f4d05dd0df0800000000000000
+      internalID: -212279354276192145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_2
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 403
+        width: 216
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d32c3c0dc6e7cd10800000000000000
+      internalID: 2145937515813282771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_3
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 467
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2476066dc790b50800000000000000
+      internalID: 6559911592424063710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_4
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 3
+        width: 120
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 0, z: 43, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c75c8f8505b66590800000000000000
+      internalID: -7681253078945998904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 198
+        width: 1035
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 380, y: 0, z: 248, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99145a489ec02320800000000000000
+      internalID: 2531250144059595162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_6
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 153
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360f24461472ea7b0800000000000000
+      internalID: -5211184557012619165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_7
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 101
+        width: 3
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e277f89b444489960800000000000000
+      internalID: 7608906632404105006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_8
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 177
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5cfedb630b40460800000000000000
+      internalID: 7207079052860966370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_9
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 452
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b957c67980fbbcc50800000000000000
+      internalID: 6686648115382744475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_10
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 405
+        width: 120
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 0, z: 27, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dff0c8ac86f3730800000000000000
+      internalID: 3981015814761348366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 637
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 18, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a0e189858fe4e70800000000000000
+      internalID: 9101484956355267131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_12
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 0
+        width: 153
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b68afd73b5ba6d0800000000000000
+      internalID: -2978186433041765584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_13
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 0
+        width: 152
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abdd5b6b06427c60800000000000000
+      internalID: 7814385318301129634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_14
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 403
+        width: 174
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cfc568c1b231900800000000000000
+      internalID: 653913772412173316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_15
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 579
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4277a8811e5cfe8d0800000000000000
+      internalID: -2814813671513229532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341
+        width: 765
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9153b1ba6743fe1d0800000000000000
+      internalID: -3319376716067293927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 829
+        width: 171
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8888c7ba9ecd810800000000000000
+      internalID: 1791563674524616887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_18
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 571
+        width: 162
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fde3654c1a69270800000000000000
+      internalID: 8256964831463006007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 270
+        width: 1907
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c4bead9a6d3d950800000000000000
+      internalID: 6472753114472205372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_20
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 839
+        width: 1787
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8775a6ef62a003210800000000000000
+      internalID: 1310558654158231416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 857
+        width: 174
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4664a1884cbbc94e0800000000000000
+      internalID: -1973496083923712412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_22
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 2
+        width: 78
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 43, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d78351a73c991870800000000000000
+      internalID: 8654119921712859088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_23
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 620
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 21, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa45fd5c20a603650800000000000000
+      internalID: 6210580446286140586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_0: 3391305653436716465
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_1: -212279354276192145
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_10: 3981015814761348366
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_11: 9101484956355267131
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_12: -2978186433041765584
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_13: 7814385318301129634
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_14: 653913772412173316
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_15: -2814813671513229532
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_16: -3319376716067293927
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_17: 1791563674524616887
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_18: 8256964831463006007
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_19: 6472753114472205372
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_2: 2145937515813282771
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_20: 1310558654158231416
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_21: -1973496083923712412
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_22: 8654119921712859088
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_23: 6210580446286140586
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_3: 6559911592424063710
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_4: -7681253078945998904
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_5: 2531250144059595162
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_6: -5211184557012619165
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_7: 7608906632404105006
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_8: 7207079052860966370
+      sactx-2048x1024-ETC2-BattleMainSpriteAtlas-64de5fd8_9: 6686648115382744475
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

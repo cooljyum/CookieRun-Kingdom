@@ -8,36 +8,29 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     //BattkeCookie
     [Header("BattleCookie")]
     [Tooltip("Settings related to battle cookies.")]
-
-#if UNITY_EDITOR
+    #region
+    private BattleCookies _cookiesManager;
     [SerializeField]
     private TeamData _cookieTeam = new TeamData();
-
-#endif
-    private BattleCookies _cookiesManager;
     private List<List<int>> _battleCookieKeys = new List<List<int>>();
     private List<List<GameObject>> _battleCookies = new List<List<GameObject>>();
-
-    [Header("-------------------")]
-    //Enemy
-    [Header("Enemy")]
-    [Tooltip("Settings related to battle enemies.")]
-
-    [SerializeField]
-    private int _stage = 1;
-#if UNITY_EDITOR
-    [SerializeField]
-    private List<TeamData> _enemiesTeamList = new List<TeamData>();
-
-#endif
-    private BattleEnemies _enemiesManager;
-    private List<List<List<int>>> _battleEnemiesKeys = new List<List<List<int>>>();
-    private List<List<List<GameObject>>> _battleEnemiesObjectsList = new List<List<List<GameObject>>>();
     public List<List<GameObject>> GetBattleCookies()
     {
         return _battleCookies;
     }
+    #endregion
 
+    [Header("-------------------")]
+
+    //Enemy
+    [Header("Enemy")]
+    [Tooltip("Settings related to battle enemies.")]
+    #region
+    private BattleEnemies _enemiesManager;
+    [SerializeField]
+    private List<TeamData> _enemiesTeamList = new List<TeamData>();
+    private List<List<List<int>>> _battleEnemiesKeys = new List<List<List<int>>>();
+    private List<List<List<GameObject>>> _battleEnemiesObjectsList = new List<List<List<GameObject>>>();
     public List<List<List<GameObject>>> GetEnemiesObjList()
     {
         return _battleEnemiesObjectsList;
@@ -47,7 +40,10 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     {
         return _enemiesTeamList;
     }
+    #endregion
 
+    //ClassData
+    #region
     [System.Serializable]
     public class TeamData
     {
@@ -65,7 +61,6 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             Back.Clear();
         }
     }
-
     [System.Serializable]
     public class BattleObjPosData
     {
@@ -78,29 +73,20 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             BattleObj.Clear();
         }
     }
+    #endregion
 
-    private void Start()
-    {
-       // Init(); // 초기화 함수 호출
-    }
-
-    public void Init()
+    public void Init() //초기화
     {
         TestGame();
-        CreateBattle(); // 배틀 오브젝트 생성 함수 호출
+        CreateBattle();
     }
 
-    private void CreateBattle()
+    private void CreateBattle() //Battle스폰
     {
         SetCookieData();
-
-        _enemiesManager = new BattleEnemies();
-        _enemiesManager.CreateBattleEnemiesGroup(_stage);
-        _battleEnemiesKeys = _enemiesManager.BattleEnemiesKeysList;
-        _battleEnemiesObjectsList = _enemiesManager.BattleEnemiesObjectsList;
+        SetEnemiesData();
         PopulateEnemiesTeamList();
     }
-
 
     //Data설정
     private void SetCookieData()
@@ -109,6 +95,8 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
         _cookiesManager = new BattleCookies();
         _cookiesManager.CreateBattleCookies(_battleCookieKeys);
         _battleCookies = _cookiesManager.BattleEntitiesList;
+
+        BattleManager.Instance.CntCurCookies = _cookiesManager.CntSpawnEntities;
 
         // Clear
         _cookieTeam.Clear();
@@ -140,6 +128,15 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             }
         }
     }
+
+    private void SetEnemiesData()
+    {
+        _enemiesManager = new BattleEnemies();
+        _enemiesManager.CreateBattleEnemiesGroup(BattleManager.Instance.Stage);
+        _battleEnemiesKeys = _enemiesManager.BattleEnemiesKeysList;
+        _battleEnemiesObjectsList = _enemiesManager.BattleEnemiesObjectsList;
+    }
+
     private void SetPositionData(BattleObjPosData positionData, int index, int count)
     {
         for (int i = 0; i < count; i++)
@@ -183,6 +180,7 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     private void TestGame()
     {
         _battleCookieKeys.Clear();
+
         // 예제 데이터 설정
         _battleCookieKeys = new List<List<int>> {
             new List<int> { 1, 2 },   // Front

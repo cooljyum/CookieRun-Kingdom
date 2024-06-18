@@ -5,6 +5,9 @@ using UnityEngine;
 
 public abstract class BattleEntitiesBase : MonoBehaviour
 {
+    private int _cntSpawnEntities = 0;
+    public int CntSpawnEntities { get; }
+    
     protected List<List<GameObject>> _battleEntities = new List<List<GameObject>>();
     public List<List<GameObject>> BattleEntitiesList => _battleEntities;
 
@@ -55,6 +58,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
             GameObject squadObject = hasSquad ? positionTransform.GetChild(2).gameObject : null;
 
             _battleEntities.Add(new List<GameObject>());
+            _cntSpawnEntities = 0;
             List<int> entities = entityKeys[i];
 
             if (entities.Count == 1)
@@ -95,6 +99,8 @@ public abstract class BattleEntitiesBase : MonoBehaviour
         {
             if (i < childCount)
             {
+                _cntSpawnEntities++;
+
                 Transform child = parent.GetChild(i);
                 GameObject newEntityPrefab = Instantiate(prefab, child);
                 newEntityPrefab.transform.localPosition = Vector3.zero;

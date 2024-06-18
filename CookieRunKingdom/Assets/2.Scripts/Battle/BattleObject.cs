@@ -223,10 +223,12 @@ public class BattleObject : MonoBehaviour
 
     private void MoveToTarget()
     {
+        if (BattleManager.Instance.IsStop) return;
+
         if (_target != null)
         {
             Vector3 direction = (_target.transform.position - transform.parent.position).normalized;
-            transform.parent.position += direction * moveSpeed * Time.deltaTime;
+            transform.parent.position += direction * moveSpeed * Time.deltaTime * BattleUIManager.Instance.StageSpeed;
         }
     }
 
@@ -303,7 +305,7 @@ public class BattleObject : MonoBehaviour
 
         //   _characterData.Skill.UseSkill(gameObject, _target);
 
-
+        if (BattleManager.Instance.IsStop) return;
 
         if (_target != null && _curStatus == Status.Attack)
         {
