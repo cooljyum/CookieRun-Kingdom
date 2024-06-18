@@ -6,14 +6,13 @@ using UnityEngine;
 public class InterfaceManager : MonoBehaviour
 {
     private TextMeshProUGUI _coinText;
+    private TextMeshProUGUI _stageText;
 
-    private void Awake()
+    private void Start()
     {
-        _coinText = GetComponentInChildren<TextMeshProUGUI>();
-    }
-
-    private void Update()
-    {
-        _coinText.text = GameManager.Instance.CurPlayerData.Level.ToString();
-    }
+        _coinText = transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
+        _coinText.text = GameManager.Instance.CurPlayerData.Coin.ToString();
+        _stageText = transform.GetChild(1).GetChild(1).GetComponent<TextMeshProUGUI>();
+        _stageText.text = GameManager.Instance.CurPlayerData.CurStage.ToString();
+    }    
 }

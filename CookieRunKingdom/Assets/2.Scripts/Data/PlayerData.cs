@@ -6,6 +6,8 @@ public class PlayerData
 {
     public int Level;
     public int Exp;
+    public int Coin;
+    public int CurStage;
     public List<int> DeckKeyLists;
     public List<int> BuildingKeyLists;
     public List<List<int>> PosIndexLists;
