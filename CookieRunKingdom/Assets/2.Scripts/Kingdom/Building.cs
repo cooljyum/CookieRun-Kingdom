@@ -14,10 +14,7 @@ public class Building : MonoBehaviour
 
     private GameObject _bubbleItemPrefab;
     private BuildingData _buildingData;
-    public BuildingData BuildingData
-    {
-        get { return _buildingData; }
-    }
+    public BuildingData BuildingData => _buildingData;
     private CraftItemInfo _craftItemInfo;
     private SkeletonAnimation _skeletonAnimation;
     private SpriteRenderer _spriteRenderer;
@@ -27,10 +24,7 @@ public class Building : MonoBehaviour
     private Sprite _bubbleItemImage;
 
     private List<CraftItemInfo> _craftingItems = new();
-    public List<CraftItemInfo> CraftingItems
-    {
-        get { return _craftingItems; }
-    }
+    public List<CraftItemInfo> CraftingItems => _craftingItems;
 
     private void Awake()
     {
@@ -62,7 +56,7 @@ public class Building : MonoBehaviour
         }
     }
 
-    public void AddCraftItem(CraftItemInfo item)
+    public void AddCraftItem(CraftItemInfo item) //생산 시작한 아이템 생산 리스트에 넣기
     {
         _craftingItems.Add(item);
     }
@@ -81,6 +75,7 @@ public class Building : MonoBehaviour
         else
         {
             _spriteRenderer.sprite = buildingData.Sprite;
+            _spriteRenderer.gameObject.SetActive(true);
             _skeletonAnimation.gameObject.SetActive(false);
         }
 

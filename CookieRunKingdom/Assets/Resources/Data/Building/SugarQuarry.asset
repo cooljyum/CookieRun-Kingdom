@@ -18,6 +18,7 @@ MonoBehaviour:
   Size: 12
   Point: 24
   SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+  Sprite: {fileID: 0}
   Information: "\uC624\uB79C \uC7A0\uC5D0 \uBE60\uC9C4 \uAC01\uC124\uD0D5 \uACE8\uB818
     \uC911\uC5D0\uC11C\uB3C4 \uAC01\uC9C0\uACE0 \uC624\uB798\uB41C \uAC83\uC744 \uC5C4\uC120\uD55C\uB2E4.
     \uAC01\uC124\uD0D5\uC744 \uCE98 \uB54C\uC5D0\uB294 \uC5B8\uC81C\uB098 \uACE8\uB818\uC5D0\uAC8C
@@ -29,19 +30,22 @@ MonoBehaviour:
   RequiredEquipmentCount: 2
   RequiredTime: 240
   CraftInfos:
-  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+  - BuildingKey: 30
+    SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
     RequiredTime: 90
     IsMaterial: 1
     Cost: 80
     ResultItem: {fileID: 11400000, guid: bbb98c2b915b4ef40815586288d4436a, type: 2}
     ResultCount: 3
-  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+  - BuildingKey: 30
+    SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
     RequiredTime: 840
     IsMaterial: 1
     Cost: 240
     ResultItem: {fileID: 11400000, guid: b274eedf6b955f94fb64681942642a1f, type: 2}
     ResultCount: 9
-  - SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
+  - BuildingKey: 30
+    SkeletonDataAsset: {fileID: 11400000, guid: 7c3f4b5d114b36646911b44e5346ee10, type: 2}
     RequiredTime: 6300
     IsMaterial: 1
     Cost: 540

@@ -27,7 +27,7 @@ public class KingdomManager : MonoBehaviour
 
     [Header("---------------------------------------------------------")]
     [SerializeField]
-    private SkeletonAnimation _selectedBuilding;
+    private SkeletonAnimation _selectedBuildingSkeletonAnimation;
     [SerializeField]
     private SpriteRenderer _previewImage;
     [SerializeField]
@@ -40,11 +40,8 @@ public class KingdomManager : MonoBehaviour
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
 
-    private Building _selectBuilding;
-    public Building SelectBuilding
-    {
-        get { return _selectBuilding; }
-    }
+    private Building _selectedBuilding;
+    public Building SelectedBuilding => _selectedBuilding;
 
     private void Awake()
     {
@@ -53,10 +50,10 @@ public class KingdomManager : MonoBehaviour
 
     private void Update()
     {
-        if (!_selectedBuilding.gameObject.activeSelf) return;
+        if (!_selectedBuildingSkeletonAnimation.gameObject.activeSelf) return;
 
         Vector2 mousePos = Input.mousePosition;
-        _selectedBuilding.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
+        _selectedBuildingSkeletonAnimation.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
     }
 
     public void SelectDTypeBuilding(StoreBuildingUI buildingUI) //선택한 D타입 건물 출현 세팅
@@ -64,9 +61,9 @@ public class KingdomManager : MonoBehaviour
         _storeUI.gameObject.SetActive(false);
         _selectedBuildingUI = buildingUI;
 
-        _selectedBuilding.gameObject.SetActive(true);
-        _selectedBuilding.skeletonDataAsset = buildingUI.GetBuildingData().SkeletonDataAsset;
-        _selectedBuilding.Initialize(true);
+        _selectedBuildingSkeletonAnimation.gameObject.SetActive(true);
+        _selectedBuildingSkeletonAnimation.skeletonDataAsset = buildingUI.GetBuildingData().SkeletonDataAsset;
+        _selectedBuildingSkeletonAnimation.Initialize(true);
     }
 
     public void SelectCTypeBuilding(BuildingData data) //선택한 C타입 건물 출현 세팅
@@ -74,9 +71,9 @@ public class KingdomManager : MonoBehaviour
         _storeUI.gameObject.SetActive(false);
         _selectedBuildingData = data;
 
-        _selectedBuilding.gameObject.SetActive(true);
-        _selectedBuilding.skeletonDataAsset = _selectedBuildingData.SkeletonDataAsset;
-        _selectedBuilding.Initialize(true);
+        _selectedBuildingSkeletonAnimation.gameObject.SetActive(true);
+        _selectedBuildingSkeletonAnimation.skeletonDataAsset = _selectedBuildingData.SkeletonDataAsset;
+        _selectedBuildingSkeletonAnimation.Initialize(true);
     }
 
     public int Building() //선택한 건물의 데이터 키 값 반환
@@ -117,7 +114,7 @@ public class KingdomManager : MonoBehaviour
             _selectedBuildingData = null;
         }
 
-        _selectedBuilding.gameObject.SetActive(false);
+        _selectedBuildingSkeletonAnimation.gameObject.SetActive(false);
         return key;
     }
 
@@ -136,7 +133,7 @@ public class KingdomManager : MonoBehaviour
 
     public void OnClickBuilding(Building building) //설치된 건물
     {
-        _selectBuilding = building;
+        _selectedBuilding = building;
         BuildingData data = building.BuildingData;
 
         print("Building Click");
@@ -150,6 +147,7 @@ public class KingdomManager : MonoBehaviour
             _craftUI.gameObject.SetActive(true);
             _craftUI.CreateCraftItem(data);
             _craftUI.SetData(data);
+            _craftUI.SetCraftingItem(building);
         }
     }
 

@@ -51,7 +51,7 @@ public class TimeManager : Singleton<TimeManager>
         _totalTimer[buildingKey][craftItemInfo.ResultItem.Key] = craftItemInfo.RequiredTime;
     }
 
-    public float GetRemainTime(int buildingKey, int itemKey)
+    public float GetRemainingTime(int buildingKey, int itemKey)
     {
         if (_totalTimer.ContainsKey(buildingKey) && _totalTimer[buildingKey].ContainsKey(itemKey))
         {

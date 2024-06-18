@@ -42,7 +42,7 @@ public class CraftUI : MonoBehaviour
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.Initialize(true);
 
-        if (buildingData.Key != 0 && buildingData.Key < 100) //1n번대 -> 재료
+        if (buildingData.Key >= 10 && buildingData.Key < 100) //1n번대 -> 재료
         {
             _curMaterialImage.sprite = buildingData.CraftInfos[0].ResultItem.Sprite;
             _curMaterialAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(buildingData.CraftInfos[0].ResultItem.Key).ToString();
@@ -69,14 +69,33 @@ public class CraftUI : MonoBehaviour
 
     public void SetCraftingItem(Building building)
     {
-        List<CraftItemInfo> craftringItems = building.CraftingItems;
+        ClearCraftingItem();
 
-
+        //빌딩의 CraftingItems 리스트에서 아이템 정보를 가져와 세팅
+        foreach (var craftItemInfo in building.CraftingItems)
+        {
+            foreach (Transform craftingCell in _craftingContent)
+            {
+                var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
+                if (!craftingItemUI.CraftingItemImage.gameObject.activeSelf)
+                {
+                    craftingItemUI.SetCraftingItem(craftItemInfo);
+                    break;
+                }
+            }
+        }
     }
 
-    void ClearCraftingItem()
+    void ClearCraftingItem() //기존 crafting cell 데이터 초기화
     {
-
+        foreach (Transform craftingCell in _craftingContent)
+        {
+            var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
+            if (craftingItemUI != null)
+            {
+                craftingItemUI.ResetData();
+            }
+        }
     }
 
     public void CraftStart(CraftItemInfo craftItemInfo)
@@ -87,7 +106,7 @@ public class CraftUI : MonoBehaviour
             if (!craftingItemUI.CraftingItemImage.gameObject.activeSelf)
             {
                 craftingItemUI.CraftStart(craftItemInfo);
-                KingdomManager.Instance.SelectBuilding.AddCraftItem(craftItemInfo);
+                KingdomManager.Instance.SelectedBuilding.AddCraftItem(craftItemInfo);
                 break;
             }
         }

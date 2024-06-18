@@ -35,7 +35,8 @@ public class CraftingItemUI : MonoBehaviour
         _craftItemInfo = craftItemInfo;
         _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
 
-        float remainingTime = TimeManager.Instance.GetRemainTime(_buildingKey, craftItemInfo.ResultItem.Key);
+        //남은 시간 세팅
+        float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, craftItemInfo.ResultItem.Key);
         if (remainingTime <= 0)
         {
             remainingTime = _craftItemInfo.Value.RequiredTime;
@@ -58,10 +59,12 @@ public class CraftingItemUI : MonoBehaviour
         {
             if (_craftItemInfo.HasValue && !_isCraftingComplete)
             {
-                float elapsedTime = _craftItemInfo.Value.RequiredTime - TimeManager.Instance.GetRemainTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
+                //경과 시간 계산 -> 값 세팅
+                float elapsedTime = _craftItemInfo.Value.RequiredTime - TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
                 _timeProgressBar.value = elapsedTime;
                 _timeText.text = TimeManager.ConvertTime((int)(_craftItemInfo.Value.RequiredTime - elapsedTime));
 
+                //제작 완료 여부 확인
                 if (_craftItemInfo.Value.RequiredTime - elapsedTime <= 0)
                 {
                     OnCraftingComplete();
@@ -76,7 +79,7 @@ public class CraftingItemUI : MonoBehaviour
         if (!_craftItemInfo.HasValue) return;
 
         print("FastBtn Click");
-        float remainingTime = TimeManager.Instance.GetRemainTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
+        float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
         remainingTime -= 10000;
 
         if (remainingTime < 0)
@@ -100,13 +103,60 @@ public class CraftingItemUI : MonoBehaviour
         _timeProgressBar.gameObject.SetActive(false);
     }
 
-    public void OnClickCraftedItem()
+    public void OnClickCraftedItem() //Crafting-생산된 아이템
     {
         if (!_craftingImage.gameObject.activeSelf) return;
+        if (!_checkImage.gameObject.activeSelf) return;
+
+        //_craftingItems 리스트에서 아이템 제거
+        Building currentBuilding = KingdomManager.Instance.SelectedBuilding;
+        if (currentBuilding != null && _craftItemInfo.HasValue)
+        {
+            currentBuilding.CraftingItems.Remove(_craftItemInfo.Value);
+        }
 
         _craftingImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
         GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key, _craftItemInfo.Value.ResultCount);
         print($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
+    }
+
+    public void ResetData()
+    {
+        _craftItemInfo = null;
+        _craftingImage.gameObject.SetActive(false);
+        _checkImage.gameObject.SetActive(false);
+        _timeProgressBar.gameObject.SetActive(false);
+    }
+
+    public void SetCraftingItem(CraftItemInfo craftItemInfo) //생산 중이었던 아이템의 데이터 세팅
+    {
+        _buildingKey = craftItemInfo.BuildingKey;
+        _craftItemInfo = craftItemInfo;
+        _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
+
+        //생산 시간 계산 및 세팅
+        float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, craftItemInfo.ResultItem.Key);
+        _timeProgressBar.maxValue = _craftItemInfo.Value.RequiredTime;
+        float elapsedTime = _craftItemInfo.Value.RequiredTime - remainingTime;
+        _timeProgressBar.value = elapsedTime;
+        _timeText.text = TimeManager.ConvertTime((int)remainingTime);
+
+        if (remainingTime == 0)
+        {
+            _isCraftingComplete = true;
+            _timeProgressBar.gameObject.SetActive(false);
+            _fastBtn.gameObject.SetActive(false);
+            _checkImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            _isCraftingComplete = false;
+            _timeProgressBar.gameObject.SetActive(true);
+            _fastBtn.gameObject.SetActive(true);
+            _checkImage.gameObject.SetActive(false);
+        }
+
+        _craftingImage.gameObject.SetActive(true);
     }
 }
