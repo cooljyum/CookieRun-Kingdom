@@ -13,6 +13,10 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     [SerializeField]
     private TeamData _cookieTeam = new TeamData();
     private List<List<int>> _battleCookieKeys = new List<List<int>>();
+    public List<List<int>> BattleCookieKeys
+    {
+        get { return _battleCookieKeys; }
+    }
     private List<List<GameObject>> _battleCookies = new List<List<GameObject>>();
     public List<List<GameObject>> GetBattleCookies()
     {

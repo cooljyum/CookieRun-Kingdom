@@ -8,29 +8,53 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager Instance;
 
-
     [Header("Staus")]
     [SerializeField]
     private bool _isOnBattle = true;
-    public bool IsOnBattle { get; set; }
+    public bool IsOnBattle 
+    {
+        get { return _isOnBattle; }
+        set { _isOnBattle = value; }
+    }
     [SerializeField]
     private bool _isStop = false;
-    public bool IsStop { get; set; }
-    
-
+    public bool IsStop 
+    {
+        get { return _isStop; }
+        set { _isStop = value; }
+    }
+   
     [Header("Stage")]
     [SerializeField]
     private int _stage = 1;
-    public int Stage { get; set; } = 1;
+    public int Stage
+    {
+        get { return _stage; }
+        set { _stage = value; }
+    }
+    private StageData _stageData;
+    public StageData StageData 
+    {
+        get { return _stageData; }
+    }
 
     [Header("BattleObj Cnt")]
-    [Header("-Cookie")]
+    [Header("- Cookie")]
     [SerializeField]
     private int _killedCookies = 0;
-    public int KilledCookies { get; set; }
+    public int KilledCookies
+    {
+        get { return _killedCookies; }
+        set { _killedCookies = value; }
+    }
     private int _cntCurCookies = 0;
-    public int CntCurCookies { get; set; }
-    [Header("-Enemies")]
+    public int CntCurCookies
+    {
+        get { return _cntCurCookies; }
+        set { _cntCurCookies = value; }
+    }
+
+    [Header("- Enemies")]
     [SerializeField]
     private int _curEnemyTeamIdx = 0;
     [SerializeField]
@@ -52,11 +76,14 @@ public class BattleManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        SetStageData();
     }
 
     private void Start()
     {
         BattleObjectSpawnManager.Instance.Init();
+        BattleUIManager.Instance.Init();
         _battleCookies = BattleObjectSpawnManager.Instance.GetBattleCookies();
         _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesObjList();
 
@@ -65,6 +92,11 @@ public class BattleManager : MonoBehaviour
         _cntBattleEnemies = _enemiesTeamList.Count;
 
         StartCoroutine(StartGameInit());
+    }
+
+    private void SetStageData()
+    {
+        _stageData = DataManager.Instance.GetStageData(_stage);
     }
 
     private IEnumerator StartGameInit()
@@ -79,8 +111,7 @@ public class BattleManager : MonoBehaviour
         _isOnBattle = false;
     }
 
-
-    public void SetTargetsToCookies()
+    public void SetTargetsToCookies() 
     {
         SetTargets(_battleCookies, GetCurrentEnemyObjLists());
     }

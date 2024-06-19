@@ -11,4 +11,12 @@ public class StageData : ScriptableObject
 
     [Header("Stage Info")]
     public List<int> MonsterGroupList; // 몬스터그룹 리스트
+    public List<StageItem> StageItemList; // 아이템 리스트
+}
+
+[System.Serializable]
+public class StageItem
+{
+    public int Key; // 아이템 키
+    public float Value; // 아이템 얻는 수치
 }

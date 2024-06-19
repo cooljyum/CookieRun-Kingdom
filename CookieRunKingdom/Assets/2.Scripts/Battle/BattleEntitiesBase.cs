@@ -6,7 +6,8 @@ using UnityEngine;
 public abstract class BattleEntitiesBase : MonoBehaviour
 {
     private int _cntSpawnEntities = 0;
-    public int CntSpawnEntities { get; }
+    public int CntSpawnEntities 
+    { get { return _cntSpawnEntities; } }
     
     protected List<List<GameObject>> _battleEntities = new List<List<GameObject>>();
     public List<List<GameObject>> BattleEntitiesList => _battleEntities;
@@ -43,6 +44,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
         string[] positions = { "Front", "Middle", "Back" };
 
         _battleEntities.Clear();
+        _cntSpawnEntities = 0;
 
         for (int i = 0; i < entityKeys.Count; i++)
         {
@@ -58,7 +60,6 @@ public abstract class BattleEntitiesBase : MonoBehaviour
             GameObject squadObject = hasSquad ? positionTransform.GetChild(2).gameObject : null;
 
             _battleEntities.Add(new List<GameObject>());
-            _cntSpawnEntities = 0;
             List<int> entities = entityKeys[i];
 
             if (entities.Count == 1)

@@ -13,14 +13,17 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField]
     private GameObject _skillBtnPrefab;
     [SerializeField]
-    private Transform _skillBtnPanel;
+    private Transform _skillBtnParentTransform;
 
     [Header("Timer")]
     [SerializeField]
     private bool _isTimerRunning = false;
     [SerializeField]
     private float _battleTime;
-    public float BattleTime { get; }
+    public float BattleTime 
+    {
+        get { return _battleTime; } 
+    }
     [SerializeField]
     private TextMeshProUGUI _timerTxt;
 
@@ -65,7 +68,7 @@ public class BattleUIManager : MonoBehaviour
         _stageSpeedBtnTxt = _stageSpeedBtn.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
     }
 
-    private void Start()
+    public void Init()
     {
         SetGaugeWidth(0f);
 
@@ -88,12 +91,12 @@ public class BattleUIManager : MonoBehaviour
             _continueBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _continueBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
         }
+        _resultUIController.Init();
     }
 
-    
     public GameObject AddSkillBtn()
     {
-        GameObject skillBtn = Instantiate(_skillBtnPrefab, _skillBtnPanel);
+        GameObject skillBtn = Instantiate(_skillBtnPrefab, _skillBtnParentTransform);
         return skillBtn;
     }
 
@@ -130,8 +133,6 @@ public class BattleUIManager : MonoBehaviour
         {
             _battleTime -= Time.deltaTime * StageSpeed;
             _timerTxt.text = FormatTime(_battleTime);
-
-            SetResultUI(true);
         }
         else
         {

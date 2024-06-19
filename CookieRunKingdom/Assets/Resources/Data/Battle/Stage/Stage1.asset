@@ -15,3 +15,8 @@ MonoBehaviour:
   Key: 1
   Name: Stage1
   MonsterGroupList: 01000000020000000100000002000000
+  StageItemList:
+  - Key: 2
+    Value: 100
+  - Key: 3
+    Value: 150
