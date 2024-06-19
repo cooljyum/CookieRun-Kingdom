@@ -52,6 +52,23 @@ public class Building : MonoBehaviour
             if(_collider.bounds.Contains(mousePos))
             {
                 KingdomManager.Instance.OnClickBuilding(this);
+                KingdomManager.Instance.MapGrid.SetActive(false);
+            }
+        }
+
+        //생산 여부에 따라 애니메이션 변경
+        if (_craftingItems.Count > 0)
+        {
+            if (_skeletonAnimation.AnimationName != "working")
+            {
+                SetSkeletonAnimation("working");
+            }
+        }
+        else
+        {
+            if (_skeletonAnimation.AnimationName != "loop_back")
+            {
+                SetSkeletonAnimation("loop_back");
             }
         }
     }

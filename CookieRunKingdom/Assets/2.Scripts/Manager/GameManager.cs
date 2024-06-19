@@ -91,6 +91,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RemoveBuilding(Building building)
+    {
+        int index = CurPlayerData.BuildingKeyLists.IndexOf(building.BuildingData.Key);
+        if (index != -1)
+        {
+            CurPlayerData.BuildingKeyLists.RemoveAt(index);
+            CurPlayerData.BuildingPosLists.RemoveAt(index);
+            SavePlayerData();
+        }
+    }
+
     public int GetBuildingCount(int buildingKey)
     {
         if (MyBuildings.ContainsKey(buildingKey))
@@ -99,4 +110,22 @@ public class GameManager : MonoBehaviour
         }
         return 0;
     }
+
+    public void SaveBuilding(Building building)
+    {
+        CurPlayerData.BuildingKeyLists.Add(building.BuildingData.Key);
+        CurPlayerData.BuildingPosLists.Add(building.transform.position);
+        SavePlayerData();
+    }
+
+    public List<(int, Vector2)> LoadBuildings()
+    {
+        List<(int, Vector2)> buildings = new List<(int, Vector2)>();
+        for (int i = 0; i < CurPlayerData.BuildingKeyLists.Count; i++)
+        {
+            buildings.Add((CurPlayerData.BuildingKeyLists[i], CurPlayerData.BuildingPosLists[i]));
+        }
+        return buildings;
+    }
+
 }

@@ -76,7 +76,7 @@ public class StoreBuildingUI : MonoBehaviour
             KingdomManager.Instance.SelectDTypeBuilding(this);
         }
 
-        KingdomManager.Instance.StoreUI.gameObject.SetActive(false);
+        KingdomManager.Instance.MapGrid.SetActive(true);
     }
 
     public void SetInActive(bool isActive) //상점 내 건물 버튼 비활성화

@@ -36,6 +36,9 @@ public class KingdomManager : MonoBehaviour
     private SpriteRenderer _previewImage;
     [SerializeField]
     private GameObject _editUI;
+    [SerializeField]
+    private GameObject _mapGrid;
+    public GameObject MapGrid => _mapGrid;
 
     private StoreBuildingUI _selectedBuildingUI;
     private BuildingData _selectedBuildingData;    
@@ -57,7 +60,14 @@ public class KingdomManager : MonoBehaviour
         if (!_selectedBuildingSkeletonAnimation.gameObject.activeSelf) return;
 
         Vector2 mousePos = Input.mousePosition;
-        _selectedBuildingSkeletonAnimation.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
+
+        worldPos.x = Mathf.Round(worldPos.x);
+        worldPos.y = Mathf.Round(worldPos.y);
+
+        _selectedBuildingSkeletonAnimation.transform.position = worldPos;
+
+        RemoveBuildingData();
     }
 
     public void SelectDTypeBuilding(StoreBuildingUI buildingUI) //선택한 D타입 건물 출현 세팅
@@ -68,6 +78,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuildingSkeletonAnimation.gameObject.SetActive(true);
         _selectedBuildingSkeletonAnimation.skeletonDataAsset = buildingUI.GetBuildingData().SkeletonDataAsset;
         _selectedBuildingSkeletonAnimation.Initialize(true);
+        _editUI.SetActive(true);
     }
 
     public void SelectCTypeBuilding(BuildingData data) //선택한 C타입 건물 출현 세팅
@@ -78,6 +89,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuildingSkeletonAnimation.gameObject.SetActive(true);
         _selectedBuildingSkeletonAnimation.skeletonDataAsset = _selectedBuildingData.SkeletonDataAsset;
         _selectedBuildingSkeletonAnimation.Initialize(true);
+        _editUI.SetActive(true);
     }
 
     public int Building() //선택한 건물의 데이터 키 값 반환
@@ -187,5 +199,34 @@ public class KingdomManager : MonoBehaviour
     public void ClickCraftBtn(CraftItemInfo craftItemInfo)
     {
         _craftUI.CraftStart(craftItemInfo);
+    }
+
+    public void OnClickEditCheckBtn()
+    {
+        Vector2 buildingPos = _selectedBuildingSkeletonAnimation.transform.position;
+        int key = Building();
+
+        if (key != 0)
+        {
+            GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
+            GameObject buildingObj = Instantiate(buildingPrefab, buildingPos, Quaternion.identity);
+            Building newBuilding = buildingObj.GetComponent<Building>();
+            newBuilding.Build(DataManager.Instance.GetBuildingData(key), buildingPos);
+
+            // 플레이어 데이터로 저장
+            GameManager.Instance.SaveBuilding(newBuilding);
+
+            _editUI.SetActive(false);
+        }
+    }
+
+    private void RemoveBuildingData()
+    {
+        if (_selectedBuilding != null)
+        {
+            GameManager.Instance.RemoveBuilding(_selectedBuilding);
+            Destroy(_selectedBuilding.gameObject);
+            _selectedBuilding = null;
+        }
     }
 }
