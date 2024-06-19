@@ -7,6 +7,7 @@ using UnityEditor.Animations;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering.VirtualTexturing;
+using UnityEngine.SceneManagement;
 using UnityEngine.U2D.Animation;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
@@ -18,12 +19,15 @@ public class KingdomManager : MonoBehaviour
     [Header("UI Panel")]
     [SerializeField]
     private StoreUI _storeUI;
+    public StoreUI StoreUI => _storeUI;
     [SerializeField]
     private BuildingInfoUI _buildingInfoPanel;
     [SerializeField]
     private CraftUI _craftUI;
     [SerializeField]
     private GameObject _kingdomPlayPanel;
+    [SerializeField]
+    private GatchaUI _gatchaUI;
 
     [Header("---------------------------------------------------------")]
     [SerializeField]
@@ -125,9 +129,38 @@ public class KingdomManager : MonoBehaviour
         _storeUI.CreateCTypeBuilding();
     }
 
+    public void OnClickPlayBtn() //Main-Play
+    {
+        print("PlayBtn Click");
+        _kingdomPlayPanel.gameObject.SetActive(true);
+    }
+
+    public void OnClickGatchaBtn() //Main-»Ì±â
+    {
+        print("GatchaBtn Click");
+        _gatchaUI.gameObject.SetActive(true);
+    }
+
+    public void OnClickCookieKingdomBtn() //Play-ÄíÅ° ¿Õ±¹
+    {
+        print("CookieKingdomBtn Click");
+        _kingdomPlayPanel.gameObject.SetActive(false);
+    }
+
+    public void OnClickWorldAdventureBtn() //Play-¿ùµå Å½Çè
+    {
+        print("WorldAdventureBtn Click");
+        SceneManager.LoadScene("ReadyScene");
+    }
+
+    public void OnClickPlayExitBtn() //Play-³ª°¡±â
+    {
+        print("PlayExitBtn Click");
+        _kingdomPlayPanel.gameObject.SetActive(false);
+    }
+
     public void ClickStoreBuildingBtn(BuildingData data)
     {
-        _storeUI.gameObject.SetActive(false);
         _buildingInfoPanel.SetData(data);
     }
 

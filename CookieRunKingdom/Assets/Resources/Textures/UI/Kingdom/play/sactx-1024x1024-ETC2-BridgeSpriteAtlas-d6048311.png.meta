@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2afa71c6c780f641a239331443f60b3
+guid: a4a6e6b845b00a642b099eb940173ccc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,11 +39,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,7 +65,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 585
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15d60e02573cdeb0800000000000000
+      internalID: -4693815886064724710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_1
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 220
+        width: 166
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbafe3701efef1d0800000000000000
+      internalID: -3314932929080087586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_2
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 204
+        width: 166
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a23f5c2f985b250800000000000000
+      internalID: 5959821357690858046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_3
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 407
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f7dc16822fbf510800000000000000
+      internalID: 1584125949204332430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_0: -4693815886064724710
+      sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_1: -3314932929080087586
+      sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_2: 5959821357690858046
+      sactx-1024x1024-ETC2-BridgeSpriteAtlas-d6048311_3: 1584125949204332430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

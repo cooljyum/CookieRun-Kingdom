@@ -44,7 +44,7 @@ public class CraftingItemUI : MonoBehaviour
         }
 
         _timeProgressBar.maxValue = _craftItemInfo.Value.RequiredTime;
-        _timeProgressBar.value = 0.0f;
+        _timeProgressBar.value = _craftItemInfo.Value.RequiredTime - remainingTime;
         _timeText.text = TimeManager.ConvertTime((int)remainingTime);
 
         _craftingImage.gameObject.SetActive(true);
@@ -138,8 +138,7 @@ public class CraftingItemUI : MonoBehaviour
         //생산 시간 계산 및 세팅
         float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, craftItemInfo.ResultItem.Key);
         _timeProgressBar.maxValue = _craftItemInfo.Value.RequiredTime;
-        float elapsedTime = _craftItemInfo.Value.RequiredTime - remainingTime;
-        _timeProgressBar.value = elapsedTime;
+        _timeProgressBar.value = _craftItemInfo.Value.RequiredTime - remainingTime;
         _timeText.text = TimeManager.ConvertTime((int)remainingTime);
 
         if (remainingTime == 0)
