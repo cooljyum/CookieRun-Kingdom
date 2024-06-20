@@ -157,7 +157,8 @@ public class KingdomManager : MonoBehaviour
     public void OnClickGatchaBtn() //Main-뽑기
     {
         print("GatchaBtn Click");
-        _gatchaUI.gameObject.SetActive(true);
+        //_gatchaUI.gameObject.SetActive(true);
+        SceneManager.LoadScene("GachaScene");
     }
 
     public void OnClickCookieKingdomBtn() //Play-쿠키 왕국
@@ -220,10 +221,10 @@ public class KingdomManager : MonoBehaviour
             Building newBuilding = buildingObj.GetComponent<Building>();
             newBuilding.Build(DataManager.Instance.GetBuildingData(key), buildingPos);
 
-            // 플레이어 데이터로 저장
-            GameManager.Instance.SaveBuilding(newBuilding);
+            //플레이어 데이터로 건물 저장
+            //GameManager.Instance.SaveBuilding(newBuilding);
 
-            // 겹치는 사각형 표시 제거
+            //겹치는 사각형 표시 제거
             foreach (var indicator in _overlapIndicators)
             {
                 Destroy(indicator);
@@ -261,21 +262,31 @@ public class KingdomManager : MonoBehaviour
         }
         _overlapIndicators.Clear();
 
+        // 선택된 빌딩의 위치 및 크기 가져오기
+        var selectedBuildingBounds = SelectedBuilding.GetBounds();
+        selectedBuildingBounds.center = position;
+
         // 모든 빌딩과 현재 선택된 빌딩의 위치 및 크기 비교
         var buildings = FindObjectsOfType<Building>();
-        var selectedBuildingBounds = new Bounds(position, _selectedBuildingSkeletonAnimation.GetComponent<Renderer>().bounds.size);
 
         foreach (var building in buildings)
         {
             if (building == SelectedBuilding) continue;
 
-            var buildingBounds = new Bounds(building.transform.position, building.GetComponent<Renderer>().bounds.size);
+            var buildingBounds = building.GetBounds();
 
             if (selectedBuildingBounds.Intersects(buildingBounds))
             {
                 // 겹치는 부분 표시
                 var overlapIndicator = Instantiate(_overlapIndicatorPrefab, building.transform.position, Quaternion.identity);
+                overlapIndicator.transform.localScale = new Vector2(buildingBounds.size.x, buildingBounds.size.y);
                 _overlapIndicators.Add(overlapIndicator);
+
+                building.SetOverlapColor(Color.blue);
+            }
+            else
+            {
+                building.SetOverlapColor(Color.clear);
             }
         }
     }

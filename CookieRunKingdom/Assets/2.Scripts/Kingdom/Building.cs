@@ -11,6 +11,8 @@ public class Building : MonoBehaviour
     private GameObject _installEffect;
     [SerializeField]
     private Transform _craftBubble;
+    [SerializeField]
+    private GameObject _buildingOverlap;
 
     private GameObject _bubbleItemPrefab;
     private BuildingData _buildingData;
@@ -22,6 +24,9 @@ public class Building : MonoBehaviour
     private Animator _effectAnimator;
     private Animator _bubbleAnimator;
     private Sprite _bubbleItemImage;
+    private PolygonCollider2D _overlapCollider;
+    public PolygonCollider2D OverlapCollider => _overlapCollider;
+    private SpriteRenderer _overlapRenderer;
 
     private List<CraftItemInfo> _craftingItems = new();
     public List<CraftItemInfo> CraftingItems => _craftingItems;
@@ -41,6 +46,8 @@ public class Building : MonoBehaviour
     {
         _craftBubble.gameObject.SetActive(false);
         _bubbleAnimator.SetBool("isCrafted", false);
+        _overlapCollider = _buildingOverlap.GetComponentInChildren<PolygonCollider2D>();
+        _overlapRenderer = _overlapCollider.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -106,6 +113,19 @@ public class Building : MonoBehaviour
     {
         _skeletonAnimation.AnimationName = name;
         _skeletonAnimation.Initialize(true);
+    }
+
+    public void SetOverlapColor(Color color)
+    {
+        if (_overlapRenderer != null)
+        {
+            _overlapRenderer.color = color;
+        }
+    }
+
+    public Bounds GetBounds()
+    {
+        return _overlapCollider.bounds;
     }
 
     //public void SetCraftedItemBubble(int key) //*»£√‚«ÿæﬂµ 
