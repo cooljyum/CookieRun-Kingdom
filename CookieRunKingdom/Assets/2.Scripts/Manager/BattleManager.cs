@@ -82,6 +82,8 @@ public class BattleManager : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.Instance.PlayBG("BattleBgm");
+
         _stage = GameManager.Instance.CurPlayerData.CurStage;
 
         BattleObjectSpawnManager.Instance.Init();

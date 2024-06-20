@@ -17,10 +17,16 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField]
     private List<ClipInfo> _clipInfos = new List<ClipInfo>();
-
+    [SerializeField]
+    private List<ClipInfo> _clipEffectInfos = new List<ClipInfo>();
 
     private AudioSource _audioSource;
-    private Dictionary<string, AudioClip> clips = new Dictionary<string, AudioClip>();
+
+    private Dictionary<string, AudioClip> _clips = new Dictionary<string, AudioClip>();
+    private Dictionary<string, AudioClip> _clipEffects = new Dictionary<string, AudioClip>();
+
+    private float _bgVolume = 1f;
+    private float _fxVolume = 1f;
 
     private void Awake()
     {
@@ -28,7 +34,12 @@ public class SoundManager : MonoBehaviour
 
         foreach(ClipInfo clipInfo in _clipInfos)
         {
-            clips.Add(clipInfo.key, clipInfo.clip);
+            _clips.Add(clipInfo.key, clipInfo.clip);
+        }
+
+        foreach (ClipInfo clipInfo in _clipEffectInfos)
+        {
+            _clipEffects.Add(clipInfo.key, clipInfo.clip);
         }
 
         _audioSource = GetComponent<AudioSource>();
@@ -36,12 +47,51 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBG(string key)
     {
-        _audioSource.clip = clips[key];
-        _audioSource.Play();        
+        if (_clips.TryGetValue(key, out AudioClip clip))
+        {
+            _audioSource.clip = clip;
+            _audioSource.volume = _bgVolume;
+            _audioSource.loop = true; // 배경음은 일반적으로 루프 재생
+            _audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning($"BG clip with key {key} not found!");
+        }
     }
 
     public void PlayFX(string key)
     {
-        _audioSource.PlayOneShot(clips[key]);
+        if (_clipEffects.TryGetValue(key, out AudioClip clip))
+        {
+            StartCoroutine(PlayFXCoroutine(clip));
+        }
+        else
+        {
+            Debug.LogWarning($"FX clip with key {key} not found!");
+        }
+    }
+
+    private IEnumerator PlayFXCoroutine(AudioClip clip)
+    {
+        float originalVolume = _audioSource.volume;
+        _audioSource.volume = _fxVolume;
+        _audioSource.PlayOneShot(clip);
+        yield return new WaitForSeconds(clip.length);
+        _audioSource.volume = originalVolume;
+    }
+
+    public void SetBGVolume(float volume)
+    {
+        _bgVolume = Mathf.Clamp01(volume);
+        if (_audioSource.isPlaying && _audioSource.loop)
+        {
+            _audioSource.volume = _bgVolume;
+        }
+    }
+
+    public void SetFXVolume(float volume)
+    {
+        _fxVolume = Mathf.Clamp01(volume);
     }
 }

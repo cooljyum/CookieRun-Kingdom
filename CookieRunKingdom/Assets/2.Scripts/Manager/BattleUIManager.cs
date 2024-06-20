@@ -78,6 +78,7 @@ public class BattleUIManager : MonoBehaviour
         {
             _stopBtn.onClick.AddListener(() => ToggleObj(_stopUI, true));
             _stopBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = true);
+            _stopBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
         }
         if (_exitBtn != null)
         {

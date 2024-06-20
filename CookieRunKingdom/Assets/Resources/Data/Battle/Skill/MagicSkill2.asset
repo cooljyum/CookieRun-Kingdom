@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f728db5c505a646a0f5dedf7a5f0bc, type: 3}
+  m_Name: MagicSkill2
+  m_EditorClassIdentifier: 
+  IsPlay: 0
+  SkillName: "\uB9E4\uC9C1"
+  Cooldown: 5
+  EffectPrefab: {fileID: 920603366338826950, guid: a8ca7ca9b8db9b64bbdd7cd89b17d88a, type: 3}
+  EffectObj: {fileID: 0}
+  MagicDamage: 10
+  EffectDuration: 10
