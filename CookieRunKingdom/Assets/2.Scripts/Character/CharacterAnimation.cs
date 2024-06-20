@@ -14,6 +14,7 @@ public class CharacterAnimation : MonoBehaviour
     private Dictionary<string, string> _aniMappingList = new Dictionary<string, string>();
 
     public event System.Action OnAttackEnd;
+    public event System.Action OnSkillEnd;
 
     private void Update()
     {
@@ -84,6 +85,10 @@ public class CharacterAnimation : MonoBehaviour
         if (status == "Battle_Attack")
         {
             OnAttackEnd();
+        }
+        else if (status == "Battle_Skill")
+        {
+            OnSkillEnd();
         }
     }
 }

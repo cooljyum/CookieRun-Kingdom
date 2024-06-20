@@ -27,10 +27,6 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _timerTxt;
 
-    [Header("PauseBtn")]
-    [SerializeField] 
-    private Button _pauseBtn;
-
     [Header("StageGuage")]
     [SerializeField]
     private RectTransform _stageGauge;

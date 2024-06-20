@@ -10,14 +10,14 @@ public class BattleManager : MonoBehaviour
 
     [Header("Staus")]
     [SerializeField]
-    private bool _isOnBattle = true;
+    private bool _isOnBattle = false;
     public bool IsOnBattle 
     {
         get { return _isOnBattle; }
         set { _isOnBattle = value; }
     }
     [SerializeField]
-    private bool _isStop = false;
+    private bool _isStop = true;
     public bool IsStop 
     {
         get { return _isStop; }
@@ -47,6 +47,7 @@ public class BattleManager : MonoBehaviour
         get { return _killedCookies; }
         set { _killedCookies = value; }
     }
+    [SerializeField]
     private int _cntCurCookies = 0;
     public int CntCurCookies
     {
@@ -63,11 +64,10 @@ public class BattleManager : MonoBehaviour
     private int _killedEnemies = 0;
     [SerializeField]
     private int _killedCurBattleEnemies = 0;
-
     [SerializeField]
-    private float _cntBattleEnemies = 0;
+    private float _cntBattleEnemiesList = 0;
 
-    public float KillEnemiesGuage { get { return ((_curEnemyTeamIdx + 1) / _cntBattleEnemies); } }
+    public float KillEnemiesGuage { get { return ((_curEnemyTeamIdx + 1) / _cntBattleEnemiesList); } }
 
     private List<List<GameObject>> _battleCookies;
     private List<List<List<GameObject>>> _enemiesTeamList;
@@ -87,9 +87,9 @@ public class BattleManager : MonoBehaviour
         _battleCookies = BattleObjectSpawnManager.Instance.GetBattleCookies();
         _enemiesTeamList = BattleObjectSpawnManager.Instance.GetEnemiesObjList();
 
-        _isOnBattle = true;
+        _isStop = true;
 
-        _cntBattleEnemies = _enemiesTeamList.Count;
+        _cntBattleEnemiesList = _enemiesTeamList.Count;
 
         StartCoroutine(StartGameInit());
     }
@@ -108,7 +108,7 @@ public class BattleManager : MonoBehaviour
 
         BattleUIManager.Instance.SetTimer(180f);
 
-        _isOnBattle = false;
+        _isStop = false;
     }
 
     public void SetTargetsToCookies() 
@@ -240,20 +240,20 @@ public class BattleManager : MonoBehaviour
         }
 
         _curEnemyTeamIdx++;
-
-        // _curEnemyTeamIdxüũ _enemiesTeamList
-        if (_curEnemyTeamIdx >= _enemiesTeamList.Count)
-        {
-            _curEnemyTeamIdx = 0; 
-        }
     }
 
     private void CheckResult() 
     {
-        
+        //Defeat
         if (_cntCurCookies == _killedCookies)
         {
             BattleUIManager.Instance.SetResultUI(false);
+        }
+
+        //Victory
+        if (_curEnemyTeamIdx >= _enemiesTeamList.Count)
+        {
+            BattleUIManager.Instance.SetResultUI(true);
         }
     }
 

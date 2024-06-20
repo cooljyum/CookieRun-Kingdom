@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 2
   Name: "\uB538\uAE30\uB9DB\uCFE0\uD0A4"
-  Hp: 100
+  Hp: 150
   Attack: 5
   Defence: 10
   Critical: 0.1
@@ -38,7 +38,7 @@ MonoBehaviour:
   - Key: Battle_Attack
     AnimationName: skill1_back
   - Key: Battle_Skill
-    AnimationName: 
+    AnimationName: skill2_back
   - Key: Battle_Die
     AnimationName: 
   - Key: Battle_Run

@@ -24,7 +24,7 @@ public class HPBarController : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
     }
 
     public void SetTarget(GameObject target,bool isEnemy) 
@@ -37,7 +37,7 @@ public class HPBarController : MonoBehaviour
 
     public void SetHP(float hp, float maxHp)
     {
-        if (_hpBar.value < 1) gameObject.SetActive(true); 
+        //if (_hpBar.value < 1) gameObject.SetActive(true); 
 
         // HP 값을 Slider에 반영
         _hpBar.value = hp / maxHp;

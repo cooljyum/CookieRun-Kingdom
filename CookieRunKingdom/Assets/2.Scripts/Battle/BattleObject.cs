@@ -29,7 +29,8 @@ public class BattleObject : MonoBehaviour
         Idle,
         Attack,
         Run,
-        Defend
+        Defend,
+        Skill
     }
 
     // 체력 관련 변수
@@ -53,14 +54,14 @@ public class BattleObject : MonoBehaviour
     // 타겟 관련 변수
     [Header("Target")]
     [SerializeField]
-    private GameObject _target;
+    protected GameObject _target;
     [SerializeField]
     private float _targetDistance;
 
     // 애니메이션 관련 변수
     [Header("Animation")]
     private SkeletonAnimation _skeletonAni;
-    private CharacterAnimation _characterAni;
+    protected CharacterAnimation _characterAni;
 
     // HP 바 관련 변수
     [Header("HP Bar")]
@@ -124,10 +125,8 @@ public class BattleObject : MonoBehaviour
                 if (_curStatus == Status.Run)
                     MoveToTarget();
             }
-
             SetTarget();
         }
-
         UpdateStatus();
     }
     
@@ -155,6 +154,7 @@ public class BattleObject : MonoBehaviour
     private void MoveKnockBackPos()
     {
         _knockBackTimer -= Time.deltaTime;
+
         if (_knockBackTimer > 0)
         {
             transform.parent.Translate(_knockBackDirection * Time.deltaTime);
@@ -168,6 +168,8 @@ public class BattleObject : MonoBehaviour
     //Status을 체크
     private void UpdateStatus()
     {
+        if (_curStatus == Status.Skill) return;
+
         if (_target && _target.activeSelf == true)
         {
             _targetDistance = GetDistanceToTarget();
@@ -184,28 +186,12 @@ public class BattleObject : MonoBehaviour
     }
 
     //Status를 세팅
-    private void SetStatus(Status newStatus)
+    protected void SetStatus(Status newStatus)
     {
         if (_curStatus == newStatus) return;
 
         _curStatus = newStatus;
 
-        switch (_curStatus)
-        {
-            case Status.Idle:
-                break;
-            case Status.Run:
-                break;
-            case Status.Attack:
-                Attack();
-                break;
-            case Status.Defend:
-                break;
-            default:
-                break;
-        }
-
-        //if (!_isEnemy) return;
         //Status
         _characterAni.PlayAni("Battle", _curStatus.ToString());
     }
@@ -234,26 +220,9 @@ public class BattleObject : MonoBehaviour
 
     private void Attack()
     {
-        if (!BattleManager.Instance.IsOnBattle)
-            BattleManager.Instance.IsOnBattle = true;
-
-       
-
-        //switch (_characterData.AttackType)
-        //{
-        //    case AttackType.Melee:
-        //        MeleeAttack();
-        //        break;
-        //    case AttackType.Ranged:
-        //        RangedAttack();
-        //        break;
-        //    case AttackType.Magical:
-        //        MagicalAttack();
-        //        break;
-        //}
     }
 
-    private void MeleeAttack()
+/*    private void MeleeAttack()
     {
         Debug.Log("Performing Melee Attack");
         if (_target != null)
@@ -261,9 +230,9 @@ public class BattleObject : MonoBehaviour
             _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
         }
         _attackCooldownTimer = _characterData.AttackInterval;
-    }
+    }*/
 
-    private void RangedAttack()
+/*    private void RangedAttack()
     {
         Debug.Log("Performing Ranged Attack");
         if (_target != null)
@@ -283,7 +252,7 @@ public class BattleObject : MonoBehaviour
             _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
         }
         _attackCooldownTimer = _characterData.AttackInterval;
-    }
+    }*/
 
     private float CalculateDamage(float baseDamage)
     {
@@ -301,11 +270,9 @@ public class BattleObject : MonoBehaviour
     {
         // if (_characterData.Skill.IsPlay) return;
 
-
-
-        //   _characterData.Skill.UseSkill(gameObject, _target);
-
         if (BattleManager.Instance.IsStop) return;
+
+        CheckIsBattle();
 
         if (_target != null && _curStatus == Status.Attack)
         {
@@ -318,8 +285,12 @@ public class BattleObject : MonoBehaviour
                 _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
             }
         }
+    }
 
-        // _attackCooldownTimer = _characterData.AttackInterval;
+    protected void CheckIsBattle() 
+    {
+        if (!BattleManager.Instance.IsOnBattle)
+            BattleManager.Instance.IsOnBattle = true;
     }
 
     public void Damage(float damage)

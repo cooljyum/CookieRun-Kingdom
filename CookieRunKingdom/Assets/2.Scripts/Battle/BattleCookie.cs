@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class BattleCookie : BattleObject
@@ -19,12 +20,17 @@ public class BattleCookie : BattleObject
     {
         base.Start();
 
+        _characterAni.OnSkillEnd += SkillEnd;
+
+
         GameObject skillBtn = BattleUIManager.Instance.AddSkillBtn();
 
         if (skillBtn != null)
         {
             _skillBtn = skillBtn.GetComponent<SkillBtn>();
             _skillBtn.SetImg(_characterData.SkillBtnImg);
+            _skillBtn.SetOwner(gameObject);
+            _skillBtn.SetState(SkillBtn.SkillBtnState.Wait);
         }
 
         _skillMaxCooldownTimer = _characterData.Skill.Cooldown;
@@ -43,6 +49,7 @@ public class BattleCookie : BattleObject
 
     private void Update()
     {
+        if (BattleManager.Instance.IsStop) return;
         base.Update();
 
         SkillTimer();
@@ -51,13 +58,30 @@ public class BattleCookie : BattleObject
     public void Damage(float damage)
     {
         base.Damage(damage);
-
         
         _skillBtn.SetHPBarUI(_hp/_maxHp);
     }
 
+    public void Skill()
+    {
+        SetStatus(Status.Skill);
+        _characterData.Skill.UseSkill(gameObject, _target);
+    }
+
+    public void SkillEnd() 
+    {
+        Debug.Log("Skill End!");
+
+        CheckIsBattle();
+        SetStatus(Status.Run);
+        _skillBtn.SetState(SkillBtn.SkillBtnState.On);
+        _skillCooldownTimer = _skillMaxCooldownTimer;
+    }
     private void SkillTimer() 
     {
+        if (_skillBtn.CurState == SkillBtn.SkillBtnState.Skill) return;
+
+
         if (_skillCooldownTimer > 0)
         {
             _skillCooldownTimer -= Time.deltaTime;

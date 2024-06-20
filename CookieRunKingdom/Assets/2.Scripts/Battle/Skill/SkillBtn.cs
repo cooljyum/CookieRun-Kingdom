@@ -20,6 +20,10 @@ public class SkillBtn : MonoBehaviour
     private bool _isSkill = false; //스킬을 사용할 수 있는 상태인지
     [SerializeField]
     private SkillBtnState _curState; // 현재 버튼 상태
+    public SkillBtnState CurState 
+    {
+        get { return _curState; }
+    }
 
     [Header("Btn Child Obj")]
     [SerializeField]
@@ -28,6 +32,10 @@ public class SkillBtn : MonoBehaviour
     private GameObject _particle;
     [SerializeField]
     private GameObject _hpBar;
+
+    [Header("Btn Owner Obj")]
+    [SerializeField]
+    private GameObject _owner;
 
 
     public enum SkillBtnState
@@ -54,6 +62,11 @@ public class SkillBtn : MonoBehaviour
         _btn.onClick.AddListener(OnSkillBtnClick);
     }
 
+    public void SetOwner(GameObject owner) 
+    {
+        _owner = owner;
+    }
+
     public void SetImg(SkillBtnImg skillBtnImg)
     {
         _onImg = skillBtnImg.OnImg;
@@ -64,6 +77,7 @@ public class SkillBtn : MonoBehaviour
     public void SetState(SkillBtnState newState)
     {
         if (_curState == newState) return;
+
         _curState = newState;
 
         switch (_curState)
@@ -104,7 +118,8 @@ public class SkillBtn : MonoBehaviour
        
         if (_curState == SkillBtnState.Ready)
         {
-
+            _owner.GetComponent<BattleCookie>().Skill();
+            SetState(SkillBtnState.Skill);
         }
     }
 

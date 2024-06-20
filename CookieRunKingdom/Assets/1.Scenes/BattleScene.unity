@@ -1196,6 +1196,7 @@ MonoBehaviour:
     CurStage: 0
     DeckKeyLists: 
     BuildingKeyLists: 
+    BuildingPosLists: []
     MyCardsLists: 
 --- !u!4 &66623116 stripped
 Transform:
@@ -9380,11 +9381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillBtnPrefab: {fileID: 0}
-  _skillBtnParentTransform: {fileID: 0}
+  _skillBtnParentTransform: {fileID: 1313113499}
   _isTimerRunning: 0
   _battleTime: 0
   _timerTxt: {fileID: 4467114957574098957}
-  _pauseBtn: {fileID: 0}
   _stageGauge: {fileID: 4609348727667963057}
   _stageSpeedBtn: {fileID: 912324246361832631}
   _stopBtn: {fileID: 5037701031919425389}
@@ -11984,6 +11984,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1903508738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -1214599766611271094, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 860515010475900181, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754840672927024229, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_Name
+      value: BattleCookie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754840672927024229, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945316053122105691, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061536147968579412, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
+      propertyPath: _animationName
+      value: skill2_end_back
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8df2cc5b86e88294c96abab106aed825, type: 3}
 --- !u!1 &1995052321
 GameObject:
   m_ObjectHideFlags: 0
@@ -20723,6 +20796,7 @@ SceneRoots:
   - {fileID: 556214172}
   - {fileID: 1405176280}
   - {fileID: 310614570}
+  - {fileID: 1903508738}
   - {fileID: 1670923802}
   - {fileID: 1411691121}
   - {fileID: 340277623}
