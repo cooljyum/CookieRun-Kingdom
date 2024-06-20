@@ -41,14 +41,15 @@ public class ResultPanel : MonoBehaviour
         }        
         else if (_randomValue < 90)
         {
-            if (!GameManager.Instance.CurPlayerData.MyCardsLists.Contains(6))
+            _random = Random.Range(6, 10);
+            if (!GameManager.Instance.CurPlayerData.MyCardsLists.Contains(_random))
             {
-                _icon.SetData(6);
-                GameManager.Instance.CurPlayerData.MyCardsLists.Add(6);
+                _icon.SetData(_random);
+                GameManager.Instance.CurPlayerData.MyCardsLists.Add(_random);
             }
             else
             {
-                _icon.SetData(6);
+                _icon.SetData(_random);
                 GameManager.Instance.CurPlayerData.Mileage += 100;
             }
         }        
