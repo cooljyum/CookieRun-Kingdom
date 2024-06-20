@@ -1,6 +1,8 @@
 using Spine.Unity;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -66,6 +68,13 @@ public class ReadyManager : MonoBehaviour
 
     public void SaveDeck()
     {
+        List<int> deckCntList = new List<int>();
+        for (int i = 0; i < _readySorts.Count; i++)
+        {
+            deckCntList.Add(_readySorts[i].GetSize());
+        }
+        GameManager.Instance.CurPlayerData.BattlePosCntLists = deckCntList;
+
         GameManager.Instance.CurPlayerData.DeckKeyLists.Clear();
 
         foreach(KeyValuePair<int, GameObject> selectCharacter in _selectedCharacters)

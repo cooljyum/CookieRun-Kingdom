@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class ResultUIController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class ResultUIController : MonoBehaviour
     private GameObject _itemSlotPrefab;
     [SerializeField]
     private Transform _itemSlotParentTransform;
+    private List<StageItem> _stageItemList;
 
     [Header("----------------------------")]
     [Header("Defeat")]
@@ -68,6 +70,7 @@ public class ResultUIController : MonoBehaviour
         if (isWin)
         {
             SetResult();
+            SaveItems();
             _battleVictoryUI.SetActive(true);
         }
         else 
@@ -117,6 +120,8 @@ public class ResultUIController : MonoBehaviour
 
     private void SetItem() 
     {
+        _stageItemList = new List<StageItem>();
+
         List<StageItem> itemDatas = BattleManager.Instance.StageData.StageItemList;
         for (int i = 0;i < itemDatas.Count;i++) 
         {
@@ -126,6 +131,8 @@ public class ResultUIController : MonoBehaviour
                 GameObject itemSlot = Instantiate(_itemSlotPrefab, _itemSlotParentTransform);
                 itemSlot.transform.GetChild(0).GetChild(0).gameObject.GetComponent<Image>().sprite = DataManager.Instance.GetItemData(item.Key).Sprite;
                 itemSlot.transform.GetChild(0).GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = item.Value.ToString();
+
+                _stageItemList.Add(item);
             }
         }
     }
@@ -175,7 +182,25 @@ public class ResultUIController : MonoBehaviour
                 aniName = "lose";
 
             _awardCookiesParent.transform.GetChild(i).GetChild(0).GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(0, aniName, true);
-           //_awardCookiesTransform.transform.GetChild(i).transform.GetChild(0).GetComponent<SkeletonGraphic>().Initialize(true);
+        }
+    }
+
+    void SaveItems() 
+    {
+        foreach (var itemData in _stageItemList)
+        {
+            int key = itemData.Key;
+            int value = (int)itemData.Value;
+
+            switch (key)
+            {
+                case 2: //Exp
+                    GameManager.Instance.CurPlayerData.Exp += value;
+                    break;
+                case 3: //Gold
+                    GameManager.Instance.CurPlayerData.Coin += value;
+                    break;
+            }
         }
     }
 }

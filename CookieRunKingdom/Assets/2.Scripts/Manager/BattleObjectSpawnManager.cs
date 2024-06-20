@@ -8,7 +8,6 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     //BattkeCookie
     [Header("BattleCookie")]
     [Tooltip("Settings related to battle cookies.")]
-    #region
     private BattleCookies _cookiesManager;
     [SerializeField]
     private TeamData _cookieTeam = new TeamData();
@@ -22,14 +21,10 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     {
         return _battleCookies;
     }
-    #endregion
-
     [Header("-------------------")]
-
     //Enemy
     [Header("Enemy")]
     [Tooltip("Settings related to battle enemies.")]
-    #region
     private BattleEnemies _enemiesManager;
     [SerializeField]
     private List<TeamData> _enemiesTeamList = new List<TeamData>();
@@ -44,10 +39,8 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
     {
         return _enemiesTeamList;
     }
-    #endregion
 
     //ClassData
-    #region
     [System.Serializable]
     public class TeamData
     {
@@ -77,7 +70,6 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
             BattleObj.Clear();
         }
     }
-    #endregion
 
     public void Init() //√ ±‚»≠
     {
