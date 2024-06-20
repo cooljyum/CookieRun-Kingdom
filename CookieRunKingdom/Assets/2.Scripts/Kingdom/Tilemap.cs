@@ -25,7 +25,11 @@ public class Tilemap : MonoBehaviour
 
             if (_collider.bounds.Contains(mousePos))
             {
-                KingdomManager.Instance.SelectedBuilding.transform.position = mousePos;
+                if (KingdomManager.Instance.SelectedBuilding != null)
+                {
+                    KingdomManager.Instance.SetSnappedPosition();
+                    KingdomManager.Instance.SetSelectedBuilding(null); //선택 해제
+                }
             }
         }
     }

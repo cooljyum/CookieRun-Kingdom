@@ -108,11 +108,11 @@ public class Building : MonoBehaviour
         _skeletonAnimation.Initialize(true);
     }
 
-    public void SetCraftedItemBubble(int key) //*호출해야됨
-    {
-        //생산 완료된 아이템 리스트 for문
-        GameObject instantiatedPrefab = Instantiate(_bubbleItemPrefab);
-        instantiatedPrefab.transform.SetParent(_craftBubble, false);
-        //_bubbleItemImage = GameManager.Instance.GetItemData(key);
-    }
+    //public void SetCraftedItemBubble(int key) //*호출해야됨
+    //{
+    //    //생산 완료된 아이템 리스트 for문
+    //    GameObject instantiatedPrefab = Instantiate(_bubbleItemPrefab);
+    //    instantiatedPrefab.transform.SetParent(_craftBubble, false);
+    //    //_bubbleItemImage = GameManager.Instance.GetItemData(key);
+    //}
 }

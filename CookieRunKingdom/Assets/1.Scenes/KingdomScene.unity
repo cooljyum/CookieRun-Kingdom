@@ -9195,6 +9195,7 @@ MonoBehaviour:
     CurStage: 0
     DeckKeyLists: 
     BuildingKeyLists: 
+    BuildingPosLists: []
     MyCardsLists: 
 --- !u!1 &1848666229
 GameObject:

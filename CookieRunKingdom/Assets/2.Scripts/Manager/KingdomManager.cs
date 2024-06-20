@@ -50,9 +50,15 @@ public class KingdomManager : MonoBehaviour
     private Building _selectedBuilding;
     public Building SelectedBuilding => _selectedBuilding;
 
+    private GameObject _overlapIndicatorPrefab;
+
+    private List<GameObject> _overlapIndicators = new List<GameObject>();
+
     private void Awake()
     {
         Instance = this;
+
+        _overlapIndicatorPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/BuildingOverlap");
     }
 
     private void Update()
@@ -67,7 +73,8 @@ public class KingdomManager : MonoBehaviour
 
         _selectedBuildingSkeletonAnimation.transform.position = worldPos;
 
-        RemoveBuildingData();
+        //겹치는 범위 표시
+        CheckOverlapAndShowIndicators(worldPos);
     }
 
     public void SelectDTypeBuilding(StoreBuildingUI buildingUI) //선택한 D타입 건물 출현 세팅
@@ -216,17 +223,60 @@ public class KingdomManager : MonoBehaviour
             // 플레이어 데이터로 저장
             GameManager.Instance.SaveBuilding(newBuilding);
 
+            // 겹치는 사각형 표시 제거
+            foreach (var indicator in _overlapIndicators)
+            {
+                Destroy(indicator);
+            }
+            _overlapIndicators.Clear();
+
             _editUI.SetActive(false);
         }
     }
 
-    private void RemoveBuildingData()
+    public void SetSelectedBuilding(Building building)
     {
-        if (_selectedBuilding != null)
+        _selectedBuilding = building;
+    }
+
+    public void SetSnappedPosition()
+    {
+        Vector2 originalPosition = KingdomManager.Instance.SelectedBuilding.transform.position;
+        float tileSizeX = 2.6f;
+        float tileSizeY = 1.33f;
+
+        // 원래 위치를 타일 그리드 위치로 스냅
+        float snappedX = Mathf.Round(originalPosition.x / tileSizeX) * tileSizeX;
+        float snappedY = Mathf.Round(originalPosition.y / tileSizeY) * tileSizeY;
+
+        originalPosition = new Vector2(snappedX, snappedY);
+    }
+
+    private void CheckOverlapAndShowIndicators(Vector2 position)
+    {
+        // 겹치는 사각형 표시 제거
+        foreach (var indicator in _overlapIndicators)
         {
-            GameManager.Instance.RemoveBuilding(_selectedBuilding);
-            Destroy(_selectedBuilding.gameObject);
-            _selectedBuilding = null;
+            Destroy(indicator);
+        }
+        _overlapIndicators.Clear();
+
+        // 모든 빌딩과 현재 선택된 빌딩의 위치 및 크기 비교
+        var buildings = FindObjectsOfType<Building>();
+        var selectedBuildingBounds = new Bounds(position, _selectedBuildingSkeletonAnimation.GetComponent<Renderer>().bounds.size);
+
+        foreach (var building in buildings)
+        {
+            if (building == SelectedBuilding) continue;
+
+            var buildingBounds = new Bounds(building.transform.position, building.GetComponent<Renderer>().bounds.size);
+
+            if (selectedBuildingBounds.Intersects(buildingBounds))
+            {
+                // 겹치는 부분 표시
+                var overlapIndicator = Instantiate(_overlapIndicatorPrefab, building.transform.position, Quaternion.identity);
+                _overlapIndicators.Add(overlapIndicator);
+            }
         }
     }
 }
