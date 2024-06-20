@@ -118,6 +118,8 @@ public class BattleManager : MonoBehaviour
 
     public void SetTargetsToEnemies()
     {
+        if (_curEnemyTeamIdx >= _enemiesTeamList.Count) return;
+        
         SetCurBattleEnemies();
         SetTargets(GetCurrentEnemyObjLists(), _battleCookies);
     }

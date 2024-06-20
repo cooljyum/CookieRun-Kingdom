@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BattleUIManager : MonoBehaviour
 {
@@ -68,6 +69,7 @@ public class BattleUIManager : MonoBehaviour
     {
         SetGaugeWidth(0f);
 
+        //Setting Btn Click Event
         if (_stageSpeedBtn != null)
         {
             _stageSpeedBtn.onClick.AddListener(OnStageSpeedBtnClick);
@@ -81,12 +83,17 @@ public class BattleUIManager : MonoBehaviour
         {
             _exitBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _exitBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
+            _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
         }
         if (_continueBtn != null)
         {
             _continueBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _continueBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
         }
+
+        //Setting Obj Active
+        _stopUI.SetActive(false);
+
         _resultUIController.Init();
     }
 

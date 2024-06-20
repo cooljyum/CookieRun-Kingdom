@@ -1,9 +1,8 @@
 using Spine.Unity;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ResultUIController : MonoBehaviour
@@ -30,20 +29,34 @@ public class ResultUIController : MonoBehaviour
     [Header("----------------------------")]
     [Header("Cookie")]
     [SerializeField]
-    private GameObject _awardCookiesTransform;
+    private GameObject _awardCookiesParent;
 
-
+    [Header("Btn")]
+    [SerializeField]
+    private GameObject _resultBtnParent;
+    [SerializeField]
+    private Button _exitBtn;
+    [SerializeField]
+    private Button _goKingdomBtn;
 
     private void Awake()
     {
         _itemSlotPrefab = Resources.Load<GameObject>("Prefabs/Battle/ItemSlot");
+        _exitBtn = _resultBtnParent.transform.GetChild(0).GetComponent<Button>();
+        _goKingdomBtn = _resultBtnParent.transform.GetChild(1).GetComponent<Button>();
+    }
+    private void Start()
+    {
+        _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
+        _goKingdomBtn.onClick.AddListener(() => SceneManager.LoadScene("KingdomScene"));
     }
 
     public void Init()
     {
         _battleVictoryUI.SetActive(false);
         _battleDefeatUI.SetActive(false);
-        _awardCookiesTransform.SetActive(false);
+        _resultBtnParent.SetActive(false);
+        _awardCookiesParent.SetActive(false);
 
         ClearChildObjects(_itemSlotParentTransform);
         SetItem();
@@ -62,7 +75,8 @@ public class ResultUIController : MonoBehaviour
             _battleDefeatUI.SetActive(true);
         }
 
-        _awardCookiesTransform.SetActive(true);
+        _resultBtnParent.SetActive(true);
+        _awardCookiesParent.SetActive(true);
         SetAwardCookiesAni(isWin);
     }
 
@@ -128,7 +142,7 @@ public class ResultUIController : MonoBehaviour
     {
         List<List<int>> battleCookies =  BattleObjectSpawnManager.Instance.BattleCookieKeys;
 
-        foreach (Transform child in _awardCookiesTransform.transform)
+        foreach (Transform child in _awardCookiesParent.transform)
         {
             child.gameObject.SetActive(false);
         }
@@ -138,7 +152,7 @@ public class ResultUIController : MonoBehaviour
         {
             foreach (int cookieKey in cookieList)
             {
-                GameObject awardCookie = _awardCookiesTransform.transform.GetChild(cnt).gameObject;
+                GameObject awardCookie = _awardCookiesParent.transform.GetChild(cnt).gameObject;
                 if (awardCookie != null)
                 {
                     awardCookie.SetActive(true);
@@ -160,7 +174,7 @@ public class ResultUIController : MonoBehaviour
             else 
                 aniName = "lose";
 
-            _awardCookiesTransform.transform.GetChild(i).GetChild(0).GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(0, aniName, true);
+            _awardCookiesParent.transform.GetChild(i).GetChild(0).GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(0, aniName, true);
            //_awardCookiesTransform.transform.GetChild(i).transform.GetChild(0).GetComponent<SkeletonGraphic>().Initialize(true);
         }
     }

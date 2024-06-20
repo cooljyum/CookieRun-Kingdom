@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1.Scenes/TestScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/1.Scenes/KingdomScene.unity
+    guid: e916e0de1e2cc2849982f8689e590bbf
+  - enabled: 1
+    path: Assets/1.Scenes/ReadyScene.unity
+    guid: 2476e11a05fcea44c97c05b3e6485191
+  - enabled: 1
+    path: Assets/1.Scenes/BattleScene.unity
+    guid: f28ed3dc1437120409a64bc771a29337
+  - enabled: 1
+    path: Assets/1.Scenes/GachaScene.unity
+    guid: a054ee7c5f717af48b354e4ed3375051
   m_configObjects: {}

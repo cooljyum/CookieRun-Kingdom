@@ -82,11 +82,16 @@ public class SkillBtn : MonoBehaviour
 
         switch (_curState)
         {
+            #region
             case SkillBtnState.On:
                 _isSkill = false;
                 _btn.image.sprite = _onImg;
+                _btn.image.material = null;
+                _particle.SetActive(false);
+                _hpBar.SetActive(false);
                 break;
             case SkillBtnState.Off:
+                _isSkill = false;
                 _btn.image.sprite = _offImg;
                 _btn.image.material = null;
                 _particle.SetActive(false);
@@ -94,6 +99,9 @@ public class SkillBtn : MonoBehaviour
                 _btn.interactable = false;
                 break;
             case SkillBtnState.Wait:
+                _isSkill = false;
+                _btn.image.material = null;
+                _particle.SetActive(false);
                 _hpBar.SetActive(true);
                 break;
             case SkillBtnState.Ready:
@@ -102,11 +110,13 @@ public class SkillBtn : MonoBehaviour
                 _particle.SetActive(true);
                 break;
             case SkillBtnState.Skill:
+                _isSkill = false;
                 _btn.image.sprite = _skillImg;
                 _btn.image.material = null;
                 _particle.SetActive(false);
                 _hpBar.SetActive(false);
                 break;
+            #endregion
         }
     }
 

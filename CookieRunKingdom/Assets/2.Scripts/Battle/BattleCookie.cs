@@ -79,8 +79,7 @@ public class BattleCookie : BattleObject
     }
     private void SkillTimer() 
     {
-        if (_skillBtn.CurState == SkillBtn.SkillBtnState.Skill) return;
-
+        if (_skillBtn.CurState == SkillBtn.SkillBtnState.Skill && _skillBtn.CurState == SkillBtn.SkillBtnState.Off) return;
 
         if (_skillCooldownTimer > 0)
         {
