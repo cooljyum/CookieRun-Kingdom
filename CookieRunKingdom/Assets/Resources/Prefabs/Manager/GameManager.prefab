@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5348423828101311476}
   - component: {fileID: 5660444806171690149}
   - component: {fileID: 1725033887270370607}
-  - component: {fileID: 7920272228888113172}
   - component: {fileID: 7263754449183455260}
   m_Layer: 0
   m_Name: GameManager
@@ -28,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465223092429044178}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -92,14 +91,20 @@ MonoBehaviour:
   _clipEffectInfos:
   - key: BtnClick
     clip: {fileID: 8300000, guid: be76c1da5edf5e842aae9f11fafbba18, type: 3}
---- !u!81 &7920272228888113172
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465223092429044178}
-  m_Enabled: 1
+  - key: BtnClickQuit
+    clip: {fileID: 8300000, guid: 7b373070633386947a2bf699b2f7609d, type: 3}
+  - key: Battle_CookieDie
+    clip: {fileID: 8300000, guid: 147cef3b42e1f72458fa9dd39562b67b, type: 3}
+  - key: Battle_EnemyDie
+    clip: {fileID: 8300000, guid: 4efc49a303325a34e979353632c348a8, type: 3}
+  - key: Battle_DefeatEffect
+    clip: {fileID: 8300000, guid: 95131430bd7059742a94f7b27ff7649b, type: 3}
+  - key: Battle_VictoryEffect
+    clip: {fileID: 8300000, guid: ac30d80f85e9bfd44a6149c310969789, type: 3}
+  - key: Battle_MagicEffect
+    clip: {fileID: 8300000, guid: 8980bfdcedcf2754fb738de346881762, type: 3}
+  - key: Battle_HealEffect
+    clip: {fileID: 8300000, guid: 9f4b5d1c80c30504ea56023c2300759e, type: 3}
 --- !u!82 &7263754449183455260
 AudioSource:
   m_ObjectHideFlags: 0
