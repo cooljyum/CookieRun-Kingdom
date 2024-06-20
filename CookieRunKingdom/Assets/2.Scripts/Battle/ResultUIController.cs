@@ -70,7 +70,10 @@ public class ResultUIController : MonoBehaviour
         if (isWin)
         {
             SetResult();
+
             SaveItems();
+            SaveCurStage();
+            
             _battleVictoryUI.SetActive(true);
         }
         else 
@@ -80,6 +83,7 @@ public class ResultUIController : MonoBehaviour
 
         _resultBtnParent.SetActive(true);
         _awardCookiesParent.SetActive(true);
+      
         SetAwardCookiesAni(isWin);
     }
 
@@ -202,5 +206,10 @@ public class ResultUIController : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void SaveCurStage() 
+    {
+        GameManager.Instance.CurPlayerData.CurStage++;
     }
 }

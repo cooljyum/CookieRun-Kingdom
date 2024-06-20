@@ -82,6 +82,8 @@ public class BattleManager : MonoBehaviour
 
     private void Start()
     {
+        _stage = GameManager.Instance.CurPlayerData.CurStage;
+
         BattleObjectSpawnManager.Instance.Init();
         BattleUIManager.Instance.Init();
         _battleCookies = BattleObjectSpawnManager.Instance.GetBattleCookies();

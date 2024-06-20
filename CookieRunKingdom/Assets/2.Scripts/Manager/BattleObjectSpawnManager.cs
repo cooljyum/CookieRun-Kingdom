@@ -73,7 +73,7 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
 
     public void Init() //초기화
     {
-        TestGame();
+        SetBattleCookieKeys();
         CreateBattle();
     }
 
@@ -173,15 +173,45 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
         }
     }
 
+    private void SetBattleCookieKeys()
+    {
+        _battleCookieKeys.Clear();
+
+        //테스트코드
+        if(GameManager.Instance.CurPlayerData.BattlePosCntLists.Count <= 0)
+            TestGame();
+
+        int curIdx = 0;
+        foreach (int posCount in GameManager.Instance.CurPlayerData.BattlePosCntLists)
+        {
+            List<int> posList = new List<int>();
+
+            for (int i = 0; i < posCount; i++)
+            {
+                if (curIdx < GameManager.Instance.CurPlayerData.DeckKeyLists.Count)
+                {
+                    posList.Add(GameManager.Instance.CurPlayerData.DeckKeyLists[curIdx]);
+                    curIdx++;
+                }
+                else
+                {
+                    Debug.LogWarning("DeckKeyLists에 값이 부족합니다.");
+                    break;
+                }
+            }
+
+            _battleCookieKeys.Add(posList);
+        }
+    }
     private void TestGame()
     {
         _battleCookieKeys.Clear();
 
         // 예제 데이터 설정
         _battleCookieKeys = new List<List<int>> {
-            new List<int> { 1, 2 },   // Front
-            new List<int> { 3, 4 },   // Middle
-            new List<int> { 5 }       // Back
-        };
+                    new List<int> { 1, 2 },   // Front
+                    new List<int> { 3, 4 },   // Middle
+                    new List<int> { 5 }       // Back
+                };
     }
 }
