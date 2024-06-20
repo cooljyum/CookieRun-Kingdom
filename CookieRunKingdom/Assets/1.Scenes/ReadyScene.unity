@@ -1477,9 +1477,11 @@ MonoBehaviour:
     Level: 0
     Exp: 0
     Coin: 0
+    Mileage: 0
     CurStage: 0
     DeckKeyLists: 
     BuildingKeyLists: 
+    BuildingPosLists: []
     MyCardsLists: 
 --- !u!4 &529245862
 Transform:
@@ -2325,7 +2327,7 @@ MonoBehaviour:
   m_Content: {fileID: 2123357056}
   m_Horizontal: 1
   m_Vertical: 0
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135

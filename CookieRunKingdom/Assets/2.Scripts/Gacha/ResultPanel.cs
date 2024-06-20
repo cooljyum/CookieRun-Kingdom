@@ -26,7 +26,7 @@ public class ResultPanel : MonoBehaviour
         
         if (_randomValue < 80)
         {
-            _random = Random.Range(0, 5);
+            _random = Random.Range(1, 6);
 
             if(!GameManager.Instance.CurPlayerData.MyCardsLists.Contains(_random))
             {
@@ -41,7 +41,7 @@ public class ResultPanel : MonoBehaviour
         }        
         else if (_randomValue < 90)
         {
-            _random = Random.Range(6, 10);
+            _random = Random.Range(6, 11);
             if (!GameManager.Instance.CurPlayerData.MyCardsLists.Contains(_random))
             {
                 _icon.SetData(_random);

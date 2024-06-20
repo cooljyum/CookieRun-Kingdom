@@ -22,15 +22,10 @@ public class GachaIcon : MonoBehaviour
     public void SetData(int key)
     {        
         _characterData = DataManager.Instance.GetCharacterData(key);
-        if((_skeletonGraphic.skeletonDataAsset == _characterData.SkeletonDataAsset))
-        {
-            _skeletonGraphic.Initialize(true);
-        }
-        else
-        {
-            _skeletonGraphic.skeletonDataAsset = _characterData.SkeletonDataAsset;
-            _skeletonGraphic.Initialize(true);
-        }        
+        
+        _skeletonGraphic.skeletonDataAsset = _characterData.SkeletonDataAsset;
+        _skeletonGraphic.Initialize(true);
+                
         _nameText.text = _characterData.Name;
     }
 }

@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class BattleReadyManager : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        
+    }
     public void ExitReady()
     {
         SceneManager.LoadScene(1);
