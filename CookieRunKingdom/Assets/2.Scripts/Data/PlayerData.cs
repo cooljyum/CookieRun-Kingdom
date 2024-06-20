@@ -7,6 +7,7 @@ public class PlayerData
     public int Level;
     public int Exp;
     public int Coin;
+    public int Mileage;
     public int CurStage;
     public List<int> DeckKeyLists;
     public List<int> BuildingKeyLists;

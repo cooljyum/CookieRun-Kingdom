@@ -6,7 +6,8 @@ using TMPro;
 using UnityEngine;
 
 public class GachaIcon : MonoBehaviour
-{ 
+{
+    [SerializeField]
     private CharacterData _characterData;
     public CharacterData CharacterData { get { return _characterData; } }
     private SkeletonGraphic _skeletonGraphic;
@@ -18,9 +19,10 @@ public class GachaIcon : MonoBehaviour
     }
 
     public void SetData(int key)
-    {
+    {        
         _characterData = DataManager.Instance.GetCharacterData(key);
         _skeletonGraphic.skeletonDataAsset = _characterData.SkeletonDataAsset;
+        _skeletonGraphic.Initialize(true);
         _nameText.text = _characterData.Name;
     }
 }

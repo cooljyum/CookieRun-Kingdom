@@ -48,7 +48,8 @@ public class PlayerDataManager : MonoBehaviour
         PlayerData playerData = new PlayerData();
         playerData.Level = 1;
         playerData.Exp = 0;
-        playerData.Coin = 0;
+        playerData.Coin = 10000;
+        playerData.Mileage = 0;
         playerData.CurStage = 1;
         playerData.MyCardsLists = new System.Collections.Generic.List<int>();
         playerData.DeckKeyLists = new System.Collections.Generic.List<int>();
