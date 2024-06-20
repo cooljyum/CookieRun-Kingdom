@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 642c55870301d914683bb17306016302, type: 3}
+  m_Name: Cookie10
+  m_EditorClassIdentifier: 
+  Key: 10
+  Name: "\uBBFC\uD2B8\uCD08\uCF54\uCFE0\uD0A4"
+  Hp: 250
+  Attack: 20
+  Defence: 20
+  Critical: 0.1
+  Type: 6
+  Rarity: 2
+  AttackType: 0
+  AttackDamage: 10
+  AttackInterval: 3
+  AttackRange: 3
+  Skill: {fileID: 11400000, guid: f28c7c260b2916547874133f8021d7ec, type: 2}
+  SkeletonDataAsset: {fileID: 11400000, guid: 83b7b58dba1226e4c88b49061e05b712, type: 2}
+  ProfileImage: {fileID: 21300000, guid: e1ab13d16dc4f614c9f6e8f7dcb8e568, type: 3}
+  TypeImage: {fileID: 21300000, guid: 304930aff43a34b4fab20427d5d0ff20, type: 3}
+  SkillBtnImg:
+    OnImg: {fileID: 21300000, guid: 58d25a12d2b3f404ea326b006be71324, type: 3}
+    OffImg: {fileID: 21300000, guid: 58d25a12d2b3f404ea326b006be71324, type: 3}
+    SkillImg: {fileID: 21300000, guid: d3ca31bdd26ecc941b7f7d15126e33ad, type: 3}
+  AnimationMappings:
+  - Key: Battle_Idle
+    AnimationName: battle_idle_back
+  - Key: Battle_Attack
+    AnimationName: skill1_back
+  - Key: Battle_Skill
+    AnimationName: skill2_end_back
+  - Key: Battle_Die
+    AnimationName: 
+  - Key: Battle_Run
+    AnimationName: run_back

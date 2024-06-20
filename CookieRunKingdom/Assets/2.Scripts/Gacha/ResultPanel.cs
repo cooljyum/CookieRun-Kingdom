@@ -35,13 +35,22 @@ public class ResultPanel : MonoBehaviour
             }
             else
             {
+                _icon.SetData(_random);
                 GameManager.Instance.CurPlayerData.Mileage += 100;
             }
         }        
         else if (_randomValue < 90)
         {
-            _icon.SetData(6);
-            GameManager.Instance.CurPlayerData.MyCardsLists.Add(6);
+            if (!GameManager.Instance.CurPlayerData.MyCardsLists.Contains(6))
+            {
+                _icon.SetData(6);
+                GameManager.Instance.CurPlayerData.MyCardsLists.Add(6);
+            }
+            else
+            {
+                _icon.SetData(6);
+                GameManager.Instance.CurPlayerData.Mileage += 100;
+            }
         }        
     }
 

@@ -13,6 +13,6 @@ public class BattleReadyManager : MonoBehaviour
     
     public void EnterBattle()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

@@ -1,6 +1,7 @@
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
@@ -21,8 +22,15 @@ public class GachaIcon : MonoBehaviour
     public void SetData(int key)
     {        
         _characterData = DataManager.Instance.GetCharacterData(key);
-        _skeletonGraphic.skeletonDataAsset = _characterData.SkeletonDataAsset;
-        _skeletonGraphic.Initialize(true);
+        if((_skeletonGraphic.skeletonDataAsset == _characterData.SkeletonDataAsset))
+        {
+            _skeletonGraphic.Initialize(true);
+        }
+        else
+        {
+            _skeletonGraphic.skeletonDataAsset = _characterData.SkeletonDataAsset;
+            _skeletonGraphic.Initialize(true);
+        }        
         _nameText.text = _characterData.Name;
     }
 }
