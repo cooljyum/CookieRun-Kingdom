@@ -1257,6 +1257,7 @@ GameObject:
   - component: {fileID: 249329934}
   - component: {fileID: 249329936}
   - component: {fileID: 249329937}
+  - component: {fileID: 249329938}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1389,6 +1390,14 @@ MonoBehaviour:
   _minZoomSize: 4
   _maxZoomSize: 7
   _zoomInOutValueSize: 0.5
+--- !u!81 &249329938
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249329932}
+  m_Enabled: 1
 --- !u!1 &310614569
 GameObject:
   m_ObjectHideFlags: 0

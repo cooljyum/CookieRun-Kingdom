@@ -81,7 +81,6 @@ public class BattleObject : MonoBehaviour
         get { return _attackRange; }
         set { _attackRange = value; }
     }
-
     private void Awake()
     {
         _skeletonAni = GetComponent<SkeletonAnimation>();
