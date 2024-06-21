@@ -90,7 +90,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d60c8474a6225304b8e9fffd859ed81e, type: 3}
   _clipEffectInfos:
   - key: BtnClick
-    clip: {fileID: 8300000, guid: be76c1da5edf5e842aae9f11fafbba18, type: 3}
+    clip: {fileID: 8300000, guid: 6e23a123d83bda4459cd38f83b781ff7, type: 3}
   - key: BtnClickQuit
     clip: {fileID: 8300000, guid: 7b373070633386947a2bf699b2f7609d, type: 3}
   - key: Battle_CookieDie
