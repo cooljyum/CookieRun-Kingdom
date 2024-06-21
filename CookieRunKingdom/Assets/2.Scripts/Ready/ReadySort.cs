@@ -11,6 +11,10 @@ public class ReadySort : MonoBehaviour
     public List<Transform> DetailPositions
     {  get { return _detailPositions; } } 
     private List<GameObject> _characters = new List<GameObject>();
+    public List<GameObject> Characters
+    {
+        get { return _characters; }
+    }
     private void Awake()
     {
         for (int i = 0; i < 3; i++)

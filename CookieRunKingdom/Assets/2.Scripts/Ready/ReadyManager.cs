@@ -2,6 +2,7 @@ using Spine.Unity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
@@ -22,6 +23,7 @@ public class ReadyManager : MonoBehaviour
     private DeckSettingManager _deckSettingManager;
 
     private Dictionary<int, GameObject> _selectedCharacters = new Dictionary<int, GameObject>();
+    
 
     private void Awake()
     {
@@ -68,18 +70,21 @@ public class ReadyManager : MonoBehaviour
 
     public void SaveDeck()
     {
+        GameManager.Instance.CurPlayerData.DeckKeyLists.Clear();
         List<int> deckCntList = new List<int>();
         for (int i = 0; i < _readySorts.Count; i++)
         {
             deckCntList.Add(_readySorts[i].GetSize());
+
+            for (int j = 0; j < _readySorts[i].GetSize(); j++)
+            {
+                GameManager.Instance.CurPlayerData.DeckKeyLists.Add(_readySorts[i].Characters[j].GetComponent<StandingCharacter>().CharacterData.Key);
+            }
         }
         GameManager.Instance.CurPlayerData.BattlePosCntLists = deckCntList;
 
-        GameManager.Instance.CurPlayerData.DeckKeyLists.Clear();
-
-        foreach(KeyValuePair<int, GameObject> selectCharacter in _selectedCharacters)
+        foreach (KeyValuePair<int, GameObject> selectCharacter in _selectedCharacters)
         {
-            GameManager.Instance.CurPlayerData.DeckKeyLists.Add(selectCharacter.Key);
             Destroy(selectCharacter.Value);
         }
 
