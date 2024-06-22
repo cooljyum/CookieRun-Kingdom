@@ -30,6 +30,12 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
 
         foreach(ClipInfo clipInfo in _clipInfos)
@@ -47,6 +53,8 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBG(string key)
     {
+        StopBG();
+
         if (_clips.TryGetValue(key, out AudioClip clip))
         {
             _audioSource.clip = clip;
@@ -79,6 +87,14 @@ public class SoundManager : MonoBehaviour
         _audioSource.PlayOneShot(clip);
         yield return new WaitForSeconds(clip.length);
         _audioSource.volume = originalVolume;
+    }
+
+    public void StopBG()
+    {
+        if (_audioSource.isPlaying && _audioSource.loop)
+        {
+            _audioSource.Stop();
+        }
     }
 
     public void SetBGVolume(float volume)

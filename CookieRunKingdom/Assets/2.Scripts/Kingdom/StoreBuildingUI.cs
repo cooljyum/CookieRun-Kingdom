@@ -65,7 +65,8 @@ public class StoreBuildingUI : MonoBehaviour
 
     public void OnClickBuildingBtn() //Store-°Ç¹°
     {   
-        print("BuildingBtn Click");
+        Debug.Log("BuildingBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
 
         if (_isCType)
         {

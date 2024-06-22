@@ -74,14 +74,16 @@ public class BuildingInfoUI : MonoBehaviour
 
     public void OnClickOkayBtn() //Info-확인
     {
-        print("OkayBtn Click");
+        Debug.Log("OkayBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         gameObject.SetActive(false);
         KingdomManager.Instance.SelectCTypeBuilding(_buildingData);
     }
 
     public void OnClickExitBtn() //Info-나가기
     {
-        print("ExitBtn Click");
+        Debug.Log("ExitBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         gameObject.SetActive(false);
     }
 }

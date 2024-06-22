@@ -14,22 +14,22 @@ public class Tilemap : MonoBehaviour
 
     private void Start()
     {
-        LoadBuildings(); //*빌딩저장됨*//
+        LoadBuildings();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) //클릭한 타일 위치에 빌딩 짓기
+        if (Input.GetMouseButtonDown(0)) //클릭한 타일 위치에 건물 위치 고정
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (_collider.bounds.Contains(mousePos))
             {
-                if (KingdomManager.Instance.SelectedBuilding != null)
-                {
-                    KingdomManager.Instance.SetSnappedPosition();
-                    KingdomManager.Instance.SetSelectedBuilding(null); //선택 해제
-                }
+                if (KingdomManager.Instance.SelectedBuildingData == null) return;
+
+                KingdomManager.Instance.SetSnappedPosition();
+                KingdomManager.Instance.SetSelectedBuilding(null); //선택 해제
+                KingdomManager.Instance.IsBuildingFixed = true;
             }
         }
     }
@@ -42,9 +42,17 @@ public class Tilemap : MonoBehaviour
             GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
             GameObject buildingObj = Instantiate(buildingPrefab, transform);
             Building building = buildingObj.GetComponent<Building>();
-            building.Build(DataManager.Instance.GetBuildingData(buildingData.Item1), buildingData.Item2);
+            building.Build(DataManager.Instance.GetBuildingData(buildingData.Item1), KingdomManager.Instance.SelectedPosition);
 
             //_buildings.Add(building);
         }
+    }
+
+    public void ConstructBuilding() //체크 버튼 클릭 시 호출 -> 건물 짓기
+    {
+        GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
+        GameObject buildingObj = Instantiate(buildingPrefab, transform);
+        Building building = buildingObj.GetComponent<Building>();
+        building.Build(DataManager.Instance.GetBuildingData(KingdomManager.Instance.SelectedBuildingData.Key), KingdomManager.Instance.SelectedPosition);
     }
 }

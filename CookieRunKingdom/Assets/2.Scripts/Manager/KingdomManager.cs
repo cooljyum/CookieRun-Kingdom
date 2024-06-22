@@ -38,11 +38,15 @@ public class KingdomManager : MonoBehaviour
     private GameObject _editUI;
     [SerializeField]
     private GameObject _mapGrid;
+    [SerializeField]
+    private Tilemap _tilemap;
     public GameObject MapGrid => _mapGrid;
 
     private StoreBuildingUI _selectedBuildingUI;
-    private BuildingData _selectedBuildingData;    
-
+    private BuildingData _selectedBuildingData;
+    public BuildingData SelectedBuildingData => _selectedBuildingData;
+    public Vector2 SelectedPosition;
+    public bool IsBuildingFixed;
     private TextMeshProUGUI _buildingCost;
     private TextMeshProUGUI _buildingPoint;
     private TextMeshProUGUI _buildingCurCount;
@@ -51,19 +55,22 @@ public class KingdomManager : MonoBehaviour
     public Building SelectedBuilding => _selectedBuilding;
 
     private GameObject _overlapIndicatorPrefab;
-
     private List<GameObject> _overlapIndicators = new List<GameObject>();
 
     private void Awake()
     {
         Instance = this;
-
         _overlapIndicatorPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/BuildingOverlap");
+    }
+
+    private void Start()
+    {
+        IsBuildingFixed = false;
     }
 
     private void Update()
     {
-        if (!_selectedBuildingSkeletonAnimation.gameObject.activeSelf) return;
+        if (IsBuildingFixed || !_selectedBuildingSkeletonAnimation.gameObject.activeSelf) return;
 
         Vector2 mousePos = Input.mousePosition;
         Vector2 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
@@ -74,7 +81,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuildingSkeletonAnimation.transform.position = worldPos;
 
         //겹치는 범위 표시
-        CheckOverlapAndShowIndicators(worldPos);
+        //CheckOverlapAndShowIndicators(worldPos);
     }
 
     public void SelectDTypeBuilding(StoreBuildingUI buildingUI) //선택한 D타입 건물 출현 세팅
@@ -143,39 +150,45 @@ public class KingdomManager : MonoBehaviour
 
     public void OnClickConstructBtn() //Main-건설하기
     {
-        print("ConstructBtn Click");
+        Debug.Log("ConstructBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         _storeUI.gameObject.SetActive(true);
         _storeUI.CreateCTypeBuilding();
     }
 
     public void OnClickPlayBtn() //Main-Play
     {
-        print("PlayBtn Click");
+        Debug.Log("PlayBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         _kingdomPlayPanel.gameObject.SetActive(true);
     }
 
     public void OnClickGatchaBtn() //Main-뽑기
     {
-        print("GatchaBtn Click");
+        Debug.Log("GatchaBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         //_gatchaUI.gameObject.SetActive(true);
         SceneManager.LoadScene("GachaScene");
     }
 
     public void OnClickCookieKingdomBtn() //Play-쿠키 왕국
     {
-        print("CookieKingdomBtn Click");
+        Debug.Log("CookieKingdomBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
     public void OnClickWorldAdventureBtn() //Play-월드 탐험
     {
-        print("WorldAdventureBtn Click");
+        Debug.Log("WorldAdventureBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         SceneManager.LoadScene("ReadyScene");
     }
 
     public void OnClickPlayExitBtn() //Play-나가기
     {
-        print("PlayExitBtn Click");
+        Debug.Log("PlayExitBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
@@ -189,7 +202,7 @@ public class KingdomManager : MonoBehaviour
         _selectedBuilding = building;
         BuildingData data = building.BuildingData;
 
-        print("Building Click");
+        Debug.Log("Building Click");
 
         if (data.Type == "Decorative")
         { 
@@ -204,35 +217,9 @@ public class KingdomManager : MonoBehaviour
         }
     }
 
-    public void ClickCraftBtn(CraftItemInfo craftItemInfo)
+    public void ClickCraftBtn(CraftItemInfo craftItemInfo) //생산 버튼 클릭 시 호출 -> 생산 시작
     {
         _craftUI.CraftStart(craftItemInfo);
-    }
-
-    public void OnClickEditCheckBtn()
-    {
-        Vector2 buildingPos = _selectedBuildingSkeletonAnimation.transform.position;
-        int key = Building();
-
-        if (key != 0)
-        {
-            GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
-            GameObject buildingObj = Instantiate(buildingPrefab, buildingPos, Quaternion.identity);
-            Building newBuilding = buildingObj.GetComponent<Building>();
-            newBuilding.Build(DataManager.Instance.GetBuildingData(key), buildingPos);
-
-            //플레이어 데이터로 건물 저장
-            //GameManager.Instance.SaveBuilding(newBuilding);
-
-            //겹치는 사각형 표시 제거
-            foreach (var indicator in _overlapIndicators)
-            {
-                Destroy(indicator);
-            }
-            _overlapIndicators.Clear();
-
-            _editUI.SetActive(false);
-        }
     }
 
     public void SetSelectedBuilding(Building building)
@@ -242,7 +229,7 @@ public class KingdomManager : MonoBehaviour
 
     public void SetSnappedPosition()
     {
-        Vector2 originalPosition = KingdomManager.Instance.SelectedBuilding.transform.position;
+        Vector2 originalPosition = _selectedBuildingSkeletonAnimation.transform.position;
         float tileSizeX = 2.6f;
         float tileSizeY = 1.33f;
 
@@ -250,44 +237,98 @@ public class KingdomManager : MonoBehaviour
         float snappedX = Mathf.Round(originalPosition.x / tileSizeX) * tileSizeX;
         float snappedY = Mathf.Round(originalPosition.y / tileSizeY) * tileSizeY;
 
-        originalPosition = new Vector2(snappedX, snappedY);
+        SelectedPosition = new Vector2(snappedX, snappedY);
     }
 
-    private void CheckOverlapAndShowIndicators(Vector2 position)
+    public void OnClickConstructBuilding()
     {
-        // 겹치는 사각형 표시 제거
-        foreach (var indicator in _overlapIndicators)
+        if (_selectedBuildingData == null)
         {
-            Destroy(indicator);
+            Debug.LogError("선택된 건물 데이터가 없습니다.");
+            return;
         }
-        _overlapIndicators.Clear();
 
-        // 선택된 빌딩의 위치 및 크기 가져오기
-        var selectedBuildingBounds = SelectedBuilding.GetBounds();
-        selectedBuildingBounds.center = position;
+        // 선택된 건물에서 필요한 건설 데이터를 가져오기
+        int requiredGold = _selectedBuildingData.RequiredGold;
+        ItemData requiredMaterial = _selectedBuildingData.RequiredMaterial;
+        int requiredMaterialCount = _selectedBuildingData.RequiredMaterialCount;
+        ItemData requiredEquipment = _selectedBuildingData.RequiredEquipment;
+        int requiredEquipmentCount = _selectedBuildingData.RequiredEquipmentCount;
 
-        // 모든 빌딩과 현재 선택된 빌딩의 위치 및 크기 비교
-        var buildings = FindObjectsOfType<Building>();
+        // 플레이어가 충분한 자원을 가지고 있는지 확인
+        bool hasEnoughGold = GameManager.Instance.CurPlayerData.Coin >= requiredGold;
+        bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemCount(requiredMaterial.Key) >= requiredMaterialCount;
+        bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemCount(requiredEquipment.Key) >= requiredEquipmentCount;
 
-        foreach (var building in buildings)
+        if (!hasEnoughGold)
         {
-            if (building == SelectedBuilding) continue;
+            Debug.LogError("건물을 건설하기에 골드가 부족합니다.");
+            // 플레이어에게 오류 메시지 표시
+            return;
+        }
 
-            var buildingBounds = building.GetBounds();
+        if (!hasEnoughMaterial)
+        {
+            Debug.LogError("건물을 건설하기에 재료가 부족합니다.");
+            // 플레이어에게 오류 메시지 표시
+            return;
+        }
 
-            if (selectedBuildingBounds.Intersects(buildingBounds))
-            {
-                // 겹치는 부분 표시
-                var overlapIndicator = Instantiate(_overlapIndicatorPrefab, building.transform.position, Quaternion.identity);
-                overlapIndicator.transform.localScale = new Vector2(buildingBounds.size.x, buildingBounds.size.y);
-                _overlapIndicators.Add(overlapIndicator);
+        if (!hasEnoughEquipment)
+        {
+            Debug.LogError("건물을 건설하기에 장비가 부족합니다.");
+            // 플레이어에게 오류 메시지 표시
+            return;
+        }
 
-                building.SetOverlapColor(Color.blue);
-            }
-            else
-            {
-                building.SetOverlapColor(Color.clear);
-            }
+        // 플레이어의 인벤토리에서 자원 차감
+        GameManager.Instance.CurPlayerData.Coin -= requiredGold;
+        GameManager.Instance.PlayerInventory.RemoveItem(requiredMaterial.Key, requiredMaterialCount);
+        GameManager.Instance.PlayerInventory.RemoveItem(requiredEquipment.Key, requiredEquipmentCount);
+
+        // 건물 건설 진행
+        if (_tilemap != null)
+        {
+            _tilemap.ConstructBuilding();
+            Debug.Log("건물이 성공적으로 건설되었습니다.");
         }
     }
+
+    //private void CheckOverlapAndShowIndicators(Vector2 position)
+    //{
+    //    // 겹치는 사각형 표시 제거
+    //    foreach (var indicator in _overlapIndicators)
+    //    {
+    //        Destroy(indicator);
+    //    }
+    //    _overlapIndicators.Clear();
+    //
+    //    // 선택된 빌딩의 위치 및 크기 가져오기
+    //    var selectedBuildingBounds = SelectedBuilding.GetBounds();
+    //    selectedBuildingBounds.center = position;
+    //
+    //    // 모든 빌딩과 현재 선택된 빌딩의 위치 및 크기 비교
+    //    var buildings = FindObjectsOfType<Building>();
+    //
+    //    foreach (var building in buildings)
+    //    {
+    //        if (building == SelectedBuilding) continue;
+    //
+    //        var buildingBounds = building.GetBounds();
+    //
+    //        if (selectedBuildingBounds.Intersects(buildingBounds))
+    //        {
+    //            // 겹치는 부분 표시
+    //            var overlapIndicator = Instantiate(_overlapIndicatorPrefab, building.transform.position, Quaternion.identity);
+    //            overlapIndicator.transform.localScale = new Vector2(buildingBounds.size.x, buildingBounds.size.y);
+    //            _overlapIndicators.Add(overlapIndicator);
+    //
+    //            building.SetOverlapColor(Color.blue);
+    //        }
+    //        else
+    //        {
+    //            building.SetOverlapColor(Color.clear);
+    //        }
+    //    }
+    //}
 }

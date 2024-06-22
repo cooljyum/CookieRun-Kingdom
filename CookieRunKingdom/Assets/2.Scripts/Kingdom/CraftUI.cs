@@ -114,7 +114,7 @@ public class CraftUI : MonoBehaviour
 
     public void OnClickExitBtn() //Craft-³ª°¡±â
     {
-        print("ExitBtn Click");
+        Debug.Log("ExitBtn Click");
         gameObject.SetActive(false);
     }
 }

@@ -107,7 +107,8 @@ public class CraftItemUI : MonoBehaviour
 
     public void OnClickCraftBtn() //Craft-¡¶¿€
     {
-        print("CraftBtn Click");
+        Debug.Log("CraftBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         KingdomManager.Instance.ClickCraftBtn(_craftItemInfo);
     }
 

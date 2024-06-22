@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +40,47 @@ public class GameManager : MonoBehaviour
         // 인벤토리 초기화
         PlayerInventory = new Inventory();
         LoadPlayerInventory();
+    }
+
+    private void Start()
+    {
+        // 씬 변경 이벤트 구독
+        SceneManager.activeSceneChanged += OnActiveSceneChanged;
+        CheckAndPlayBGM();
+    }
+
+    private void CheckAndPlayBGM()
+    {
+        //StartScene
+        if (SceneManager.GetActiveScene().name == "StartScene")
+        {
+            SoundManager.Instance.PlayBG("StartBgm");
+        }
+        //KingdomScene
+        else if (SceneManager.GetActiveScene().name == "KingdomScene")
+        {
+            SoundManager.Instance.PlayBG("KingdomBgm");
+        }
+        //ReadyScene
+        else if (SceneManager.GetActiveScene().name == "ReadyScene")
+        {
+            SoundManager.Instance.PlayBG("ReadyBgm");
+        }
+        //BattleScene
+        else if (SceneManager.GetActiveScene().name == "BattleScene")
+        {
+            SoundManager.Instance.PlayBG("BattleBgm");
+        }
+        else
+        {
+            SoundManager.Instance.StopBG();
+        }
+    }
+
+    private void OnActiveSceneChanged(Scene current, Scene next)
+    {
+        // 씬이 변경될 때 배경음악을 확인하고 재생
+        CheckAndPlayBGM();
     }
 
     private void InitializeMyBuildings()

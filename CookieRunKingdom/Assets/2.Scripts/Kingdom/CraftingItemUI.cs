@@ -4,6 +4,7 @@ using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class CraftingItemUI : MonoBehaviour
 {
@@ -78,7 +79,8 @@ public class CraftingItemUI : MonoBehaviour
     {
         if (!_craftItemInfo.HasValue) return;
 
-        print("FastBtn Click");
+        Debug.Log("FastBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick2");
         float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
         remainingTime -= 10000;
 
@@ -97,7 +99,7 @@ public class CraftingItemUI : MonoBehaviour
     {
         if (_isCraftingComplete) return;
 
-        print("Crafting Complete");
+        Debug.Log("Crafting Complete");
         _isCraftingComplete = true;
         _checkImage.gameObject.SetActive(true);
         _timeProgressBar.gameObject.SetActive(false);
@@ -118,7 +120,7 @@ public class CraftingItemUI : MonoBehaviour
         _craftingImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
         GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key, _craftItemInfo.Value.ResultCount);
-        print($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
+        Debug.Log($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
     }
 
     public void ResetData()
