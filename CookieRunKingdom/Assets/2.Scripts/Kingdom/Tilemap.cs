@@ -36,12 +36,12 @@ public class Tilemap : MonoBehaviour
     private void LoadBuildings() //저장한 빌딩 로드
     {
         List<(int, Vector2)> buildingDatas = GameManager.Instance.LoadBuildings();
-        foreach (var buildingData in buildingDatas)
+        for (int i = 0; i < buildingDatas.Count; i++)
         {
             GameObject buildingPrefab = Resources.Load<GameObject>("Prefabs/Kingdom/Map/Building");
             GameObject buildingObj = Instantiate(buildingPrefab, transform);
             Building building = buildingObj.GetComponent<Building>();
-            building.Build(DataManager.Instance.GetBuildingData(buildingData.Item1), KingdomManager.Instance.SelectedPosition);
+            building.Build(DataManager.Instance.GetBuildingData(buildingDatas[i].Item1), buildingDatas[i].Item2);
 
             //_buildings.Add(building);
         }

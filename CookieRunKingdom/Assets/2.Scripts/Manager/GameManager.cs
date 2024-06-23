@@ -157,9 +157,16 @@ public class GameManager : MonoBehaviour
 
     public void SaveBuilding(Building building)
     {
-        CurPlayerData.BuildingKeyLists.Add(building.BuildingData.Key);
-        CurPlayerData.BuildingPosLists.Add(building.transform.position);
-        SavePlayerData();
+        int key = building.BuildingData.Key;
+        Vector2 pos = building.transform.position;
+
+        // 중복 저장 방지
+        if (!CurPlayerData.BuildingKeyLists.Contains(key) || !CurPlayerData.BuildingPosLists.Contains(pos))
+        {
+            CurPlayerData.BuildingKeyLists.Add(key);
+            CurPlayerData.BuildingPosLists.Add(pos);
+            SavePlayerData();
+        }
     }
 
     public List<(int, Vector2)> LoadBuildings()
@@ -171,5 +178,4 @@ public class GameManager : MonoBehaviour
         }
         return buildings;
     }
-
 }

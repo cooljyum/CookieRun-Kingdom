@@ -104,6 +104,8 @@ public class Building : MonoBehaviour
         }
 
         transform.position = pos;
+        GameManager.Instance.SaveBuilding(this); //건물 정보 저장
+
         gameObject.SetActive(true);
         _installEffect.gameObject.SetActive(true);
         _installEffect.GetComponentInChildren<ParticleSystem>().Play();
