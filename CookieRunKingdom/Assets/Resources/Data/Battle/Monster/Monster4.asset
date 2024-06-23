@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642c55870301d914683bb17306016302, type: 3}
-  m_Name: Monster2
+  m_Name: Monster4
   m_EditorClassIdentifier: 
-  Key: 2
-  Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD1302"
+  Key: 4
+  Name: "\uCF00\uC774\uD06C\uBAAC\uC2A4\uD1304"
   Hp: 40
   Attack: 10
   Defence: 0
@@ -23,10 +23,10 @@ MonoBehaviour:
   AttackType: 0
   AttackDamage: 2
   AttackInterval: 0
-  AttackRange: 1.8
+  AttackRange: 3
   Skill: {fileID: 0}
   BulletObject: {fileID: 0}
-  SkeletonDataAsset: {fileID: 11400000, guid: 2fbebbf7793fbdf4fa0ff58116d03c62, type: 2}
+  SkeletonDataAsset: {fileID: 11400000, guid: 6e19bf2837de8d94abc84f3a24422bd8, type: 2}
   ProfileImage: {fileID: 0}
   TypeImage: {fileID: 0}
   SkillBtnImg:

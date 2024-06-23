@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsPlay: 0
   SkillName: "\uB9E4\uC9C1"
-  Cooldown: 5
+  Cooldown: 8
   EffectPrefab: {fileID: 4110890516877605113, guid: 731368365c0b98940978e34d47ff1a0b, type: 3}
   EffectObj: {fileID: 0}
   MagicDamage: 10

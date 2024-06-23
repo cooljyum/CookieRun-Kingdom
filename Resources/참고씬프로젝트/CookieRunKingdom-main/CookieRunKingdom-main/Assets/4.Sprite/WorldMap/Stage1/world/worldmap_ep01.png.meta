@@ -252,7 +252,7 @@ TextureImporter:
       213: -536949300167905146
     second: worldmap_ep01_5
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -269,10 +269,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -311,6 +313,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -322,6 +326,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -334,6 +339,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -346,6 +352,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -358,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2116,9 +2124,92 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      worldmap_ep01_0: 1029074013476302106
+      worldmap_ep01_1: -1645614892137622103
+      worldmap_ep01_10: -810669831602237752
+      worldmap_ep01_101: -4448037252235781477
+      worldmap_ep01_102: 3873680761012182460
+      worldmap_ep01_103: -8416263649513095340
+      worldmap_ep01_104: -5577837972105144216
+      worldmap_ep01_105: -6968929074420295351
+      worldmap_ep01_106: -3221521939103082802
+      worldmap_ep01_107: 2123313650319522736
+      worldmap_ep01_108: 4140703123709762740
+      worldmap_ep01_109: -231750003659812336
+      worldmap_ep01_11: 2308835621216834045
+      worldmap_ep01_110: -1313758097875365788
+      worldmap_ep01_111: -3735914641758149162
+      worldmap_ep01_112: 6409220479139058903
+      worldmap_ep01_113: -7320937685164185027
+      worldmap_ep01_114: -7010715496626148611
+      worldmap_ep01_115: 3893010459704384533
+      worldmap_ep01_116: 3671090579120187283
+      worldmap_ep01_117: 5039736878407704638
+      worldmap_ep01_12: 358938924184773210
+      worldmap_ep01_13: -1702893353470587085
+      worldmap_ep01_14: -8269709291115016397
+      worldmap_ep01_15: -9023048360957285057
+      worldmap_ep01_2: -7887164299843616086
+      worldmap_ep01_22: 4451538693736601430
+      worldmap_ep01_25: 5445824157017422397
+      worldmap_ep01_27: 3139006080428462771
+      worldmap_ep01_28: -367233579669951313
+      worldmap_ep01_29: -7347690424274656355
+      worldmap_ep01_3: 8873261671729805006
+      worldmap_ep01_30: 2376942025946188234
+      worldmap_ep01_31: 8136756766854379621
+      worldmap_ep01_32: 6047118563881593330
+      worldmap_ep01_34: -1664840172301552336
+      worldmap_ep01_38: 2905574751429735634
+      worldmap_ep01_39: -5264773814283231299
+      worldmap_ep01_4: -7875417924926297961
+      worldmap_ep01_40: -7680880471161659857
+      worldmap_ep01_45: 6336777122414020529
+      worldmap_ep01_46: -3663695404961977451
+      worldmap_ep01_47: 3487125396720562102
+      worldmap_ep01_5: -536949300167905146
+      worldmap_ep01_56: -6351156196496519586
+      worldmap_ep01_57: -2231635802371385595
+      worldmap_ep01_58: 7060006408200928236
+      worldmap_ep01_59: 8254487218107812207
+      worldmap_ep01_60: -5160737492839228471
+      worldmap_ep01_61: -8068351696093595391
+      worldmap_ep01_62: 2524999851167059443
+      worldmap_ep01_63: 5808711268851267823
+      worldmap_ep01_64: -1856661654525376565
+      worldmap_ep01_65: -6475350919462906905
+      worldmap_ep01_66: -5565143109399973487
+      worldmap_ep01_67: 7607446724987667489
+      worldmap_ep01_68: -318060559670700476
+      worldmap_ep01_69: -831760907892426326
+      worldmap_ep01_7: 442789300416238992
+      worldmap_ep01_70: -34675099554804838
+      worldmap_ep01_71: 7834658948168320913
+      worldmap_ep01_72: -2275196741093149029
+      worldmap_ep01_73: 342311432639838416
+      worldmap_ep01_74: 3181559865527976675
+      worldmap_ep01_75: 9203896539360994926
+      worldmap_ep01_76: 6517530809264275590
+      worldmap_ep01_77: -137240011323803020
+      worldmap_ep01_78: -1517049856049046123
+      worldmap_ep01_79: -8689267331652423999
+      worldmap_ep01_8: 8482792267876640398
+      worldmap_ep01_80: -7388349083078793417
+      worldmap_ep01_81: 1653334917210150196
+      worldmap_ep01_82: 890037553371339501
+      worldmap_ep01_83: 6655373483491727716
+      worldmap_ep01_84: -2757361107323207095
+      worldmap_ep01_85: -8216007383024647796
+      worldmap_ep01_86: 8294138173544944647
+      worldmap_ep01_87: -5334984526263971569
+      worldmap_ep01_88: -1896812999561108410
+      worldmap_ep01_89: -8739466645011326749
+      worldmap_ep01_9: -5074979290545564594
+      worldmap_ep01_93: 4465319739108315968
+      worldmap_ep01_97: 121544201978565579
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

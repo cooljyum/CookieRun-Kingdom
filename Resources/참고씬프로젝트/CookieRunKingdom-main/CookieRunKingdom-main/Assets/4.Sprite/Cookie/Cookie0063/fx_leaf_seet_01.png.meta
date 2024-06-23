@@ -63,7 +63,7 @@ TextureImporter:
       213: 1042474485620738479
     second: fx_leaf_seet_01_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -80,10 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +124,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -133,6 +137,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -145,6 +150,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -157,6 +163,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -169,6 +176,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -604,9 +612,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      fx_leaf_seet_01_0: -8894209679409441612
+      fx_leaf_seet_01_1: 8389321060549687979
+      fx_leaf_seet_01_10: 8982172516299515827
+      fx_leaf_seet_01_11: -6286270448329089619
+      fx_leaf_seet_01_12: -274711846267741136
+      fx_leaf_seet_01_13: 5852040241354661510
+      fx_leaf_seet_01_14: 8643409288017023727
+      fx_leaf_seet_01_15: 3654383258248118784
+      fx_leaf_seet_01_16: -5940788803659773825
+      fx_leaf_seet_01_17: 2419521281617451063
+      fx_leaf_seet_01_18: -3649870028528827472
+      fx_leaf_seet_01_19: 1042474485620738479
+      fx_leaf_seet_01_2: 365792528956515734
+      fx_leaf_seet_01_3: -815555371594468958
+      fx_leaf_seet_01_4: -2545362582253704622
+      fx_leaf_seet_01_5: 2004999862564272802
+      fx_leaf_seet_01_6: -5406803474547425178
+      fx_leaf_seet_01_7: -3040495521794856627
+      fx_leaf_seet_01_8: 6974935413814103236
+      fx_leaf_seet_01_9: 3286907643894215835
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

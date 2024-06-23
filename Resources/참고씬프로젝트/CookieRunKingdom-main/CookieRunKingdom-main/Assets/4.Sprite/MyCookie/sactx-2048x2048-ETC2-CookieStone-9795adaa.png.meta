@@ -159,7 +159,7 @@ TextureImporter:
       213: 9130652049014527539
     second: sactx-2048x2048-ETC2-CookieStone-9795adaa_51
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -176,10 +176,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -218,6 +220,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -229,6 +233,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -241,6 +246,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -253,6 +259,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -265,6 +272,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1372,9 +1380,61 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_0: 2633507568890333297
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_1: -5815352208722621891
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_10: -8623120865336485396
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_11: 5909070341987612312
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_12: -8636347921992830559
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_13: 7179303596046433211
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_14: -7247488710007640064
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_15: 3054666994558148284
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_16: 6820133666583289826
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_17: -8450438358920323792
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_18: 7642657725048413530
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_19: -5442507764841157086
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_2: 7633401873193870366
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_20: -5956607996014739129
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_21: -3384384108498248997
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_22: -4446708122346912526
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_23: -953547335171090139
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_24: 10087529756688947
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_25: -3224802520069771629
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_26: -723996136770326355
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_27: 4904062822454921854
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_28: 3207448786702450818
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_29: 5218214737431997339
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_3: -823961447135524358
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_30: 6565215237151577837
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_31: -4817389534646937413
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_32: -3827046070345118282
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_33: 4238721210859798152
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_34: -1468284237633673541
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_35: 7526235497678105615
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_36: -6493232327392650722
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_37: -2987305469397688911
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_38: -3507850529294854849
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_39: 7879589850378248394
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_4: 1938569370579876254
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_40: 1905972359367900655
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_41: -9165280031109473637
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_42: -6076411429358038608
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_43: 7986558676996232268
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_44: 2997254195740327580
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_45: 3677025341217676614
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_46: 3311627326830742897
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_47: 5473315667942333634
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_48: -8594854531211014825
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_49: 2377146513878085529
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_5: -562993099160649117
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_50: -2297702208948920117
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_51: 9130652049014527539
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_6: 3524867647302592018
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_7: -691768913344205200
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_8: -1168322963083761597
+      sactx-2048x2048-ETC2-CookieStone-9795adaa_9: 6664777627273441741
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

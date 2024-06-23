@@ -77,7 +77,6 @@ public class BattleCookie : BattleObject
     {
         Debug.Log("Skill End!");
 
-        CheckIsBattle();
         SetStatus(Status.Run);
         _skillBtn.SetState(SkillBtn.SkillBtnState.On);
         _skillCooldownTimer = _skillMaxCooldownTimer;

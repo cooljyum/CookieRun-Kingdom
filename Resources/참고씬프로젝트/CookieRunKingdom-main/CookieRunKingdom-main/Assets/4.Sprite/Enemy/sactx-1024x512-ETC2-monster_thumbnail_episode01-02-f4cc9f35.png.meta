@@ -66,7 +66,7 @@ TextureImporter:
       213: -3832488732968643310
     second: sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -83,10 +83,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +127,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -136,6 +140,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -148,6 +153,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -160,6 +166,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -172,6 +179,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -628,9 +636,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_0: 8598198376604545484
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_1: -5045521072363693070
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_10: -3701542830808707455
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_11: 5370486544659755821
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_12: -3177026529739953235
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_13: -6495635285565132973
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_14: 414741725773345758
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_15: 7541424375055591247
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_16: 4154368656713327175
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_17: -1045951481912319934
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_18: 598835867253334191
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_19: 2600333908144866976
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_2: 8477695892131183516
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_20: -3832488732968643310
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_3: 60364906885881401
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_4: 452283752886898037
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_5: 5800489677576522703
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_6: 545396336727003914
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_7: -6711686739992574653
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_8: -3847635859047843211
+      sactx-1024x512-ETC2-monster_thumbnail_episode01-02-f4cc9f35_9: -6537218469735772642
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

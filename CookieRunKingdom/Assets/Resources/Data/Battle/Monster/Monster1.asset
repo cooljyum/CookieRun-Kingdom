@@ -23,7 +23,7 @@ MonoBehaviour:
   AttackType: 0
   AttackDamage: 1
   AttackInterval: 0
-  AttackRange: 2
+  AttackRange: 1.5
   Skill: {fileID: 0}
   BulletObject: {fileID: 0}
   SkeletonDataAsset: {fileID: 11400000, guid: 3549b20f23f387745876e9f3d46f18ab, type: 2}
@@ -33,6 +33,7 @@ MonoBehaviour:
     OnImg: {fileID: 0}
     OffImg: {fileID: 0}
     SkillImg: {fileID: 0}
+  VoiceClip: {fileID: 0}
   AnimationMappings:
   - Key: Battle_Idle
     AnimationName: default

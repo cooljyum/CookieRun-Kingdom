@@ -79,7 +79,9 @@ public class ResultUIController : MonoBehaviour
 
             SaveItems();
             SaveCurStage();
-            
+
+            GameManager.Instance.SavePlayerData();
+
             _battleVictoryUI.SetActive(true);
         }
         else 

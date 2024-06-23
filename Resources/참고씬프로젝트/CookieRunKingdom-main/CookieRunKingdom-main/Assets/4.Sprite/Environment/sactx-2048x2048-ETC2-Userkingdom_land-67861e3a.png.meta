@@ -228,7 +228,7 @@ TextureImporter:
       213: 8694143066855936589
     second: sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_74
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -245,10 +245,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -287,6 +289,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -298,6 +302,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -310,6 +315,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -322,6 +328,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -334,6 +341,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1924,9 +1932,84 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_0: -1617965319877877636
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_1: 2253389452923972683
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_10: -4062376955602370751
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_11: 5117277241351163970
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_12: -8861341116972248387
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_13: 8783187662727179857
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_14: -2055930114070346753
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_15: -865490632364289013
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_16: 6031654517337494998
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_17: 6577042529105791373
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_18: -6780013868610457566
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_19: 777468327683777088
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_2: 7432356896287501454
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_20: 96685528536960635
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_21: -208607057441429270
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_22: 8013825551353258867
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_23: -331698543773333287
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_24: 1912480885673251321
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_25: -5921784950201890662
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_26: 4130474824135079425
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_27: 3012428940832655343
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_28: 2972112221205287783
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_29: -3011945272030844116
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_3: 2554263999783180183
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_30: -586088418960509107
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_31: 8430830345615005408
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_32: 7164873393378010021
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_33: 6772350925699815741
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_34: 874766288000546332
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_35: 8076875801338429782
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_36: 7073589128989731928
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_37: 6432283395663037683
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_38: -7717905585106200516
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_39: 4297439776647898456
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_4: -6322982212803271936
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_40: -4680456786418822213
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_41: 7194387002931848066
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_42: -6059303070738476496
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_43: 928290749555188068
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_44: 3054315436770991527
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_45: 5567103076826444808
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_46: 3549050965296529670
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_47: -20275074889147205
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_48: -743111546003748392
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_49: -3542134566071581165
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_5: 474825310696111328
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_50: 6219770917527814848
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_51: -4044791550385382594
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_52: 8854878284048488335
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_53: -539499039503233638
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_54: -657220284997821832
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_55: -6383868087119075303
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_56: -5716513433651201382
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_57: 680883129199752041
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_58: -7606006382284164383
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_59: -5998393834317010106
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_6: -6028606361236872802
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_60: 2269373180167838374
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_61: 8606739767015540844
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_62: -8410682976376155821
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_63: 5673263093163888105
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_64: 7138612639501347681
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_65: 2731646465411608465
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_66: -652834154927299386
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_67: -2505675214392644231
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_68: -412566965355219463
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_69: -3527955239521099508
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_7: -3056906930929709179
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_70: 964771826040161104
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_71: 2602558858351896479
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_72: 7672899532465303543
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_73: -353360877571252890
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_74: 8694143066855936589
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_8: 9182495716356907318
+      sactx-2048x2048-ETC2-Userkingdom_land-67861e3a_9: 4298883350258964843
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

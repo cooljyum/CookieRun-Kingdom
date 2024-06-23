@@ -15,5 +15,5 @@ MonoBehaviour:
   Key: 2
   Name: "Stage1\uC758 \uAE30\uBCF8 "
   FrontMonsterKeyList: 0100000001000000
-  MiddleMonsterKeyList: 010000000100000001000000
-  BackMonsterKeyList: 0100000001000000
+  MiddleMonsterKeyList: 010000000200000001000000
+  BackMonsterKeyList: 0300000003000000

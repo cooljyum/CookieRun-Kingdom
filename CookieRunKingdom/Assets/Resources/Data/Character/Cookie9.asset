@@ -23,8 +23,8 @@ MonoBehaviour:
   AttackType: 1
   AttackDamage: 10
   AttackInterval: 3
-  AttackRange: 3
-  Skill: {fileID: 11400000, guid: f28c7c260b2916547874133f8021d7ec, type: 2}
+  AttackRange: 5
+  Skill: {fileID: 11400000, guid: 75549a78606481d41a804227f37bc443, type: 2}
   BulletObject: {fileID: 5545455532991810110, guid: 89f7c4eab7251944c9bba55b8a86bc07, type: 3}
   SkeletonDataAsset: {fileID: 11400000, guid: a283782462e74324bbe9821d5d07de5b, type: 2}
   ProfileImage: {fileID: 21300000, guid: 5b0eef365bd9dc4478104ac0ebe1a4ab, type: 3}

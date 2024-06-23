@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stage4
   m_EditorClassIdentifier: 
   Key: 4
-  Name: Stage4
+  Name: "1-4 \uC0AC\uC9C0\uB9C8 \uB864\uCF00\uC774\uD06C \uB098\uBB34 \uC232"
   MonsterGroupList: 01000000020000000100000002000000
   StageItemList:
   - Key: 2

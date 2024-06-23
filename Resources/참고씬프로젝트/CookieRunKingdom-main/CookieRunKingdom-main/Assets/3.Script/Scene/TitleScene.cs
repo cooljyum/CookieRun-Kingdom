@@ -12,12 +12,10 @@ public class TitleScene : BaseScene
     [SerializeField] private SkeletonAnimation _titleAnimation;
     [SerializeField] private SkeletonAnimation _titleLogoAnimation;
     [SerializeField] private TitleSceneUI _titleSceneUI;
-    [SerializeField] private GameObject _communicationUI;
 
     protected override void Init()
     {
-        GameManager.Instance.Init();
-        GameManager.Sound.PlaySe(EBGM.start);
+      //  GameManager.Sound.PlaySe(EBGM.start);
         TitleLogic().Forget();
     }
 
@@ -35,16 +33,5 @@ public class TitleScene : BaseScene
 
         await UniTask.WaitUntil(() => _titleLogoAnimation.AnimationState.GetCurrent(0).IsComplete);
 
-
-        // 애니메이션 실행하면 GameManager Load할 때까지 통신UI 켜줌
-        _communicationUI.SetActive(true);
-        await GameManager.Instance.LoadData();
-        _communicationUI.SetActive(false);
-
-
-        GameManager.Sound.PlayBgm(EBGM.mainTitle);
-
-        // 로그인 UI 보여주자
-        GameManager.UI.PushUI(_titleSceneUI);
     }
 }

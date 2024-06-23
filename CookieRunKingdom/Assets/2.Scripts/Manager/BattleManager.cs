@@ -81,6 +81,9 @@ public class BattleManager : MonoBehaviour
     {
         SoundManager.Instance.PlayBG("BattleBgm");
 
+        if (GameManager.Instance.CurPlayerData.CurStage > 5) //현재 스테이지가 5가 최대이므로 설정
+            GameManager.Instance.CurPlayerData.CurStage = 5;
+
         _stage = GameManager.Instance.CurPlayerData.CurStage;
         SetStageData();
 

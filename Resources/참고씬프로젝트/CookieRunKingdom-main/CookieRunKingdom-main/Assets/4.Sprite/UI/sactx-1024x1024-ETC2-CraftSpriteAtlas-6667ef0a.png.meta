@@ -60,7 +60,7 @@ TextureImporter:
       213: -2350978951927662590
     second: sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_18
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -77,10 +77,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,6 +121,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -130,6 +134,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -142,6 +147,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -154,6 +160,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -166,6 +173,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -580,9 +588,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_0: -8792761978844206426
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_1: 5268661544479778142
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_10: 3313705993696775085
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_11: 6972885055711588483
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_12: -4878912591846669065
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_13: -1640826692925735785
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_14: -8847045865178678011
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_15: 8075840622731492497
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_16: 5194217550095069612
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_17: -3789361217657547178
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_18: -2350978951927662590
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_2: -5187746431816746734
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_3: 2222431738071514873
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_4: 2336206447589755691
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_5: 8535642788425588881
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_6: 6316509818807631739
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_7: 7266982471332230285
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_8: -8836849998139983585
+      sactx-1024x1024-ETC2-CraftSpriteAtlas-6667ef0a_9: 2135943063465255985
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

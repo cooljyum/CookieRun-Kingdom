@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stage2
   m_EditorClassIdentifier: 
   Key: 2
-  Name: Stage2
+  Name: "1-2 \uBC30\uBD88\uB7EC \uB864\uCF00\uC774\uD06C \uB098\uBB34 \uC232"
   MonsterGroupList: 010000000200000001000000
   StageItemList:
   - Key: 2

@@ -75,7 +75,7 @@ TextureImporter:
       213: 8807604647373047198
     second: sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -92,10 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +136,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -145,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -157,6 +162,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -169,6 +175,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -181,6 +188,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -616,9 +624,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_0: -7756856749929832934
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_1: -8017658952531577216
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_10: -5824422342527445114
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_11: 2826726858098485678
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_12: -2901232448587045302
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_13: 2884221986107152454
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_14: 1092890378389161454
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_15: 1922237558381798289
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_2: 261492511529681995
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_20: 6257861970650838406
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_21: 7064844895583573722
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_22: -4495168866452925724
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_23: 8807604647373047198
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_3: -8860317931583842515
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_4: -2372868743499930791
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_5: -418273065545153136
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_6: -3929249452707077617
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_7: 1456550715460491848
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_8: 7791311120819031610
+      sactx-2048x2048-ETC2-BattleResultSpriteAtlas-1109e2d8_9: -4323517192457172991
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
