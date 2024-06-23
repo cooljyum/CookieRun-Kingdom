@@ -77,6 +77,7 @@ public class SkillBtn : MonoBehaviour
     public void SetState(SkillBtnState newState)
     {
         if (_curState == newState) return;
+        if (_curState == SkillBtnState.Off) return;
 
         _curState = newState;
 
