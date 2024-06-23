@@ -60,11 +60,13 @@ public class ReadyManager : MonoBehaviour
     public void Exit()
     {
         SaveDeck();
+        SoundManager.Instance.PlayFX("BtnClick2");
         EnterReadyPanel();
     }
     public void EnterDeck()
     {
         //SaveDeck();
+        SoundManager.Instance.PlayFX("BtnClick2");
         EnterDeckSettingPanel();
     }
 

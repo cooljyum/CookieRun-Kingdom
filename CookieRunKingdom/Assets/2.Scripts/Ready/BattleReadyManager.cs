@@ -8,15 +8,17 @@ public class BattleReadyManager : MonoBehaviour
 {
     private void OnEnable()
     {
-        
+       
     }
     public void ExitReady()
     {
+        SoundManager.Instance.PlayFX("BtnClick2");
         SceneManager.LoadScene(1);
     }
     
     public void EnterBattle()
     {
+        SoundManager.Instance.PlayFX("BtnClick2");
         SceneManager.LoadScene(3);
     }
 }

@@ -65,8 +65,9 @@ public class DeckSettingManager : MonoBehaviour
     }
 
     public void ClearCharacters()
-    {        
-        foreach(KeyValuePair<int, GameObject> deckBtn in _deckBtns)
+    {
+        SoundManager.Instance.PlayFX("BtnClick2");
+        foreach (KeyValuePair<int, GameObject> deckBtn in _deckBtns)
         {            
             if(deckBtn.Value.GetComponent<DeckSettingBtn>().IsSet() == true)
             {
