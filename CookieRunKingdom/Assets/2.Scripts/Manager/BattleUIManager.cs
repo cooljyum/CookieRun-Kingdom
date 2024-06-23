@@ -63,6 +63,10 @@ public class BattleUIManager : MonoBehaviour
     private GameObject _skillEffectUI;
     public bool IsSkillEffect = false;
 
+    [Header("StageUI")]
+    [SerializeField]
+    private GameObject _stageUI;
+
     private void Awake()
     {
         Instance = this;
@@ -89,7 +93,7 @@ public class BattleUIManager : MonoBehaviour
         {
             _exitBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _exitBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
-            _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
+            _exitBtn.onClick.AddListener(() => LoadingManager.Instance.LoadScene("KingdomScene"));
             _exitBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
         }
         if (_continueBtn != null)
@@ -101,6 +105,9 @@ public class BattleUIManager : MonoBehaviour
 
         //Setting Obj Active
         _stopUI.SetActive(false);
+
+        _stageUI.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = BattleManager.Instance.StageData.Name;
+        _stageUI.SetActive(true);
 
         _resultUIController.Init();
     }

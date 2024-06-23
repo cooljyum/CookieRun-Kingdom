@@ -130,20 +130,26 @@ public class BattleObject : MonoBehaviour
     // Update
     protected void Update()
     {
+        //KnockBack
+        if (_isKnockedBack)
+        {
+            MoveKnockBackPos();
+        }
+
         if (_target != null)
         {
             if (_isEnemy)
             {
-                if (_isKnockedBack)
-                    MoveKnockBackPos();
-
                 if (_curStatus == Status.Run)
                     MoveToTarget();
             }
             SetTarget();
         }
+        
         UpdateStatus();
 
+
+        //AttackCooldown
         if (_attackCooldownTimer > 0)
         {
             _attackCooldownTimer -= Time.deltaTime;
@@ -182,13 +188,14 @@ public class BattleObject : MonoBehaviour
         else
         {
             _isKnockedBack = false;
+            gameObject.SetActive(false);
         }
     }
 
     //Status¿ª √º≈©
     private void UpdateStatus()
     {
-        if (_curStatus == Status.Skill) return;
+        if (_curStatus == Status.Skill || _isKnockedBack) return;
 
         if (_target && _target.activeSelf == true)
         {
@@ -381,12 +388,21 @@ public class BattleObject : MonoBehaviour
 
         BattleManager.Instance.UpdateKillBattleInfo(_isEnemy);
 
-        gameObject.SetActive(false);
+        KnockBack();
     }
 
     private void KnockBack() // ≥ÀπÈ
     {
-        _knockBackDirection = new Vector3(transform.parent.localScale.x, transform.parent.localScale.y * 0.5f, 0) * 50f;
+        float knockBackX = transform.parent.localScale.x;
+        float knockBackY = transform.parent.localScale.y * 0.5f;
+
+        if (!IsEnemy)
+        {
+            knockBackX = -knockBackX;
+            knockBackY = -knockBackY;
+        }
+
+        _knockBackDirection = new Vector3(knockBackX, knockBackY, 0) * 50f;
         _isKnockedBack = true;
         _knockBackTimer = _knockBackDuration;
     }

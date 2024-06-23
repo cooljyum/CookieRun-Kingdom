@@ -49,9 +49,9 @@ public class ResultUIController : MonoBehaviour
     }
     private void Start()
     {
-        _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
+        _exitBtn.onClick.AddListener(() => LoadingManager.Instance.LoadScene("KingdomScene"));
         _exitBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
-        _goKingdomBtn.onClick.AddListener(() => SceneManager.LoadScene("KingdomScene"));
+        _goKingdomBtn.onClick.AddListener(() => LoadingManager.Instance.LoadScene("KingdomScene"));
         _goKingdomBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
     }
 

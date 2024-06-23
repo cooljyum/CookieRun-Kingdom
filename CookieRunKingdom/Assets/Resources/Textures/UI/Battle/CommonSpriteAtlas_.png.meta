@@ -3458,6 +3458,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: CommonSpriteAtlas__0
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 554
+        width: 706
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107bd66f02080c6418bf69f3ebe3c9e7
+      internalID: -208235626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3469,6 +3490,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      CommonSpriteAtlas__0: -208235626
       sactx-2048x2048-ETC2-CommonSpriteAtlas-c21a8158 #60423_0: -2517770917579377092
       sactx-2048x2048-ETC2-CommonSpriteAtlas-c21a8158 #60423_1: 859530012015758016
       sactx-2048x2048-ETC2-CommonSpriteAtlas-c21a8158 #60423_10: 2530446469967154638
