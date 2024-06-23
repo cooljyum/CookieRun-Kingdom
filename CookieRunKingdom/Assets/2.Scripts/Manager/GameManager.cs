@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -103,16 +104,17 @@ public class GameManager : MonoBehaviour
 
     private void LoadPlayerInventory()
     {
-        //플레이어의 인벤토리를 _curPlayerData에서 가져오기
-        foreach (var item in _curPlayerData.InventoryItems)
+        // 플레이어의 인벤토리를 _curPlayerData에서 가져오기
+        for (int i = 0; i < _curPlayerData.InvenItemKeyLists.Count; i++)
         {
-            PlayerInventory.AddItem(item.Key, item.Value);
+            PlayerInventory.AddItem(_curPlayerData.InvenItemKeyLists[i], _curPlayerData.InvenItemAmountLists[i]);
         }
     }
 
     public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 
     {
-        _curPlayerData.InventoryItems = PlayerInventory.GetAllItems();
+        _curPlayerData.InvenItemKeyLists = PlayerInventory.GetAllItems().Keys.ToList();
+        _curPlayerData.InvenItemAmountLists = PlayerInventory.GetAllItems().Values.ToList();
         _playerDataManager.SavePlayerData(_curPlayerData, _playerDataName);
     }
 

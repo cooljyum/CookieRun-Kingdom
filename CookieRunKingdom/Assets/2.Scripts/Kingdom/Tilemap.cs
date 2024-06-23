@@ -28,7 +28,6 @@ public class Tilemap : MonoBehaviour
                 if (KingdomManager.Instance.SelectedBuildingData == null) return;
 
                 KingdomManager.Instance.SetSnappedPosition();
-                KingdomManager.Instance.SetSelectedBuilding(null); //선택 해제
                 KingdomManager.Instance.IsBuildingFixed = true;
             }
         }

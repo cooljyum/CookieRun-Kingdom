@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuildingOverlap
       objectReference: {fileID: 0}
+    - target: {fileID: 747875369438707279, guid: 5129924f344417245881990937657aa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4740707961841657014, guid: 5129924f344417245881990937657aa3, type: 3}
       propertyPath: m_Color.b
       value: 1
