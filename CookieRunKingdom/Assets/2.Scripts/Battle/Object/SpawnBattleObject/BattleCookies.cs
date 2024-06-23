@@ -15,3 +15,4 @@ public class BattleCookies : BattleEntitiesBase
         CreateBattleEntities(cookieKeys, "BattleCookies", "Prefabs/Battle/BattleCookie");
     }
 }
+

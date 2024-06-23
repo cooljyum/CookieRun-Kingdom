@@ -20,11 +20,12 @@ MonoBehaviour:
   Critical: 0.3
   Type: 2
   Rarity: 0
-  AttackType: 0
+  AttackType: 1
   AttackDamage: 10
   AttackInterval: 3
   AttackRange: 3
   Skill: {fileID: 11400000, guid: 8b60495316e4a8c4587ba807046f79e5, type: 2}
+  BulletObject: {fileID: 5545455532991810110, guid: 987c3e7481f18d94da8863620510877a, type: 3}
   SkeletonDataAsset: {fileID: 11400000, guid: 6a5203d900ee26245a293c7347a21df7, type: 2}
   ProfileImage: {fileID: 21300000, guid: 0ab2e53026f03e64fa047160de1dec04, type: 3}
   TypeImage: {fileID: 21300000, guid: d4a822d4e232b42409d38ebaacab8838, type: 3}

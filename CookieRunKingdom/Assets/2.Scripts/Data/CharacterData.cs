@@ -26,6 +26,7 @@ public class CharacterData : ScriptableObject
     public float AttackInterval; // 공격 간격 (초 단위)
     public float AttackRange; // 공격 범위
     public SkillBase Skill; // 특수 스킬
+    public GameObject BulletObject; // 원거리 불렛 
 
     [Header("Appearance")]
     public SkeletonDataAsset SkeletonDataAsset;
@@ -44,7 +45,7 @@ public enum AttackType
 {
     Melee, // 근거리 공격
     Ranged, // 원거리 공격
-    Magical // 마법 공격
+    Heal // 힐러
 }
 
 // 애니메이션 매핑 클래스

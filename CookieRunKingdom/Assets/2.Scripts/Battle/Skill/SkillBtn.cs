@@ -126,10 +126,11 @@ public class SkillBtn : MonoBehaviour
 
         print("SkillBtn Click!");
        
-        if (_curState == SkillBtnState.Ready)
+        if (_curState == SkillBtnState.Ready && !BattleUIManager.Instance.IsSkillEffect)
         {
             _owner.GetComponent<BattleCookie>().Skill();
             SetState(SkillBtnState.Skill);
+            BattleUIManager.Instance.IsSkillEffect = true;
         }
     }
 

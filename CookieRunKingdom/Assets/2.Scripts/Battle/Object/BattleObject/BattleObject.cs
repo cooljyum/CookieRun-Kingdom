@@ -38,6 +38,10 @@ public class BattleObject : MonoBehaviour
     [SerializeField]
     protected float _hp;
     protected float _maxHp;
+    public float HP
+    {
+        get { return _hp; }
+    }
 
     // 캐릭터 이동 관련 변수
     [Header("Movement")]
@@ -81,17 +85,23 @@ public class BattleObject : MonoBehaviour
         get { return _attackRange; }
         set { _attackRange = value; }
     }
+
+    [Header("Heal")]
+    private GameObject _healEffect;
+
     private void Awake()
     {
         _skeletonAni = GetComponent<SkeletonAnimation>();
 
-        // Resources 폴더에서 HPBar 프리팹 로드
-        _hpBarPrefab = Resources.Load<GameObject>("Prefabs/Battle/HPBar");
+        //HealEffect
+        _healEffect = Resources.Load<GameObject>("Prefabs/Battle/Skill/HealEffect");
+        _healEffect = Instantiate(_healEffect, transform.position, Quaternion.identity);
+        _healEffect.SetActive(false);
 
-        // HPBar 프리팹을 스폰하고 HPBarController 설정
+        // HPBar
+        _hpBarPrefab = Resources.Load<GameObject>("Prefabs/Battle/HPBar");
         GameObject hpBarInstance = Instantiate(_hpBarPrefab, transform.position, Quaternion.identity);
         hpBarInstance.transform.SetParent(GameObject.Find("HPBars").transform, false);
-        
         _hpBarController = hpBarInstance.GetComponent<HPBarController>();
     }
 
@@ -128,7 +138,7 @@ public class BattleObject : MonoBehaviour
         }
         UpdateStatus();
     }
-    
+
     //Target세팅 
     private void SetTarget()
     {
@@ -219,9 +229,21 @@ public class BattleObject : MonoBehaviour
 
     private void Attack()
     {
+        switch (_characterData.AttackType)
+        {
+            case AttackType.Melee:
+                MeleeAttack();
+                break;
+            case AttackType.Ranged:
+                RangedAttack();
+                break;
+            case AttackType.Heal:
+                HealAttack();
+                break;
+        }
     }
 
-/*    private void MeleeAttack()
+    private void MeleeAttack()
     {
         Debug.Log("Performing Melee Attack");
         if (_target != null)
@@ -229,29 +251,24 @@ public class BattleObject : MonoBehaviour
             _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
         }
         _attackCooldownTimer = _characterData.AttackInterval;
-    }*/
-
-/*    private void RangedAttack()
-    {
-        Debug.Log("Performing Ranged Attack");
-        if (_target != null)
-        {
-            // Implement ranged attack logic here
-            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
-        }
-        _attackCooldownTimer = _characterData.AttackInterval;
     }
 
-    private void MagicalAttack()
+    private void RangedAttack()
     {
-        Debug.Log("Performing Magical Attack");
         if (_target != null)
         {
-            // Implement magical attack logic here
-            _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
+            Vector3 direction = (_target.transform.position - transform.position).normalized;
+            GameObject bulletInstance = Instantiate(_characterData.BulletObject, transform.position, Quaternion.identity);
+            Bullet bullet = bulletInstance.GetComponent<Bullet>();
+            bullet.SetTarget(_target, CalculateDamage(_characterData.AttackDamage), direction);
         }
-        _attackCooldownTimer = _characterData.AttackInterval;
-    }*/
+    }
+
+    private void HealAttack()
+    {
+        BattleObject _healTarget = BattleManager.Instance.FindLowestHpCookie();
+        _healTarget.Heal(CalculateDamage(_characterData.AttackDamage));
+    }
 
     private float CalculateDamage(float baseDamage)
     {
@@ -267,29 +284,29 @@ public class BattleObject : MonoBehaviour
 
     private void AttackAniEnd()
     {
-        // if (_characterData.Skill.IsPlay) return;
-
         if (BattleManager.Instance.IsStop) return;
 
-        CheckIsBattle();
-
-        if (_target != null && _curStatus == Status.Attack)
+        if (_target != null && _target.activeSelf && _curStatus == Status.Attack)
         {
-            if (_isEnemy)
-            {
-                Debug.Log("Enemy Attack End" + _target.ToString());
-                _target.GetComponent<BattleCookie>().Damage(CalculateDamage(_characterData.AttackDamage));
-            }
-            else { 
-                _target.GetComponent<BattleObject>().Damage(CalculateDamage(_characterData.AttackDamage));
-            }
+            CheckIsBattle();
+            Attack();
         }
     }
 
-    protected void CheckIsBattle() 
+    protected void CheckIsBattle()
     {
-        if (!BattleManager.Instance.IsOnBattle)
+        if (!BattleManager.Instance.IsOnBattle )
             BattleManager.Instance.IsOnBattle = true;
+    }
+
+    public void Heal(float value)
+    {
+        _hp += value;
+
+        if (_hp > _maxHp)
+            _hp = _maxHp;
+
+        _healEffect.SetActive(true);
     }
 
     public void Damage(float damage)
@@ -307,7 +324,7 @@ public class BattleObject : MonoBehaviour
         }
     }
 
-    private void Die() 
+    private void Die()
     {
         // 캐릭터가 죽었을 때
         Debug.Log("Character died");

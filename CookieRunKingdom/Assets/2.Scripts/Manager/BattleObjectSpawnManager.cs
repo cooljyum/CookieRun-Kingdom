@@ -50,7 +50,6 @@ public class BattleObjectSpawnManager : Singleton<BattleObjectSpawnManager>
         public BattleObjPosData Middle = new BattleObjPosData();
         [SerializeField]
         public BattleObjPosData Back = new BattleObjPosData();
-
         public void Clear()
         {
             Front.Clear();

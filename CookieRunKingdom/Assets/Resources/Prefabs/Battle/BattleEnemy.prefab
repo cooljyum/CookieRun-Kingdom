@@ -136,9 +136,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae8174d6368cac4a8759c0ca0a28f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 0}
-  target: {fileID: 0}
-  attackRange: 5
+  _isEnemy: 0
+  _characterData: {fileID: 0}
+  _curStatus: 0
+  _hp: 0
+  moveSpeed: 2
+  _target: {fileID: 0}
+  _targetDistance: 0
+  _hpBarPrefab: {fileID: 0}
+  _attackRange: 2
 --- !u!1 &8647774128232776301
 GameObject:
   m_ObjectHideFlags: 0

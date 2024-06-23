@@ -230,3 +230,5 @@ MonoBehaviour:
   _hpBarPrefab: {fileID: 0}
   _attackRange: 2
   _skillBtn: {fileID: 0}
+  _skillCooldownTimer: 0
+  _skillMaxCooldownTimer: 0

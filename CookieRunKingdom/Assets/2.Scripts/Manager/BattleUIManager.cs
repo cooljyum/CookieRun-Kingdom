@@ -58,6 +58,11 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField]
     private ResultUIController _resultUIController;
 
+    [Header("SkillEffectUI")]
+    [SerializeField]
+    private GameObject _skillEffectUI;
+    public bool IsSkillEffect = false;
+
     private void Awake()
     {
         Instance = this;
@@ -209,5 +214,11 @@ public class BattleUIManager : MonoBehaviour
     {
         BattleManager.Instance.IsStop = true;
         _resultUIController.SetResultUI(isWin);
+    }
+
+    public void SetSkillEffectUI(Texture texture)
+    {
+        _skillEffectUI.GetComponent<SkillEffectUIController>().ChangeSkillImgTex(texture);
+        _skillEffectUI.gameObject.SetActive(true);
     }
 }

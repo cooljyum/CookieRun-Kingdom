@@ -12,7 +12,8 @@ public abstract class BattleEntitiesBase : MonoBehaviour
     protected List<List<GameObject>> _battleEntities = new List<List<GameObject>>();
     public List<List<GameObject>> BattleEntitiesList => _battleEntities;
 
-    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath, bool isSpawnTeam = false, Vector2 position = default, bool hasSquad = false, bool isEnemy = false)
+    protected void CreateBattleEntities(List<List<int>> entityKeys, string parentObjectName, string prefabPath
+                                    , bool isSpawnTeam = false, Vector2 position = default, bool hasSquad = false, bool isEnemy = false)
     {
         //예외처리
         GameObject battleEntitiesObject = GameObject.Find(parentObjectName);
@@ -111,7 +112,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
                 newEntityPrefab.GetComponent<BattleObject>().IsEnemy = isEnemy;
                 if (!isEnemy)
                 {
-                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange + ( + positionIndex);
+                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange + (2 * positionIndex);
                 }
                 else 
                 {
@@ -136,3 +137,4 @@ public abstract class BattleEntitiesBase : MonoBehaviour
 
     protected abstract CharacterData GetCharacterData(int key);
 }
+

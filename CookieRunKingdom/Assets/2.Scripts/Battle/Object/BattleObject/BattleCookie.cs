@@ -50,6 +50,7 @@ public class BattleCookie : BattleObject
     private void Update()
     {
         if (BattleManager.Instance.IsStop) return;
+
         base.Update();
 
         SkillTimer();
@@ -58,17 +59,18 @@ public class BattleCookie : BattleObject
     public void Damage(float damage)
     {
         base.Damage(damage);
-        
-        _skillBtn.SetHPBarUI(_hp/_maxHp);
+
+        _skillBtn.SetHPBarUI(_hp / _maxHp);
     }
 
     public void Skill()
     {
         SetStatus(Status.Skill);
         _characterData.Skill.UseSkill(gameObject, _target);
+        BattleUIManager.Instance.SetSkillEffectUI(_characterData.ProfileImage.texture);
     }
 
-    public void SkillEnd() 
+    public void SkillEnd()
     {
         Debug.Log("Skill End!");
 
@@ -77,8 +79,14 @@ public class BattleCookie : BattleObject
         _skillBtn.SetState(SkillBtn.SkillBtnState.On);
         _skillCooldownTimer = _skillMaxCooldownTimer;
     }
-    private void SkillTimer() 
+    private void SkillTimer()
     {
+        if (!BattleManager.Instance.IsOnBattle)
+        {
+            _skillBtn.SetState(SkillBtn.SkillBtnState.On);
+            return;
+        }
+
         if (_skillBtn.CurState == SkillBtn.SkillBtnState.Skill && _skillBtn.CurState == SkillBtn.SkillBtnState.Off) return;
 
         if (_skillCooldownTimer > 0)
@@ -95,7 +103,7 @@ public class BattleCookie : BattleObject
         {
             _skillBtn.SetState(SkillBtn.SkillBtnState.Ready);
         }
-        else 
+        else
         {
             _skillBtn.SetState(SkillBtn.SkillBtnState.Wait);
         }

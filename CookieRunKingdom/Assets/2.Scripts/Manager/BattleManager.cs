@@ -72,12 +72,9 @@ public class BattleManager : MonoBehaviour
     private List<List<GameObject>> _battleCookies;
     private List<List<List<GameObject>>> _enemiesTeamList;
 
-
     private void Awake()
     {
         Instance = this;
-
-        SetStageData();
     }
 
     private void Start()
@@ -85,6 +82,7 @@ public class BattleManager : MonoBehaviour
         SoundManager.Instance.PlayBG("BattleBgm");
 
         _stage = GameManager.Instance.CurPlayerData.CurStage;
+        SetStageData();
 
         BattleObjectSpawnManager.Instance.Init();
         BattleUIManager.Instance.Init();
@@ -191,6 +189,33 @@ public class BattleManager : MonoBehaviour
 
         return closestObj;
     }
+
+    //제일Hp가 적은얘
+    public BattleObject FindLowestHpCookie()
+    {
+        BattleObject lowestHpCookie = null;
+        float minHp = float.MaxValue;
+
+        foreach (var cookieList in _battleCookies)
+        {
+            foreach (var cookie in cookieList)
+            {
+                var battleObj = cookie.GetComponent<BattleObject>();
+                if (battleObj != null && battleObj.CurStatus != BattleObject.Status.None)
+                {
+                    float currentHp = battleObj.gameObject.GetComponent<BattleObject>().HP;
+                    if (currentHp < minHp)
+                    {
+                        minHp = currentHp;
+                        lowestHpCookie = battleObj.gameObject.GetComponent<BattleObject>();
+                    }
+                }
+            }
+        }
+
+        return lowestHpCookie;
+    }
+
 
     //업데이트 죽은 배틀 정보 관리
     public void UpdateKillBattleInfo(bool isEnemy)

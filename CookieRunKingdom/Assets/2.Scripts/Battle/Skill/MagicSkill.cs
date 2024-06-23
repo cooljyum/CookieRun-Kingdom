@@ -14,7 +14,7 @@ public class MagicSkill : SkillBase
     {
         Debug.Log($"MagicSkill({SkillName}):{user.name}->{target.name}, [Damage:{MagicDamage}, Duration:{EffectDuration}]");
         
-        IsPlay=true;
+        IsPlay = true;
         MagicEffect(target, true);
         // CoroutineRunner.Instance.StartCoroutine(MagicEffect(target));
     }
