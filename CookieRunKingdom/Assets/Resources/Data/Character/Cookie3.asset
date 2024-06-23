@@ -33,6 +33,7 @@ MonoBehaviour:
     OnImg: {fileID: 21300000, guid: 491b2314dd6851b44a2067e5bf05440f, type: 3}
     OffImg: {fileID: 21300000, guid: bf9d0a8708286b34b89b092ff240df40, type: 3}
     SkillImg: {fileID: 21300000, guid: 4ada635761b8add4c9fec7e5a8e3e8fe, type: 3}
+  VoiceClip: {fileID: 8300000, guid: 305d38a7b52dc4f4885ce92db51f6c46, type: 3}
   AnimationMappings:
   - Key: Battle_Idle
     AnimationName: battle_idle_back

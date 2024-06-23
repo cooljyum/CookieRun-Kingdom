@@ -50,7 +50,9 @@ public class ResultUIController : MonoBehaviour
     private void Start()
     {
         _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
+        _exitBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
         _goKingdomBtn.onClick.AddListener(() => SceneManager.LoadScene("KingdomScene"));
+        _goKingdomBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
     }
 
     public void Init()
@@ -69,6 +71,10 @@ public class ResultUIController : MonoBehaviour
     {
         if (isWin)
         {
+            SoundManager.Instance.PlayBG("VictoryBgm");
+            SoundManager.Instance.PlayFX("Battle_VictoryEffect");
+            SoundManager.Instance.PlayFX("Battle_VictoryVoiceEffect");
+
             SetResult();
 
             SaveItems();
@@ -78,6 +84,10 @@ public class ResultUIController : MonoBehaviour
         }
         else 
         {
+            SoundManager.Instance.PlayBG("DefeatBgm");
+            SoundManager.Instance.PlayFX("Battle_DefeatEffect");
+            SoundManager.Instance.PlayFX("Battle_DefeatVoiceEffect");
+
             _battleDefeatUI.SetActive(true);
         }
 

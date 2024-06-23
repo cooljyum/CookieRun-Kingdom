@@ -57,6 +57,8 @@ MonoBehaviour:
     BuildingKeyLists: 
     BuildingPosLists: []
     MyCardsLists: 
+    InvenItemKeyLists: 
+    InvenItemAmountLists: 
 --- !u!114 &1725033887270370607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,17 +96,29 @@ MonoBehaviour:
   - key: BtnClickQuit
     clip: {fileID: 8300000, guid: 7b373070633386947a2bf699b2f7609d, type: 3}
   - key: Battle_CookieDie
-    clip: {fileID: 8300000, guid: 147cef3b42e1f72458fa9dd39562b67b, type: 3}
+    clip: {fileID: 8300000, guid: f6afa0e39352dec43b219fbacc50cbb6, type: 3}
   - key: Battle_EnemyDie
     clip: {fileID: 8300000, guid: 4efc49a303325a34e979353632c348a8, type: 3}
   - key: Battle_DefeatEffect
     clip: {fileID: 8300000, guid: 95131430bd7059742a94f7b27ff7649b, type: 3}
   - key: Battle_VictoryEffect
     clip: {fileID: 8300000, guid: ac30d80f85e9bfd44a6149c310969789, type: 3}
-  - key: Battle_MagicEffect
-    clip: {fileID: 8300000, guid: 8980bfdcedcf2754fb738de346881762, type: 3}
+  - key: Battle_MeleeEffect
+    clip: {fileID: 8300000, guid: 7b373070633386947a2bf699b2f7609d, type: 3}
   - key: Battle_HealEffect
     clip: {fileID: 8300000, guid: 9f4b5d1c80c30504ea56023c2300759e, type: 3}
+  - key: Battle_RangedEffect
+    clip: {fileID: 8300000, guid: be76c1da5edf5e842aae9f11fafbba18, type: 3}
+  - key: Battle_MagicEffect
+    clip: {fileID: 8300000, guid: 8980bfdcedcf2754fb738de346881762, type: 3}
+  - key: Battle_CookieAttackEffect
+    clip: {fileID: 8300000, guid: 758b687daf5937641b18f19830e23f58, type: 3}
+  - key: Battle_EnemyDamageEffect
+    clip: {fileID: 8300000, guid: 0d5f95c5ad3292f48a31f072250b356b, type: 3}
+  - key: Battle_VictoryVoiceEffect
+    clip: {fileID: 8300000, guid: 6e891f5ff7aeb8c4f91b3c5acfa994db, type: 3}
+  - key: Battle_DefeatVoiceEffect
+    clip: {fileID: 8300000, guid: bf9783179bc89eb4683b1721ea8b7c64, type: 3}
 --- !u!82 &7263754449183455260
 AudioSource:
   m_ObjectHideFlags: 0

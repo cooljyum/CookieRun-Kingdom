@@ -201,7 +201,7 @@ public class BattleManager : MonoBehaviour
             foreach (var cookie in cookieList)
             {
                 var battleObj = cookie.GetComponent<BattleObject>();
-                if (battleObj != null && battleObj.CurStatus != BattleObject.Status.None)
+                if (battleObj != null && battleObj.CurStatus != BattleObject.Status.None && battleObj.gameObject.activeSelf)
                 {
                     float currentHp = battleObj.gameObject.GetComponent<BattleObject>().HP;
                     if (currentHp < minHp)

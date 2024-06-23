@@ -112,7 +112,7 @@ public abstract class BattleEntitiesBase : MonoBehaviour
                 newEntityPrefab.GetComponent<BattleObject>().IsEnemy = isEnemy;
                 if (!isEnemy)
                 {
-                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange + (2 * positionIndex);
+                    newEntityPrefab.GetComponent<BattleObject>().AttackRange = characterData.AttackRange + (3 * positionIndex);
                 }
                 else 
                 {

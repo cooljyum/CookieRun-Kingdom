@@ -108,6 +108,7 @@ public class SkillBtn : MonoBehaviour
                 _isSkill = true;
                 _btn.image.material = _outlineMat;
                 _particle.SetActive(true);
+                _hpBar.SetActive(true);
                 break;
             case SkillBtnState.Skill:
                 _isSkill = false;

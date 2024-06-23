@@ -34,6 +34,8 @@ public class CharacterData : ScriptableObject
     public Sprite TypeImage;
     public SkillBtnImg SkillBtnImg;
 
+    [Header("Audio")]
+    public AudioClip VoiceClip;
 
     [Header("Animation Info")]
     public List<AnimationMapping> AnimationMappings = new List<AnimationMapping>(); // 애니메이션 이름 매핑 리스트

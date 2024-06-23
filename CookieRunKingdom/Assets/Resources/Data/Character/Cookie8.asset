@@ -20,11 +20,12 @@ MonoBehaviour:
   Critical: 0.1
   Type: 2
   Rarity: 1
-  AttackType: 0
+  AttackType: 1
   AttackDamage: 10
-  AttackInterval: 3
+  AttackInterval: 5
   AttackRange: 3
   Skill: {fileID: 11400000, guid: f28c7c260b2916547874133f8021d7ec, type: 2}
+  BulletObject: {fileID: 5545455532991810110, guid: 89f7c4eab7251944c9bba55b8a86bc07, type: 3}
   SkeletonDataAsset: {fileID: 11400000, guid: ea68cb03221b06a49ac095b801d2366d, type: 2}
   ProfileImage: {fileID: 21300000, guid: ac1e67241e566094f9e9a0999fa6776c, type: 3}
   TypeImage: {fileID: 21300000, guid: d4a822d4e232b42409d38ebaacab8838, type: 3}
@@ -32,6 +33,7 @@ MonoBehaviour:
     OnImg: {fileID: 21300000, guid: 65be848610f074c4f9d59bbc98728e44, type: 3}
     OffImg: {fileID: 21300000, guid: 65be848610f074c4f9d59bbc98728e44, type: 3}
     SkillImg: {fileID: 21300000, guid: 98973582331e6154a9fe31be144b7445, type: 3}
+  VoiceClip: {fileID: 8300000, guid: 407470f5267d9b24c9b1cd345d3a255f, type: 3}
   AnimationMappings:
   - Key: Battle_Idle
     AnimationName: battle_idle_back

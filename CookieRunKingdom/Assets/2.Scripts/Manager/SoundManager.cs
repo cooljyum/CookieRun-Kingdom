@@ -79,6 +79,10 @@ public class SoundManager : MonoBehaviour
             Debug.LogWarning($"FX clip with key {key} not found!");
         }
     }
+    public void PlayOneShotClip(AudioClip clip)
+    {
+        StartCoroutine(PlayFXCoroutine(clip));
+    }
 
     private IEnumerator PlayFXCoroutine(AudioClip clip)
     {

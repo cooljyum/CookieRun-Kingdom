@@ -90,11 +90,13 @@ public class BattleUIManager : MonoBehaviour
             _exitBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _exitBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
             _exitBtn.onClick.AddListener(() => SceneManager.LoadScene("ReadyScene"));
+            _exitBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
         }
         if (_continueBtn != null)
         {
             _continueBtn.onClick.AddListener(() => ToggleObj(_stopUI, false));
             _continueBtn.onClick.AddListener(() => BattleManager.Instance.IsStop = false);
+            _continueBtn.onClick.AddListener(() => SoundManager.Instance.PlayFX("BtnClick"));
         }
 
         //Setting Obj Active
@@ -181,6 +183,8 @@ public class BattleUIManager : MonoBehaviour
 
     private void OnStageSpeedBtnClick()
     {
+        SoundManager.Instance.PlayFX("BtnClick");
+
         _speedState = (_speedState + 1) % 3;
 
         switch (_speedState)

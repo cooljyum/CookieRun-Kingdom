@@ -21,6 +21,8 @@ public class MagicSkill : SkillBase
 
     private void MagicEffect(GameObject target, bool isActive = true)
     {
+        SoundManager.Instance.PlayFX("Battle_MagicEffect");
+
         Debug.Log("MagicEffect!") ;
         IsPlay = false;
         target.GetComponent<BattleObject>().Damage(MagicDamage);

@@ -21,9 +21,9 @@ public class SkillEffectUIController : MonoBehaviour
     {
         if (_isActivated)
         {
-            if (Time.time - activationTime >= 2f)
+            if (Time.time - activationTime >= 2f|| !BattleManager.Instance.IsOnBattle )
             {
-                // 3초가 지나면 서서히 비활성화
+                // 2초가 지나면 서서히 비활성화
                 _isActivated = false; // 상태 초기화
                 StartCoroutine(FadeOut());
             }

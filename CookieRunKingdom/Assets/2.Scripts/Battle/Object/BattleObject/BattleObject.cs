@@ -76,6 +76,7 @@ public class BattleObject : MonoBehaviour
     // 공격 쿨다운 관련 변수
     [Header("Attack Cooldown")]
     private float _attackCooldownTimer = 0f;
+    private float _attackCooldownTimerMax = 0f;
 
     [Header("AttackRange")]
     [SerializeField]
@@ -96,6 +97,7 @@ public class BattleObject : MonoBehaviour
         //HealEffect
         _healEffect = Resources.Load<GameObject>("Prefabs/Battle/Skill/HealEffect");
         _healEffect = Instantiate(_healEffect, transform.position, Quaternion.identity);
+        _healEffect.transform.SetParent(transform);
         _healEffect.SetActive(false);
 
         // HPBar
@@ -118,6 +120,10 @@ public class BattleObject : MonoBehaviour
         _maxHp = _characterData.Hp;
         _hp = _maxHp;
 
+
+        _attackCooldownTimerMax = _characterData.AttackInterval;
+        _attackCooldownTimer = _attackCooldownTimerMax;
+
         SetStatus(Status.Idle);
     }
 
@@ -137,6 +143,11 @@ public class BattleObject : MonoBehaviour
             SetTarget();
         }
         UpdateStatus();
+
+        if (_attackCooldownTimer > 0)
+        {
+            _attackCooldownTimer -= Time.deltaTime;
+        }
     }
 
     //Target세팅 
@@ -183,11 +194,15 @@ public class BattleObject : MonoBehaviour
         {
             _targetDistance = GetDistanceToTarget();
 
-            if (_targetDistance <= _attackRange)
+            if (_targetDistance <= _attackRange && _attackCooldownTimer <= 0)
             {
                 SetStatus(Status.Attack);
             }
-            else if (_curStatus != Status.Run)
+            else if (BattleManager.Instance.IsOnBattle && !IsEnemy)
+            {
+                SetStatus(Status.Idle);
+            }
+            else
             {
                 SetStatus(Status.Run);
             }
@@ -203,6 +218,7 @@ public class BattleObject : MonoBehaviour
 
         //Status
         _characterAni.PlayAni("Battle", _curStatus.ToString());
+
     }
 
     // Set
@@ -229,6 +245,14 @@ public class BattleObject : MonoBehaviour
 
     private void Attack()
     {
+        _attackCooldownTimer = _attackCooldownTimerMax;
+
+        if (IsEnemy)
+        {
+            _target.GetComponent<BattleCookie>().Damage(CalculateDamage(_characterData.AttackDamage));
+            return;
+        }
+
         switch (_characterData.AttackType)
         {
             case AttackType.Melee:
@@ -239,6 +263,21 @@ public class BattleObject : MonoBehaviour
                 break;
             case AttackType.Heal:
                 HealAttack();
+                break;
+        }
+
+        SoundManager.Instance.PlayFX("Battle_CookieAttackEffect");
+
+        switch (_characterData.AttackType)
+        {
+            case AttackType.Melee:
+                SoundManager.Instance.PlayFX("Battle_MeleeEffect");
+                break;
+            case AttackType.Ranged:
+                SoundManager.Instance.PlayFX("Battle_RangedEffect");
+                break;
+            case AttackType.Heal:
+                SoundManager.Instance.PlayFX("Battle_HealEffect");
                 break;
         }
     }
@@ -311,6 +350,9 @@ public class BattleObject : MonoBehaviour
 
     public void Damage(float damage)
     {
+        //if(IsEnemy)
+        //    SoundManager.Instance.PlayFX("Battle_EnemyDamageEffect");
+
         float actualDamage = damage - _characterData.Defence;
         actualDamage = Mathf.Max(actualDamage, 0); // 데미지가 0보다 작지 않도록 설정
 
@@ -320,6 +362,7 @@ public class BattleObject : MonoBehaviour
 
         if (_hp <= 0)
         {
+            KnockBack();
             Die();
         }
     }
@@ -328,6 +371,11 @@ public class BattleObject : MonoBehaviour
     {
         // 캐릭터가 죽었을 때
         Debug.Log("Character died");
+
+        if (IsEnemy)
+            SoundManager.Instance.PlayFX("Battle_EnemyDie");
+        else
+            SoundManager.Instance.PlayFX("Battle_CookieDie");
 
         _hp = 0;
 

@@ -66,8 +66,11 @@ public class BattleCookie : BattleObject
     public void Skill()
     {
         SetStatus(Status.Skill);
+
         _characterData.Skill.UseSkill(gameObject, _target);
+
         BattleUIManager.Instance.SetSkillEffectUI(_characterData.ProfileImage.texture);
+        SoundManager.Instance.PlayOneShotClip(_characterData.VoiceClip);
     }
 
     public void SkillEnd()
