@@ -77,9 +77,7 @@ public class DeckSettingBtn : MonoBehaviour
 
         ReadyManager.Instance.Remove(_characterData);
         GameManager.Instance.CurPlayerData.DeckKeyLists.Remove(_characterData.Key);
-        ButtonOff();
-
-        
+        ButtonOff();        
     }
 
     private void ButtonOn()
