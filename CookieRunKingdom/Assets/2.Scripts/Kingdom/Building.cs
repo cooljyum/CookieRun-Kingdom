@@ -107,6 +107,9 @@ public class Building : MonoBehaviour
         gameObject.SetActive(true);
         _installEffect.gameObject.SetActive(true);
         _installEffect.GetComponentInChildren<ParticleSystem>().Play();
+
+        KingdomManager.Instance.SetSelectedBuilding(null); //선택 해제
+        KingdomManager.Instance.IsBuildingFixed = false;
     }
 
     public void SetSkeletonAnimation(string name)

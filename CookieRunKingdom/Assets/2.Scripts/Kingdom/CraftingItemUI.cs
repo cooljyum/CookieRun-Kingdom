@@ -119,8 +119,13 @@ public class CraftingItemUI : MonoBehaviour
 
         _craftingImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
+
+        //아이템 인벤토리에 추가
         GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key, _craftItemInfo.Value.ResultCount);
         Debug.Log($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
+
+        //플레이어 데이터 저장
+        GameManager.Instance.SavePlayerData();
     }
 
     public void ResetData()
@@ -130,7 +135,7 @@ public class CraftingItemUI : MonoBehaviour
         _checkImage.gameObject.SetActive(false);
         _timeProgressBar.gameObject.SetActive(false);
     }
-
+    
     public void SetCraftingItem(CraftItemInfo craftItemInfo) //생산 중이었던 아이템의 데이터 세팅
     {
         _buildingKey = craftItemInfo.BuildingKey;

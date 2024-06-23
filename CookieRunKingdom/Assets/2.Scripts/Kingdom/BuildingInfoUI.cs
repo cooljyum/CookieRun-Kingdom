@@ -8,6 +8,8 @@ using UnityEngine;
 public class BuildingInfoUI : MonoBehaviour
 {
     [SerializeField]
+    private GameObject _parentObject;
+    [SerializeField]
     private SkeletonGraphic _buildingImage;
     [SerializeField]
     private TextMeshProUGUI _buildingInfo;
@@ -84,6 +86,6 @@ public class BuildingInfoUI : MonoBehaviour
     {
         Debug.Log("ExitBtn Click");
         SoundManager.Instance.PlayFX("BtnClick2");
-        gameObject.SetActive(false);
+        _parentObject.SetActive(false);
     }
 }

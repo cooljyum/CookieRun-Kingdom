@@ -248,49 +248,50 @@ public class KingdomManager : MonoBehaviour
             return;
         }
 
-        // 선택된 건물에서 필요한 건설 데이터를 가져오기
-        int requiredGold = _selectedBuildingData.RequiredGold;
-        ItemData requiredMaterial = _selectedBuildingData.RequiredMaterial;
-        int requiredMaterialCount = _selectedBuildingData.RequiredMaterialCount;
-        ItemData requiredEquipment = _selectedBuildingData.RequiredEquipment;
-        int requiredEquipmentCount = _selectedBuildingData.RequiredEquipmentCount;
-
-        // 플레이어가 충분한 자원을 가지고 있는지 확인
-        bool hasEnoughGold = GameManager.Instance.CurPlayerData.Coin >= requiredGold;
-        bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemCount(requiredMaterial.Key) >= requiredMaterialCount;
-        bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemCount(requiredEquipment.Key) >= requiredEquipmentCount;
-
-        if (!hasEnoughGold)
-        {
-            Debug.LogError("건물을 건설하기에 골드가 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
-            return;
-        }
-
-        if (!hasEnoughMaterial)
-        {
-            Debug.LogError("건물을 건설하기에 재료가 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
-            return;
-        }
-
-        if (!hasEnoughEquipment)
-        {
-            Debug.LogError("건물을 건설하기에 장비가 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
-            return;
-        }
-
-        // 플레이어의 인벤토리에서 자원 차감
-        GameManager.Instance.CurPlayerData.Coin -= requiredGold;
-        GameManager.Instance.PlayerInventory.RemoveItem(requiredMaterial.Key, requiredMaterialCount);
-        GameManager.Instance.PlayerInventory.RemoveItem(requiredEquipment.Key, requiredEquipmentCount);
+        //// 선택된 건물에서 필요한 건설 데이터를 가져오기
+        //int requiredGold = _selectedBuildingData.RequiredGold;
+        //ItemData requiredMaterial = _selectedBuildingData.RequiredMaterial;
+        //int requiredMaterialCount = _selectedBuildingData.RequiredMaterialCount;
+        //ItemData requiredEquipment = _selectedBuildingData.RequiredEquipment;
+        //int requiredEquipmentCount = _selectedBuildingData.RequiredEquipmentCount;
+        //
+        //// 플레이어가 충분한 자원을 가지고 있는지 확인
+        //bool hasEnoughGold = GameManager.Instance.CurPlayerData.Coin >= requiredGold;
+        //bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemCount(requiredMaterial.Key) >= requiredMaterialCount;
+        //bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemCount(requiredEquipment.Key) >= requiredEquipmentCount;
+        //
+        //if (!hasEnoughGold)
+        //{
+        //    Debug.LogError("건물을 건설하기에 골드가 부족합니다.");
+        //    // 플레이어에게 오류 메시지 표시
+        //    return;
+        //}
+        //
+        //if (!hasEnoughMaterial)
+        //{
+        //    Debug.LogError("건물을 건설하기에 재료가 부족합니다.");
+        //    // 플레이어에게 오류 메시지 표시
+        //    return;
+        //}
+        //
+        //if (!hasEnoughEquipment)
+        //{
+        //    Debug.LogError("건물을 건설하기에 장비가 부족합니다.");
+        //    // 플레이어에게 오류 메시지 표시
+        //    return;
+        //}
+        //
+        //// 플레이어의 인벤토리에서 자원 차감
+        //GameManager.Instance.CurPlayerData.Coin -= requiredGold;
+        //GameManager.Instance.PlayerInventory.RemoveItem(requiredMaterial.Key, requiredMaterialCount);
+        //GameManager.Instance.PlayerInventory.RemoveItem(requiredEquipment.Key, requiredEquipmentCount);
 
         // 건물 건설 진행
         if (_tilemap != null)
         {
             _tilemap.ConstructBuilding();
             Debug.Log("건물이 성공적으로 건설되었습니다.");
+            _selectedBuildingSkeletonAnimation.gameObject.SetActive(false);
         }
     }
 

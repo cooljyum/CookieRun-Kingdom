@@ -55,6 +55,8 @@ public class PlayerDataManager : MonoBehaviour
         playerData.DeckKeyLists = new System.Collections.Generic.List<int>();
         playerData.BuildingKeyLists = new System.Collections.Generic.List<int>();
         playerData.PosIndexLists = new System.Collections.Generic.List<List<int>>();
+        playerData.InvenItemKeyLists = new System.Collections.Generic.List<int>();
+        playerData.InvenItemAmountLists = new System.Collections.Generic.List<int>();
         return playerData;
     }
 }
