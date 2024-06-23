@@ -18,6 +18,9 @@ public class KingdomManager : MonoBehaviour
 
     [Header("UI Panel")]
     [SerializeField]
+    private GameObject _mainUI;
+    public GameObject MainUI => _mainUI;
+    [SerializeField]
     private StoreUI _storeUI;
     public StoreUI StoreUI => _storeUI;
     [SerializeField]
@@ -26,8 +29,15 @@ public class KingdomManager : MonoBehaviour
     private CraftUI _craftUI;
     [SerializeField]
     private GameObject _kingdomPlayPanel;
+
+    [Header("InGame Infos")]
     [SerializeField]
-    private GatchaUI _gatchaUI;
+    private TextMeshProUGUI[] _coinTexts;
+    [SerializeField]
+    private TextMeshProUGUI[] _diaTexts;
+    [SerializeField]
+    private Slider _expBar;
+    private float _maxExp = 1000f; //추후 데이터화 예정
 
     [Header("---------------------------------------------------------")]
     [SerializeField]
@@ -38,9 +48,9 @@ public class KingdomManager : MonoBehaviour
     private GameObject _editUI;
     [SerializeField]
     private GameObject _mapGrid;
+    public GameObject MapGrid => _mapGrid;
     [SerializeField]
     private Tilemap _tilemap;
-    public GameObject MapGrid => _mapGrid;
 
     private StoreBuildingUI _selectedBuildingUI;
     private BuildingData _selectedBuildingData;
@@ -65,6 +75,7 @@ public class KingdomManager : MonoBehaviour
 
     private void Start()
     {
+        SetMoneyValue();
         IsBuildingFixed = false;
     }
 
@@ -151,7 +162,7 @@ public class KingdomManager : MonoBehaviour
     public void OnClickConstructBtn() //Main-건설하기
     {
         Debug.Log("ConstructBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         _storeUI.gameObject.SetActive(true);
         _storeUI.CreateCTypeBuilding();
     }
@@ -159,14 +170,14 @@ public class KingdomManager : MonoBehaviour
     public void OnClickPlayBtn() //Main-Play
     {
         Debug.Log("PlayBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         _kingdomPlayPanel.gameObject.SetActive(true);
     }
 
     public void OnClickGatchaBtn() //Main-뽑기
     {
         Debug.Log("GatchaBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         //_gatchaUI.gameObject.SetActive(true);
         SceneManager.LoadScene("GachaScene");
     }
@@ -174,21 +185,21 @@ public class KingdomManager : MonoBehaviour
     public void OnClickCookieKingdomBtn() //Play-쿠키 왕국
     {
         Debug.Log("CookieKingdomBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
     public void OnClickWorldAdventureBtn() //Play-월드 탐험
     {
         Debug.Log("WorldAdventureBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         SceneManager.LoadScene("ReadyScene");
     }
 
     public void OnClickPlayExitBtn() //Play-나가기
     {
         Debug.Log("PlayExitBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
@@ -210,6 +221,7 @@ public class KingdomManager : MonoBehaviour
         }
         else
         {
+            _mainUI.SetActive(false);
             _craftUI.gameObject.SetActive(true);
             _craftUI.CreateCraftItem(data);
             _craftUI.SetData(data);
@@ -249,20 +261,20 @@ public class KingdomManager : MonoBehaviour
         }
 
         //// 선택된 건물에서 필요한 건설 데이터를 가져오기
-        //int requiredGold = _selectedBuildingData.RequiredGold;
+        int requiredCoin = _selectedBuildingData.RequiredCoin;
         //ItemData requiredMaterial = _selectedBuildingData.RequiredMaterial;
         //int requiredMaterialCount = _selectedBuildingData.RequiredMaterialCount;
         //ItemData requiredEquipment = _selectedBuildingData.RequiredEquipment;
         //int requiredEquipmentCount = _selectedBuildingData.RequiredEquipmentCount;
         //
         //// 플레이어가 충분한 자원을 가지고 있는지 확인
-        //bool hasEnoughGold = GameManager.Instance.CurPlayerData.Coin >= requiredGold;
+        bool hasEnoughCoin = GameManager.Instance.CurPlayerData.Coin >= requiredCoin;
         //bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemCount(requiredMaterial.Key) >= requiredMaterialCount;
         //bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemCount(requiredEquipment.Key) >= requiredEquipmentCount;
         //
         //if (!hasEnoughGold)
         //{
-        //    Debug.LogError("건물을 건설하기에 골드가 부족합니다.");
+        //    Debug.LogError("건물을 건설하기에 코인이 부족합니다.");
         //    // 플레이어에게 오류 메시지 표시
         //    return;
         //}
@@ -282,9 +294,11 @@ public class KingdomManager : MonoBehaviour
         //}
         //
         //// 플레이어의 인벤토리에서 자원 차감
-        //GameManager.Instance.CurPlayerData.Coin -= requiredGold;
+        GameManager.Instance.CurPlayerData.Coin -= requiredCoin;
         //GameManager.Instance.PlayerInventory.RemoveItem(requiredMaterial.Key, requiredMaterialCount);
         //GameManager.Instance.PlayerInventory.RemoveItem(requiredEquipment.Key, requiredEquipmentCount);
+
+        SetMoneyValue();
 
         // 건물 건설 진행
         if (_tilemap != null)
@@ -293,6 +307,26 @@ public class KingdomManager : MonoBehaviour
             Debug.Log("건물이 성공적으로 건설되었습니다.");
             _selectedBuildingSkeletonAnimation.gameObject.SetActive(false);
         }
+    }
+
+    public void SetMoneyValue()
+    {
+        foreach (var coinText in _coinTexts) //Coin
+        {
+            string value = GameManager.Instance.CurPlayerData.Coin.ToString();
+            coinText.text = value;
+        }
+        foreach (var diaText in _diaTexts) //Diamond
+        {
+            string value = GameManager.Instance.CurPlayerData.Diamond.ToString();
+            diaText.text = value;
+        }
+    }
+
+    public void SetExpValue()
+    {
+        float value = GameManager.Instance.CurPlayerData.Exp;
+        _expBar.value = value/ _maxExp;
     }
 
     //private void CheckOverlapAndShowIndicators(Vector2 position)

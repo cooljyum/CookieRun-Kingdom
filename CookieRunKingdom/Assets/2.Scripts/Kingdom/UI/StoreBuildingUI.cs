@@ -41,7 +41,7 @@ public class StoreBuildingUI : MonoBehaviour
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.startingAnimation = "off";
         _buildingImage.Initialize(true);
-        _costText.text = buildingData.RequiredGold.ToString();
+        _costText.text = buildingData.RequiredCoin.ToString();
         _buildingName.text = buildingData.Name;
         _environmentPoint.text = buildingData.Point.ToString();
         MaxCount = _buildingLevel;
@@ -66,7 +66,7 @@ public class StoreBuildingUI : MonoBehaviour
     public void OnClickBuildingBtn() //Store-°Ç¹°
     {   
         Debug.Log("BuildingBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
 
         if (_isCType)
         {

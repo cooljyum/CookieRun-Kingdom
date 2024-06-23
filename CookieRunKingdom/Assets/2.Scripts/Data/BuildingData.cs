@@ -30,7 +30,7 @@ public class BuildingData : ScriptableObject
     public string Information;
 
     [Header("Build And Level Up")] //건설 및 레벨 업 조건
-    public int RequiredGold;
+    public int RequiredCoin;
     public ItemData RequiredMaterial;
     public int RequiredMaterialCount;
     public ItemData RequiredEquipment;

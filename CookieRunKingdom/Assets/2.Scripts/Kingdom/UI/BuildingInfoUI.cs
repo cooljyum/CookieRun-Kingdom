@@ -77,7 +77,7 @@ public class BuildingInfoUI : MonoBehaviour
     public void OnClickOkayBtn() //Info-확인
     {
         Debug.Log("OkayBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         gameObject.SetActive(false);
         KingdomManager.Instance.SelectCTypeBuilding(_buildingData);
     }
@@ -85,7 +85,7 @@ public class BuildingInfoUI : MonoBehaviour
     public void OnClickExitBtn() //Info-나가기
     {
         Debug.Log("ExitBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         _parentObject.SetActive(false);
     }
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   SkeletonDataAsset: {fileID: 0}
   Sprite: {fileID: 21300000, guid: 52e658680f03e864c9c107ce46a7b9df, type: 3}
   Information: 
-  RequiredGold: 0
+  RequiredCoin: 1500
   RequiredMaterial: {fileID: 0}
   RequiredMaterialCount: 0
   RequiredEquipment: {fileID: 0}

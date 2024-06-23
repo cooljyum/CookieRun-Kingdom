@@ -63,7 +63,7 @@ public class StoreUI : MonoBehaviour
     public void OnClickConstructTypeBtn() //Store-건설
     {
         Debug.Log("ConstructTypeBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         CreateCTypeBuilding();
         _cTypeBuildingContent.gameObject.SetActive(true);
         _dTypeBuildingContent.gameObject.SetActive(false);
@@ -72,7 +72,7 @@ public class StoreUI : MonoBehaviour
     public void OnClickDecorateTypeBtn() //Store-꾸미기
     {
         Debug.Log("DecorateTypeBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         CreateDTypeBuilding();
         _cTypeBuildingContent.gameObject.SetActive(false);
         _dTypeBuildingContent.gameObject.SetActive(true);
@@ -81,7 +81,7 @@ public class StoreUI : MonoBehaviour
     public void OnClickExitBtn() //Store-나가기
     {
         Debug.Log("ExitBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         gameObject.SetActive(false);
     }
 }

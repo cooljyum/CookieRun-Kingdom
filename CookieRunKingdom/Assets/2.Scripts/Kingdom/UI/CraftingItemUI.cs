@@ -80,7 +80,7 @@ public class CraftingItemUI : MonoBehaviour
         if (!_craftItemInfo.HasValue) return;
 
         Debug.Log("FastBtn Click");
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
         remainingTime -= 10000;
 

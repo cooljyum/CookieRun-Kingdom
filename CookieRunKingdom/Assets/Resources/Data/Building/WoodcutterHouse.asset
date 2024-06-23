@@ -23,7 +23,7 @@ MonoBehaviour:
     \uC4F8 \uC218 \uC788\uAC8C\uB054 \uAC00\uACF5\uD558\uB294 \uACF3. \uAC13 \uC790\uB978
     \uB864\uCF00\uC774\uD06C \uD5A5\uAE30\uAC00 \uC9C4\uB3D9\uD574 \uD14C\uB77C\uD53C
     \uC7A5\uC18C\uB85C\uB3C4 \uC0AC\uC6A9\uD55C\uB2E4."
-  RequiredGold: 1100
+  RequiredCoin: 3900
   RequiredMaterial: {fileID: 11400000, guid: 4c353fee5149d114eb523a7df2d4bd36, type: 2}
   RequiredMaterialCount: 2
   RequiredEquipment: {fileID: 0}

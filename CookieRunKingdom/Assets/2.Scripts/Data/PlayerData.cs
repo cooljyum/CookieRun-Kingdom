@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerData
 {
     public int Level;
-    public int Exp;
+    public float Exp;
     public int Coin;
+    public int Diamond;
     public int Mileage;
     public int CurStage;
     public List<int> DeckKeyLists;

@@ -116,5 +116,6 @@ public class CraftUI : MonoBehaviour
     {
         Debug.Log("ExitBtn Click");
         gameObject.SetActive(false);
+        KingdomManager.Instance.MainUI.SetActive(true);
     }
 }

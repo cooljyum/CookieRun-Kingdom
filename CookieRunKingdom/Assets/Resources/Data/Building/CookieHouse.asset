@@ -18,32 +18,36 @@ MonoBehaviour:
   Size: 8
   Point: 9
   SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  Sprite: {fileID: 0}
   Information: "\uCFE0\uD0A4 \uC655\uAD6D\uC5D0\uB294 \uB2EC\uCF64\uD55C \uCFE0\uD0A4
     \uD558\uC6B0\uC2A4\uB4E4\uC774 \uAC00\uB4DD\uD558\uACE0 \uB2EC\uCF64\uD55C \uCFE0\uD0A4
     \uD558\uC6B0\uC2A4\uC5D0\uB294 \uBC14\uC0AD\uD55C \uCFE0\uD0A4\uB4E4\uC774 \uC0B4\uC9C0!
     \uC5B8\uC820\uAC00 \uC655\uAD6D\uC774 \uCEE4\uC9C0\uBA74 \uB2E4\uC591\uD55C \uBAA8\uC2B5\uC758
     \uCFE0\uD0A4 \uD558\uC6B0\uC2A4\uB97C \uB9CC\uB098\uBCFC \uC218 \uC788\uC9C0
     \uC54A\uC744\uAE4C?"
-  RequiredGold: 1000
+  RequiredCoin: 2000
   RequiredMaterial: {fileID: 11400000, guid: 4c353fee5149d114eb523a7df2d4bd36, type: 2}
   RequiredMaterialCount: 3
   RequiredEquipment: {fileID: 0}
   RequiredEquipmentCount: 0
   RequiredTime: 60
   CraftInfos:
-  - SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  - BuildingKey: 0
+    SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
     RequiredTime: 900
     IsMaterial: 1
     Cost: 0
     ResultItem: {fileID: 11400000, guid: d3dc3015b51c5584eb1780ba7046df3c, type: 2}
     ResultCount: 3
-  - SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  - BuildingKey: 0
+    SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
     RequiredTime: 1620
     IsMaterial: 1
     Cost: 0
     ResultItem: {fileID: 11400000, guid: d3dc3015b51c5584eb1780ba7046df3c, type: 2}
     ResultCount: 6
-  - SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
+  - BuildingKey: 0
+    SkeletonDataAsset: {fileID: 11400000, guid: 35838e863385c9440a7c6a7a1a2277a9, type: 2}
     RequiredTime: 2700
     IsMaterial: 1
     Cost: 0
