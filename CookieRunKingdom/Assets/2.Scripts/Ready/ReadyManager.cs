@@ -70,12 +70,12 @@ public class ReadyManager : MonoBehaviour
     public void Exit()
     {
         SaveDeck();
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         EnterReadyPanel();
     }
     public void EnterDeck()
     { 
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         EnterDeckSettingPanel();
     }
 
@@ -130,7 +130,7 @@ public class ReadyManager : MonoBehaviour
         }
 
         switch ((Type)characterData.Type)
-        {//CharacterData의 Type 정보에 따라 
+        {//CharacterData의 Type 정보에 따라 위치 배정
             case Type.Assault:
             case Type.Defence:
                 return PushSort(0, characterData);
@@ -161,11 +161,9 @@ public class ReadyManager : MonoBehaviour
 
                 _selectedCharacters.Add(characterData.Key, character);
                 _readySorts[i].Add(character);
-
                 return true;
             }
         }
-
         return false;
     }
     public void Remove(CharacterData characterData)

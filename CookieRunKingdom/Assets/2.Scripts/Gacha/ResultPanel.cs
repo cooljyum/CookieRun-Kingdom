@@ -14,15 +14,18 @@ public class ResultPanel : MonoBehaviour
     }
 
     public void OpenGacha()
-    {
+    {//카드 뽑기 함수
+        SoundManager.Instance.PlayFX("BtnClick");
+        //재화 부족 시 리턴
         if (GameManager.Instance.CurPlayerData.Coin < 1000) return;
+
 
         GameManager.Instance.CurPlayerData.Coin -= 1000;
         gameObject.SetActive(true);
 
+        //이하 카드 뽑기 확률 구현
         _randomValue = Random.Range(0, 100);
         int _random;
-
         
         if (_randomValue < 80)
         {
@@ -57,6 +60,7 @@ public class ResultPanel : MonoBehaviour
 
     public void CloseGacha()
     {
+        SoundManager.Instance.PlayFX("BtnClick");
         gameObject.SetActive(false);
 
         GameManager.Instance.SavePlayerData();

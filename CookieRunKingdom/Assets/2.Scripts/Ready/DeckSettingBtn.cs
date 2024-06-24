@@ -48,7 +48,7 @@ public class DeckSettingBtn : MonoBehaviour
 
     public void OnClick()
     {
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         if (!_isSet)
         {
             AddCharacter();

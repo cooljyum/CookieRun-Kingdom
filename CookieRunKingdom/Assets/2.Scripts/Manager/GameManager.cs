@@ -72,6 +72,10 @@ public class GameManager : MonoBehaviour
         {
             SoundManager.Instance.PlayBG("BattleBgm");
         }
+        else if(SceneManager.GetActiveScene().name == "GachaScene")
+        {
+            SoundManager.Instance.PlayBG("GachaBgm");
+        }
         else
         {
             SoundManager.Instance.StopBG();

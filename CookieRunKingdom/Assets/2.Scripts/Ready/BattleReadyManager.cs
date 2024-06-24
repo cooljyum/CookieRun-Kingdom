@@ -12,13 +12,13 @@ public class BattleReadyManager : MonoBehaviour
     }
     public void ExitReady()
     {
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         SceneManager.LoadScene(1);
     }
     
     public void EnterBattle()
     {
-        SoundManager.Instance.PlayFX("BtnClick2");
+        SoundManager.Instance.PlayFX("BtnClick");
         SceneManager.LoadScene(3);
     }
 }
