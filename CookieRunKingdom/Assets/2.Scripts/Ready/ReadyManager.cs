@@ -24,7 +24,17 @@ public class ReadyManager : MonoBehaviour
 
     private Dictionary<int, GameObject> _selectedCharacters = new Dictionary<int, GameObject>();
     
-
+    public enum Type
+    {
+        Assault,
+        Defence,
+        Penetrate,
+        Magic,
+        Heal,
+        Shoot,
+        Buff,
+        Bomb
+    }
     private void Awake()
     {
         Instance = this;
@@ -64,8 +74,7 @@ public class ReadyManager : MonoBehaviour
         EnterReadyPanel();
     }
     public void EnterDeck()
-    {
-        //SaveDeck();
+    { 
         SoundManager.Instance.PlayFX("BtnClick2");
         EnterDeckSettingPanel();
     }
@@ -116,23 +125,22 @@ public class ReadyManager : MonoBehaviour
     public bool Add(CharacterData characterData)
     {
         if(_selectedCharacters.Count == 5)
-        {
-            //예외처리
+        {//기존 선택된 캐릭터가 5에 도달할 시 Add호출 예외 처리
             return false;
         }
 
-        switch (characterData.Type)
-        {
-            case 0:
-            case 1:
+        switch ((Type)characterData.Type)
+        {//CharacterData의 Type 정보에 따라 
+            case Type.Assault:
+            case Type.Defence:
                 return PushSort(0, characterData);
-            case 2:
-            case 3:
-            case 7:
+            case Type.Penetrate:
+            case Type.Magic:
+            case Type.Bomb:
                 return PushSort(1, characterData);
-            case 4:
-            case 5:
-            case 6:
+            case Type.Shoot:
+            case Type.Heal:
+            case Type.Buff:
                 return PushSort(2, characterData);
         }
 
@@ -145,7 +153,7 @@ public class ReadyManager : MonoBehaviour
 
         for (int i = index; i < _readySorts.Count; i++)
         {
-            if (_readySorts[i].GetSize() < 2)
+            if (_readySorts[i].GetSize() < 2)//해당 위치에 배치된 캐릭터가 2개를 초과할 시
             {
                 // 비어있는 ReadySort에 캐릭터를 추가
                 GameObject character = Instantiate(_characterPrefab, null);
