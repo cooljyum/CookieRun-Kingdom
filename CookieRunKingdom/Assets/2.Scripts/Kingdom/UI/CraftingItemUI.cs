@@ -58,17 +58,19 @@ public class CraftingItemUI : MonoBehaviour
     {
         while (true)
         {
+            //현재 제작 중인 아이템이 있고, 제작이 완료되지 않았을 때만
             if (_craftItemInfo.HasValue && !_isCraftingComplete)
             {
                 //경과 시간 계산 -> 값 세팅
-                float elapsedTime = _craftItemInfo.Value.RequiredTime - TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
+                float elapsedTime = _craftItemInfo.Value.RequiredTime 
+                    - TimeManager.Instance.GetRemainingTime(_buildingKey, _craftItemInfo.Value.ResultItem.Key);
                 _timeProgressBar.value = elapsedTime;
                 _timeText.text = TimeManager.ConvertTime((int)(_craftItemInfo.Value.RequiredTime - elapsedTime));
 
                 //제작 완료 여부 확인
                 if (_craftItemInfo.Value.RequiredTime - elapsedTime <= 0)
                 {
-                    OnCraftingComplete();
+                    OnCraftingComplete(); //제작 완료
                 }
             }
             yield return new WaitForSeconds(1f);
@@ -121,14 +123,15 @@ public class CraftingItemUI : MonoBehaviour
         _checkImage.gameObject.SetActive(false);
 
         //아이템 인벤토리에 추가
-        GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key, _craftItemInfo.Value.ResultCount);
+        GameManager.Instance.PlayerInventory.AddItem(_craftItemInfo.Value.ResultItem.Key,
+            _craftItemInfo.Value.ResultCount);
         Debug.Log($"Item {_craftItemInfo.Value.ResultItem.Name} added to inventory.");
 
-        //플레이어 데이터 저장
+        //플레이어 데이터로 저장
         GameManager.Instance.SavePlayerData();
     }
 
-    public void ResetData()
+    public void ClearCraftingItem()
     {
         _craftItemInfo = null;
         _craftingImage.gameObject.SetActive(false);

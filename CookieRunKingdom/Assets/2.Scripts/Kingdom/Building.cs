@@ -28,7 +28,7 @@ public class Building : MonoBehaviour
     public PolygonCollider2D OverlapCollider => _overlapCollider;
     private SpriteRenderer _overlapRenderer;
 
-    private List<CraftItemInfo> _craftingItems = new();
+    private List<CraftItemInfo> _craftingItems = new List<CraftItemInfo>();
     public List<CraftItemInfo> CraftingItems => _craftingItems;
 
     private void Awake()

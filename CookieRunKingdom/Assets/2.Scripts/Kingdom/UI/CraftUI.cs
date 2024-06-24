@@ -93,7 +93,7 @@ public class CraftUI : MonoBehaviour
             var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
             if (craftingItemUI != null)
             {
-                craftingItemUI.ResetData();
+                craftingItemUI.ClearCraftingItem();
             }
         }
     }
@@ -105,8 +105,10 @@ public class CraftUI : MonoBehaviour
             var craftingItemUI = craftingCell.GetComponent<CraftingItemUI>();
             if (!craftingItemUI.CraftingItemImage.gameObject.activeSelf)
             {
+                //생산 시작
                 craftingItemUI.CraftStart(craftItemInfo);
-                KingdomManager.Instance.SelectedBuilding.AddCraftItem(craftItemInfo);
+                //생산 정보 리스트에 추가
+                KingdomManager.Instance.SelectedBuilding.AddCraftItem(craftItemInfo); 
                 break;
             }
         }
