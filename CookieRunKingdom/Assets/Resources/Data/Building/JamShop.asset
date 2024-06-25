@@ -31,7 +31,7 @@ MonoBehaviour:
   CraftInfos:
   - BuildingKey: 100
     SkeletonDataAsset: {fileID: 11400000, guid: 14d34c1e84410414ab7aa47759354322, type: 2}
-    RequiredTime: 90
+    RequiredTime: 10
     IsMaterial: 0
     Cost: 0
     ResultItem: {fileID: 11400000, guid: 4c7f5016ac597b5499a4f83bcbef6901, type: 2}

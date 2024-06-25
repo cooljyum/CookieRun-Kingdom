@@ -29,6 +29,8 @@ public class KingdomManager : MonoBehaviour
     private CraftUI _craftUI;
     [SerializeField]
     private GameObject _kingdomPlayPanel;
+    [SerializeField]
+    private GameObject _titleObject;
 
     [Header("InGame Infos")]
     [SerializeField]
@@ -37,6 +39,9 @@ public class KingdomManager : MonoBehaviour
     private TextMeshProUGUI[] _diaTexts;
     [SerializeField]
     private Slider _expBar;
+    [SerializeField]
+    private TextMeshProUGUI _levelText;
+
     private float _maxExp = 1000f; //추후 데이터화 예정
 
     [Header("---------------------------------------------------------")]
@@ -76,6 +81,7 @@ public class KingdomManager : MonoBehaviour
     private void Start()
     {
         SetMoneyValue();
+        SetExpValue();
         IsBuildingFixed = false;
     }
 
@@ -202,6 +208,12 @@ public class KingdomManager : MonoBehaviour
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
+    public void OnClickTitleBtn()
+    {
+        Debug.Log("TitleBtn Click");
+        _titleObject.SetActive(false);
+    }
+
     public void ClickStoreBuildingBtn(BuildingData data)
     {
         _buildingInfoPanel.SetData(data);
@@ -324,8 +336,11 @@ public class KingdomManager : MonoBehaviour
 
     public void SetExpValue()
     {
-        float value = GameManager.Instance.CurPlayerData.Exp;
-        _expBar.value = value/ _maxExp;
+        float exp = GameManager.Instance.CurPlayerData.Exp;
+        _expBar.value = exp / _maxExp;
+
+        int level = GameManager.Instance.CurPlayerData.Level;
+        _levelText.text = level.ToString();
     }
 
     //private void CheckOverlapAndShowIndicators(Vector2 position)
