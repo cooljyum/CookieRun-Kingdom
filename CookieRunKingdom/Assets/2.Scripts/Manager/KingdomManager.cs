@@ -29,8 +29,6 @@ public class KingdomManager : MonoBehaviour
     private CraftUI _craftUI;
     [SerializeField]
     private GameObject _kingdomPlayPanel;
-    [SerializeField]
-    private GameObject _titleObject;
 
     [Header("InGame Infos")]
     [SerializeField]
@@ -206,12 +204,6 @@ public class KingdomManager : MonoBehaviour
         Debug.Log("PlayExitBtn Click");
         SoundManager.Instance.PlayFX("BtnClick");
         _kingdomPlayPanel.gameObject.SetActive(false);
-    }
-
-    public void OnClickTitleBtn()
-    {
-        Debug.Log("TitleBtn Click");
-        _titleObject.SetActive(false);
     }
 
     public void ClickStoreBuildingBtn(BuildingData data)
