@@ -4,26 +4,24 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InfoIngridientUI : MonoBehaviour
+public class InfoIngridientUI : MonoBehaviour  //* 건물 정보 UI *//
 {
     [SerializeField]
-    private Image _ingredientImage;
+    private Image _ingredientImage; //건설 재료 이미지
     [SerializeField]
-    private TextMeshProUGUI _ingridientAmount;
+    private TextMeshProUGUI _ingridientAmount; //건설 재료 필요 개수
     [SerializeField]
-    private TextMeshProUGUI _requiredTime;
+    private TextMeshProUGUI _requiredTime; //건설 필요 시간
 
-    private BuildingData _buildingData;
-
-    public void SetData(ItemData data, int amount)
+    public void SetIngredientData(ItemData itemData, int amount) //건물 정보 UI 활성화 -> 건설 재료 데이터 세팅
     {
-        _ingredientImage.sprite = data.Sprite;
+        _ingredientImage.sprite = itemData.Sprite;
 
-        int curCount = GameManager.Instance.PlayerInventory.GetItemCount(data.Key);
+        int curCount = GameManager.Instance.PlayerInventory.GetItemAmount(itemData.Key);
         _ingridientAmount.text = $"{curCount}/{amount}";
     }
 
-    public void SetTimeData(int time)
+    public void SetTimeData(int time) //건물 정보 UI 활성화 -> 건설 시간 데이터 세팅
     {
         _requiredTime.text = TimeManager.ConvertTime(time);
     }

@@ -9,6 +9,7 @@ public class ItemData : ScriptableObject
     public int Key;
     public string Name;
     public Sprite Sprite;
+    public Enums.ItemType Type;
 
     [Header("Equipment : Required Information")]
     public List<int> MaterialKeys;

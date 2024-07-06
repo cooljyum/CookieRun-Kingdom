@@ -8,19 +8,21 @@ using UnityEngine;
 public class Building : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _installEffect;
+    private GameObject _installEffect; //설치 완료 이펙트
     [SerializeField]
-    private Transform _craftBubble;
+    private Transform _craftBubble; //생산된 아이템 방울
     [SerializeField]
-    private GameObject _buildingOverlap;
+    private GameObject _buildingOverlap; //임의의 건물 겹치는 부위
 
     private GameObject _bubbleItemPrefab;
+    //건물 데이터 //->
     private BuildingData _buildingData;
     public BuildingData BuildingData => _buildingData;
     private CraftItemInfo _craftItemInfo;
     private SkeletonAnimation _skeletonAnimation;
     private SpriteRenderer _spriteRenderer;
     private BoxCollider2D _collider;
+    // <-//
     private Animator _effectAnimator;
     private Animator _bubbleAnimator;
     private Sprite _bubbleItemImage;
@@ -28,7 +30,7 @@ public class Building : MonoBehaviour
     public PolygonCollider2D OverlapCollider => _overlapCollider;
     private SpriteRenderer _overlapRenderer;
 
-    private List<CraftItemInfo> _craftingItems = new List<CraftItemInfo>();
+    private List<CraftItemInfo> _craftingItems = new List<CraftItemInfo>(); //생산중인 아이템 정보 보관용
     public List<CraftItemInfo> CraftingItems => _craftingItems;
 
     private void Awake()

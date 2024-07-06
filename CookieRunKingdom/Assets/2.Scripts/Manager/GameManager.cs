@@ -9,14 +9,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    private PlayerDataManager _playerDataManager; //플레이어 데이터 저장 관리하는 매니저
+    private PlayerDataManager _playerDataManager; // 플레이어 데이터 저장 관리하는 매니저
 
-    private string _playerDataName = "PlayerData"; //저장하는 플레이어 데이터의 json 이름
+    private string _playerDataName = "PlayerData"; // 저장하는 플레이어 데이터의 json 이름
 
     [SerializeField]
-    private PlayerData _curPlayerData; //현재 플레이어 Data
+    private PlayerData _curPlayerData; // 현재 플레이어 Data
 
-    public PlayerData CurPlayerData 
+    public PlayerData CurPlayerData
     {
         get { return _curPlayerData; }
         set { _curPlayerData = value; }
@@ -27,20 +27,27 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        DontDestroyOnLoad(this);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
 
-        // Load Manager 
-        DataManager.Instance.LoadData();
+            // Load Manager 
+            DataManager.Instance.LoadData();
 
-        _playerDataManager = new PlayerDataManager();
-        _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
+            _playerDataManager = new PlayerDataManager();
+            _curPlayerData = _playerDataManager.LoadPlayerData(_playerDataName);
 
-        InitializeMyBuildings();
+            InitializeMyBuildings();
 
-        // 인벤토리 초기화
-        PlayerInventory = new Inventory();
-        LoadPlayerInventory();
+            // 인벤토리 초기화
+            PlayerInventory = new Inventory(LoadItemData());
+            LoadPlayerInventory();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -50,35 +57,43 @@ public class GameManager : MonoBehaviour
         CheckAndPlayBGM();
     }
 
+    private Dictionary<int, ItemData> LoadItemData()
+    {
+        // ItemData 로드
+        ItemData[] itemDataArray = Resources.LoadAll<ItemData>("Data/Items");
+        Dictionary<int, ItemData> itemDataDictionary = new Dictionary<int, ItemData>();
+
+        foreach (ItemData itemData in itemDataArray)
+        {
+            itemDataDictionary[itemData.Key] = itemData;
+        }
+
+        return itemDataDictionary;
+    }
+
     private void CheckAndPlayBGM()
     {
-        //StartScene
-        if (SceneManager.GetActiveScene().name == "StartScene")
+        // 각 씬에 따른 배경음악 재생
+        switch (SceneManager.GetActiveScene().name)
         {
-            SoundManager.Instance.PlayBG("StartBgm");
-        }
-        //KingdomScene
-        else if (SceneManager.GetActiveScene().name == "KingdomScene")
-        {
-            SoundManager.Instance.PlayBG("KingdomBgm");
-        }
-        //ReadyScene
-        else if (SceneManager.GetActiveScene().name == "ReadyScene")
-        {
-            SoundManager.Instance.PlayBG("ReadyBgm");
-        }
-        //BattleScene
-        else if (SceneManager.GetActiveScene().name == "BattleScene")
-        {
-            SoundManager.Instance.PlayBG("BattleBgm");
-        }
-        else if(SceneManager.GetActiveScene().name == "GachaScene")
-        {
-            SoundManager.Instance.PlayBG("GachaBgm");
-        }
-        else
-        {
-            SoundManager.Instance.StopBG();
+            case "StartScene":
+                SoundManager.Instance.PlayBG("StartBgm");
+                break;
+            case "KingdomScene":
+                SoundManager.Instance.PlayBG("KingdomBgm");
+                break;
+            case "ReadyScene":
+                SoundManager.Instance.PlayBG("ReadyBgm");
+                break;
+            case "BattleScene":
+                SoundManager.Instance.PlayBG("BattleBgm");
+                break;
+            case "GachaScene":
+                SoundManager.Instance.PlayBG("GachaBgm");
+                break;
+            default:
+                SoundManager.Instance.StopBG();
+                break;
         }
     }
 
@@ -90,20 +105,14 @@ public class GameManager : MonoBehaviour
 
     private void InitializeMyBuildings()
     {
-        //BuildingData 로드
+        // BuildingData 로드
         BuildingData[] buildingDataArray = Resources.LoadAll<BuildingData>("Data/Building");
 
-        //MyBuildings 리스트 초기화
+        // MyBuildings 리스트 초기화
         foreach (BuildingData buildingData in buildingDataArray)
         {
             MyBuildings[buildingData.Key] = 0;
         }
-    }
-
-    private void LoadMyCards()
-    {
-        //List<int> myCardsList = new List<int>();
-        //myCardsList = PlayerDataManager
     }
 
     private void LoadPlayerInventory()
@@ -115,20 +124,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SavePlayerData()  //버튼 클릭과 연동하면 데이터 저장 가능 
+    public void SavePlayerData()
     {
-        _curPlayerData.InvenItemKeyLists = PlayerInventory.GetAllItems().Keys.ToList();
-        _curPlayerData.InvenItemAmountLists = PlayerInventory.GetAllItems().Values.ToList();
+        // 플레이어 데이터 저장
+        var allItems = PlayerInventory.GetAllItems();
+        _curPlayerData.InvenItemKeyLists = allItems.Keys.ToList();
+        _curPlayerData.InvenItemAmountLists = allItems.Values.ToList();
         _playerDataManager.SavePlayerData(_curPlayerData, _playerDataName);
-    }
-
-    private void OnApplicationQuit() //앱 종료시 호출
-    {
-        //SavePlayerData();
     }
 
     public void AddBuilding(int buildingKey)
     {
+        // 건물 추가
         if (MyBuildings.ContainsKey(buildingKey))
         {
             MyBuildings[buildingKey]++;
@@ -141,6 +148,7 @@ public class GameManager : MonoBehaviour
 
     public void RemoveBuilding(Building building)
     {
+        // 건물 제거
         int index = CurPlayerData.BuildingKeyLists.IndexOf(building.BuildingData.Key);
         if (index != -1)
         {
@@ -152,6 +160,7 @@ public class GameManager : MonoBehaviour
 
     public int GetBuildingCount(int buildingKey)
     {
+        // 건물 개수 반환
         if (MyBuildings.ContainsKey(buildingKey))
         {
             return MyBuildings[buildingKey];
@@ -161,6 +170,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveBuilding(Building building)
     {
+        // 건물 저장
         int key = building.BuildingData.Key;
         Vector2 pos = building.transform.position;
 
@@ -181,5 +191,27 @@ public class GameManager : MonoBehaviour
             buildings.Add((CurPlayerData.BuildingKeyLists[i], CurPlayerData.BuildingPosLists[i]));
         }
         return buildings;
+    }
+
+    private int GetMaxInventorySlots(int inventoryLevel)
+    {
+        // 인벤토리 레벨에 따른 최대 칸 수 계산
+        switch (inventoryLevel)
+        {
+            case 1:
+                return 32;
+            case 2:
+                return 64;
+            case 3:
+                return 128;
+            default:
+                return 32; // 기본 레벨 1
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        // 앱 종료 시 플레이어 데이터 저장
+        SavePlayerData();
     }
 }

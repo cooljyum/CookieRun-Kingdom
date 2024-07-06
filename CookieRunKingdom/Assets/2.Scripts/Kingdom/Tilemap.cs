@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Tilemap : MonoBehaviour
 {
-    private Collider2D _collider;
-    //private List<Building> _buildings = new List<Building>();
+    private Collider2D _collider; //건설 시 활용하는 충돌 콜라이더
 
     private void Awake()
     {
@@ -42,8 +41,6 @@ public class Tilemap : MonoBehaviour
             GameObject buildingObj = Instantiate(buildingPrefab, transform);
             Building building = buildingObj.GetComponent<Building>();
             building.Build(DataManager.Instance.GetBuildingData(buildingDatas[i].Item1), buildingDatas[i].Item2);
-
-            //_buildings.Add(building);
         }
     }
 

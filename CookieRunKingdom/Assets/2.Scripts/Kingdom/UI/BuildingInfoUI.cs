@@ -5,22 +5,22 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class BuildingInfoUI : MonoBehaviour
+public class BuildingInfoUI : MonoBehaviour  //* 건물 정보 UI *//
 {
     [SerializeField]
-    private GameObject _parentObject;
+    private GameObject _parentObject; //비활성화용 부모 오브젝트
     [SerializeField]
-    private SkeletonGraphic _buildingImage;
+    private SkeletonGraphic _buildingImage; //건물 이미지
     [SerializeField]
-    private TextMeshProUGUI _buildingInfo;
+    private TextMeshProUGUI _buildingInfo; //건물 소개글
     [SerializeField]
-    private TextMeshProUGUI _environmentPoint;
+    private TextMeshProUGUI _environmentPoint; //건물 환경 점수
     [SerializeField]
-    private TextMeshProUGUI _buildingSize;
+    private TextMeshProUGUI _buildingSize; //건물 (바닥) 크기 (: NXN)
     [SerializeField]
-    private Transform _ingredientContent;
+    private Transform _ingredientContent; //건설 재료
     [SerializeField]
-    private TextMeshProUGUI _buildingName;
+    private TextMeshProUGUI _buildingName; //건물 이름
 
     private GameObject _itemCellPrefab;
     private GameObject _timeCellPrefab;
@@ -59,13 +59,13 @@ public class BuildingInfoUI : MonoBehaviour
         {
             GameObject itemObj = Instantiate(_itemCellPrefab, _ingredientContent);
             var ingredientUI = itemObj.GetComponent<InfoIngridientUI>();
-            ingredientUI.SetData(data.RequiredMaterial, data.RequiredMaterialCount);
+            ingredientUI.SetIngredientData(data.RequiredMaterial, data.RequiredMaterialCount);
         }
         if (data.RequiredEquipment != null)
         {
             GameObject itemObj = Instantiate(_itemCellPrefab, _ingredientContent);
             var ingredientUI = itemObj.GetComponent<InfoIngridientUI>();
-            ingredientUI.SetData(data.RequiredEquipment, data.RequiredEquipmentCount);
+            ingredientUI.SetIngredientData(data.RequiredEquipment, data.RequiredEquipmentCount);
         }
 
         //시간 Cell 생성

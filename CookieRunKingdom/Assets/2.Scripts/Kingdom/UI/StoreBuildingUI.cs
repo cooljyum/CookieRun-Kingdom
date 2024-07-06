@@ -5,39 +5,37 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StoreBuildingUI : MonoBehaviour
+public class StoreBuildingUI : MonoBehaviour  //건물 상점 칸
 {
     [SerializeField]
-    private SkeletonGraphic _buildingImage;
+    private SkeletonGraphic _buildingImage; //건물 이미지
     [SerializeField]
-    private TextMeshProUGUI _costText;
+    private TextMeshProUGUI _costText; //건물 가격
     [SerializeField]
-    private TextMeshProUGUI _buildingName;
+    private TextMeshProUGUI _buildingName; //건물 이름
     [SerializeField]
-    private TextMeshProUGUI _environmentPoint;
+    private TextMeshProUGUI _environmentPoint; //건물 환경 점수
     [SerializeField]
-    private TextMeshProUGUI _curCount;
+    private TextMeshProUGUI _curCount; //건물의 현재 설치 수
     [SerializeField]
-    private GameObject _inactiveImage;
+    private GameObject _inactiveImage; //비활성화 이미지 (설치 가능한 만큼 설치 시 활성화)
 
-    private BuildingData _buildingData;
+    private BuildingData _buildingData; //건물 데이터
     public BuildingData GetBuildingData() { return _buildingData; }
 
-    private bool _isCType;
-    public int MaxCount { get; private set; }
-    private int _buildingLevel = 1;
+    private bool _isCType; //건설 타입 여부
+    public int MaxCount { get; private set; } //설치 가능 최대 개수
+    private int _buildingLevel = 1; //건물 레벨
 
-    public void SetData(BuildingData buildingData)
+    public void SetData(BuildingData buildingData) //건물 상점 UI 활성화 -> 데이터 세팅
     {
         _buildingData = buildingData;
+
         if (_buildingData.Type == "Decorative")
-        {
             _isCType = false;
-        }
         else
-        {
             _isCType = true;
-        }
+
         _buildingImage.skeletonDataAsset = buildingData.SkeletonDataAsset;
         _buildingImage.startingAnimation = "off";
         _buildingImage.Initialize(true);
@@ -53,13 +51,9 @@ public class StoreBuildingUI : MonoBehaviour
 
             // 최대 개수에 도달하면 버튼 비활성화
             if (currentCount >= MaxCount)
-            {
                 SetInActive(true);
-            }
             else
-            {
                 SetInActive(false);
-            }
         }
     }
 
@@ -69,13 +63,9 @@ public class StoreBuildingUI : MonoBehaviour
         SoundManager.Instance.PlayFX("BtnClick");
 
         if (_isCType)
-        {
             KingdomManager.Instance.ClickStoreBuildingBtn(_buildingData);
-        }
         else
-        {
             KingdomManager.Instance.SelectDTypeBuilding(this);
-        }
 
         KingdomManager.Instance.MapGrid.SetActive(true);
     }

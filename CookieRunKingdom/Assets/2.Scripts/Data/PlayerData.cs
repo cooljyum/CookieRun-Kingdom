@@ -16,6 +16,7 @@ public class PlayerData
     public List<Vector2> BuildingPosLists;
     public List<List<int>> PosIndexLists;
     public List<int> MyCardsLists;
+    public int InventoryLevel;
     public List<int> InvenItemKeyLists;
     public List<int> InvenItemAmountLists;
 }

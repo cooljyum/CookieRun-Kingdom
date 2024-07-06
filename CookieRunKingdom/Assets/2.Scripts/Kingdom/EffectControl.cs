@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EffectControl : MonoBehaviour
+public class EffectControl : MonoBehaviour  //* 이펙트 관리 공간 *//
 {
     [SerializeField]
     private Animator _installEffectAnimator;

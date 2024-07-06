@@ -6,24 +6,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 
-public class CraftingItemUI : MonoBehaviour
+public class CraftingItemUI : MonoBehaviour  //* 생산 중인 아이템 UI *//
 {
     [Header("Crafting Info")]
     [SerializeField]
-    private Image _craftingImage;
+    public Image CraftingItemImage; //아이템 이미지
     [SerializeField]
-    private Image _checkImage;
+    private Image _checkImage; //체크 표시 이미지 (완료될 때 활성화)
     [SerializeField]
-    private Slider _timeProgressBar;
+    private Slider _timeProgressBar; //생산 시간 바
     [SerializeField]
-    private Button _fastBtn;
+    private Button _fastBtn; //시간 단축 버튼
     [SerializeField]
-    private TextMeshProUGUI _timeText;
-    public Image CraftingItemImage => _craftingImage;
+    private TextMeshProUGUI _timeText; //생산 시간
 
-    private CraftItemInfo? _craftItemInfo;
-    private int _buildingKey;
-    private bool _isCraftingComplete;
+    private CraftItemInfo? _craftItemInfo; //아이템 생산 정보
+    private int _buildingKey; //건물 키
+    private bool _isCraftingComplete; //생산 완료 여부
 
     private void OnEnable()
     {
@@ -34,7 +33,7 @@ public class CraftingItemUI : MonoBehaviour
     {
         _buildingKey = craftItemInfo.BuildingKey;
         _craftItemInfo = craftItemInfo;
-        _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
+        CraftingItemImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
 
         //남은 시간 세팅
         float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, craftItemInfo.ResultItem.Key);
@@ -48,13 +47,13 @@ public class CraftingItemUI : MonoBehaviour
         _timeProgressBar.value = _craftItemInfo.Value.RequiredTime - remainingTime;
         _timeText.text = TimeManager.ConvertTime((int)remainingTime);
 
-        _craftingImage.gameObject.SetActive(true);
+        CraftingItemImage.gameObject.SetActive(true);
         _timeProgressBar.gameObject.SetActive(true);
         _fastBtn.gameObject.SetActive(true);
         _checkImage.gameObject.SetActive(false);
     }
 
-    private IEnumerator UpdateCraftingProgress()
+    private IEnumerator UpdateCraftingProgress() //생산 진행 상황 업데이트 코루틴
     {
         while (true)
         {
@@ -77,7 +76,7 @@ public class CraftingItemUI : MonoBehaviour
         }
     }
 
-    public void OnClickFastBtn() // Crafting-시간 축소
+    public void OnClickFastBtn() // Crafting-시간 단축
     {
         if (!_craftItemInfo.HasValue) return;
 
@@ -97,7 +96,7 @@ public class CraftingItemUI : MonoBehaviour
         _timeText.text = TimeManager.ConvertTime((int)(_craftItemInfo.Value.RequiredTime - elapsedTime));
     }
 
-    private void OnCraftingComplete()
+    private void OnCraftingComplete() //생산 완료
     {
         if (_isCraftingComplete) return;
 
@@ -109,17 +108,17 @@ public class CraftingItemUI : MonoBehaviour
 
     public void OnClickCraftedItem() //Crafting-생산된 아이템
     {
-        if (!_craftingImage.gameObject.activeSelf) return;
+        if (!CraftingItemImage.gameObject.activeSelf) return;
         if (!_checkImage.gameObject.activeSelf) return;
 
         //_craftingItems 리스트에서 아이템 제거
-        Building currentBuilding = KingdomManager.Instance.SelectedBuilding;
+        Building currentBuilding = KingdomManager.Instance.ClickedBuilding;
         if (currentBuilding != null && _craftItemInfo.HasValue)
         {
             currentBuilding.CraftingItems.Remove(_craftItemInfo.Value);
         }
 
-        _craftingImage.gameObject.SetActive(false);
+        CraftingItemImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
 
         //아이템 인벤토리에 추가
@@ -131,19 +130,19 @@ public class CraftingItemUI : MonoBehaviour
         GameManager.Instance.SavePlayerData();
     }
 
-    public void ClearCraftingItem()
+    public void ClearCraftingItem() //생산 중인 아이템 지우기
     {
         _craftItemInfo = null;
-        _craftingImage.gameObject.SetActive(false);
+        CraftingItemImage.gameObject.SetActive(false);
         _checkImage.gameObject.SetActive(false);
         _timeProgressBar.gameObject.SetActive(false);
     }
     
-    public void SetCraftingItem(CraftItemInfo craftItemInfo) //생산 중이었던 아이템의 데이터 세팅
+    public void SetCraftingItem(CraftItemInfo craftItemInfo) //생산 중인 아이템의 데이터 세팅
     {
         _buildingKey = craftItemInfo.BuildingKey;
         _craftItemInfo = craftItemInfo;
-        _craftingImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
+        CraftingItemImage.sprite = _craftItemInfo.Value.ResultItem.Sprite;
 
         //생산 시간 계산 및 세팅
         float remainingTime = TimeManager.Instance.GetRemainingTime(_buildingKey, craftItemInfo.ResultItem.Key);
@@ -151,14 +150,14 @@ public class CraftingItemUI : MonoBehaviour
         _timeProgressBar.value = _craftItemInfo.Value.RequiredTime - remainingTime;
         _timeText.text = TimeManager.ConvertTime((int)remainingTime);
 
-        if (remainingTime == 0)
+        if (remainingTime == 0) //생산 완료 ?
         {
             _isCraftingComplete = true;
             _timeProgressBar.gameObject.SetActive(false);
             _fastBtn.gameObject.SetActive(false);
             _checkImage.gameObject.SetActive(true);
         }
-        else
+        else //아직 생산 중 ?
         {
             _isCraftingComplete = false;
             _timeProgressBar.gameObject.SetActive(true);
@@ -166,6 +165,6 @@ public class CraftingItemUI : MonoBehaviour
             _checkImage.gameObject.SetActive(false);
         }
 
-        _craftingImage.gameObject.SetActive(true);
+        CraftingItemImage.gameObject.SetActive(true);
     }
 }

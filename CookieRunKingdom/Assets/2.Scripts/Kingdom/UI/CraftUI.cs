@@ -5,30 +5,29 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CraftUI : MonoBehaviour
+public class CraftUI : MonoBehaviour  //* 생산 창 UI *//
 {
     [SerializeField]
-    private Transform _itemCellContent;
+    private Transform _itemCellContent; //생산 가능 아이템들
     [SerializeField]
-    private Transform _craftingContent;
+    private Transform _craftingContent; //생산 중인 아이템들
     [SerializeField]
-    private TextMeshProUGUI _buildingName;
+    private TextMeshProUGUI _buildingName; //건물 이름
     [SerializeField]
-    private SkeletonGraphic _buildingImage;
+    private SkeletonGraphic _buildingImage; //건물 이미지
     [SerializeField]
-    private TextMeshProUGUI _coinText;
+    private TextMeshProUGUI _coinText; //보유 코인
     [SerializeField]
-    private TextMeshProUGUI _diaText;
+    private TextMeshProUGUI _diaText; //보유 다이아
     [SerializeField]
-    private Image _curMaterialImage;
+    private Image _curMaterialImage; //현재 보유 재료 이미지
     [SerializeField]
-    private TextMeshProUGUI _curMaterialAmount;
+    private TextMeshProUGUI _curMaterialAmount; //현재 보유 재료 수량
     [SerializeField]
-    private GameObject _curMaterialObject;
+    private GameObject _curMaterialObject; //현재 보유 재료 오브젝트
 
     private GameObject _itemPrefab;
-    private BuildingData _buildingData;
-    private Image _craftingImage;
+    private BuildingData _buildingData; //테스트//
 
     private void Awake()
     {
@@ -45,7 +44,7 @@ public class CraftUI : MonoBehaviour
         if (buildingData.Key >= 10 && buildingData.Key < 100) //1n번대 -> 재료
         {
             _curMaterialImage.sprite = buildingData.CraftInfos[0].ResultItem.Sprite;
-            _curMaterialAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(buildingData.CraftInfos[0].ResultItem.Key).ToString();
+            _curMaterialAmount.text = GameManager.Instance.PlayerInventory.GetItemAmount(buildingData.CraftInfos[0].ResultItem.Key).ToString();
         }
         else
         {
@@ -108,7 +107,7 @@ public class CraftUI : MonoBehaviour
                 //생산 시작
                 craftingItemUI.CraftStart(craftItemInfo);
                 //생산 정보 리스트에 추가
-                KingdomManager.Instance.SelectedBuilding.AddCraftItem(craftItemInfo); 
+                KingdomManager.Instance.ClickedBuilding.AddCraftItem(craftItemInfo); 
                 break;
             }
         }

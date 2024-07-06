@@ -5,14 +5,14 @@ using UnityEngine;
 public class StoreUI : MonoBehaviour
 {
     [SerializeField]
-    private Transform _cTypeBuildingContent; //건설 타입(constrctType)
+    private Transform _cTypeBuildingContent; //건설 타입(Constrct Type) 건물들의 부모 객체
     [SerializeField]
-    private Transform _dTypeBuildingContent; //꾸미기 타입(decorateType)    
+    private Transform _dTypeBuildingContent; //꾸미기 타입(Decoration Type) 건물들의 부모 객체
 
     private GameObject _cTypeBuildingPrefab;
     private GameObject _dTypeBuildingPrefab;
 
-    private BuildingData[] _buildingDataArray;
+    private BuildingData[] _buildingDataArray; //모든 건물 데이터 배열 (필터링하여 상점에 노출)
 
     private void Awake()
     {

@@ -5,12 +5,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CraftItemUI : MonoBehaviour
+public class CraftItemUI : MonoBehaviour  //* 생산 가능 아이템 UI *//
 {
     [SerializeField]
-    private GameObject _materialSetting;
+    private GameObject _materialSetting; //재료 칸 오브젝트
     [SerializeField]
-    private GameObject _equipmentSetting;
+    private GameObject _equipmentSetting; //도구 칸 오브젝트
     [Header("Information")]
     [SerializeField]
     private Image _itemImage;
@@ -39,7 +39,7 @@ public class CraftItemUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _curEquipmentAmount;
 
-    private CraftItemInfo _craftItemInfo;
+    private CraftItemInfo _craftItemInfo; //아이템 생산 정보
     
     public void SetData(CraftItemInfo craftItemInfo) //생성한 Craft 칸 데이터 세팅
     {
@@ -64,7 +64,7 @@ public class CraftItemUI : MonoBehaviour
 
             int material1Key = craftItemInfo.ResultItem.MaterialKeys[0];
             ItemData material1Data = GetItemData(material1Key);
-            int material1Count = GameManager.Instance.PlayerInventory.GetItemCount(material1Key);
+            int material1Count = GameManager.Instance.PlayerInventory.GetItemAmount(material1Key);
 
             //재료1 데이터 존재 확인
             if (material1Data != null)
@@ -82,7 +82,7 @@ public class CraftItemUI : MonoBehaviour
             {
                 int material2Key = craftItemInfo.ResultItem.MaterialKeys[1];
                 ItemData material2Data = GetItemData(material2Key);
-                int material2Count = GameManager.Instance.PlayerInventory.GetItemCount(material2Key);
+                int material2Count = GameManager.Instance.PlayerInventory.GetItemAmount(material2Key);
 
                 //재료2 데이터 존재 확인
                 if (material2Data != null)
@@ -100,7 +100,7 @@ public class CraftItemUI : MonoBehaviour
                 _material2Object.SetActive(false);
             }
 
-            _curEquipmentAmount.text = GameManager.Instance.PlayerInventory.GetItemCount(craftItemInfo.ResultItem.Key).ToString();
+            _curEquipmentAmount.text = GameManager.Instance.PlayerInventory.GetItemAmount(craftItemInfo.ResultItem.Key).ToString();
         }
 
     }
@@ -112,7 +112,7 @@ public class CraftItemUI : MonoBehaviour
         KingdomManager.Instance.ClickCraftBtn(_craftItemInfo);
     }
 
-    private ItemData GetItemData(int key)
+    private ItemData GetItemData(int key) //key에 맞는 아이템 데이터 반환
     {
         ItemData[] allItemData = Resources.LoadAll<ItemData>("Data/Item");
 

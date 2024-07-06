@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuildingEditUI : MonoBehaviour
+public class BuildingEditUI : MonoBehaviour  //* 건물 편집 기능 원형 UI *//
 {
     [SerializeField]
-    private Transform _parentObject;
+    private Transform _parentObject; //비활성화용 부모 오브젝트
 
-    private bool _isRotated = false;
+    private bool _isRotated = false; //건물 이미지 회전 여부
 
     public void OnClickExitBtn()
     {
@@ -17,14 +17,14 @@ public class BuildingEditUI : MonoBehaviour
         // Exit 버튼 클릭 시 수행할 동작 추가
     }
 
-    public void OnClickCheckBtn()
+    public void OnClickCheckBtn() //Edit-체크
     {
         Debug.Log("Check Btn Click!");
         SoundManager.Instance.PlayFX("BtnClick");
         KingdomManager.Instance.OnClickConstructBuilding();
     }
 
-    public void OnClickRotateBtn()
+    public void OnClickRotateBtn() //Edit-회전
     {
         Debug.Log("Rotate Btn Click!");
         SoundManager.Instance.PlayFX("BtnClick");
@@ -39,7 +39,7 @@ public class BuildingEditUI : MonoBehaviour
         _isRotated = !_isRotated;
     }
 
-    public void OnClickInfoBtn()
+    public void OnClickInfoBtn() //Edit-정보
     {
         Debug.Log("Info Btn Click!");
         SoundManager.Instance.PlayFX("BtnClick");

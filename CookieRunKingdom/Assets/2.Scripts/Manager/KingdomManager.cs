@@ -29,6 +29,8 @@ public class KingdomManager : MonoBehaviour
     private CraftUI _craftUI;
     [SerializeField]
     private GameObject _kingdomPlayPanel;
+    [SerializeField]
+    private InventoryUI _inventoryUI;
 
     [Header("InGame Infos")]
     [SerializeField]
@@ -40,35 +42,35 @@ public class KingdomManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _levelText;
 
-    private float _maxExp = 1000f; //추후 데이터화 예정
-
-    [Header("---------------------------------------------------------")]
+    [Header("Building Selected Mode")]
     [SerializeField]
-    private SkeletonAnimation _selectedBuildingSkeletonAnimation;
+    private SkeletonAnimation _selectedBuildingSkeletonAnimation; //선택한 건물의 애니메이션
     [SerializeField]
-    private SpriteRenderer _previewImage;
+    private SpriteRenderer _previewImage; //선택 시 활성화되는 바닥 너비의 타일
     [SerializeField]
-    private GameObject _editUI;
+    private GameObject _editUI; //선택 시 활성화되는 편집 기능 원
     [SerializeField]
-    private GameObject _mapGrid;
+    private GameObject _mapGrid; //건물 설치 시 최소 단위인 맵 격자
     public GameObject MapGrid => _mapGrid;
     [SerializeField]
-    private Tilemap _tilemap;
+    private Tilemap _tilemap; //건물 설치할 수 있는 타일맵
 
-    private StoreBuildingUI _selectedBuildingUI;
-    private BuildingData _selectedBuildingData;
+    private StoreBuildingUI _selectedBuildingUI; //선택한 건물 상점 칸
+    private BuildingData _selectedBuildingData; //선택한 건물 데이터
     public BuildingData SelectedBuildingData => _selectedBuildingData;
-    public Vector2 SelectedPosition;
-    public bool IsBuildingFixed;
-    private TextMeshProUGUI _buildingCost;
-    private TextMeshProUGUI _buildingPoint;
-    private TextMeshProUGUI _buildingCurCount;
+    public Vector2 SelectedPosition; //설치한 건물 위치
+    public bool IsBuildingFixed; //건물 설치 고정 여부
+    private TextMeshProUGUI _buildingCost; //건물 가격
+    private TextMeshProUGUI _buildingPoint; //건물 환경 점수
+    private TextMeshProUGUI _buildingCurCount; //건물 현재 설치한 개수
 
-    private Building _selectedBuilding;
-    public Building SelectedBuilding => _selectedBuilding;
+    private Building _clickedBuilding; //설치된 건물 중 클릭한 건물
+    public Building ClickedBuilding => _clickedBuilding;
 
     private GameObject _overlapIndicatorPrefab;
     private List<GameObject> _overlapIndicators = new List<GameObject>();
+    private float _maxExp = 1000f; //추후 데이터화 예정
+
 
     private void Awake()
     {
@@ -83,7 +85,7 @@ public class KingdomManager : MonoBehaviour
         IsBuildingFixed = false;
     }
 
-    private void Update()
+    private void Update() //설치 모드 - 마우스를 따라가며 맵 격자 크기만큼 스냅된 위치로 업데이트
     {
         if (IsBuildingFixed || !_selectedBuildingSkeletonAnimation.gameObject.activeSelf) return;
 
@@ -185,6 +187,14 @@ public class KingdomManager : MonoBehaviour
         SceneManager.LoadScene("GachaScene");
     }
 
+    public void OnClickInventoryBtn() //Main-창고
+    {
+        Debug.Log("InventoryBtn Click");
+        SoundManager.Instance.PlayFX("BtnClick");
+        _inventoryUI.gameObject.SetActive(true);
+        _inventoryUI.LoadPlayerInventory();
+    }
+
     public void OnClickCookieKingdomBtn() //Play-쿠키 왕국
     {
         Debug.Log("CookieKingdomBtn Click");
@@ -206,14 +216,14 @@ public class KingdomManager : MonoBehaviour
         _kingdomPlayPanel.gameObject.SetActive(false);
     }
 
-    public void ClickStoreBuildingBtn(BuildingData data)
+    public void ClickStoreBuildingBtn(BuildingData data) //건물 상점에서 구매 버튼 클릭할 때 호출
     {
         _buildingInfoPanel.SetData(data);
     }
 
-    public void OnClickBuilding(Building building) //설치된 건물
+    public void OnClickBuilding(Building building) //설치된 건물 클릭할 때 호출
     {
-        _selectedBuilding = building;
+        _clickedBuilding = building;
         BuildingData data = building.BuildingData;
 
         Debug.Log("Building Click");
@@ -237,12 +247,12 @@ public class KingdomManager : MonoBehaviour
         _craftUI.CraftStart(craftItemInfo);
     }
 
-    public void SetSelectedBuilding(BuildingData buildingData)
+    public void SetSelectedBuilding(BuildingData buildingData) //상점에서 건물 선택 -> 데이터 전달
     {
         _selectedBuildingData = buildingData;
     }
 
-    public void SetSnappedPosition()
+    public void SetSnappedPosition() //설치 모드에서 마우스 기준 스냅된 위치 계산
     {
         Vector2 originalPosition = _selectedBuildingSkeletonAnimation.transform.position;
         float tileSizeX = 2.6f;
@@ -272,8 +282,8 @@ public class KingdomManager : MonoBehaviour
         
         // 플레이어가 충분한 자원을 가지고 있는지 확인
         bool hasEnoughCoin = GameManager.Instance.CurPlayerData.Coin >= requiredCoin;
-        bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemCount(requiredMaterial.Key) >= requiredMaterialCount;
-        bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemCount(requiredEquipment.Key) >= requiredEquipmentCount;
+        bool hasEnoughMaterial = GameManager.Instance.PlayerInventory.GetItemAmount(requiredMaterial.Key) >= requiredMaterialCount;
+        bool hasEnoughEquipment = GameManager.Instance.PlayerInventory.GetItemAmount(requiredEquipment.Key) >= requiredEquipmentCount;
         
         if (!hasEnoughCoin)
         {
@@ -312,7 +322,7 @@ public class KingdomManager : MonoBehaviour
         }
     }
 
-    public void SetMoneyValue()
+    public void SetMoneyValue() //재화 값 세팅
     {
         foreach (var coinText in _coinTexts) //Coin
         {
@@ -326,7 +336,7 @@ public class KingdomManager : MonoBehaviour
         }
     }
 
-    public void SetExpValue()
+    public void SetExpValue() //경험치 값 세팅
     {
         float exp = GameManager.Instance.CurPlayerData.Exp;
         _expBar.value = exp / _maxExp;
@@ -345,7 +355,7 @@ public class KingdomManager : MonoBehaviour
     //    _overlapIndicators.Clear();
     //
     //    // 선택된 빌딩의 위치 및 크기 가져오기
-    //    var selectedBuildingBounds = SelectedBuilding.GetBounds();
+    //    var selectedBuildingBounds = ClickedBuilding.GetBounds();
     //    selectedBuildingBounds.center = position;
     //
     //    // 모든 빌딩과 현재 선택된 빌딩의 위치 및 크기 비교
@@ -353,7 +363,7 @@ public class KingdomManager : MonoBehaviour
     //
     //    foreach (var building in buildings)
     //    {
-    //        if (building == SelectedBuilding) continue;
+    //        if (building == ClickedBuilding) continue;
     //
     //        var buildingBounds = building.GetBounds();
     //
