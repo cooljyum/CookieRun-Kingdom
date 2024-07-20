@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_27;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_27;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -60,33 +60,115 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2.Scripts\Data\ItemData.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\BaseProjectile.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\PlayerDataManager.cs" />
+    <Compile Include="Assets\2.Scripts\Etc\CameraZoom.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\Utils.cs" />
+    <Compile Include="Assets\9.Particles\script\CC\KnockbackCommand.cs" />
     <Compile Include="Assets\2.Scripts\Data\BuildingData.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\BuildingEditUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\HeadbuttEffect.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Object\BattleObject\BattleObject.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\Tilemap.cs" />
     <Compile Include="Assets\2.Scripts\Ready\StandingManager.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\SoundManager.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UI\HPBarController.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\ModifiedMaterial.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\MagicCircleEffect.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Skill\CoroutineRunner.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\Inventory.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Object\SpawnBattleObject\BattleEnemies.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Object\BattleObject\BattleCookie.cs" />
     <Compile Include="Assets\2.Scripts\Manager\DataManager.cs" />
     <Compile Include="Assets\2.Scripts\Manager\KingdomManager.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\BuildingInfoUI.cs" />
+    <Compile Include="Assets\9.Particles\script\DamageTextController.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\EffectControl.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\UIParticleUpdater.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\HealEffect.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+    <Compile Include="Assets\2.Scripts\Etc\Enums.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\TyphoonEffect.cs" />
     <Compile Include="Assets\2.Scripts\Character\CharacterAnimation.cs" />
-    <Compile Include="Assets\2.Scripts\Kingdom\BuildingManager.cs" />
+    <Compile Include="Assets\2.Scripts\Etc\OnButtonToggle.cs" />
     <Compile Include="Assets\2.Scripts\Manager\BattleManager.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\ProjectileMagicCircle.cs" />
     <Compile Include="Assets\2.Scripts\CookieAnimationTest.cs" />
+    <Compile Include="Assets\2.Scripts\Gacha\GachaUIManager.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\2.Scripts\Kingdom\Building.cs" />
-    <Compile Include="Assets\2.Scripts\Battle\BattleCookies.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\9.Particles\script\BattleMapGenerator.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\TimeManager.cs" />
     <Compile Include="Assets\2.Scripts\Manager\BattleObjectSpawnManager.cs" />
     <Compile Include="Assets\2.Scripts\Data\MonsterGroupData.cs" />
-    <Compile Include="Assets\2.Scripts\Battle\BattleObject.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\CraftingItemUI.cs" />
+    <Compile Include="Assets\2.Scripts\Network\NetManager.cs" />
+    <Compile Include="Assets\2.Scripts\Etc\CameraControl.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\StoreUI.cs" />
+    <Compile Include="Assets\2.Scripts\Ready\BattleReadyManager.cs" />
+    <Compile Include="Assets\9.Particles\script\CC\ICCCommand.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\PostEffectscontroller.cs" />
+    <Compile Include="Assets\9.Particles\script\CC\DraggedCommand.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\RotateSelf.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\AnimatableProperty.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\CraftItemUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UI\StageUIFade.cs" />
+    <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\TitleManager.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\InfoIngridientUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UI\ResultUIController.cs" />
     <Compile Include="Assets\2.Scripts\Ready\DeckSettingManager.cs" />
+    <Compile Include="Assets\2.Scripts\Ready\StageInfo.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\DamageBox.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\InventoryItemUI.cs" />
+    <Compile Include="Assets\2.Scripts\Data\PlayerData.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\LodingManager.cs" />
     <Compile Include="Assets\2.Scripts\Data\StageData.cs" />
-    <Compile Include="Assets\2.Scripts\Battle\BattleEntitiesBase.cs" />
-    <Compile Include="Assets\2.Scripts\Battle\BattleEnemies.cs" />
+    <Compile Include="Assets\2.Scripts\Ready\InterfaceManager.cs" />
+    <Compile Include="Assets\2.Scripts\Network\LoginManager.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\SkillEffectUIController.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\UIParticle.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\ProjectileCoffee.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\2.Scripts\Manager\Singleton.cs" />
+    <Compile Include="Assets\2.Scripts\Etc\QuickSort.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Object\SpawnBattleObject\BattleCookies.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\Testststt.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\UIParticleRenderer.cs" />
+    <Compile Include="Assets\2.Scripts\Manager\BattleUIManager.cs" />
     <Compile Include="Assets\2.Scripts\Ready\DeckSettingBtn.cs" />
     <Compile Include="Assets\2.Scripts\Etc\Gizmo.cs" />
+    <Compile Include="Assets\9.Particles\Projectile_\ProjectileSwordSlash.cs" />
+    <Compile Include="Assets\2.Scripts\Gacha\ResultPanel.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\CraftUI.cs" />
     <Compile Include="Assets\2.Scripts\Ready\StandingCharacter.cs" />
-    <Compile Include="Assets\2.Scripts\Kingdom\BuildingBtn.cs" />
-    <Compile Include="Assets\2.Scripts\Kingdom\CameraControl.cs" />
-    <Compile Include="Assets\2.Scripts\Kingdom\ProductUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Object\SpawnBattleObject\BattleEntitiesBase.cs" />
+    <Compile Include="Assets\2.Scripts\Gacha\GachaManager.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\StoreBuildingUI.cs" />
+    <Compile Include="Assets\9.Particles\script\CC\AirborneCommand.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\UIParticle\UIParticleAttractor.cs" />
     <Compile Include="Assets\2.Scripts\Ready\ReadySort.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Map\BattleMapScrolling.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Skill\MagicSkill.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Bullet\Bullet.cs" />
+    <Compile Include="Assets\2.Scripts\Network\ChatManager.cs" />
     <Compile Include="Assets\2.Scripts\Manager\GameManager.cs" />
+    <Compile Include="Assets\2.Scripts\Kingdom\UI\InventoryUI.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Effect\FollowParent.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+    <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Skill\SkillBase.cs" />
     <Compile Include="Assets\2.Scripts\Ready\ReadyManager.cs" />
+    <Compile Include="Assets\2.Scripts\Gacha\GachaIcon.cs" />
+    <Compile Include="Assets\2.Scripts\Ready\ClearButtonManager.cs" />
+    <Compile Include="Assets\2.Scripts\Battle\Skill\SkillBtn.cs" />
     <Compile Include="Assets\2.Scripts\Data\CharacterData.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +176,7 @@
     <None Include="Assets\10.SkeletonData\Kingdom\Fountain5\building_fountain_5.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Building\Building_atelier\building_atelier.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
     <None Include="Assets\11.Spine\version.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Castle4\building_castle_4.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -103,6 +186,7 @@
     <None Include="Assets\10.SkeletonData\Building\Building_sugarstone\building_sugarstone.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Enemy\Enemy10111\m10111.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0024\cookie0024.atlas.txt" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0035\cookie0035.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0134\cookie0134.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0028\cookie0028.atlas.txt" />
@@ -110,6 +194,7 @@
     <None Include="Assets\10.SkeletonData\Kingdom\Statue\pvp_flag.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0058\cookie0058.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\7.Shaders\Battle\SpriteOutline.shader" />
     <None Include="Assets\10.SkeletonData\Kingdom\Castle3\building_castle_3.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Castle6\building_castle_6.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Enemy\Enemy10128\m10128.atlas.txt" />
@@ -163,17 +248,23 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\10.SkeletonData\Building\Building_doll\building_doll.atlas.txt" />
+    <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\10.SkeletonData\Enemy\Enemy10113\m10113.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Fountain6\building_fountain_6.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\10.SkeletonData\Building\Building_jellyberry\building_jellyberry.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\Photon\PhotonChat\Demos\DemoChat\Files\eurof_tt.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0065\cookie0065.atlas.txt" />
+    <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0133\cookie0133.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Building\Building_cake\building_cake.atlas.txt" />
+    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0511\cookie0511.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
     <None Include="Assets\10.SkeletonData\Enemy\Enemy10117\m10117.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0042\cookie0042.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Fountain4\building_fountain_4.atlas.txt" />
@@ -193,6 +284,7 @@
     <None Include="Assets\10.SkeletonData\Kingdom\Mine\building_mine.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0503\cookie0503.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Hotairballoon\Building_hotairballoon.atlas.txt" />
+    <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\10.SkeletonData\Building\Building_coffee\building_coffee.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Kingdom\Castle5\building_castle_5.atlas.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -202,6 +294,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\10.SkeletonData\Enemy\Enemy10114\m10114.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0025\cookie0025.atlas.txt" />
+    <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\10.SkeletonData\Kingdom\Castle1\building_castle_1.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0513\cookie0513.atlas.txt" />
     <None Include="Assets\10.SkeletonData\Cookie\Cookie0514\cookie0514.atlas.txt" />
@@ -555,16 +648,12 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Android.Types">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Android.Gradle">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Android.GradleProject">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1277,9 +1366,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{2833CCF9-39FF-BCD8-B84C-74F9E3F701E1}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{A1CC3AB2-5CDD-0437-4A6A-C58049420FBA}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{B3BC17C4-3EBC-A9E0-DAE7-D8BE07F68A7F}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{57191D2E-4ACB-F072-F1B7-61624A4BE5BE}</Project>
       <Name>spine-unity-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{B76CD9C7-279D-E9F1-D9EA-7C43DE7BF6D0}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFab.csproj">
+      <Project>{B199AE56-6524-684F-7F22-03C59CEA9317}</Project>
+      <Name>PlayFab</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{CDB93398-295F-2CF0-C175-4F4E21FB387C}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{122E251F-BEE1-7943-63EF-964069FE0F7F}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabSDKEditor.csproj">
+      <Project>{029D5FB4-1BC5-4808-38D5-9EAE4DD2DB96}</Project>
+      <Name>PlayFabSDKEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{879A4FC0-8CD2-7428-3EBF-E9C691D1DDB4}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{A35788A9-DCF1-1351-FC32-0D035D358566}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabEditorExtensions.csproj">
+      <Project>{CE9F2293-558A-4FBD-BCDB-19593B30AB06}</Project>
+      <Name>PlayFabEditorExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{73D08DBB-C8E1-D984-D54F-DD4573867C3B}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{EC7D3E04-BA04-2ED2-DDB5-A6B4E26A92D8}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{FA9F6AB0-1C77-B9D0-1953-3D6B526E6875}</Project>
