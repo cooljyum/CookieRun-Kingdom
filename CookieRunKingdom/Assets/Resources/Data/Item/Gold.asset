@@ -15,5 +15,6 @@ MonoBehaviour:
   Key: 3
   Name: "\uB098\uB294\uC57C\uACE8\uB4DC"
   Sprite: {fileID: 21300000, guid: b7a8b0447f8eb4c4eb091ae5cf2e9b2b, type: 3}
+  Type: 5
   MaterialKeys: 
   MaterialAmounts: 

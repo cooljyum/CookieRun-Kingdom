@@ -238,7 +238,9 @@ public class KingdomManager : MonoBehaviour
             _craftUI.gameObject.SetActive(true);
             _craftUI.CreateCraftItem(data);
             _craftUI.SetData(data);
-            _craftUI.SetCraftingItem(building);
+
+            if(building.CraftingItems.Count > 0)
+                _craftUI.SetCraftingItem(building);
         }
     }
 
@@ -288,21 +290,18 @@ public class KingdomManager : MonoBehaviour
         if (!hasEnoughCoin)
         {
             Debug.LogError("건물을 건설하기에 코인이 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
             return;
         }
         
         if (!hasEnoughMaterial)
         {
             Debug.LogError("건물을 건설하기에 재료가 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
             return;
         }
         
         if (!hasEnoughEquipment)
         {
             Debug.LogError("건물을 건설하기에 장비가 부족합니다.");
-            // 플레이어에게 오류 메시지 표시
             return;
         }
         

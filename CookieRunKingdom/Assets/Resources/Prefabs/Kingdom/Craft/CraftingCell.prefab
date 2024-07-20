@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748ca557ba057b8438e0cdc68bdb7f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _craftingImage: {fileID: 7627349683895044153}
+  CraftingItemImage: {fileID: 7627349683895044153}
   _checkImage: {fileID: 5551460555514394869}
   _timeProgressBar: {fileID: 4815612226289979958}
   _fastBtn: {fileID: 5048271278004686380}

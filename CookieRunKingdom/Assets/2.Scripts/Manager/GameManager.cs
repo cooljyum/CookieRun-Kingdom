@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     private Dictionary<int, ItemData> LoadItemData()
     {
         // ItemData 로드
-        ItemData[] itemDataArray = Resources.LoadAll<ItemData>("Data/Items");
+        ItemData[] itemDataArray = Resources.LoadAll<ItemData>("Data/Item");
         Dictionary<int, ItemData> itemDataDictionary = new Dictionary<int, ItemData>();
 
         foreach (ItemData itemData in itemDataArray)
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         // 각 씬에 따른 배경음악 재생
         switch (SceneManager.GetActiveScene().name)
         {
-            case "StartScene":
+            case "TitleScene":
                 SoundManager.Instance.PlayBG("StartBgm");
                 break;
             case "KingdomScene":
@@ -128,8 +128,18 @@ public class GameManager : MonoBehaviour
     {
         // 플레이어 데이터 저장
         var allItems = PlayerInventory.GetAllItems();
-        _curPlayerData.InvenItemKeyLists = allItems.Keys.ToList();
-        _curPlayerData.InvenItemAmountLists = allItems.Values.ToList();
+        _curPlayerData.InvenItemKeyLists = new List<int>();
+        _curPlayerData.InvenItemAmountLists = new List<int>();
+
+        foreach (var item in allItems)
+        {
+            foreach (var amount in item.Value)
+            {
+                _curPlayerData.InvenItemKeyLists.Add(item.Key);
+                _curPlayerData.InvenItemAmountLists.Add(amount);
+            }
+        }
+
         _playerDataManager.SavePlayerData(_curPlayerData, _playerDataName);
     }
 

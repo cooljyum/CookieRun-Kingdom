@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    private float _cameraSpeed = 5f;
+    private float _cameraSpeed = 7f;
     private Vector2 touchStart; // 터치 시작 지점
     private Vector3 cameraStartPos; // 터치 시작 시 카메라 위치
     private float _zoomSpeed = 5f; //0.1f; // 키 줌 속도 / 터치 줌 속도 //*추후 수정*//

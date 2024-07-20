@@ -29,7 +29,7 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
         // 인벤토리 레벨에 따른 최대 슬롯 수 계산
         _maxSlotCount = GetMaxSlotsForInventoryLevel(inventoryLevel);
 
-        // 최대 슬롯 수에 따라 슬롯 활성화/비활성화
+        // 현재 슬롯 수에 따라 슬롯 활성화/비활성화
         for (int i = 0; i < _inventoryContent.childCount; i++)
         {
             _inventoryContent.GetChild(i).gameObject.SetActive(i < _maxSlotCount);
@@ -40,7 +40,7 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
         SetSizeValue();
     }
 
-    private int GetMaxSlotsForInventoryLevel(int inventoryLevel) //인벤 레벨에 따라 최대 슬롯 수 반환
+    private int GetMaxSlotsForInventoryLevel(int inventoryLevel) // 인벤 레벨에 따라 최대 슬롯 수 반환
     {
         return inventoryLevel switch
         {
@@ -55,35 +55,46 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
     {
         // 플레이어 데이터 속 인벤토리 레벨을 사용하여 슬롯 세팅
         int inventoryLevel = GameManager.Instance.CurPlayerData.InventoryLevel;
-        SetInventorySlots(inventoryLevel);
+        _maxSlotCount = GetMaxSlotsForInventoryLevel(inventoryLevel);
 
         // 모든 아이템을 가져옴
         var allItems = GameManager.Instance.PlayerInventory.GetAllItems();
         int slotIndex = 0;
 
+        // 기존 슬롯 제거
+        foreach (Transform child in _inventoryContent)
+        {
+            Destroy(child.gameObject);
+        }
+
         // 각 아이템을 슬롯에 표시
         foreach (var item in allItems)
         {
-            if (slotIndex >= _inventoryContent.childCount) break;
+            if (slotIndex >= _maxSlotCount) break;
 
-            // 현재 슬롯에 아이템 데이터를 설정
-            var itemSlot = _inventoryContent.GetChild(slotIndex).GetComponent<InventoryItemUI>();
-            var itemData = Resources.Load<ItemData>($"Data/Items/{item.Key}");
-            int maxAmountPerSlot = GameManager.Instance.PlayerInventory.GetMaxItemAmountPerSlot(itemData.Type);
-
-            int remainingAmount = item.Value;
-            while (remainingAmount > 0 && slotIndex < _inventoryContent.childCount)
+            var itemData = DataManager.Instance.GetItemData(item.Key);
+            if (itemData == null)
             {
-                // 슬롯에 표시할 수 있는 최대 수량 계산
-                int displayAmount = Mathf.Min(remainingAmount, maxAmountPerSlot);
-                itemSlot.SetInventorySlotData(itemData, displayAmount);
-                remainingAmount -= displayAmount;
-                slotIndex++;
-                if (remainingAmount > 0 && slotIndex < _inventoryContent.childCount)
+                Debug.LogError($"ItemData for key {item.Key} is null.");
+                continue;
+            }
+
+            foreach (var amount in item.Value)
+            {
+                if (slotIndex >= _maxSlotCount) break;
+
+                // 슬롯 생성
+                var itemSlotObject = Instantiate(_itemCellPrefab, _inventoryContent);
+                var itemSlot = itemSlotObject.GetComponent<InventoryItemUI>();
+
+                if (itemSlot == null)
                 {
-                    // 다음 슬롯으로 이동
-                    itemSlot = _inventoryContent.GetChild(slotIndex).GetComponent<InventoryItemUI>();
+                    Debug.LogError("ItemSlot is null.");
+                    continue;
                 }
+
+                itemSlot.SetInventorySlotData(itemData, amount);
+                slotIndex++;
             }
         }
 
@@ -92,7 +103,7 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
         SetSizeValue();
     }
 
-    private void CreateItemSlot(Enums.ItemType type) //타입에 맞는 아이템 슬롯만 활성화
+    private void CreateItemSlot(Enums.ItemType type) // 타입에 맞는 아이템 슬롯만 활성화
     {
         foreach (Transform child in _inventoryContent)
         {
@@ -108,7 +119,7 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
         }
     }
 
-    private void SetSizeValue() //칸 수 값 세팅
+    private void SetSizeValue() // 칸 수 값 세팅
     {
         _sizeText.text = $"{_curSlotCount}/{_maxSlotCount}";
     }
@@ -166,6 +177,6 @@ public class InventoryUI : MonoBehaviour  //* 인벤토리 UI *//
     {
         Debug.Log("ExtendBtn Click");
         SoundManager.Instance.PlayFX("BtnClick");
-        //확장UI.gameObject.SetActive(true);
+        // 확장UI.gameObject.SetActive(true);
     }
 }

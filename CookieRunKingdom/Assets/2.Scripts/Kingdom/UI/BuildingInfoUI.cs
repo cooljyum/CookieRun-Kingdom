@@ -8,15 +8,13 @@ using UnityEngine;
 public class BuildingInfoUI : MonoBehaviour  //* 건물 정보 UI *//
 {
     [SerializeField]
-    private GameObject _parentObject; //비활성화용 부모 오브젝트
-    [SerializeField]
     private SkeletonGraphic _buildingImage; //건물 이미지
     [SerializeField]
     private TextMeshProUGUI _buildingInfo; //건물 소개글
     [SerializeField]
     private TextMeshProUGUI _environmentPoint; //건물 환경 점수
     [SerializeField]
-    private TextMeshProUGUI _buildingSize; //건물 (바닥) 크기 (: NXN)
+    private TextMeshProUGUI _buildingSize; //건물 (바닥) 크기 (: 숫자X숫자)
     [SerializeField]
     private Transform _ingredientContent; //건설 재료
     [SerializeField]
@@ -86,6 +84,6 @@ public class BuildingInfoUI : MonoBehaviour  //* 건물 정보 UI *//
     {
         Debug.Log("ExitBtn Click");
         SoundManager.Instance.PlayFX("BtnClick");
-        _parentObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

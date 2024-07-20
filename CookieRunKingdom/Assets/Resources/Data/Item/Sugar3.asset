@@ -15,5 +15,6 @@ MonoBehaviour:
   Key: 33
   Name: "\uAC01\uC124\uD0D5 \uC870\uAC01 \uC218\uB808"
   Sprite: {fileID: 21300000, guid: 03dfc83db79521e42a6f4fd4038737bb, type: 3}
+  Type: 4
   MaterialKeys: 1f000000
-  MateiralAmounts: 
+  MaterialAmounts: 

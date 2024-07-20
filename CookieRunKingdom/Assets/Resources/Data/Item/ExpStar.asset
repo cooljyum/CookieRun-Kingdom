@@ -15,5 +15,6 @@ MonoBehaviour:
   Key: 2
   Name: "Exp\uC2A4\uD0C0"
   Sprite: {fileID: 21300000, guid: 741b0a8c261a2b94584a8cdb888fd53c, type: 3}
+  Type: 5
   MaterialKeys: 
   MaterialAmounts: 
